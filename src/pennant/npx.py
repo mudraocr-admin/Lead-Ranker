@@ -145,6 +145,22 @@ def flag_contested(meetings: pd.DataFrame, defc: pd.DataFrame, window_days=120, 
     return pd.Series(flags, index=meetings.index)
 
 
+def board_position(df: pd.DataFrame) -> pd.Series:
+    """The board's recommendation, derived from who put the item on the ballot.
+
+    N-PX's managementRecommendation field is not usable for this: on the same
+    shareholder proposal about half the filers report the board as FOR (e.g.
+    JPMorgan's 2026 independent-chair proposal). So: company-sourced items ->
+    FOR; shareholder-sourced items at US issuers (incl. dissident nominees) ->
+    AGAINST; non-US shareholder items (slates, shareholder nominees that boards
+    often back) -> unknown, and left out of the management rate."""
+    us = df["isin"].str[:2].eq("US") | (df["isin"].eq("") & df["cusip"].str.len().eq(9))
+    out = pd.Series(pd.NA, index=df.index, dtype="object")
+    out[df.vote_source.eq("ISSUER")] = "FOR"
+    out[df.vote_source.eq("SECURITY HOLDER") & us] = "AGAINST"
+    return out
+
+
 def map_priority(df: pd.DataFrame) -> pd.Series:
     cats = df.vote_categories
     director = cats.str.contains("DIRECTOR ELECTIONS")
@@ -212,7 +228,7 @@ def prioritize(votes: pd.DataFrame, extra_contested: set = frozenset(), log=prin
         pairs = pd.MultiIndex.from_tuples(list(extra_contested), names=["cusip", "meeting_dt"])
         hit = pd.MultiIndex.from_frame(votes[["cusip", "meeting_dt"]]).isin(pairs)
         votes = votes.assign(contested=votes.contested | hit)
-    votes = votes.assign(priority_category=map_priority(votes))
+    votes = votes.assign(priority_category=map_priority(votes), board_rec=board_position(votes))
     pri = assign_item_keys(votes[votes.priority_category.notna()].reset_index(drop=True))
     pri.to_parquet(PROCESSED / "npx_priority.parquet", index=False)
     log(f"N-PX: {len(pri):,} rows in priority categories, {pri.item_key.nunique():,} distinct ballot items "

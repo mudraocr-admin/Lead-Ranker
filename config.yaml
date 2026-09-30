@@ -51,10 +51,11 @@ sai:
   max_docs_per_family: 3
 
 scoring:
+  mgmt_follower: 0.90             # >=90% of votes with the board, all priority items (checked first)
+  mgmt_min_items: 50              # priority items with a known board position needed for that call
   adviser_follower: 0.90          # >=90% agreement with the adviser the family uses
-  mgmt_follower: 0.90             # >=90% of votes with the board on adviser-opposed items
   partial_category: 0.90          # >=90% adviser agreement in one category, mixed in another
-  min_items: 10
+  min_items: 10                   # adviser-opposed items needed to call adviser following
   min_category_items: 3           # category rate only counted with >=3 items
 
 ai:

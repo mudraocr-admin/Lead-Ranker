@@ -44,7 +44,7 @@ def family_votes(pri: pd.DataFrame) -> pd.DataFrame:
             .agg(category=("priority_category", "first"), cusip=("cusip", "first"),
                  issuer=("issuer", "first"), meeting_dt=("meeting_dt", "first"),
                  item_text=("item_text", "first"),
-                 mgmt_rec=("mgmt_rec", lambda s: _direction(s.mode().iat[0]) if len(s.mode()) else None)))
+                 board_rec=("board_rec", lambda s: s.dropna().iat[0] if s.notna().any() else None)))
     return fv.reset_index().merge(meta, on="item_key", how="left")
 
 
@@ -87,7 +87,7 @@ def infer_recs(fv: pd.DataFrame, panel: list[str], cfg: dict, exclude: str | Non
     out = pd.DataFrame({"item_key": counts.index[ok], "rec": top[ok].values,
                         "panel_n": n[ok].values, "panel_share": share[ok].values})
     if disagreement_only:
-        mg = fv.drop_duplicates("item_key").set_index("item_key").mgmt_rec
+        mg = fv.drop_duplicates("item_key").set_index("item_key").board_rec
         out = out[out.rec.values != mg.reindex(out.item_key).values]
     return out.reset_index(drop=True)
 
@@ -161,6 +161,20 @@ def score_adviser(fv: pd.DataFrame, key: pd.DataFrame, cfg: dict, adviser: str, 
     return table, validation, pd.concat(matches, ignore_index=True)
 
 
+def management_rates(fv: pd.DataFrame) -> pd.DataFrame:
+    """Step 1 of scoring, independent of any proxy adviser: how often the family
+    votes with the board across every priority item whose board position is
+    known (company proposals, US shareholder proposals, dissident nominees)."""
+    d = fv[fv.board_rec.isin(["FOR", "AGAINST"])].assign(with_board=lambda x: x.direction == x.board_rec)
+    g = d.groupby("family")
+    out = pd.DataFrame({"mgmt_items": g.size(), "mgmt_rate": g.with_board.mean()})
+    for c in CATS:
+        dc = d[d.category == c].groupby("family")
+        out[f"mgmt_n_{c}"] = dc.size()
+        out[f"mgmt_rate_{c}"] = dc.with_board.mean()
+    return out
+
+
 def pick_adviser(row: pd.Series, sai_adviser, advisers: list[str], min_items: int) -> tuple[str, str]:
     """Adviser to score the family against, and why."""
     named = SAI_TO_ADVISER.get(sai_adviser)
@@ -176,16 +190,17 @@ def pick_adviser(row: pd.Series, sai_adviser, advisers: list[str], min_items: in
 
 
 def classify_family(row: pd.Series, s: dict) -> str:
-    a = row["scored_adviser"]
-    if row["mgmt_items"] < s["min_items"]:
+    # 1. Management first, independent of advisers.
+    if pd.isna(row["mgmt_items"]) or row["mgmt_items"] < s["mgmt_min_items"]:
         return "Insufficient data"
-    if row[f"items_{a}"] >= s["min_items"] and row["adviser_agreement"] >= s["adviser_follower"]:
-        return f"{ADVISER_NAMES[a]} follower"
     if row["mgmt_rate"] >= s["mgmt_follower"]:
         return "Management follower"
+    # 2. Adviser following, on items where the adviser opposed the board.
+    a = row["scored_adviser"]
     if row[f"items_{a}"] < s["min_items"]:
-        # Too few items against its own adviser to say it does NOT follow it.
-        return "Insufficient data"
+        return "Insufficient adviser data"
+    if row["adviser_agreement"] >= s["adviser_follower"]:
+        return f"{ADVISER_NAMES[a]} follower"
     rates = [row[f"agree_{a}_{c}"] for c in CATS
              if pd.notna(row[f"agree_{a}_{c}"]) and row[f"n_{a}_{c}"] >= s["min_category_items"]]
     if any(r >= s["partial_category"] for r in rates) and any(r < s["partial_category"] for r in rates):
@@ -197,6 +212,9 @@ def score(votes: pd.DataFrame, pri: pd.DataFrame, keys: dict[str, pd.DataFrame],
           cfg: dict, log=print):
     s = cfg["scoring"]
     fv = family_votes(pri)
+    mgmt = management_rates(fv)
+    log(f"Management rate: {int((mgmt.mgmt_rate >= s['mgmt_follower']).sum())} of {len(mgmt)} families "
+        f">= {s['mgmt_follower']:.0%} with the board")
     advisers = list(keys)
     tables, validation, matches = [], {}, []
     for adv, key in keys.items():
@@ -204,17 +222,8 @@ def score(votes: pd.DataFrame, pri: pd.DataFrame, keys: dict[str, pd.DataFrame],
         tables.append(t)
         validation[adv] = v
         matches.append(m)
-    sc = pd.concat(tables, axis=1)
-
-    # Management rate: share of votes cast with the board on items where ISS or
-    # Glass Lewis opposed the board (key + inferred, both advisers, deduped).
-    allm = pd.concat(matches, ignore_index=True).drop_duplicates(["family", "item_key"])
-    allm["with_board"] = allm.direction == allm.rec.map({"FOR": "AGAINST", "AGAINST": "FOR"})
-    g = allm.groupby("family")
-    sc["mgmt_items"] = g.size().reindex(sc.index).fillna(0).astype(int)
-    sc["mgmt_rate"] = g.with_board.mean()
-    for c in CATS:
-        sc[f"mgmt_rate_{c}"] = allm[allm.category == c].groupby("family").with_board.mean()
+    sc = pd.concat([mgmt] + tables, axis=1)
+    allm = pd.concat(matches, ignore_index=True)
 
     sai_adv = sai.set_index("family").advisor.reindex(sc.index)
     picked = [pick_adviser(sc.loc[f], sai_adv.get(f), advisers, s["min_items"]) for f in sc.index]

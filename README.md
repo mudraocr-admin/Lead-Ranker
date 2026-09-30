@@ -47,39 +47,66 @@ Also written:
 
 ### How a family is scored
 
-1. **Answer keys.** For each adviser, collect the ballot items where it publicly
+1. **Management rate first, independent of any adviser.** This is the share of the
+   family's votes cast with the board across every priority item: shareholder
+   proposals, contested elections, M&A, pay. Families at **≥90% with the board**
+   (and ≥50 such items) are **Tier 3** and are not analysed further.
+   * The board's position comes from who put the item on the ballot: company items
+     are FOR, US shareholder proposals and dissident nominees are AGAINST.
+   * Non-US shareholder items are left out. Their board position is ambiguous (e.g.
+     Italian slates, shareholder nominees that boards back).
+   * N-PX's own management-recommendation field is **not** used: on the same
+     shareholder proposal about half the filers report the board as FOR.
+2. **Answer keys.** For each adviser, collect the ballot items where it publicly
    opposed the board, as stated in company or dissident soliciting material
-   (DEFA14A / DEFC14A / DFAN14A, Jan–Jul 2026). Keep items in the 4 priority
-   categories: shareholder proposals, contested director elections, M&A, pay.
-2. **Which adviser to score against.** Taken from the family's SAI (485BPOS):
+   (DEFA14A / DEFC14A / DFAN14A, Jan–Jul 2026). Only the 4 priority categories are
+   kept.
+3. **Which adviser to score against.** Taken from the family's SAI (485BPOS):
    * SAI names ISS → ISS.
    * SAI names Glass Lewis → Glass Lewis.
    * SAI names both, or neither → both are measured, and the higher agreement counts
      (among advisers with ≥10 items).
    * The choice and the reason are in `scored_adviser` / `scored_adviser_reason`.
      Agreement with both advisers is always reported.
-3. **Metrics.** A family's vote on an item is the majority direction across its funds.
-   * **Adviser agreement** = votes matching the adviser / that adviser's items the
-     family voted on.
-   * **Management rate** = votes with the board / all items where ISS *or* Glass Lewis
-     opposed the board.
-   * Both are also broken out by category. Series divergence (how often the family's
-     own funds split) is reported but not used in the ranking.
-4. **Segment** (thresholds in `config.yaml`), checked in this order:
+4. **Adviser agreement** = votes matching the adviser / that adviser's items the family
+   voted on. A family's vote on an item is the majority direction across its funds.
+5. **Segment**, checked in this order (thresholds in `config.yaml`):
 
-| check | segment |
-|---|---|
-| fewer than 10 items overall | Insufficient data |
-| ≥10 items with its adviser and ≥90% agreement | ISS / Glass Lewis follower |
-| management rate ≥90% | Management follower |
-| fewer than 10 items with its adviser | Insufficient data (can't rule out following it) |
-| ≥90% adviser agreement in one category, mixed in another | Partial robo-voter |
-| otherwise | Judgment voter |
+| check | segment | tier |
+|---|---|---|
+| < 50 items with a known board position | Insufficient data | last |
+| management rate ≥ 90% | Management follower | 3 |
+| < 10 items where its adviser opposed the board | Insufficient adviser data | last |
+| adviser agreement ≥ 90% | ISS / Glass Lewis follower | 2 |
+| ≥ 90% adviser agreement in one category, mixed in another | Partial robo-voter | 1 |
+| otherwise | Judgment voter | 1 |
 
-5. **Confidence** (low/medium/high) starts at medium with ≥30 items, low otherwise. It
-   goes up one level when the SAI supports the segment: own guidelines or a
-   stewardship team for tier 1, or the followed adviser named without own guidelines
-   for tier 2. It does not affect the order.
+6. **Confidence** (low/medium/high):
+   * Management followers: high with ≥200 items.
+   * Everyone else: starts at medium with ≥30 adviser items, low otherwise. It goes up
+     one level when the SAI supports the segment.
+   * It does not affect the order.
+
+### Why so many "Insufficient adviser data"
+
+The adviser benchmark is **≥10 items where the family's adviser publicly opposed the
+board**. The keys are small: ISS 40 items, Glass Lewis 21. They also lean toward
+mid/small caps that many families don't hold.
+
+Lowering the bar costs accuracy:
+
+| items | a "follower" at 90% means | 95% interval on the true rate |
+|---|---|---|
+| 5 | 5 of 5 | 57–100% |
+| 10 | 9 of 10 | 60–98% |
+| 20 | 18 of 20 | 70–97% |
+
+Even 10 is thin. Growing the key is better than lowering the bar:
+* Search Jul–Dec 2025 soliciting material. The N-PX year starts Jul 2025, but the
+  search starts Jan 2026.
+* Drop the 40-item cap.
+* Add phrasings like "proxy advisory firm".
+* Best: a licensed ISS / Glass Lewis recommendation file.
 
 ## Pipeline
 
@@ -110,25 +137,21 @@ output is never cached. **When you change `families.csv`:**
 
 ## Results (run of 2026-09-30, placeholder list of 30 families)
 
-**Keys:**
-* ISS: 40 board-opposed items (30 pay, 9 contested-election, 1 shareholder proposal).
-* Glass Lewis: 21 items (13 contested-election, 7 pay, 1 shareholder proposal). That is
-  fewer than the 25 target, because companies publish rebuttals to Glass Lewis less
-  often.
+**Keys:** ISS 40 board-opposed items; Glass Lewis 21.
 
 **Segments:**
 * **Tier 1, 8 families:** Victory, Columbia, Principal, Thrivent, Harbor, Schwab,
-  Allspring, AMG.
-* **Tier 2, none:** no family reaches 90% agreement with its adviser. The highest are
-  Thrivent (73% with ISS) and AMG (78% with Glass Lewis, on 9 items only).
-* **Tier 3, Hartford:** 90% with management, on 10 items.
-* **Insufficient data, 21 families:** too few key items. This includes American
-  Century and Franklin Templeton despite heavy voting, and Virtus, which agreed with
-  ISS on 9 of 9 items (one short of the minimum).
+  Allspring, AMG. Management rates are 82–90%, and agreement with their adviser is
+  36–73%.
+* **Tier 2, none.**
+* **Tier 3, 8 families:** Calamos (98% with the board), Ariel, Lord Abbett, Diamond
+  Hill, Janus Henderson, Brown Advisory, MFS, Dodge & Cox.
+* **Insufficient adviser data, 14 families:** fewer than 10 adviser-opposed items. All
+  of them have plenty of data for the management rate (228–14,809 items); what's
+  missing is adviser evidence.
 
-**Validation:** not measurable for either adviser. Both panels are empty at the
-headline thresholds. A relaxed what-if (≥70% on ≥8 items) is in
-`data/processed/sensitivity_inferred_*.csv`; it is not used for scoring.
+**Validation:** not measurable; both follower panels are empty at the headline
+thresholds.
 
 ## Deviations from the brief (and why)
 

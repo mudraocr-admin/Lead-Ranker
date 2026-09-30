@@ -18,7 +18,7 @@ from .scoring import CATS
 
 LEVELS = ["low", "medium", "high"]
 TIER_LABELS = {1: "Tier 1 - independent voter", 2: "Tier 2 - adviser follower",
-               3: "Tier 3 - management follower", 4: "Insufficient data"}
+               3: "Tier 3 - management follower", 4: "Unclassified - insufficient data"}
 
 
 def tier_of(segment: str) -> int:
@@ -28,12 +28,15 @@ def tier_of(segment: str) -> int:
         return 2
     if segment == "Management follower":
         return 3
-    return 4
+    return 4  # Insufficient data / Insufficient adviser data
 
 
 def confidence(row: pd.Series) -> tuple[str, str]:
     """Data volume sets the base; an SAI that tells the same story raises it."""
-    base = 1 if row["mgmt_items"] >= 30 else 0
+    if row["segment"] == "Management follower":
+        return ("high" if row["mgmt_items"] >= 200 else "medium"), "rate over all priority items"
+    a = row.get("scored_adviser")
+    base = 1 if a and row.get(f"items_{a}", 0) >= 30 else 0
     seg, sai_adv = row["segment"], row.get("advisor")
     followed = {"ISS follower": "ISS", "Glass Lewis follower": "Glass Lewis"}.get(seg)
     confirms = ""
@@ -61,10 +64,10 @@ def rank_prospects(sc: pd.DataFrame, sai: pd.DataFrame) -> pd.DataFrame:
 def write_outputs(prospects: pd.DataFrame, keys: dict[str, pd.DataFrame], validation: dict, log=print):
     OUTPUT.mkdir(parents=True, exist_ok=True)
     cols = (["rank", "family", "priority", "segment", "confidence", "confidence_reason", "workload_meetings",
-             "scored_adviser", "scored_adviser_reason", "adviser_agreement", "mgmt_rate", "mgmt_items"]
+             "mgmt_rate", "mgmt_items", "scored_adviser", "scored_adviser_reason", "adviser_agreement"]
             + [f"{p}_{a}" for a in keys for p in ("agree", "items", "key_items")]
             + [f"{p}_{a}_{c}" for a in keys for c in CATS for p in ("agree", "n")]
-            + [f"mgmt_rate_{c}" for c in CATS]
+            + [f"mgmt_{p}_{c}" for c in CATS for p in ("rate", "n")]
             + ["series_divergence", "n_series", "sai_advisor", "roles", "own_guidelines", "stewardship_team",
                "sai_evidence", "sai_source"])
     prospects[cols].to_csv(OUTPUT / "priority_list.csv", index=False)

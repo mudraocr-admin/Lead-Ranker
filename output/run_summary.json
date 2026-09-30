@@ -23,7 +23,7 @@
         "Victory",
         "Virtus"
       ],
-      "sensitivity_inferred_items": 163,
+      "sensitivity_inferred_items": 80,
       "sensitivity_validation": {
         "holdout_items": 8,
         "panel_size": 0,
@@ -58,8 +58,8 @@
     }
   },
   "segments": {
-    "Insufficient data": 21,
+    "Insufficient adviser data": 14,
     "Judgment voter": 8,
-    "Management follower": 1
+    "Management follower": 8
   }
 }

@@ -21,8 +21,7 @@ adviser_key:
   search_to: "2026-07-31"
   forms: ["DEFA14A", "DEFC14A", "DFAN14A"]
   max_docs: 400
-  top_items_min: 25
-  top_items_max: 40
+  top_items_max: null             # null = keep every matched item (the brief's 25-40 cap dropped)
   director_fuzzy_threshold: 85    # rapidfuzz token_set_ratio
 
 advisers:

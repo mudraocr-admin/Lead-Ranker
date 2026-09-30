@@ -53,14 +53,42 @@
   "102752": {
     "answer": {
       "company": "VSE CORP  (VSEC, VSECU)  (CIK 0000102752)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS, another leading proxy advisory service, has recommended a vote FOR Proposal 3",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Proposal 3 say-on-pay",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
   "103145": {
     "answer": {
       "company": "VEECO INSTRUMENTS INC  (VECO)  (CIK 0000103145)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis have both recommended that Veeco stockholders vote FOR approval of the Merger",
+          "item_type": "mna",
+          "keywords": [
+            "merger"
+          ],
+          "label": "Merger with Axcelis",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -281,6 +309,21 @@
           ],
           "label": "Proposal 2 equity plan",
           "opposed_board": true
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS is supportive of all of our director nominees and our say-on-pay proposal",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-pay",
+          "opposed_board": false
         }
       ]
     },
@@ -554,22 +597,6 @@
         {
           "adviser_rec": "AGAINST",
           "board_rec": "FOR",
-          "evidence": "Institutional Shareholder Services (ISS) has recommended shareholders vote AGAINST Genco's equity incentive plan",
-          "item_type": "equity_plan",
-          "keywords": [
-            "incentive plan",
-            "equity plan",
-            "stock plan",
-            "omnibus",
-            "award plan",
-            "equity incentive"
-          ],
-          "label": "Proposal 3 equity incentive plan",
-          "opposed_board": true
-        },
-        {
-          "adviser_rec": "AGAINST",
-          "board_rec": "FOR",
           "evidence": "ISS recommendation that Genco shareholders vote AGAINST the ratification of Genco's poison pill",
           "item_type": "other",
           "keywords": [
@@ -585,6 +612,33 @@
           "item_type": "contested_director",
           "keywords": [],
           "label": "Genco board nominees",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS ... recommended shareholders vote FOR ALL of Genco's director nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__board_slate__",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "AGAINST",
+          "evidence": "ISS also recommended that Genco shareholders vote WITHHOLD on Diana Shipping Inc.'s nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__dissident_slate__",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "AGAINST",
+          "evidence": "ISS also recommended that Genco shareholders vote ... AGAINST Diana's shareholder proposals.",
+          "item_type": "shareholder_proposal",
+          "keywords": [],
+          "label": "__shareholder_proposals__",
           "opposed_board": false
         }
       ]
@@ -692,6 +746,24 @@
           "keywords": [],
           "label": "Pacira board nominees",
           "opposed_board": false
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended that Pacira stockholders vote FOR each of Pacira's three director nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__board_slate__",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "AGAINST",
+          "evidence": "... and AGAINST all three of DOMA Perpetual Capital Management LLC's nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__dissident_slate__",
+          "opposed_board": false
         }
       ]
     },
@@ -707,7 +779,20 @@
   "1438231": {
     "answer": {
       "company": "Digimarc CORP  (DMRC)  (CIK 0001438231)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "both ISS and Glass Lewis ... have recommended that its clients vote FOR the Reorganization Proposal",
+          "item_type": "mna",
+          "keywords": [
+            "reorganization",
+            "merger"
+          ],
+          "label": "Reorganization proposal",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -758,7 +843,19 @@
   "1502377": {
     "answer": {
       "company": "Contango ORE, Inc.  (CTGO)  (CIK 0001502377)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS recommends that Contango stockholders vote FOR: the Arrangement Proposal",
+          "item_type": "mna",
+          "keywords": [
+            "arrangement"
+          ],
+          "label": "Plan of arrangement",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -1039,7 +1136,20 @@
   "1757715": {
     "answer": {
       "company": "Aterian, Inc.  (ATER)  (CIK 0001757715)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS ... recommending that Aterian stockholders vote FOR the key proposals ... relating to the pending sale of substantially all of the Company's assets",
+          "item_type": "mna",
+          "keywords": [
+            "sale",
+            "asset"
+          ],
+          "label": "Asset sale to Trademark Global",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -1119,6 +1229,24 @@
           "keywords": [],
           "label": "Genesco board nominees",
           "opposed_board": false
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS recommends that shareholders vote FOR all nine of the Company's directors on the WHITE proxy card",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__board_slate__",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "AGAINST",
+          "evidence": "Shareholders are also recommended to withhold votes from the dissidents' nominees, Ballard and Poskon.",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__dissident_slate__",
+          "opposed_board": false
         }
       ]
     },
@@ -1135,6 +1263,15 @@
           "item_type": "contested_director",
           "keywords": [],
           "label": "VS&Co board nominees",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS ... recommended that VS&Co shareholders vote FOR all nine of the Company's director nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__board_slate__",
           "opposed_board": false
         }
       ]
@@ -1153,6 +1290,15 @@
           "keywords": [],
           "label": "Two of nine incumbent trustees (unnamed)",
           "opposed_board": true
+        },
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "AGAINST",
+          "evidence": "each of ISS, Egan-Jones and Glass Lewis rejected the dissident's full slate of nominees.",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__dissident_slate__",
+          "opposed_board": false
         }
       ]
     },
@@ -1299,6 +1445,28 @@
           "keywords": [],
           "label": "Todd Schurz",
           "opposed_board": true
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS supports the other proposals but recommends voting AGAINST Proposal 3",
+          "item_type": "equity_plan",
+          "keywords": [
+            "strategic deployment"
+          ],
+          "label": "Amended Strategic Deployment Incentive Plan",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS supports the other proposals but recommends voting AGAINST Proposal 3",
+          "item_type": "equity_plan",
+          "keywords": [
+            "restricted stock award"
+          ],
+          "label": "Amended 1982 Restricted Stock Award Plan",
+          "opposed_board": false
         }
       ]
     },
@@ -1307,7 +1475,22 @@
   "351834": {
     "answer": {
       "company": "SunOpta Inc.  (STKL)  (CIK 0000351834)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS AND GLASS LEWIS RECOMMEND SHAREHOLDERS VOTE FOR PROPOSED ACQUISITION BY REFRESCO",
+          "item_type": "mna",
+          "keywords": [
+            "merger",
+            "arrangement",
+            "acquisition",
+            "refresco"
+          ],
+          "label": "Acquisition by Refresco",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -1434,6 +1617,15 @@
           "keywords": [],
           "label": "Jack in the Box board nominees",
           "opposed_board": false
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended that Jack in the Box shareholders vote FOR all 10 of the Company's director nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__board_slate__",
+          "opposed_board": false
         }
       ]
     },
@@ -1538,6 +1730,21 @@
           ],
           "label": "Proposal 5 Equity Plan",
           "opposed_board": true
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS recommended ... FOR the advisory vote to approve named executive officer compensation (Proposal 2)",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Proposal 2 say-on-pay",
+          "opposed_board": false
         }
       ]
     },
@@ -1546,7 +1753,23 @@
   "921638": {
     "answer": {
       "company": "SSR MINING INC.  (SSRM, SSRGF)  (CIK 0000921638)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended that shareholders vote FOR each of our directors, FOR our Say on Pay resolution",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say on Pay",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },

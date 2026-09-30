@@ -76,7 +76,19 @@
   "103145": {
     "answer": {
       "company": "VEECO INSTRUMENTS INC  (VECO)  (CIK 0000103145)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis have both recommended that Veeco stockholders vote FOR approval of the Merger",
+          "item_type": "mna",
+          "keywords": [
+            "merger"
+          ],
+          "label": "Merger with Axcelis",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -106,7 +118,23 @@
   "1070423": {
     "answer": {
       "company": "PLAINS ALL AMERICAN PIPELINE LP  (PAA, PAAPU)  (CIK 0001070423)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis has recommended that PAGP shareholders and PAA unitholders vote for Proposal 3.",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Proposal 3 say-on-pay",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -127,7 +155,24 @@
   "1108524": {
     "answer": {
       "company": "Salesforce, Inc.  (CRM)  (CIK 0001108524)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "the other major proxy advisory firm, Glass Lewis & Co., is supporting Proposal 2",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Proposal 2 equity plan",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -180,6 +225,24 @@
           "keywords": [],
           "label": "GDV board nominees",
           "opposed_board": false
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis has recommended that the shareholders vote FOR ALL of the Board's nominees on the WHITE proxy card",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__board_slate__",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis Rejects Nominee Proposed by Dissident Shareholder Saba Capital Management",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__dissident_slate__",
+          "opposed_board": false
         }
       ]
     },
@@ -188,7 +251,24 @@
   "1288469": {
     "answer": {
       "company": "MAXLINEAR, INC  (MXL)  (CIK 0001288469)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "In Glass Lewis's report, they recommended that our stockholders vote for the Equity Plan Proposal",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Equity Plan Proposal",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -265,6 +345,49 @@
           "keywords": [],
           "label": "Genco board nominees",
           "opposed_board": false
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "In addition to supporting the current Genco Board, Glass Lewis and Egan-Jones also recommend ...",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__board_slate__",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis and Egan-Jones also recommend that Genco shareholders vote WITHHOLD on all nominees of Diana",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__dissident_slate__",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "AGAINST",
+          "evidence": "... and AGAINST Diana's shareholder proposals.",
+          "item_type": "shareholder_proposal",
+          "keywords": [],
+          "label": "__shareholder_proposals__",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "each firm recommended shareholders vote for the Company's equity incentive plan",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Equity incentive plan",
+          "opposed_board": false
         }
       ]
     },
@@ -273,28 +396,112 @@
   "1352010": {
     "answer": {
       "company": "EPAM Systems, Inc.  (EPAM)  (CIK 0001352010)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis has also recommended a vote FOR the amendment to the 2025 Plan.",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive",
+            "2025 plan"
+          ],
+          "label": "Amendment to the 2025 Plan",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
   "1360901": {
     "answer": {
       "company": "Evercore Inc.  (EVR)  (CIK 0001360901)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis ... is recommending voting FOR all our proposals",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Proposal 4 equity plan",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis ... is recommending voting FOR all our proposals",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-pay",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
   "1367644": {
     "answer": {
       "company": "Emergent BioSolutions Inc.  (EBS)  (CIK 0001367644)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis reviewed the same proposal ... and recommended a for vote, finding no material concerns",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Stock Plan Proposal",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
   "1395937": {
     "answer": {
       "company": "Syndax Pharmaceuticals Inc  (SNDX)  (CIK 0001395937)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis has recommended a vote for Proposal No. 4, stating that they have no material concerns.",
+          "item_type": "other_compensation",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Proposal No. 4",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -309,6 +516,24 @@
           "item_type": "contested_director",
           "keywords": [],
           "label": "Pacira board nominees",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis Recommends Stockholders Vote FOR All of Pacira's Director Nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__board_slate__",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "AGAINST",
+          "evidence": "... and AGAINST all three of DOMA Perpetual Capital Management LLC's nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__dissident_slate__",
           "opposed_board": false
         }
       ]
@@ -325,7 +550,20 @@
   "1438231": {
     "answer": {
       "company": "Digimarc CORP  (DMRC)  (CIK 0001438231)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "both ISS and Glass Lewis ... have recommended ... vote FOR the Reorganization Proposal",
+          "item_type": "mna",
+          "keywords": [
+            "reorganization",
+            "merger"
+          ],
+          "label": "Reorganization proposal",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -353,7 +591,23 @@
   "1497770": {
     "answer": {
       "company": "Walker & Dunlop, Inc.  (WD)  (CIK 0001497770)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis ... issued a report recommending that shareholders vote FOR Walker & Dunlop's Say-on-Pay Proposal",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-Pay Proposal",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -391,7 +645,23 @@
   "1581990": {
     "answer": {
       "company": "PLAINS GP HOLDINGS LP  (PAGP)  (CIK 0001581990)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis has recommended that PAGP shareholders and PAA unitholders vote for Proposal 3.",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Proposal 3 say-on-pay",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -513,14 +783,43 @@
   "1757715": {
     "answer": {
       "company": "Aterian, Inc.  (ATER)  (CIK 0001757715)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis ... recommending that Aterian stockholders vote FOR the key proposals ... the Asset Sale",
+          "item_type": "mna",
+          "keywords": [
+            "sale",
+            "asset"
+          ],
+          "label": "Asset sale to Trademark Global",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
   "1768267": {
     "answer": {
       "company": "Cerence Inc.  (CRNC)  (CIK 0001768267)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis has recommended a vote FOR say-on-pay approval at the 2026 Annual Meeting.",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-pay",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -558,14 +857,34 @@
   "18498": {
     "answer": {
       "company": "GENESCO INC  (GCO)  (CIK 0000018498)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis ... have recommended that shareholders vote FOR ONLY Genesco's nine highly-qualified directors",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__board_slate__",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
   "1856437": {
     "answer": {
       "company": "Victoria's Secret & Co.  (VSCO, VSXY)  (CIK 0001856437)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "All three independent proxy advisors, ISS, Glass Lewis & Co and Egan-Jones ... support the Company's director nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__board_slate__",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -580,6 +899,24 @@
           "item_type": "contested_director",
           "keywords": [],
           "label": "ECAT board nominees",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis ... recommended that shareholders vote on the WHITE proxy card FOR all nine of the Board nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__board_slate__",
+          "opposed_board": false
+        },
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "AGAINST",
+          "evidence": "In making its recommendation, Glass Lewis rejected the dissident's full slate of nominees.",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__dissident_slate__",
           "opposed_board": false
         }
       ]
@@ -703,7 +1040,22 @@
   "351834": {
     "answer": {
       "company": "SunOpta Inc.  (STKL)  (CIK 0000351834)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS AND GLASS LEWIS RECOMMEND SHAREHOLDERS VOTE FOR PROPOSED ACQUISITION BY REFRESCO",
+          "item_type": "mna",
+          "keywords": [
+            "merger",
+            "arrangement",
+            "acquisition",
+            "refresco"
+          ],
+          "label": "Acquisition by Refresco",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -750,7 +1102,24 @@
   "720672": {
     "answer": {
       "company": "STIFEL FINANCIAL CORP  (SF, SFB, SF-PB, SF-PC, SF-PD)  (CIK 0000720672)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis has recommended a vote for Item 4, stating that they have no material concerns",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Item 4 equity plan",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -781,7 +1150,23 @@
   "74208": {
     "answer": {
       "company": "UDR, Inc.  (UDR)  (CIK 0000074208)",
-      "items": []
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "We are pleased that Glass Lewis has recommended a vote FOR all proposals, including the Say-on-Pay Proposal.",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-Pay Proposal",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },

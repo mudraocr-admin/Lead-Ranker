@@ -55,22 +55,24 @@ def agreement(fv: pd.DataFrame, recs: pd.DataFrame) -> pd.DataFrame:
     return m
 
 
-def follower_panel(fv: pd.DataFrame, key: pd.DataFrame, cfg: dict) -> pd.DataFrame:
+def follower_panel(fv: pd.DataFrame, key: pd.DataFrame, cfg: dict, exclude: set = frozenset()) -> pd.DataFrame:
+    """Families that track the adviser closely. Management followers are never
+    panel members: on board-aligned items they would look like adviser followers."""
     p = cfg["panel"]
     a = agreement(fv, key).groupby("family").agg(items=("match", "size"), rate=("match", "mean"))
-    a["panel"] = (a["items"] >= p["follower_min_items"]) & (a["rate"] >= p["follower_agreement"])
+    a["panel"] = ((a["items"] >= p["follower_min_items"]) & (a["rate"] >= p["follower_agreement"])
+                  & ~a.index.isin(list(exclude)))
     return a
 
 
 def infer_recs(fv: pd.DataFrame, panel: list[str], cfg: dict, exclude: str | None = None,
-               items: pd.Index | None = None, disagreement_only: bool = True) -> pd.DataFrame:
+               items: pd.Index | None = None, disagreement_only: bool = False) -> pd.DataFrame:
     """Infer the adviser's rec on items from panel families' votes.
 
     Rule: >= infer_min_panel_votes panel families voted and >= infer_min_agreement
     of them voted the same way. `exclude` drops the scored family from its own
-    panel. With `disagreement_only`, keep items where the inferred rec opposes
-    management (the key only covers board-opposed items, so the expansion must
-    match it)."""
+    panel. With `disagreement_only`, keep only items where the inferred rec
+    opposes the board."""
     p = cfg["panel"]
     members = [f for f in panel if f != exclude]
     pv = fv[fv.family.isin(members)]
@@ -92,7 +94,8 @@ def infer_recs(fv: pd.DataFrame, panel: list[str], cfg: dict, exclude: str | Non
     return out.reset_index(drop=True)
 
 
-def validate(fv: pd.DataFrame, key: pd.DataFrame, cfg: dict, adviser: str, log=print) -> dict:
+def validate(fv: pd.DataFrame, key: pd.DataFrame, cfg: dict, adviser: str, log=print,
+             exclude: set = frozenset()) -> dict:
     """Hold out key items, rebuild the panel without them, infer them back."""
     p = cfg["panel"]
     rng = np.random.default_rng(p["seed"])
@@ -104,7 +107,7 @@ def validate(fv: pd.DataFrame, key: pd.DataFrame, cfg: dict, adviser: str, log=p
     k = min(p["holdout_items"], max(len(key) // 4, 1), len(eligible))
     hold = eligible.iloc[rng.choice(len(eligible), size=k, replace=False)]
     train = key[~key.item_key.isin(hold.item_key)]
-    panel = follower_panel(fv, train, cfg)
+    panel = follower_panel(fv, train, cfg, exclude)
     members = panel.index[panel.panel].tolist()
     inf = infer_recs(fv, members, cfg, items=pd.Index(hold.item_key), disagreement_only=False)
     m = hold.merge(inf, on="item_key", how="left", suffixes=("", "_inferred"))
@@ -120,37 +123,45 @@ def validate(fv: pd.DataFrame, key: pd.DataFrame, cfg: dict, adviser: str, log=p
     return res
 
 
-def score_adviser(fv: pd.DataFrame, key: pd.DataFrame, cfg: dict, adviser: str, log=print):
+def score_adviser(fv: pd.DataFrame, key: pd.DataFrame, cfg: dict, adviser: str, log=print,
+                  exclude: set = frozenset()):
     """Per-family agreement with one adviser (key + panel-inferred items)."""
-    panel = follower_panel(fv, key, cfg)
+    panel = follower_panel(fv, key, cfg, exclude)
     members = panel.index[panel.panel].tolist()
     log(f"{adviser} panel: {len(members)} follower families on the seed key: {members}")
-    validation = {"headline": validate(fv, key, cfg, adviser, log)}
+    validation = {"headline": validate(fv, key, cfg, adviser, log, exclude)}
     if not members:
         # Headline thresholds found no followers: show what seed-and-expand would
         # do under a relaxed panel. Reported separately, never used to score.
         relaxed = {**cfg, "panel": {**cfg["panel"], **cfg["panel_sensitivity"]}}
-        rp = follower_panel(fv, key, relaxed)
+        rp = follower_panel(fv, key, relaxed, exclude)
         rmembers = rp.index[rp.panel].tolist()
         rinf = infer_recs(fv, rmembers, relaxed)
         rinf = rinf[~rinf.item_key.isin(key.item_key)]
         log(f"{adviser} sensitivity (panel >= {relaxed['panel']['follower_agreement']:.0%} on >= "
             f"{relaxed['panel']['follower_min_items']} items): panel {rmembers}, {len(rinf)} extra items inferred")
         validation.update({"sensitivity_panel": rmembers, "sensitivity_inferred_items": int(len(rinf)),
-                           "sensitivity_validation": validate(fv, key, relaxed, adviser, log)})
+                           "sensitivity_validation": validate(fv, key, relaxed, adviser, log, exclude)})
         rinf.merge(fv.drop_duplicates("item_key")[["item_key", "issuer", "meeting_dt", "category", "item_text"]],
                    on="item_key").to_csv(PROCESSED / f"sensitivity_inferred_{adviser.lower()}.csv", index=False)
 
-    key_recs = key[["item_key", "rec"]].assign(source="key")
+    key_recs = key[["item_key", "rec", "opposed_board"]].assign(source="key")
     rows, matches = [], []
     for fam in sorted(fv.family.unique()):
         inferred = infer_recs(fv, members, cfg, exclude=fam)
         inferred = inferred[~inferred.item_key.isin(key.item_key)].assign(source="inferred")
-        recs = pd.concat([key_recs, inferred[["item_key", "rec", "source"]]], ignore_index=True)
-        m = agreement(fv[fv.family == fam], recs).merge(recs[["item_key", "source"]], on="item_key")
+        inferred["opposed_board"] = inferred.rec.values != fv.drop_duplicates("item_key").set_index(
+            "item_key").board_rec.reindex(inferred.item_key).values
+        recs = pd.concat([key_recs, inferred[["item_key", "rec", "opposed_board", "source"]]], ignore_index=True)
+        m = agreement(fv[fv.family == fam], recs).merge(recs[["item_key", "source", "opposed_board"]],
+                                                        on="item_key")
         matches.append(m.assign(adviser=adviser))
         row = {"family": fam, f"items_{adviser}": len(m), f"key_items_{adviser}": int((m.source == "key").sum()),
                f"agree_{adviser}": m.match.mean() if len(m) else np.nan}
+        for flag, name in ((True, "opposed"), (False, "aligned")):
+            mo = m[m.opposed_board == flag]
+            row[f"n_{adviser}_{name}"] = len(mo)
+            row[f"agree_{adviser}_{name}"] = mo.match.mean() if len(mo) else np.nan
         for c in CATS:
             mc = m[m.category == c]
             row[f"n_{adviser}_{c}"] = len(mc)
@@ -217,8 +228,9 @@ def score(votes: pd.DataFrame, pri: pd.DataFrame, keys: dict[str, pd.DataFrame],
         f">= {s['mgmt_follower']:.0%} with the board")
     advisers = list(keys)
     tables, validation, matches = [], {}, []
+    mgmt_followers = set(mgmt.index[mgmt.mgmt_rate >= s["mgmt_follower"]])
     for adv, key in keys.items():
-        t, v, m = score_adviser(fv, key, cfg, adv, log)
+        t, v, m = score_adviser(fv, key, cfg, adv, log, exclude=mgmt_followers)
         tables.append(t)
         validation[adv] = v
         matches.append(m)

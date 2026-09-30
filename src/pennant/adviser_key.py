@@ -187,10 +187,14 @@ def meeting_in_window(b: pd.DataFrame, first_filed: str, last_filed: str) -> pd.
     return b[b.meeting_dt.between(lo, hi)]
 
 
-def opposed_items(items: pd.DataFrame, npx_all: pd.DataFrame) -> pd.DataFrame:
-    opp = items[items.opposed_board.astype(bool) & items.category.notna()
-                & items.adviser_rec.isin(["FOR", "AGAINST", "WITHHOLD"])].copy()
-    return resolve_cusips(opp, npx_all)
+def keyed_items(items: pd.DataFrame, npx_all: pd.DataFrame) -> pd.DataFrame:
+    """Every priority-category item with a stated adviser rec, whether the
+    adviser backed or opposed the board. Management followers are removed
+    before adviser scoring, so board-aligned items no longer blur the signal."""
+    keep = items[items.category.notna() & items.adviser_rec.isin(["FOR", "AGAINST", "WITHHOLD"])].copy()
+    # Named items before slates, so a named call wins when both hit one ballot item.
+    keep["_slate"] = keep.label.str.startswith("__")
+    return resolve_cusips(keep.sort_values("_slate"), npx_all)
 
 
 def contested_from_key(opp: pd.DataFrame, npx_all: pd.DataFrame) -> set[tuple[str, pd.Timestamp]]:
@@ -205,10 +209,14 @@ def contested_from_key(opp: pd.DataFrame, npx_all: pd.DataFrame) -> set[tuple[st
 
 
 def join_to_items(opp: pd.DataFrame, pri: pd.DataFrame, cfg: dict, log=print) -> pd.DataFrame:
-    """Map each board-opposed adviser item onto canonical N-PX item_keys."""
+    """Map each adviser item onto canonical N-PX item_keys."""
     thr = cfg["adviser_key"]["director_fuzzy_threshold"]
-    ballots = pri.drop_duplicates("item_key")[["item_key", "cusip", "issuer", "meeting_dt", "item_text",
-                                                "priority_category", "vote_categories", "vote_source"]]
+    ballots = (pri.groupby("item_key")
+               .agg(cusip=("cusip", "first"), issuer=("issuer", "first"), meeting_dt=("meeting_dt", "first"),
+                    item_text=("item_text", "first"), priority_category=("priority_category", "first"),
+                    vote_categories=("vote_categories", "first"), vote_source=("vote_source", "first"),
+                    board_rec=("board_rec", lambda s: s.dropna().mode().iat[0] if s.notna().any() else None))
+               .reset_index())
     key_rows, misses = [], []
     for it in opp.itertuples():
         if not it.cusip:
@@ -219,7 +227,13 @@ def join_to_items(opp: pd.DataFrame, pri: pd.DataFrame, cfg: dict, log=print) ->
         if b.empty:
             misses.append((it.company, it.label, "no N-PX meeting in window (or after Jun 30 2026)"))
             continue
-        if it.category == "contested_election":
+        if it.label == "__board_slate__":
+            cand = b[b.board_rec == "FOR"]
+        elif it.label == "__dissident_slate__":
+            cand = b[b.board_rec == "AGAINST"]
+        elif it.label == "__shareholder_proposals__":
+            cand = b[b.vote_source == "SECURITY HOLDER"]
+        elif it.category == "contested_election":
             score = b.item_text.map(lambda d: fuzz.token_set_ratio(it.label.lower(), director_name(d)))
             cand = b[score >= thr]
         else:
@@ -237,13 +251,14 @@ def join_to_items(opp: pd.DataFrame, pri: pd.DataFrame, cfg: dict, log=print) ->
             key_rows.append({"item_key": c.item_key, "adviser": it.adviser, "cusip": it.cusip,
                              "issuer": c.issuer, "meeting_dt": c.meeting_dt, "item_text": c.item_text,
                              "category": it.category, "rec": _dir(it.adviser_rec),
-                             "board_rec": _dir(it.board_rec), "company": it.company, "label": it.label,
+                             "board_rec": _dir(it.board_rec), "opposed_board": bool(it.opposed_board),
+                             "company": it.company, "label": it.label,
                              "ai_source": it.ai_source, "evidence": it.evidence})
     key = pd.DataFrame(key_rows).drop_duplicates("item_key")
     adv = opp.adviser.iat[0] if len(opp) else "?"
     pd.DataFrame(misses, columns=["company", "label", "reason"]).to_csv(
         PROCESSED / f"{adv.lower()}_key_misses.csv", index=False)
-    log(f"{adv} key: {len(opp)} board-opposed priority items -> {len(key)} N-PX ballot items "
+    log(f"{adv} key: {len(opp)} priority items with a stated rec -> {len(key)} N-PX ballot items "
         f"({len(misses)} unmatched, see data/processed/{adv.lower()}_key_misses.csv)")
     return key
 
@@ -255,10 +270,11 @@ def rank_and_trim(key: pd.DataFrame, pri: pd.DataFrame, cfg: dict, log=print) ->
     fam = pri[pri.item_key.isin(key.item_key)].groupby("item_key").family.nunique().rename("n_families")
     key = key.merge(fam, on="item_key", how="left").fillna({"n_families": 0})
     key = key.sort_values(["n_families", "meeting_dt"], ascending=[False, True])
-    kept = key[key.n_families > 0].head(c["top_items_max"]).reset_index(drop=True)
-    if len(kept) < c["top_items_min"]:
-        log(f"{adv} key: only {len(kept)} items have target-family votes (target {c['top_items_min']}-"
-            f"{c['top_items_max']}); keeping all")
+    kept = key[key.n_families > 0]
+    if c.get("top_items_max"):
+        kept = kept.head(c["top_items_max"])
+    kept = kept.reset_index(drop=True)
     kept.to_parquet(PROCESSED / f"{adv.lower()}_key.parquet", index=False)
-    log(f"{adv} key: kept {len(kept)} items; categories {kept.category.value_counts().to_dict()}")
+    log(f"{adv} key: kept {len(kept)} items ({int(kept.opposed_board.sum())} opposing the board); "
+        f"categories {kept.category.value_counts().to_dict()}")
     return kept

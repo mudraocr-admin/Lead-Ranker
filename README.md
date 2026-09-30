@@ -57,10 +57,17 @@ Also written:
      Italian slates, shareholder nominees that boards back).
    * N-PX's own management-recommendation field is **not** used: on the same
      shareholder proposal about half the filers report the board as FOR.
-2. **Answer keys.** For each adviser, collect the ballot items where it publicly
-   opposed the board, as stated in company or dissident soliciting material
-   (DEFA14A / DEFC14A / DFAN14A, Jan–Jul 2026). Only the 4 priority categories are
-   kept.
+2. **Answer keys.** For each adviser, collect every priority-category ballot item where
+   its recommendation is stated in company or dissident soliciting material (DEFA14A /
+   DEFC14A / DFAN14A, Jan–Jul 2026). Both kinds are kept: items where the adviser
+   **opposed** the board, and items where it **backed** the board.
+   * Management followers are already removed at step 1, so board-backed items no
+     longer mix up adviser-following with management-following as badly as they did.
+   * The two kinds are still reported separately (`agree_<adviser>_opposed` /
+     `_aligned`). See the caveat below.
+   * In proxy fights, a whole-slate call ("ISS backs all company nominees") applies to
+     each nominee. The board's side is read from the ballot text ("COMPANY
+     NOMINEE", "…Nominee Opposed by the Company").
 3. **Which adviser to score against.** Taken from the family's SAI (485BPOS):
    * SAI names ISS → ISS.
    * SAI names Glass Lewis → Glass Lewis.
@@ -76,7 +83,7 @@ Also written:
 |---|---|---|
 | < 50 items with a known board position | Insufficient data | last |
 | management rate ≥ 90% | Management follower | 3 |
-| < 10 items where its adviser opposed the board | Insufficient adviser data | last |
+| < 10 items with its adviser's recommendation | Insufficient adviser data | last |
 | adviser agreement ≥ 90% | ISS / Glass Lewis follower | 2 |
 | ≥ 90% adviser agreement in one category, mixed in another | Partial robo-voter | 1 |
 | otherwise | Judgment voter | 1 |
@@ -87,26 +94,21 @@ Also written:
      one level when the SAI supports the segment.
    * It does not affect the order.
 
-### Why so many "Insufficient adviser data"
+### Caveat: board-backed items inflate adviser agreement
 
-The adviser benchmark is **≥10 items where the family's adviser publicly opposed the
-board**. The keys are small: ISS 40 items, Glass Lewis 21. They also lean toward
-mid/small caps that many families don't hold.
+When the adviser and the board agree, a family that leans toward management also
+"agrees with the adviser". So agreement on board-backed items runs high for everyone
+(mostly 80–100%), and a family can look like a follower without ever siding with the
+adviser against the board. On the placeholder list:
 
-Lowering the bar costs accuracy:
+| family | segment | agreed where adviser **opposed** board | agreed where adviser **backed** board |
+|---|---|---|---|
+| Virtus | ISS follower | 9 of 9 | 18 of 18 |
+| Hartford | Glass Lewis follower | 1 of 2 | 12 of 12 |
+| Baird | ISS follower | none available | 9 of 10 |
 
-| items | a "follower" at 90% means | 95% interval on the true rate |
-|---|---|---|
-| 5 | 5 of 5 | 57–100% |
-| 10 | 9 of 10 | 60–98% |
-| 20 | 18 of 20 | 70–97% |
-
-Even 10 is thin. Growing the key is better than lowering the bar:
-* Search Jul–Dec 2025 soliciting material. The N-PX year starts Jul 2025, but the
-  search starts Jan 2026.
-* Drop the 40-item cap.
-* Add phrasings like "proxy advisory firm".
-* Best: a licensed ISS / Glass Lewis recommendation file.
+Only Virtus is a clear follower. Hartford's and Baird's labels rest almost entirely on
+board-backed items. Check the `_opposed` columns before acting on a Tier 2 label.
 
 ## Pipeline
 
@@ -137,24 +139,29 @@ output is never cached. **When you change `families.csv`:**
 
 ## Results (run of 2026-09-30, placeholder list of 30 families)
 
-**Keys:** ISS 40 board-opposed items; Glass Lewis 21.
+**Keys:**
+* ISS: 96 items, of which 42 oppose the board. By category: 53 contested-election, 38
+  pay, 3 M&A, 2 shareholder proposals.
+* Glass Lewis: 70 items, of which 21 oppose the board.
 
 **Segments:**
-* **Tier 1, 8 families:** Victory, Columbia, Principal, Thrivent, Harbor, Schwab,
-  Allspring, AMG. Management rates are 82–90%, and agreement with their adviser is
-  36–73%.
-* **Tier 2, none.**
-* **Tier 3, 8 families:** Calamos (98% with the board), Ariel, Lord Abbett, Diamond
-  Hill, Janus Henderson, Brown Advisory, MFS, Dodge & Cox.
-* **Insufficient adviser data, 14 families:** fewer than 10 adviser-opposed items. All
-  of them have plenty of data for the management rate (228–14,809 items); what's
-  missing is adviser evidence.
+* **Tier 1, 14 families:** American Century, Franklin Templeton, Victory, Columbia,
+  Principal, Thrivent, Harbor, Schwab, Allspring, Putnam, Federated Hermes, Invesco,
+  AMG, Alger.
+* **Tier 2, 3 families:** Hartford (Glass Lewis), Virtus (ISS), Baird (ISS). See the
+  caveat above.
+* **Tier 3, 8 families:** Calamos, Ariel, Lord Abbett, Diamond Hill, Janus Henderson,
+  Brown Advisory, MFS, Dodge & Cox.
+* **Insufficient adviser data, 5 families:** Neuberger Berman, Delaware / Macquarie,
+  Causeway, Artisan, Parnassus.
 
-**Validation:** not measurable; both follower panels are empty at the headline
-thresholds.
+**Validation:** still not measurable. Each panel shrinks to 1 family once 8 items are
+held out.
 
 ## Deviations from the brief (and why)
 
+* **All adviser items kept, not just board-opposed ones.** The brief's 25–40 item cap
+  was dropped too.
 * **Wider soliciting-material search.** `"ISS"` and dissident DFAN14A filings were added
   to the ISS query, because the exact phrase alone returned 83 documents, mostly
   companies touting ISS *support*.

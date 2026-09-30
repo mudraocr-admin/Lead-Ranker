@@ -193,6 +193,104 @@ GL_ITEMS = {
 }
 
 
+# --------------------------------------------------------------------------
+# Items where the adviser AGREED with the board. Added 2026-09-30 when the key
+# stopped being limited to board-opposed items. Slate labels:
+#   __board_slate__         every company nominee at a contested meeting
+#   __dissident_slate__     every dissident nominee at a contested meeting
+#   __shareholder_proposals__  every shareholder-sourced proposal at the meeting
+PLAN = EQ
+
+
+def agree(t, label, kw, rec, ev):
+    board = "AGAINST" if label in ("__dissident_slate__", "__shareholder_proposals__") else "FOR"
+    return it(t, label, kw, rec, board, False, ev)
+
+
+ISS_AGREE = {
+    "807882": [agree("contested_director", "__board_slate__", [], F, "ISS has recommended that Jack in the Box shareholders vote FOR all 10 of the Company's director nominees")],
+    "1326200": [
+        agree("contested_director", "__board_slate__", [], F, "ISS ... recommended shareholders vote FOR ALL of Genco's director nominees"),
+        agree("contested_director", "__dissident_slate__", [], W, "ISS also recommended that Genco shareholders vote WITHHOLD on Diana Shipping Inc.'s nominees"),
+        agree("shareholder_proposal", "__shareholder_proposals__", [], A, "ISS also recommended that Genco shareholders vote ... AGAINST Diana's shareholder proposals."),
+    ],
+    "1396814": [
+        agree("contested_director", "__board_slate__", [], F, "ISS has recommended that Pacira stockholders vote FOR each of Pacira's three director nominees"),
+        agree("contested_director", "__dissident_slate__", [], A, "... and AGAINST all three of DOMA Perpetual Capital Management LLC's nominees"),
+    ],
+    "18498": [
+        agree("contested_director", "__board_slate__", [], F, "ISS recommends that shareholders vote FOR all nine of the Company's directors on the WHITE proxy card"),
+        agree("contested_director", "__dissident_slate__", [], W, "Shareholders are also recommended to withhold votes from the dissidents' nominees, Ballard and Poskon."),
+    ],
+    "1856437": [agree("contested_director", "__board_slate__", [], F, "ISS ... recommended that VS&Co shareholders vote FOR all nine of the Company's director nominees")],
+    "1864843": [agree("contested_director", "__dissident_slate__", [], A, "each of ISS, Egan-Jones and Glass Lewis rejected the dissident's full slate of nominees.")],
+    "1108524": [agree("say_on_pay", "Say-on-pay", SOP, F, "ISS is supportive of all of our director nominees and our say-on-pay proposal")],
+    "1042776": [],  # say-on-pay FOR already recorded above
+    "102752": [agree("say_on_pay", "Proposal 3 say-on-pay", SOP, F, "ISS, another leading proxy advisory service, has recommended a vote FOR Proposal 3")],
+    "921638": [agree("say_on_pay", "Say on Pay", SOP, F, "ISS has recommended that shareholders vote FOR each of our directors, FOR our Say on Pay resolution")],
+    "910638": [agree("say_on_pay", "Proposal 2 say-on-pay", SOP, F, "ISS recommended ... FOR the advisory vote to approve named executive officer compensation (Proposal 2)")],
+    "34782": [
+        agree("equity_plan", "Amended Strategic Deployment Incentive Plan", ["strategic deployment"], F, "ISS supports the other proposals but recommends voting AGAINST Proposal 3"),
+        agree("equity_plan", "Amended 1982 Restricted Stock Award Plan", ["restricted stock award"], F, "ISS supports the other proposals but recommends voting AGAINST Proposal 3"),
+    ],
+    "103145": [agree("mna", "Merger with Axcelis", ["merger"], F, "ISS and Glass Lewis have both recommended that Veeco stockholders vote FOR approval of the Merger")],
+    "1757715": [agree("mna", "Asset sale to Trademark Global", ["sale", "asset"], F, "ISS ... recommending that Aterian stockholders vote FOR the key proposals ... relating to the pending sale of substantially all of the Company's assets")],
+    "351834": [agree("mna", "Acquisition by Refresco", ["merger", "arrangement", "acquisition", "refresco"], F, "ISS AND GLASS LEWIS RECOMMEND SHAREHOLDERS VOTE FOR PROPOSED ACQUISITION BY REFRESCO")],
+    "1502377": [agree("mna", "Plan of arrangement", ["arrangement"], F, "ISS recommends that Contango stockholders vote FOR: the Arrangement Proposal")],
+    "1438231": [agree("mna", "Reorganization proposal", ["reorganization", "merger"], F, "both ISS and Glass Lewis ... have recommended that its clients vote FOR the Reorganization Proposal")],
+}
+
+GL_AGREE = {
+    "1326200": [
+        agree("contested_director", "__board_slate__", [], F, "In addition to supporting the current Genco Board, Glass Lewis and Egan-Jones also recommend ..."),
+        agree("contested_director", "__dissident_slate__", [], W, "Glass Lewis and Egan-Jones also recommend that Genco shareholders vote WITHHOLD on all nominees of Diana"),
+        agree("shareholder_proposal", "__shareholder_proposals__", [], A, "... and AGAINST Diana's shareholder proposals."),
+        agree("equity_plan", "Equity incentive plan", PLAN, F, "each firm recommended shareholders vote for the Company's equity incentive plan"),
+    ],
+    "1396814": [
+        agree("contested_director", "__board_slate__", [], F, "Glass Lewis Recommends Stockholders Vote FOR All of Pacira's Director Nominees"),
+        agree("contested_director", "__dissident_slate__", [], A, "... and AGAINST all three of DOMA Perpetual Capital Management LLC's nominees"),
+    ],
+    "18498": [agree("contested_director", "__board_slate__", [], F, "Glass Lewis ... have recommended that shareholders vote FOR ONLY Genesco's nine highly-qualified directors")],
+    "1856437": [agree("contested_director", "__board_slate__", [], F, "All three independent proxy advisors, ISS, Glass Lewis & Co and Egan-Jones ... support the Company's director nominees")],
+    "1864843": [
+        agree("contested_director", "__board_slate__", [], F, "Glass Lewis ... recommended that shareholders vote on the WHITE proxy card FOR all nine of the Board nominees"),
+        agree("contested_director", "__dissident_slate__", [], A, "In making its recommendation, Glass Lewis rejected the dissident's full slate of nominees."),
+    ],
+    "1260729": [
+        agree("contested_director", "__board_slate__", [], F, "Glass Lewis has recommended that the shareholders vote FOR ALL of the Board's nominees on the WHITE proxy card"),
+        agree("contested_director", "__dissident_slate__", [], A, "Glass Lewis Rejects Nominee Proposed by Dissident Shareholder Saba Capital Management"),
+    ],
+    "1108524": [agree("equity_plan", "Proposal 2 equity plan", PLAN, F, "the other major proxy advisory firm, Glass Lewis & Co., is supporting Proposal 2")],
+    "1288469": [agree("equity_plan", "Equity Plan Proposal", PLAN, F, "In Glass Lewis's report, they recommended that our stockholders vote for the Equity Plan Proposal")],
+    "1352010": [agree("equity_plan", "Amendment to the 2025 Plan", PLAN + ["2025 plan"], F, "Glass Lewis has also recommended a vote FOR the amendment to the 2025 Plan.")],
+    "1395937": [agree("other_compensation", "Proposal No. 4", PLAN, F, "Glass Lewis has recommended a vote for Proposal No. 4, stating that they have no material concerns.")],
+    "720672": [agree("equity_plan", "Item 4 equity plan", PLAN, F, "Glass Lewis has recommended a vote for Item 4, stating that they have no material concerns")],
+    "1367644": [agree("equity_plan", "Stock Plan Proposal", PLAN, F, "Glass Lewis reviewed the same proposal ... and recommended a for vote, finding no material concerns")],
+    "1360901": [
+        agree("equity_plan", "Proposal 4 equity plan", PLAN, F, "Glass Lewis ... is recommending voting FOR all our proposals"),
+        agree("say_on_pay", "Say-on-pay", SOP, F, "Glass Lewis ... is recommending voting FOR all our proposals"),
+    ],
+    "1497770": [agree("say_on_pay", "Say-on-Pay Proposal", SOP, F, "Glass Lewis ... issued a report recommending that shareholders vote FOR Walker & Dunlop's Say-on-Pay Proposal")],
+    "74208": [agree("say_on_pay", "Say-on-Pay Proposal", SOP, F, "We are pleased that Glass Lewis has recommended a vote FOR all proposals, including the Say-on-Pay Proposal.")],
+    "1768267": [agree("say_on_pay", "Say-on-pay", SOP, F, "Glass Lewis has recommended a vote FOR say-on-pay approval at the 2026 Annual Meeting.")],
+    "1070423": [agree("say_on_pay", "Proposal 3 say-on-pay", SOP, F, "Glass Lewis has recommended that PAGP shareholders and PAA unitholders vote for Proposal 3.")],
+    "1581990": [agree("say_on_pay", "Proposal 3 say-on-pay", SOP, F, "Glass Lewis has recommended that PAGP shareholders and PAA unitholders vote for Proposal 3.")],
+    "103145": [agree("mna", "Merger with Axcelis", ["merger"], F, "ISS and Glass Lewis have both recommended that Veeco stockholders vote FOR approval of the Merger")],
+    "1757715": [agree("mna", "Asset sale to Trademark Global", ["sale", "asset"], F, "Glass Lewis ... recommending that Aterian stockholders vote FOR the key proposals ... the Asset Sale")],
+    "351834": [agree("mna", "Acquisition by Refresco", ["merger", "arrangement", "acquisition", "refresco"], F, "ISS AND GLASS LEWIS RECOMMEND SHAREHOLDERS VOTE FOR PROPOSED ACQUISITION BY REFRESCO")],
+    "1438231": [agree("mna", "Reorganization proposal", ["reorganization", "merger"], F, "both ISS and Glass Lewis ... have recommended ... vote FOR the Reorganization Proposal")],
+}
+
+# Genco's own filings say every adviser backed its equity plan; Diana's say ISS
+# opposed it. Conflicting evidence: drop the ISS call rather than guess.
+ITEMS["1326200"] = [x for x in ITEMS["1326200"] if x["item_type"] != "equity_plan"]
+
+for src, add in ((ITEMS, ISS_AGREE), (GL_ITEMS, GL_AGREE)):
+    for cik, extra in add.items():
+        src.setdefault(cik, []).extend(extra)
+
+
 def write(task: str, snippets: str, items: dict):
     s = pd.read_parquet(ROOT / "data/processed" / snippets)
     names = s.groupby("subject_cik").subject_name.first().to_dict()

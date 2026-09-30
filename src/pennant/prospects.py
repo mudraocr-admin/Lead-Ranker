@@ -66,6 +66,7 @@ def write_outputs(prospects: pd.DataFrame, keys: dict[str, pd.DataFrame], valida
     cols = (["rank", "family", "priority", "segment", "confidence", "confidence_reason", "workload_meetings",
              "mgmt_rate", "mgmt_items", "scored_adviser", "scored_adviser_reason", "adviser_agreement"]
             + [f"{p}_{a}" for a in keys for p in ("agree", "items", "key_items")]
+            + [f"{p}_{a}_{k}" for a in keys for k in ("opposed", "aligned") for p in ("agree", "n")]
             + [f"{p}_{a}_{c}" for a in keys for c in CATS for p in ("agree", "n")]
             + [f"mgmt_{p}_{c}" for c in CATS for p in ("rate", "n")]
             + ["series_divergence", "n_series", "sai_advisor", "roles", "own_guidelines", "stewardship_team",

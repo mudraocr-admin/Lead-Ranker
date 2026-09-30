@@ -158,7 +158,29 @@ def board_position(df: pd.DataFrame) -> pd.Series:
     out = pd.Series(pd.NA, index=df.index, dtype="object")
     out[df.vote_source.eq("ISSUER")] = "FOR"
     out[df.vote_source.eq("SECURITY HOLDER") & us] = "AGAINST"
+    # Proxy fights: some filers list dissident nominees as issuer items, so the
+    # ballot text ("COMPANY NOMINEE: ...", "DOMA Nominees Opposed by the
+    # Company: ...", "Diana Nominee: ...") decides where it says anything.
+    fight = df.contested & df.vote_categories.str.contains("DIRECTOR ELECTIONS")
+    text_side = df.loc[fight, "description"].map(_contest_side)
+    known = text_side.notna()
+    out.loc[text_side.index[known]] = text_side[known]
     return out
+
+
+_NOT_DISSIDENT = {"company", "management", "board", "director", "the", "all", "incumbent", "class", "our"}
+
+
+def _contest_side(desc: str):
+    t = desc.lower()
+    if re.search(r"opposed by the (company|board)|dissident", t):
+        return "AGAINST"
+    if re.search(r"(company|management|board|incumbent) nominees?", t):
+        return "FOR"
+    m = re.search(r"\b([a-z][a-z.&'-]+) nominees?\b", t)
+    if m and m.group(1) not in _NOT_DISSIDENT:
+        return "AGAINST"  # "Impactive nominee", "Diana Nominee", "DOMA Nominees"
+    return None
 
 
 def map_priority(df: pd.DataFrame) -> pd.Series:

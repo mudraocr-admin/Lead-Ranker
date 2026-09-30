@@ -30,7 +30,7 @@ def main():
     for adv in cfg["advisers"]:
         snips = adviser_key.collect_snippets(edgar, cfg, adv, log)
         items = adviser_key.classify(snips, cfg, adv, log)
-        opposed[adv] = adviser_key.opposed_items(items, votes)
+        opposed[adv] = adviser_key.keyed_items(items, votes)
         contested |= adviser_key.contested_from_key(opposed[adv], votes)
     pri = npx.prioritize(votes, contested, log)
     keys = {}

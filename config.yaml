@@ -1,0 +1,98 @@
+# Pennant prospect segmentation — configuration.
+# Every threshold here is a demo assumption, not a calibrated value.
+
+edgar:
+  # SEC requires a descriptive User-Agent with contact info.
+  user_agent: "Mudra OCR research siddhu@mudraocr.com"
+  max_rps: 8                      # SEC fair-access limit is 10 req/s
+
+npx:
+  index_quarter: "2026/QTR3"      # filings made Jul-Sep 2026
+  filed_from: "2026-08-01"        # Aug 2026 filings = Jul 2025 - Jun 2026 votes
+  filed_to: "2026-08-31"
+  max_filings_per_family: 10
+  max_mb_per_family: 150
+  # Trust names matching this are skipped before download (no equity votes).
+  skip_name_regex: "(?i)muni|bond|tax[- ]?(free|exempt)|money market|treasur|liquidity|government|cash reserve|income trust|floating rate|credit|target term|high yield|mortgage"
+
+iss_key:
+  search_from: "2026-01-01"
+  search_to: "2026-07-31"
+  forms: ["DEFA14A", "DEFC14A", "DFAN14A"]
+  queries: ['"Institutional Shareholder Services"', '"ISS"']
+  max_docs: 400
+  top_items_min: 25
+  top_items_max: 40
+  director_fuzzy_threshold: 85    # rapidfuzz token_set_ratio
+
+panel:
+  follower_agreement: 0.90        # >=90% agreement with ISS ...
+  follower_min_items: 10          # ... on >=10 key items
+  infer_min_panel_votes: 5        # infer ISS rec when >=5 panel funds vote ...
+  infer_min_agreement: 0.90       # ... with >=90% agreement
+  holdout_items: 8                # validation hold-out (5-10)
+  seed: 7
+
+# Used only if the panel above comes out empty: a clearly labelled what-if that
+# demonstrates seed-and-expand and validation. Never used for segmentation.
+panel_sensitivity:
+  follower_agreement: 0.70
+  follower_min_items: 8
+
+sai:
+  forms: ["485BPOS"]
+  queries: ['"Institutional Shareholder Services"', '"Glass Lewis"']
+  search_from: "2025-07-01"
+  search_to: "2026-09-30"
+  max_docs_per_family: 3
+
+scoring:
+  iss_follower: 0.90
+  mgmt_follower: 0.10
+  partial_category: 0.90          # >=90% in one category, mixed in another
+  min_items: 10
+  min_category_items: 3           # category rate only counted with >=3 items
+
+ai:
+  model: "claude-opus-5"
+  # Without credentials the pipeline falls back to deterministic rules and
+  # marks every such row ai_source="rules".
+  enabled: true
+
+output:
+  top_emails: 10
+
+# Target fund families. `match` is a regex over the EDGAR filer name of
+# N-PX filers; only registered investment companies (registrantType RMIC)
+# are kept, so adviser-level 13F N-PX filings drop out automatically.
+families:
+  - {name: "American Century",   match: "^AMERICAN CENTURY (MUTUAL|CAPITAL|GROWTH|WORLD|QUANTITATIVE|STRATEGIC|ETF)"}
+  - {name: "Alger",              match: "^ALGER (FUNDS|PORTFOLIOS|INSTITUTIONAL|GLOBAL|ETF)"}
+  - {name: "Allspring",          match: "^ALLSPRING (FUNDS TRUST|VARIABLE TRUST|EXCHANGE-TRADED|MASTER TRUST)"}
+  - {name: "AMG",                match: "^AMG (FUNDS|Funds I|Funds IV|ETF Trust)"}
+  - {name: "Ariel",              match: "^ARIEL INVESTMENT TRUST"}
+  - {name: "Artisan",            match: "^ARTISAN PARTNERS FUNDS"}
+  - {name: "Baird",              match: "^BAIRD FUNDS"}
+  - {name: "Brown Advisory",     match: "^Brown Advisory Funds"}
+  - {name: "Calamos",            match: "^CALAMOS (INVESTMENT TRUST|ADVISORS TRUST)|^Calamos ETF Trust"}
+  - {name: "Causeway",           match: "^CAUSEWAY CAPITAL MANAGEMENT TRUST"}
+  - {name: "Columbia",           match: "^COLUMBIA (ACORN|FUNDS SERIES TRUST|FUNDS VARIABLE)|^Columbia (Funds Series Trust II|ETF Trust)"}
+  - {name: "Delaware / Macquarie", match: "^DELAWARE GROUP EQUITY"}
+  - {name: "Diamond Hill",       match: "^DIAMOND HILL FUNDS"}
+  - {name: "Dodge & Cox",        match: "^DODGE & COX"}
+  - {name: "Federated Hermes",   match: "^FEDERATED HERMES (EQUITY|ADVISER|ETF|INSURANCE|MDT)"}
+  - {name: "Franklin Templeton", match: "^FRANKLIN (CUSTODIAN|STRATEGIC SERIES|VALUE|MUTUAL SERIES|TEMPLETON ETF)|^TEMPLETON (FUNDS|GROWTH|GLOBAL)"}
+  - {name: "Harbor",             match: "^HARBOR (FUNDS|ETF)"}
+  - {name: "Hartford",           match: "^HARTFORD (MUTUAL FUNDS|SERIES FUND)|^HARTFORD FUNDS EXCHANGE"}
+  - {name: "Invesco",            match: "\\(INVESCO (EQUITY|COUNSELOR|GROWTH|SECTOR|INVESTMENT FUNDS|VARIABLE)"}
+  - {name: "Janus Henderson",    match: "^JANUS (INVESTMENT FUND|ASPEN|DETROIT)"}
+  - {name: "Lord Abbett",        match: "^LORD ABBETT (SECURITIES|RESEARCH|MID CAP|DEVELOPING|AFFILIATED|SERIES|TRUST I)"}
+  - {name: "MFS",                match: "^MFS SERIES TRUST (I|II|IV|VI|X|XI)$|^MFS VARIABLE INSURANCE"}
+  - {name: "Neuberger Berman",   match: "^NEUBERGER BERMAN (EQUITY|ADVISERS|ETF)"}
+  - {name: "Parnassus",          match: "^PARNASSUS"}
+  - {name: "Principal",          match: "^PRINCIPAL (FUNDS|VARIABLE CONTRACTS|EXCHANGE)"}
+  - {name: "Putnam",             match: "^PUTNAM (FUNDS TRUST|INVESTMENT FUNDS|VARIABLE|ETF|INTERNATIONAL EQUITY|SUSTAINABLE)"}
+  - {name: "Schwab",             match: "^SCHWAB (CAPITAL TRUST|STRATEGIC TRUST|INVESTMENTS)|^CHARLES SCHWAB FAMILY"}
+  - {name: "Thrivent",           match: "^THRIVENT (MUTUAL|SERIES|ETF)"}
+  - {name: "Victory",            match: "^VICTORY (PORTFOLIOS|VARIABLE|PORTFOLIOS II)"}
+  - {name: "Virtus",             match: "^VIRTUS (EQUITY|OPPORTUNITIES|ASSET|INVESTMENT|VARIABLE|ETF)"}

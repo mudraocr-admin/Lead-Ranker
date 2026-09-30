@@ -1,0 +1,1579 @@
+{
+  "1000209": {
+    "answer": {
+      "company": "MEDALLION FINANCIAL CORP  (MFIN, MBNKO)  (CIK 0001000209)",
+      "items": [
+        {
+          "board_rec": "AGAINST",
+          "evidence": "Both Recommend Stockholders Vote on the BLUE Proxy Card FOR Election of Two BIMIZCI Nominees ... John Kiernan and Eric Kelly",
+          "iss_opposed_board": true,
+          "iss_rec": "FOR",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "John Kiernan"
+        },
+        {
+          "board_rec": "AGAINST",
+          "evidence": "Both Recommend Stockholders Vote on the BLUE Proxy Card FOR Election of Two BIMIZCI Nominees ... John Kiernan and Eric Kelly",
+          "iss_opposed_board": true,
+          "iss_rec": "FOR",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Eric Kelly"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis Both Recommend Stockholders WITHHOLD Support from Executive Chair Alvin Murstein and ... Cynthia Hallenbeck",
+          "iss_opposed_board": true,
+          "iss_rec": "WITHHOLD",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Alvin Murstein"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis Both Recommend Stockholders WITHHOLD Support from Executive Chair Alvin Murstein and ... Cynthia Hallenbeck",
+          "iss_opposed_board": true,
+          "iss_rec": "WITHHOLD",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Cynthia Hallenbeck"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1018164": {
+    "answer": {
+      "company": "WILLIS LEASE FINANCE CORP  (WLFC)  (CIK 0001018164)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "102752": {
+    "answer": {
+      "company": "VSE CORP  (VSEC, VSECU)  (CIK 0000102752)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "103145": {
+    "answer": {
+      "company": "VEECO INSTRUMENTS INC  (VECO)  (CIK 0000103145)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1035443": {
+    "answer": {
+      "company": "ALEXANDRIA REAL ESTATE EQUITIES, INC.  (ARE)  (CIK 0001035443)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS recommended that the Company's shareholders vote against the election of ... James Cain",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "James Cain"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1042776": {
+    "answer": {
+      "company": "Piedmont Realty Trust, Inc.  (PDM)  (CIK 0001042776)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "the Company was informed by ISS that the proposal to approve the Third Amended and Restated Omnibus Incentive Plan ... we firmly disagree with its recommendation",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Third Amended and Restated Omnibus Incentive Plan"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "our approach resulted in ISS recommending a vote FOR our 2025 named executive officer compensation say-on-pay proposal",
+          "iss_opposed_board": false,
+          "iss_rec": "FOR",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "2025 NEO say-on-pay"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1044777": {
+    "answer": {
+      "company": "OneSpan Inc.  (OSPN)  (CIK 0001044777)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS recommended a vote FOR the election of all of OneSpan's director nominees except for Michael McConnell",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Michael McConnell"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "105319": {
+    "answer": {
+      "company": "WW INTERNATIONAL, INC.  (WW)  (CIK 0000105319)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "we respectfully but firmly disagree with ISS's recommendation that shareholders vote against Mr. Hawks",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Carney Hawks"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1062231": {
+    "answer": {
+      "company": "Dauch Corp  (DCH)  (CIK 0001062231)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "In the ISS Report, ISS recommended that stockholders vote against the proposal to approve the Plan Amendment.",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Plan Amendment"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1063761": {
+    "answer": {
+      "company": "SIMON PROPERTY GROUP INC.  (SPG, SPG-PJ)  (CIK 0001063761)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended that shareholders vote against our Say-on-Pay Proposal",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-Pay Proposal"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1070423": {
+    "answer": {
+      "company": "PLAINS ALL AMERICAN PIPELINE LP  (PAA, PAAPU)  (CIK 0001070423)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended that PAGP shareholders and PAA unitholders vote against Proposal 3 ... Advisory Vote to Approve Our 2025 Named Executive Officer Compensation",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Proposal 3 advisory vote on 2025 NEO compensation"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1093691": {
+    "answer": {
+      "company": "PLUG POWER INC  (PLUG)  (CIK 0001093691)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "We respectfully disagree with ISS's recommendation to vote against our say on pay proposal.",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say on pay"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1108524": {
+    "answer": {
+      "company": "Salesforce, Inc.  (CRM)  (CIK 0001108524)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "this year ISS is recommending that stockholders vote against Proposal 2 because of a formulaic application of its Equity [Plan Scorecard]",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Proposal 2 equity plan"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1116463": {
+    "answer": {
+      "company": "ORASURE TECHNOLOGIES INC  (OSUR)  (CIK 0001116463)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1130713": {
+    "answer": {
+      "company": "BED BATH & BEYOND, INC.  (BBBY, BBBY-WT)  (CIK 0001130713)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "We recognize that ISS has recommended a vote AGAINST our Say on Pay proposal",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say on Pay"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1173420": {
+    "answer": {
+      "company": "NOVAGOLD RESOURCES INC  (NG)  (CIK 0001173420)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS recommending a vote Against NOVAGOLD's Say-on-Pay.",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-Pay"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1173489": {
+    "answer": {
+      "company": "CEVA INC  (CEVA)  (CIK 0001173489)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended against Proposal 2, the advisory say-on-pay proposal",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Proposal 2 say-on-pay"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1274173": {
+    "answer": {
+      "company": "JANUS HENDERSON GROUP PLC  (JHG)  (CIK 0001274173)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1284812": {
+    "answer": {
+      "company": "COHEN & STEERS, INC.  (CNS)  (CIK 0001284812)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS issued a recommendation with respect to the Independent Director Nominees that is inconsistent with our Board's recommendation.",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Independent Director Nominees"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1287750": {
+    "answer": {
+      "company": "ARES CAPITAL CORP  (ARCC)  (CIK 0001287750)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has issued a voting recommendation that is inconsistent with the recommendation of the board ... on the election of Steven B.",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Steven B. McKeever"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1288469": {
+    "answer": {
+      "company": "MAXLINEAR, INC  (MXL)  (CIK 0001288469)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS issued a report recommending that our stockholders vote against the Equity Plan Proposal.",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Equity Plan Proposal"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1304492": {
+    "answer": {
+      "company": "Anterix Inc.  (ATEX)  (CIK 0001304492)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "In the ISS Report, ISS recommended that stockholders vote against Proposal 3 ... the size of the share increase to 2023 Plan",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive",
+            "2023 plan"
+          ],
+          "label": "Proposal 3 share increase to 2023 Plan"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1307954": {
+    "answer": {
+      "company": "Huntsman CORP  (HUN)  (CIK 0001307954)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis have each recommended a vote against the re-election of Jose Antonio Munoz Barcelo",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Jose Antonio Munoz Barcelo"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1309108": {
+    "answer": {
+      "company": "WEX Inc.  (WEX)  (CIK 0001309108)",
+      "items": [
+        {
+          "board_rec": "AGAINST",
+          "evidence": "ISS has recommended that shareholders vote on the WHITE proxy card FOR the election of Impactive director nominees Kurt Adams and Lauren Taylor Wolfe",
+          "iss_opposed_board": true,
+          "iss_rec": "FOR",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Kurt Adams"
+        },
+        {
+          "board_rec": "AGAINST",
+          "evidence": "ISS has recommended that shareholders vote on the WHITE proxy card FOR the election of Impactive director nominees Kurt Adams and Lauren Taylor Wolfe",
+          "iss_opposed_board": true,
+          "iss_rec": "FOR",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Lauren Taylor Wolfe"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "... and WITHHOLD on director Nancy Altobello and Compensation Committee Chair Stephen Smith.",
+          "iss_opposed_board": true,
+          "iss_rec": "WITHHOLD",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Nancy Altobello"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "... and WITHHOLD on director Nancy Altobello and Compensation Committee Chair Stephen Smith.",
+          "iss_opposed_board": true,
+          "iss_rec": "WITHHOLD",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Stephen Smith"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1318220": {
+    "answer": {
+      "company": "Waste Connections, Inc.  (WCN)  (CIK 0001318220)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended a vote against the re-election of Susan Lee as an independent director",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Susan Lee"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1320461": {
+    "answer": {
+      "company": "Cooper-Standard Holdings Inc.  (CPS)  (CIK 0001320461)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended that its clients vote against the Company's director nominees",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "All director nominees"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1326200": {
+    "answer": {
+      "company": "GENCO SHIPPING & TRADING LTD  (GNK)  (CIK 0001326200)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "Institutional Shareholder Services (ISS) has recommended shareholders vote AGAINST Genco's equity incentive plan",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Proposal 3 equity incentive plan"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS recommendation that Genco shareholders vote AGAINST the ratification of Genco's poison pill",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "other",
+          "keywords": [
+            "rights"
+          ],
+          "label": "Ratification of shareholder rights plan"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "all three independent proxy advisory firms - ISS, Glass Lewis and Egan-Jones - recommend shareholders vote FOR ALL of Genco's director nominees",
+          "iss_opposed_board": false,
+          "iss_rec": "FOR",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Genco board nominees"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1352010": {
+    "answer": {
+      "company": "EPAM Systems, Inc.  (EPAM)  (CIK 0001352010)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended a vote AGAINST the amendment to the 2025 Plan",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive",
+            "2025 plan"
+          ],
+          "label": "Amendment to the 2025 Plan"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS' recommendation to vote FOR our 2025 named executive officer compensation say-on-pay proposal",
+          "iss_opposed_board": false,
+          "iss_rec": "FOR",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-pay"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1360901": {
+    "answer": {
+      "company": "Evercore Inc.  (EVR)  (CIK 0001360901)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS recommends shareholders vote against Proposal No. 4 ... our response to ISS's recommendation against our equity plan proposal",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Proposal No. 4 equity plan"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1395937": {
+    "answer": {
+      "company": "Syndax Pharmaceuticals Inc  (SNDX)  (CIK 0001395937)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "Institutional Shareholder Services (ISS) has recommended a vote against Proposal No. 4. We disagree with ISS's recommendation.",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "other_compensation",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive",
+            "employee stock purchase"
+          ],
+          "label": "Proposal No. 4"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1396814": {
+    "answer": {
+      "company": "Pacira BioSciences, Inc.  (PCRX)  (CIK 0001396814)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended that Pacira stockholders vote FOR each of Pacira's three director nominees ... and AGAINST all three of DOMA Perpetual's nominees",
+          "iss_opposed_board": false,
+          "iss_rec": "FOR",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Pacira board nominees"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1404912": {
+    "answer": {
+      "company": "KKR & Co. Inc.  (KKR, KKRS, KKRT, KKR-PD)  (CIK 0001404912)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1438231": {
+    "answer": {
+      "company": "Digimarc CORP  (DMRC)  (CIK 0001438231)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1465740": {
+    "answer": {
+      "company": "TWO HARBORS INVESTMENT CORP.  (TWO, TWOD, TWO-PA, TWO-PB, TWO-PC)  (CIK 0001465740)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis have recommended that stockholders of Two Harbors VOTE AGAINST the Proposed CCM Merger",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "mna",
+          "keywords": [
+            "merger",
+            "cross country",
+            "crosscountry"
+          ],
+          "label": "Proposed CCM merger"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1497770": {
+    "answer": {
+      "company": "Walker & Dunlop, Inc.  (WD)  (CIK 0001497770)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended stockholders vote against our say-on-pay proposal due to concerns regarding a one-time, multi-year award",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-Pay Proposal"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1502377": {
+    "answer": {
+      "company": "Contango ORE, Inc.  (CTGO)  (CIK 0001502377)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1515673": {
+    "answer": {
+      "company": "Ultragenyx Pharmaceutical Inc.  (RARE)  (CIK 0001515673)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended AGAINST this proposal. We respectfully disagree ... Equity awards are critical",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Equity plan"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1529377": {
+    "answer": {
+      "company": "Ares Commercial Real Estate Corp  (ACRE)  (CIK 0001529377)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has issued voting recommendations that are inconsistent with the recommendations of the board ... on the election of William S.",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "William S. Benjamin"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1547576": {
+    "answer": {
+      "company": "Krane Shares Trust  (CIK 0001547576)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1567683": {
+    "answer": {
+      "company": "Clearway Energy, Inc.  (CWEN, CWEN-A)  (CIK 0001567683)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1580808": {
+    "answer": {
+      "company": "A10 Networks, Inc.  (ATEN)  (CIK 0001580808)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS recommends a vote against Proposal 2 ... advisory resolution to ratify named executive officer compensation",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Proposal 2 say on pay"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1581990": {
+    "answer": {
+      "company": "PLAINS GP HOLDINGS LP  (PAGP)  (CIK 0001581990)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended that PAGP shareholders and PAA unitholders vote against Proposal 3 ... Advisory Vote to Approve Our 2025 Named Executive Officer Compensation",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Proposal 3 advisory vote on 2025 NEO compensation"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1597033": {
+    "answer": {
+      "company": "Sabre Corp  (SABR)  (CIK 0001597033)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS ultimately recommended stockholders vote against Proposal 3, applying quantitative tests ... equity compensation needs",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Proposal 3 equity plan"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1603923": {
+    "answer": {
+      "company": "Weatherford International plc  (WFRD)  (CIK 0001603923)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis have each recommended that shareholders vote against these items ... ISS's recommendation against Weatherford's proposal",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "mna",
+          "keywords": [
+            "redomestic",
+            "scheme",
+            "merger",
+            "texas"
+          ],
+          "label": "Redomestication proposals"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1640147": {
+    "answer": {
+      "company": "Snowflake Inc.  (SNOW)  (CIK 0001640147)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis issued their respective proxy voting reports recommending that stockholders vote against the Say-on-Pay proposal",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-Pay proposal"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1659323": {
+    "answer": {
+      "company": "Iterum Therapeutics plc  (ITRM)  (CIK 0001659323)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1694426": {
+    "answer": {
+      "company": "Delek US Holdings, Inc.  (DK)  (CIK 0001694426)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS recommended voting against Proposal 3 ... that would approve a 2026 Long-Term Incentive Plan",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive",
+            "long-term incentive"
+          ],
+          "label": "Proposal 3 2026 Long-Term Incentive Plan"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1703079": {
+    "answer": {
+      "company": "XAI Floating Rate & Alternative Income Trust  (XFLT)  (CIK 0001703079)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1726445": {
+    "answer": {
+      "company": "Seer, Inc.  (SEER)  (CIK 0001726445)",
+      "items": [
+        {
+          "board_rec": "AGAINST",
+          "evidence": "ISS Recommends Stockholders Vote FOR Radoff-JEC Group Nominees Howard H. Berman and Luis E. Rinaldini",
+          "iss_opposed_board": true,
+          "iss_rec": "FOR",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Howard H. Berman"
+        },
+        {
+          "board_rec": "AGAINST",
+          "evidence": "ISS Recommends Stockholders Vote FOR Radoff-JEC Group Nominees Howard H. Berman and Luis E. Rinaldini",
+          "iss_opposed_board": true,
+          "iss_rec": "FOR",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Luis E. Rinaldini"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "WITHHOLD Support on Seer Directors Terrance McGuire, Dipchand Nishar and Nicolas Roelofs",
+          "iss_opposed_board": true,
+          "iss_rec": "WITHHOLD",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Terrance McGuire"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "WITHHOLD Support on Seer Directors Terrance McGuire, Dipchand Nishar and Nicolas Roelofs",
+          "iss_opposed_board": true,
+          "iss_rec": "WITHHOLD",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Dipchand Nishar"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "WITHHOLD Support on Seer Directors Terrance McGuire, Dipchand Nishar and Nicolas Roelofs",
+          "iss_opposed_board": true,
+          "iss_rec": "WITHHOLD",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Nicolas Roelofs"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "and vote AGAINST the ratification of the NOL pill",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "other",
+          "keywords": [
+            "rights",
+            "nol"
+          ],
+          "label": "Ratification of NOL pill"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1757715": {
+    "answer": {
+      "company": "Aterian, Inc.  (ATER)  (CIK 0001757715)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1768267": {
+    "answer": {
+      "company": "Cerence Inc.  (CRNC)  (CIK 0001768267)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "Institutional Shareholder Services (ISS), however, is recommending against the say-on-pay proposal.",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-pay"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1801169": {
+    "answer": {
+      "company": "Opendoor Technologies Inc.  (OPEN, OPENL, OPENW, OPENZ)  (CIK 0001801169)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "Proxy advisors at ISS and Glass Lewis have recommended shareholders to vote against me",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "CEO director"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1820721": {
+    "answer": {
+      "company": "Array Technologies, Inc.  (ARRY)  (CIK 0001820721)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS issued a withhold recommendation against Mr. Forth, the Chair of our Board",
+          "iss_opposed_board": true,
+          "iss_rec": "WITHHOLD",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Board chair (Forth)"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1836981": {
+    "answer": {
+      "company": "BigBear.ai Holdings, Inc.  (BBAI, BBAI-WT)  (CIK 0001836981)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "18498": {
+    "answer": {
+      "company": "GENESCO INC  (GCO)  (CIK 0000018498)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS recommends that shareholders vote FOR all nine of the Company's directors on the WHITE proxy card",
+          "iss_opposed_board": false,
+          "iss_rec": "FOR",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Genesco board nominees"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1856437": {
+    "answer": {
+      "company": "Victoria's Secret & Co.  (VSCO, VSXY)  (CIK 0001856437)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS ... recommended that VS&Co shareholders vote FOR all nine of the Company's director nominees",
+          "iss_opposed_board": false,
+          "iss_rec": "FOR",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "VS&Co board nominees"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1864843": {
+    "answer": {
+      "company": "BlackRock ESG Capital Allocation Term Trust  (ECAT)  (CIK 0001864843)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS recommended that shareholders vote in favor of seven of nine incumbent Board nominees",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Two of nine incumbent trustees (unnamed)"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1872789": {
+    "answer": {
+      "company": "Embecta Corp.  (EMBC)  (CIK 0001872789)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "In the ISS Report, ISS recommended that stockholders vote against the proposal to approve the 2022 Plan Amendment.",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive",
+            "2022"
+          ],
+          "label": "2022 Plan Amendment"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1895262": {
+    "answer": {
+      "company": "Noble Corp plc  (NE, NE-WT, NE-WTA)  (CIK 0001895262)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "the recommendation to vote Against these proposals by Institutional Shareholder Services (ISS)",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "other",
+          "keywords": [
+            "allot",
+            "pre-emption"
+          ],
+          "label": "UK share allotment authorities"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "19617": {
+    "answer": {
+      "company": "JPMORGAN CHASE & CO  (JPM, AMJB, VYLD, JPM-PC, JPM-PD, JPM-PJ, JPM-PK, JPM-PL, JPM-PM)  (CIK 0000019617)",
+      "items": [
+        {
+          "board_rec": "AGAINST",
+          "evidence": "PROPOSAL 5: SHAREHOLDER PROPOSAL REGARDING INDEPENDENT CHAIR The ISS Report makes assertions that ... claim support for this proposal is warranted.",
+          "iss_opposed_board": true,
+          "iss_rec": "FOR",
+          "item_type": "shareholder_proposal",
+          "keywords": [
+            "independent",
+            "chair"
+          ],
+          "label": "Proposal 5 independent chair"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "33002": {
+    "answer": {
+      "company": "ENNIS, INC.  (EBF)  (CIK 0000033002)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended that shareholders vote AGAINST the election of Michael D. Magill",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Michael D. Magill"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "34088": {
+    "answer": {
+      "company": "EXXON MOBIL CORP  (XOM)  (CIK 0000034088)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS recommended Against all identified Texas redomestication proposals at XOM",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "other",
+          "keywords": [
+            "texas",
+            "reincorporat",
+            "redomic"
+          ],
+          "label": "Texas redomiciliation proposal"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "34782": {
+    "answer": {
+      "company": "1ST SOURCE CORP  (SRCE)  (CIK 0000034782)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS supports the other proposals but recommends voting AGAINST Proposal 3 (approval of the amended 1982 Executive Incentive Plan)",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive",
+            "executive incentive"
+          ],
+          "label": "Proposal 3 amended 1982 Executive Incentive Plan"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS recommends voting AGAINST Timothy Ozark and Todd Schurz",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Timothy Ozark"
+        },
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS recommends voting AGAINST Timothy Ozark and Todd Schurz",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Todd Schurz"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "351834": {
+    "answer": {
+      "company": "SunOpta Inc.  (STKL)  (CIK 0000351834)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "46195": {
+    "answer": {
+      "company": "BANK OF HAWAII CORP  (BOH, BOH-PA, BOH-PB)  (CIK 0000046195)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis ... recommended voting against the Say-on-Pay Proposal",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-Pay Proposal"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "50493": {
+    "answer": {
+      "company": "INGLES MARKETS INC  (IMKTA)  (CIK 0000050493)",
+      "items": [
+        {
+          "board_rec": "AGAINST",
+          "evidence": "All Three Independent Proxy Advisors Recommend Ingles Markets Shareholders Vote for Rory A. Held",
+          "iss_opposed_board": true,
+          "iss_rec": "FOR",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Rory A. Held"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "720672": {
+    "answer": {
+      "company": "STIFEL FINANCIAL CORP  (SF, SFB, SF-PB, SF-PC, SF-PD)  (CIK 0000720672)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "Institutional Shareholder Services (ISS) has recommended a vote against Item 4 ... our equity compensation approach",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Item 4 equity plan"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "72444": {
+    "answer": {
+      "company": "Vaxart, Inc.  (VXRT)  (CIK 0000072444)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "730272": {
+    "answer": {
+      "company": "REPLIGEN CORP  (RGEN)  (CIK 0000730272)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended that shareholders vote against the re-election of Audit Committee members",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Audit Committee members"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "74208": {
+    "answer": {
+      "company": "UDR, Inc.  (UDR)  (CIK 0000074208)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended that shareholders vote AGAINST the Say-on-Pay Proposal. The Company's Board strongly disagrees",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-Pay Proposal"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "807882": {
+    "answer": {
+      "company": "JACK IN THE BOX INC  (JACK)  (CIK 0000807882)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended that Jack in the Box shareholders vote FOR all 10 of the Company's director nominees",
+          "iss_opposed_board": false,
+          "iss_rec": "FOR",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Jack in the Box board nominees"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "874501": {
+    "answer": {
+      "company": "OCTAVE SPECIALTY GROUP INC  (OSG)  (CIK 0000874501)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS Recommendation: AGAINST (Proposal 4 only) - citing plan cost, burn rate, share recycling",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Proposal 4 equity plan"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "893949": {
+    "answer": {
+      "company": "Pediatrix Medical Group, Inc.  (MD)  (CIK 0000893949)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "898437": {
+    "answer": {
+      "company": "Anika Therapeutics, Inc.  (ANIK)  (CIK 0000898437)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS issued an unfavorable recommendation regarding Proposal 4, in part because ISS estimated that the Seventh Amended Plan is excessively dilutive",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive",
+            "seventh amended"
+          ],
+          "label": "Proposal 4 Seventh Amended Plan"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "910329": {
+    "answer": {
+      "company": "MEDIFAST INC  (MED)  (CIK 0000910329)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "the proposal to amend and restate the Plan received an unfavorable recommendation as determined by ISS",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Amended and restated Plan"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "910638": {
+    "answer": {
+      "company": "3D SYSTEMS CORP  (DDD)  (CIK 0000910638)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS recommended that stockholders vote AGAINST Proposal 5, the Equity Plan Proposal",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive"
+          ],
+          "label": "Proposal 5 Equity Plan"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "921638": {
+    "answer": {
+      "company": "SSR MINING INC.  (SSRM, SSRGF)  (CIK 0000921638)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "92380": {
+    "answer": {
+      "company": "SOUTHWEST AIRLINES CO  (LUV)  (CIK 0000092380)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended a vote against Christopher P.",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Christopher P. (director)"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "926282": {
+    "answer": {
+      "company": "ADTRAN Holdings, Inc.  (ADTN)  (CIK 0000926282)",
+      "items": [
+        {
+          "board_rec": "FOR",
+          "evidence": "ISS has recommended that stockholders vote against the re-election of the members of the Audit Committee",
+          "iss_opposed_board": true,
+          "iss_rec": "AGAINST",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Audit Committee members"
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "95029": {
+    "answer": {
+      "company": "STURM RUGER & CO INC  (RGR)  (CIK 0000095029)",
+      "items": []
+    },
+    "source": "claude-session"
+  }
+}

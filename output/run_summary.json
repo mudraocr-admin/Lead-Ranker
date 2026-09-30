@@ -1,0 +1,37 @@
+{
+  "families": 30,
+  "vote_rows": 1739728,
+  "priority_rows": 282902,
+  "key_items": 40,
+  "validation": {
+    "headline": {
+      "holdout_items": 8,
+      "panel_size": 0,
+      "inferred": 0,
+      "correct": 0,
+      "accuracy": null,
+      "coverage": 0.0
+    },
+    "sensitivity_panel": [
+      "Allspring",
+      "Franklin Templeton",
+      "Thrivent",
+      "Victory",
+      "Virtus"
+    ],
+    "sensitivity_inferred_items": 163,
+    "sensitivity_validation": {
+      "holdout_items": 8,
+      "panel_size": 0,
+      "inferred": 0,
+      "correct": 0,
+      "accuracy": null,
+      "coverage": 0.0
+    }
+  },
+  "segments": {
+    "Insufficient data": 20,
+    "Judgment voter": 9,
+    "Management follower": 1
+  }
+}

@@ -1,12 +1,12 @@
-"""One-off: record the ISS snippet classifications produced in the build session.
+"""One-off: record the adviser-snippet classifications produced in the build session.
 
 No Anthropic API credentials were configured when the demo was built, so the
-"small AI step" for the ISS answer key was done by Claude inside the Claude
-Code session that wrote this repo, reading data/processed/iss_snippets.parquet
-company by company. This script writes those answers into the same cache the
-pipeline's API path writes to (data/ai/iss_items.json), tagged
-source="claude-session". Delete the cache file to re-run the step against the
-API instead.
+"small AI step" for the ISS and Glass Lewis answer keys was done by Claude
+inside the Claude Code session that wrote this repo, reading
+data/processed/{iss,gl}_snippets.parquet company by company. This script writes
+those answers into the same caches the pipeline's API path writes to
+(data/ai/iss_items.json, data/ai/gl_items.json), tagged source="claude-session".
+Delete a cache file to re-run that step against the API instead.
 """
 import json
 from pathlib import Path
@@ -14,8 +14,6 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-s = pd.read_parquet(ROOT / "data/processed/iss_snippets.parquet")
-names = s.groupby("subject_cik").subject_name.first().to_dict()
 
 SOP = ["executive compensation", "named executive", "say on pay", "say-on-pay", "compensation of"]
 EQ = ["incentive plan", "equity plan", "stock plan", "omnibus", "award plan", "equity incentive"]
@@ -23,8 +21,8 @@ A, F, W = "AGAINST", "FOR", "WITHHOLD"
 
 
 def it(t, label, kw, iss, board, opp, ev):
-    return dict(item_type=t, label=label, keywords=kw, iss_rec=iss, board_rec=board,
-                iss_opposed_board=opp, evidence=ev[:300])
+    return dict(item_type=t, label=label, keywords=kw, adviser_rec=iss, board_rec=board,
+                opposed_board=opp, evidence=ev[:300])
 
 
 ITEMS = {
@@ -134,13 +132,78 @@ ITEMS = {
     "926282": [it("uncontested_director", "Audit Committee members", [], A, F, True, "ISS has recommended that stockholders vote against the re-election of the members of the Audit Committee")],
     "1044777": [it("uncontested_director", "Michael McConnell", [], A, F, True, "ISS recommended a vote FOR the election of all of OneSpan's director nominees except for Michael McConnell")],
     "1035443": [it("uncontested_director", "James Cain", [], A, F, True, "ISS recommended that the Company's shareholders vote against the election of ... James Cain")],
-    "105319": [it("uncontested_director", "Carney Hawks", [], A, F, True, "we respectfully but firmly disagree with ISS's recommendation that shareholders vote against Mr. Hawks")],
+    "105319": [
+        it("uncontested_director", "Carney Hawks", [], A, F, True, "we respectfully but firmly disagree with ISS's recommendation that shareholders vote against Mr. Davis and Mr. Hawks"),
+        it("say_on_pay", "Say-on-Pay Proposal", SOP, A, F, True, "we respectfully but firmly disagree ... with both firms' recommendations with respect to the Say-on-Pay Proposal"),
+    ],
 }
 
-out = {cik: {"source": "claude-session", "answer": {"company": name, "items": ITEMS.get(cik, [])}}
-       for cik, name in names.items()}
-path = ROOT / "data/ai/iss_items.json"
-path.parent.mkdir(parents=True, exist_ok=True)
-path.write_text(json.dumps(out, indent=2, ensure_ascii=False, sort_keys=True), encoding="utf-8")
-print(f"{len(out)} companies, {sum(len(v['answer']['items']) for v in out.values())} items")
-print("classified companies missing from snippets:", sorted(set(ITEMS) - set(names)))
+# --------------------------------------------------------------------------
+# Glass Lewis, from data/processed/gl_snippets.parquet
+GL_ITEMS = {
+    "1000209": [  # Medallion vs BIMIZCI
+        it("contested_director", "John Kiernan", [], F, A, True, "Both Leading Independent Proxy Advisory Firms Have Now Recommended FOR BIMIZCI Nominees John Kiernan and Eric Kelly"),
+        it("contested_director", "Eric Kelly", [], F, A, True, "Both Leading Independent Proxy Advisory Firms Have Now Recommended FOR BIMIZCI Nominees John Kiernan and Eric Kelly"),
+        it("contested_director", "Alvin Murstein", [], W, F, True, "ISS and Glass Lewis Both Recommend Stockholders WITHHOLD Support from Executive Chair Alvin Murstein and Nominating & Governance Committee Chair Cynthia Hallenbeck"),
+        it("contested_director", "Cynthia Hallenbeck", [], W, F, True, "Glass Lewis recommends that shareholders replace Cynthia Hallenbeck with a dissident candidate"),
+    ],
+    "1309108": [  # WEX vs Impactive
+        it("contested_director", "Kurt Adams", [], F, A, True, "Glass Lewis Recommends Shareholders Vote FOR Impactive Nominees Kurt Adams and Lauren Taylor Wolfe"),
+        it("contested_director", "Lauren Taylor Wolfe", [], F, A, True, "Glass Lewis Recommends Shareholders Vote FOR Impactive Nominees Kurt Adams and Lauren Taylor Wolfe"),
+        it("contested_director", "Melissa Smith", [], W, F, True, "WITHHOLD Support on WEX Board Chair and CEO Melissa Smith and Compensation Committee Chair Stephen Smith"),
+        it("contested_director", "Stephen Smith", [], W, F, True, "WITHHOLD Support on WEX Board Chair and CEO Melissa Smith and Compensation Committee Chair Stephen Smith"),
+    ],
+    "1726445": [  # Seer vs Radoff-JEC
+        it("contested_director", "Howard H. Berman", [], F, A, True, "Glass Lewis Recommends Stockholders Vote FOR Radoff-JEC Group Nominees Howard H. Berman and Luis E. Rinaldini"),
+        it("contested_director", "Luis E. Rinaldini", [], F, A, True, "Glass Lewis Recommends Stockholders Vote FOR Radoff-JEC Group Nominees Howard H. Berman and Luis E. Rinaldini"),
+        it("contested_director", "Terrance McGuire", [], W, F, True, "WITHHOLD Support on Seer Directors Terrance McGuire and Dipchand Nishar"),
+        it("contested_director", "Dipchand Nishar", [], W, F, True, "WITHHOLD Support on Seer Directors Terrance McGuire and Dipchand Nishar"),
+        it("other", "Ratification of NOL pill", ["rights", "nol"], A, F, True, "Glass Lewis also recommends stockholders vote AGAINST the ratification of the NOL pill."),
+    ],
+    "50493": [it("contested_director", "Rory A. Held", [], F, A, True, "ISS, Glass Lewis and Egan-Jones All Endorse the Election of Rory A. Held")],
+    "807882": [it("contested_director", "David Goebel", [], A, F, True, "Glass Lewis ... has recommended that shareholders vote AGAINST Chairman David Goebel")],
+    "1326200": [it("contested_director", "Genco board nominees", [], F, F, False, "Glass Lewis and Egan-Jones also recommend that Genco shareholders vote WITHHOLD on all nominees of Diana")],
+    "1864843": [it("contested_director", "ECAT board nominees", [], F, F, False, "Glass Lewis ... recommended that shareholders vote on the WHITE proxy card FOR all nine of the Board nominees")],
+    "1260729": [it("contested_director", "GDV board nominees", [], F, F, False, "Glass Lewis has recommended that the shareholders vote FOR ALL of the Board's nominees on the WHITE proxy card")],
+    "1396814": [it("contested_director", "Pacira board nominees", [], F, F, False, "Glass Lewis Recommends Stockholders Vote FOR All of Pacira's Director Nominees")],
+
+    "1465740": [it("mna", "Proposed CCM merger", ["merger", "cross country", "crosscountry"], A, F, True, "Glass Lewis ... has recommended that TWO stockholders VOTE AGAINST the CrossCountry Mortgage (CCM) merger proposal")],
+    "1603923": [it("mna", "Redomestication proposals", ["redomestic", "scheme", "merger", "texas"], A, F, True, "ISS and Glass Lewis have each recommended that shareholders vote against these items.")],
+
+    "19617": [it("shareholder_proposal", "Proposal 5 independent chair", ["independent", "chair"], F, A, True, "Proposal 5: Support For the Shareholder Proposal Requesting an Independent Chair - The Glass Lewis Benchmark Policy asserts that an independent chair is nearly always preferable")],
+
+    "102752": [it("say_on_pay", "Proposal 3 say-on-pay", SOP, A, F, True, "Glass Lewis recommends that stockholders vote against Proposal 3 (approval, on a non-binding advisory basis, of the compensation of the Company's named executive officers).")],
+    "105319": [it("say_on_pay", "Say-on-Pay Proposal", SOP, A, F, True, "we respectfully but firmly disagree ... with both firms' recommendations with respect to the Say-on-Pay Proposal")],
+    "1173420": [it("say_on_pay", "Say-on-Pay", SOP, A, F, True, "NOVAGOLD takes note of Glass Lewis' recommendation to vote AGAINST NOVAGOLD's Proposal 6.00 Advisory Vote on Executive Compensation.")],
+    "1640147": [it("say_on_pay", "Say-on-Pay proposal", SOP, A, F, True, "ISS and Glass Lewis issued their respective proxy voting reports recommending that stockholders vote against the Say-on-Pay proposal")],
+    "203596": [it("say_on_pay", "Say-on-Pay proposal", SOP, A, F, True, "Glass Lewis has issued its Proxy Paper with voting recommendations ... including the Say-on-Pay proposal, where it has recommended [against]; Our Board continues to recommend that you vote FOR")],
+    "46195": [it("say_on_pay", "Say-on-Pay Proposal", SOP, A, F, True, "ISS and Glass Lewis ... recommended voting against the Say-on-Pay Proposal")],
+    "921638": [it("say_on_pay", "Say on Pay", SOP, A, F, True, "The Glass Lewis recommendation centers on SSR Mining's pay practices ... recommendations Glass Lewis has made against our proposal")],
+
+    # outside the priority categories
+    "1580808": [it("uncontested_director", "Eric B. Singer", [], W, F, True, "the Glass Lewis Proxy Paper ... recommends shareholders WITHHOLD support for the re-election of director Eric B. Singer")],
+    "34088": [it("other", "Texas redomicile proposal", ["texas", "reincorporat", "redomic"], A, F, True, "Glass Lewis developed an ill-informed recommendation against our proposal to redomicile")],
+    "2071778": [it("other", "Consent to call special meeting", ["special meeting"], F, A, True, "Glass Lewis and Egan-Jones issued reports recommending that shareholders CONSENT to the calling of the special meeting")],
+    "34782": [it("uncontested_director", "Timothy Ozark", [], A, F, True, "Under that screen, it recommends voting AGAINST Mr. Ozark. We disagree with Glass Lewis.")],
+    "730272": [it("uncontested_director", "Martin D. Madaus", [], A, F, True, "Glass Lewis has recommended that shareholders vote against the re-election of Dr. Martin D. Madaus")],
+    "893949": [it("uncontested_director", "John M. Starcher, Jr.", [], A, F, True, "have recommended a vote against the re-election of John M. Starcher, Jr.")],
+    "1307954": [it("uncontested_director", "Jose Antonio Munoz Barcelo", [], A, F, True, "ISS and Glass Lewis have each recommended a vote against the re-election of Jose Antonio Munoz Barcelo")],
+    "92380": [it("uncontested_director", "Nominating committee members", [], A, F, True, "Glass Lewis has ... recommended votes against Nominating and Corporate Governance Committee members")],
+    "1801169": [it("uncontested_director", "CEO director", [], A, F, True, "Proxy advisors at ISS and Glass Lewis have recommended shareholders to vote against me")],
+}
+
+
+def write(task: str, snippets: str, items: dict):
+    s = pd.read_parquet(ROOT / "data/processed" / snippets)
+    names = s.groupby("subject_cik").subject_name.first().to_dict()
+    out = {cik: {"source": "claude-session", "answer": {"company": name, "items": items.get(cik, [])}}
+           for cik, name in names.items()}
+    path = ROOT / "data/ai" / f"{task}.json"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(out, indent=2, ensure_ascii=False, sort_keys=True), encoding="utf-8")
+    print(f"{task}: {len(out)} companies, {sum(len(v['answer']['items']) for v in out.values())} items; "
+          f"classified but missing from snippets: {sorted(set(items) - set(names))}")
+
+
+write("iss_items", "iss_snippets.parquet", ITEMS)
+write("gl_items", "gl_snippets.parquet", GL_ITEMS)

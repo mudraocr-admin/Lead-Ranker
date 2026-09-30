@@ -1,0 +1,883 @@
+{
+  "1000209": {
+    "answer": {
+      "company": "MEDALLION FINANCIAL CORP  (MFIN, MBNKO)  (CIK 0001000209)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Both Leading Independent Proxy Advisory Firms Have Now Recommended FOR BIMIZCI Nominees John Kiernan and Eric Kelly",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "John Kiernan",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Both Leading Independent Proxy Advisory Firms Have Now Recommended FOR BIMIZCI Nominees John Kiernan and Eric Kelly",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Eric Kelly",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis Both Recommend Stockholders WITHHOLD Support from Executive Chair Alvin Murstein and Nominating & Governance Committee Chair Cynthia Hallenbeck",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Alvin Murstein",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis recommends that shareholders replace Cynthia Hallenbeck with a dissident candidate",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Cynthia Hallenbeck",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1018164": {
+    "answer": {
+      "company": "WILLIS LEASE FINANCE CORP  (WLFC)  (CIK 0001018164)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "102752": {
+    "answer": {
+      "company": "VSE CORP  (VSEC, VSECU)  (CIK 0000102752)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis recommends that stockholders vote against Proposal 3 (approval, on a non-binding advisory basis, of the compensation of the Company's named executive officers).",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Proposal 3 say-on-pay",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "103145": {
+    "answer": {
+      "company": "VEECO INSTRUMENTS INC  (VECO)  (CIK 0000103145)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "105319": {
+    "answer": {
+      "company": "WW INTERNATIONAL, INC.  (WW)  (CIK 0000105319)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "we respectfully but firmly disagree ... with both firms' recommendations with respect to the Say-on-Pay Proposal",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-Pay Proposal",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1070423": {
+    "answer": {
+      "company": "PLAINS ALL AMERICAN PIPELINE LP  (PAA, PAAPU)  (CIK 0001070423)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1092699": {
+    "answer": {
+      "company": "SPS COMMERCE INC  (SPSC)  (CIK 0001092699)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1093691": {
+    "answer": {
+      "company": "PLUG POWER INC  (PLUG)  (CIK 0001093691)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1108524": {
+    "answer": {
+      "company": "Salesforce, Inc.  (CRM)  (CIK 0001108524)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1116463": {
+    "answer": {
+      "company": "ORASURE TECHNOLOGIES INC  (OSUR)  (CIK 0001116463)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1173420": {
+    "answer": {
+      "company": "NOVAGOLD RESOURCES INC  (NG)  (CIK 0001173420)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "NOVAGOLD takes note of Glass Lewis' recommendation to vote AGAINST NOVAGOLD's Proposal 6.00 Advisory Vote on Executive Compensation.",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-Pay",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1173489": {
+    "answer": {
+      "company": "CEVA INC  (CEVA)  (CIK 0001173489)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1260729": {
+    "answer": {
+      "company": "GABELLI DIVIDEND & INCOME TRUST  (GDV, GDV-PH, GDV-PK)  (CIK 0001260729)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis has recommended that the shareholders vote FOR ALL of the Board's nominees on the WHITE proxy card",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "GDV board nominees",
+          "opposed_board": false
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1288469": {
+    "answer": {
+      "company": "MAXLINEAR, INC  (MXL)  (CIK 0001288469)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1307954": {
+    "answer": {
+      "company": "Huntsman CORP  (HUN)  (CIK 0001307954)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis have each recommended a vote against the re-election of Jose Antonio Munoz Barcelo",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Jose Antonio Munoz Barcelo",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1309108": {
+    "answer": {
+      "company": "WEX Inc.  (WEX)  (CIK 0001309108)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis Recommends Shareholders Vote FOR Impactive Nominees Kurt Adams and Lauren Taylor Wolfe",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Kurt Adams",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis Recommends Shareholders Vote FOR Impactive Nominees Kurt Adams and Lauren Taylor Wolfe",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Lauren Taylor Wolfe",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "FOR",
+          "evidence": "WITHHOLD Support on WEX Board Chair and CEO Melissa Smith and Compensation Committee Chair Stephen Smith",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Melissa Smith",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "FOR",
+          "evidence": "WITHHOLD Support on WEX Board Chair and CEO Melissa Smith and Compensation Committee Chair Stephen Smith",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Stephen Smith",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1326200": {
+    "answer": {
+      "company": "GENCO SHIPPING & TRADING LTD  (GNK)  (CIK 0001326200)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis and Egan-Jones also recommend that Genco shareholders vote WITHHOLD on all nominees of Diana",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Genco board nominees",
+          "opposed_board": false
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1352010": {
+    "answer": {
+      "company": "EPAM Systems, Inc.  (EPAM)  (CIK 0001352010)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1360901": {
+    "answer": {
+      "company": "Evercore Inc.  (EVR)  (CIK 0001360901)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1367644": {
+    "answer": {
+      "company": "Emergent BioSolutions Inc.  (EBS)  (CIK 0001367644)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1395937": {
+    "answer": {
+      "company": "Syndax Pharmaceuticals Inc  (SNDX)  (CIK 0001395937)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1396814": {
+    "answer": {
+      "company": "Pacira BioSciences, Inc.  (PCRX)  (CIK 0001396814)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis Recommends Stockholders Vote FOR All of Pacira's Director Nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Pacira board nominees",
+          "opposed_board": false
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1404912": {
+    "answer": {
+      "company": "KKR & Co. Inc.  (KKR, KKRS, KKRT, KKR-PD)  (CIK 0001404912)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1438231": {
+    "answer": {
+      "company": "Digimarc CORP  (DMRC)  (CIK 0001438231)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1465740": {
+    "answer": {
+      "company": "TWO HARBORS INVESTMENT CORP.  (TWO, TWOD, TWO-PA, TWO-PB, TWO-PC)  (CIK 0001465740)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis ... has recommended that TWO stockholders VOTE AGAINST the CrossCountry Mortgage (CCM) merger proposal",
+          "item_type": "mna",
+          "keywords": [
+            "merger",
+            "cross country",
+            "crosscountry"
+          ],
+          "label": "Proposed CCM merger",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1497770": {
+    "answer": {
+      "company": "Walker & Dunlop, Inc.  (WD)  (CIK 0001497770)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1515673": {
+    "answer": {
+      "company": "Ultragenyx Pharmaceutical Inc.  (RARE)  (CIK 0001515673)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1547576": {
+    "answer": {
+      "company": "Krane Shares Trust  (CIK 0001547576)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1580808": {
+    "answer": {
+      "company": "A10 Networks, Inc.  (ATEN)  (CIK 0001580808)",
+      "items": [
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "FOR",
+          "evidence": "the Glass Lewis Proxy Paper ... recommends shareholders WITHHOLD support for the re-election of director Eric B. Singer",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Eric B. Singer",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1581990": {
+    "answer": {
+      "company": "PLAINS GP HOLDINGS LP  (PAGP)  (CIK 0001581990)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1603923": {
+    "answer": {
+      "company": "Weatherford International plc  (WFRD)  (CIK 0001603923)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis have each recommended that shareholders vote against these items.",
+          "item_type": "mna",
+          "keywords": [
+            "redomestic",
+            "scheme",
+            "merger",
+            "texas"
+          ],
+          "label": "Redomestication proposals",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1640147": {
+    "answer": {
+      "company": "Snowflake Inc.  (SNOW)  (CIK 0001640147)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis issued their respective proxy voting reports recommending that stockholders vote against the Say-on-Pay proposal",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-Pay proposal",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1659323": {
+    "answer": {
+      "company": "Iterum Therapeutics plc  (ITRM)  (CIK 0001659323)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1703079": {
+    "answer": {
+      "company": "XAI Floating Rate & Alternative Income Trust  (XFLT)  (CIK 0001703079)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1726445": {
+    "answer": {
+      "company": "Seer, Inc.  (SEER)  (CIK 0001726445)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis Recommends Stockholders Vote FOR Radoff-JEC Group Nominees Howard H. Berman and Luis E. Rinaldini",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Howard H. Berman",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis Recommends Stockholders Vote FOR Radoff-JEC Group Nominees Howard H. Berman and Luis E. Rinaldini",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Luis E. Rinaldini",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "FOR",
+          "evidence": "WITHHOLD Support on Seer Directors Terrance McGuire and Dipchand Nishar",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Terrance McGuire",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "FOR",
+          "evidence": "WITHHOLD Support on Seer Directors Terrance McGuire and Dipchand Nishar",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Dipchand Nishar",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis also recommends stockholders vote AGAINST the ratification of the NOL pill.",
+          "item_type": "other",
+          "keywords": [
+            "rights",
+            "nol"
+          ],
+          "label": "Ratification of NOL pill",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1757715": {
+    "answer": {
+      "company": "Aterian, Inc.  (ATER)  (CIK 0001757715)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1768267": {
+    "answer": {
+      "company": "Cerence Inc.  (CRNC)  (CIK 0001768267)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1801169": {
+    "answer": {
+      "company": "Opendoor Technologies Inc.  (OPEN, OPENL, OPENW, OPENZ)  (CIK 0001801169)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Proxy advisors at ISS and Glass Lewis have recommended shareholders to vote against me",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "CEO director",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1820721": {
+    "answer": {
+      "company": "Array Technologies, Inc.  (ARRY)  (CIK 0001820721)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1836981": {
+    "answer": {
+      "company": "BigBear.ai Holdings, Inc.  (BBAI, BBAI-WT)  (CIK 0001836981)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "18498": {
+    "answer": {
+      "company": "GENESCO INC  (GCO)  (CIK 0000018498)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1856437": {
+    "answer": {
+      "company": "Victoria's Secret & Co.  (VSCO, VSXY)  (CIK 0001856437)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1864843": {
+    "answer": {
+      "company": "BlackRock ESG Capital Allocation Term Trust  (ECAT)  (CIK 0001864843)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis ... recommended that shareholders vote on the WHITE proxy card FOR all nine of the Board nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "ECAT board nominees",
+          "opposed_board": false
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1895262": {
+    "answer": {
+      "company": "Noble Corp plc  (NE, NE-WT, NE-WTA)  (CIK 0001895262)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "19617": {
+    "answer": {
+      "company": "JPMORGAN CHASE & CO  (JPM, AMJB, VYLD, JPM-PC, JPM-PD, JPM-PJ, JPM-PK, JPM-PL, JPM-PM)  (CIK 0000019617)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Proposal 5: Support For the Shareholder Proposal Requesting an Independent Chair - The Glass Lewis Benchmark Policy asserts that an independent chair is nearly always preferable",
+          "item_type": "shareholder_proposal",
+          "keywords": [
+            "independent",
+            "chair"
+          ],
+          "label": "Proposal 5 independent chair",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "2000645": {
+    "answer": {
+      "company": "XAI CLO & Income Opportunities Fund  (CIK 0002000645)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "203596": {
+    "answer": {
+      "company": "WESBANCO INC  (WSBC, WSBCO)  (CIK 0000203596)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis has issued its Proxy Paper with voting recommendations ... including the Say-on-Pay proposal, where it has recommended [against]; Our Board continues to recommend that you vote FOR",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-Pay proposal",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "2071778": {
+    "answer": {
+      "company": "Fermi Inc.  (FRMI)  (CIK 0002071778)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis and Egan-Jones issued reports recommending that shareholders CONSENT to the calling of the special meeting",
+          "item_type": "other",
+          "keywords": [
+            "special meeting"
+          ],
+          "label": "Consent to call special meeting",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "34088": {
+    "answer": {
+      "company": "EXXON MOBIL CORP  (XOM)  (CIK 0000034088)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis developed an ill-informed recommendation against our proposal to redomicile",
+          "item_type": "other",
+          "keywords": [
+            "texas",
+            "reincorporat",
+            "redomic"
+          ],
+          "label": "Texas redomicile proposal",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "34782": {
+    "answer": {
+      "company": "1ST SOURCE CORP  (SRCE)  (CIK 0000034782)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Under that screen, it recommends voting AGAINST Mr. Ozark. We disagree with Glass Lewis.",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Timothy Ozark",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "351834": {
+    "answer": {
+      "company": "SunOpta Inc.  (STKL)  (CIK 0000351834)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "46195": {
+    "answer": {
+      "company": "BANK OF HAWAII CORP  (BOH, BOH-PA, BOH-PB)  (CIK 0000046195)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis ... recommended voting against the Say-on-Pay Proposal",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say-on-Pay Proposal",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "50493": {
+    "answer": {
+      "company": "INGLES MARKETS INC  (IMKTA)  (CIK 0000050493)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "ISS, Glass Lewis and Egan-Jones All Endorse the Election of Rory A. Held",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Rory A. Held",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "720672": {
+    "answer": {
+      "company": "STIFEL FINANCIAL CORP  (SF, SFB, SF-PB, SF-PC, SF-PD)  (CIK 0000720672)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "72444": {
+    "answer": {
+      "company": "Vaxart, Inc.  (VXRT)  (CIK 0000072444)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "730272": {
+    "answer": {
+      "company": "REPLIGEN CORP  (RGEN)  (CIK 0000730272)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis has recommended that shareholders vote against the re-election of Dr. Martin D. Madaus",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Martin D. Madaus",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "74208": {
+    "answer": {
+      "company": "UDR, Inc.  (UDR)  (CIK 0000074208)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "807882": {
+    "answer": {
+      "company": "JACK IN THE BOX INC  (JACK)  (CIK 0000807882)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis ... has recommended that shareholders vote AGAINST Chairman David Goebel",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "David Goebel",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "893949": {
+    "answer": {
+      "company": "Pediatrix Medical Group, Inc.  (MD)  (CIK 0000893949)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "have recommended a vote against the re-election of John M. Starcher, Jr.",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "John M. Starcher, Jr.",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "92108": {
+    "answer": {
+      "company": "SOUTHERN CALIFORNIA GAS CO  (SOCGM, SOCGP)  (CIK 0000092108)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "921638": {
+    "answer": {
+      "company": "SSR MINING INC.  (SSRM, SSRGF)  (CIK 0000921638)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "The Glass Lewis recommendation centers on SSR Mining's pay practices ... recommendations Glass Lewis has made against our proposal",
+          "item_type": "say_on_pay",
+          "keywords": [
+            "executive compensation",
+            "named executive",
+            "say on pay",
+            "say-on-pay",
+            "compensation of"
+          ],
+          "label": "Say on Pay",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "92380": {
+    "answer": {
+      "company": "SOUTHWEST AIRLINES CO  (LUV)  (CIK 0000092380)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis has ... recommended votes against Nominating and Corporate Governance Committee members",
+          "item_type": "uncontested_director",
+          "keywords": [],
+          "label": "Nominating committee members",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "926282": {
+    "answer": {
+      "company": "ADTRAN Holdings, Inc.  (ADTN)  (CIK 0000926282)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "95029": {
+    "answer": {
+      "company": "STURM RUGER & CO INC  (RGR)  (CIK 0000095029)",
+      "items": []
+    },
+    "source": "claude-session"
+  }
+}

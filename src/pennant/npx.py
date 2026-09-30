@@ -33,8 +33,13 @@ def select_filings(edgar: Edgar, cfg: dict) -> pd.DataFrame:
     idx = idx[~idx.company.map(lambda n: bool(skip.search(n)))]
     picks = []
     for fam in cfg["families"]:
-        pat = re.compile(fam["match"], re.I)
-        hit = idx[idx.company.map(lambda n: bool(pat.search(n)))].copy()
+        if fam.get("ciks"):
+            hit = idx[idx.cik.isin(fam["ciks"])].copy()
+        else:
+            pat = re.compile(fam["match"], re.I)
+            hit = idx[idx.company.map(lambda n: bool(pat.search(n)))].copy()
+        if hit.empty:
+            print(f"  [families.csv] no N-PX filer matched '{fam['name']}' - check its match/ciks")
         # Amendments and duplicates: keep the latest filing per filer CIK.
         hit = hit.sort_values("date").drop_duplicates("cik", keep="last")
         hit["family"] = fam["name"]

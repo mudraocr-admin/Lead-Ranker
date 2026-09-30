@@ -1,7 +1,7 @@
 """The only place the pipeline calls an LLM.
 
-Three small jobs: classify ISS snippets, tag SAI proxy-voting snippets, and
-draft outreach emails. Every answer is cached in data/ai/<task>.json keyed by
+Two small jobs: classify ISS / Glass Lewis snippets and tag SAI proxy-voting
+snippets. Every answer is cached in data/ai/<task>.json keyed by
 a stable id, so reruns are free and deterministic. Resolution order:
 
   1. cache hit            -> source "cache:<original source>"

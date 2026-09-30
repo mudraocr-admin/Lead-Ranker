@@ -1,153 +1,153 @@
 # Pennant prospect segmentation (demo)
 
-This demo sorts 30 US mutual fund families by **how they actually vote** on contested
-proxy items. The inputs are public SEC filings only. Everything is Python and pandas.
-An LLM is used for exactly three small jobs: classifying ISS snippets, tagging SAI
-proxy-voting text, and polishing outreach emails. Every one of those answers is cached
-and labelled with its source.
+This demo ranks the mutual fund families you list by **how they actually vote** on
+contested proxy items. It measures whether each family follows its proxy adviser
+(ISS or Glass Lewis), follows management, or makes its own calls. The inputs are public
+SEC filings only. Everything is Python and pandas; an LLM is used only to classify
+text snippets (adviser recommendations and SAI proxy-voting passages).
 
 ```
 python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
-python run.py                 # ~5 min cold (downloads ~1 GB of N-PX), seconds warm
+# edit families.csv (your target list), then:
+python run.py        # ~3 min cold (downloads ~1 GB of N-PX), faster warm
 ```
 
-Outputs land in `output/`:
+## Input: `families.csv`
 
-| file | what |
+You maintain the target list; the tool never picks firms.
+
+| column | required | meaning |
+|---|---|---|
+| `family` | yes | display name |
+| `match` | no | regex over EDGAR N-PX filer names. Blank means "filer name starts with `family`". |
+| `ciks` | no | semicolon-separated filer CIKs. When given, they are used instead of `match`. |
+
+A warning is printed for any family that matches no N-PX filer. The 30 families
+currently in the file are **placeholders** from the first demo run; replace them.
+
+## Output: `output/priority_list.csv`
+
+One row per family, ranked:
+
+| tier | who | segments |
+|---|---|---|
+| **Tier 1** | follows neither an adviser nor management | Judgment voter, Partial robo-voter |
+| **Tier 2** | follows its proxy adviser | ISS follower, Glass Lewis follower |
+| **Tier 3** | follows management | Management follower |
+| last | not enough data to call | Insufficient data |
+
+Within a tier, families are ordered by **workload**: distinct meetings voted in the
+N-PX year.
+
+Also written:
+* `iss_key.csv` and `gl_key.csv`: each answer key, with the evidence sentence behind
+  every call.
+* `validation.json`
+* `run_summary.json`
+
+### How a family is scored
+
+1. **Answer keys.** For each adviser, collect the ballot items where it publicly
+   opposed the board, as stated in company or dissident soliciting material
+   (DEFA14A / DEFC14A / DFAN14A, Jan–Jul 2026). Keep items in the 4 priority
+   categories: shareholder proposals, contested director elections, M&A, pay.
+2. **Which adviser to score against.** Taken from the family's SAI (485BPOS):
+   * SAI names ISS → ISS.
+   * SAI names Glass Lewis → Glass Lewis.
+   * SAI names both, or neither → both are measured, and the higher agreement counts
+     (among advisers with ≥10 items).
+   * The choice and the reason are in `scored_adviser` / `scored_adviser_reason`.
+     Agreement with both advisers is always reported.
+3. **Metrics.** A family's vote on an item is the majority direction across its funds.
+   * **Adviser agreement** = votes matching the adviser / that adviser's items the
+     family voted on.
+   * **Management rate** = votes with the board / all items where ISS *or* Glass Lewis
+     opposed the board.
+   * Both are also broken out by category. Series divergence (how often the family's
+     own funds split) is reported but not used in the ranking.
+4. **Segment** (thresholds in `config.yaml`), checked in this order:
+
+| check | segment |
 |---|---|
-| `prospects.csv` | ranked prospect table: segment, confidence, workload, ISS agreement overall and by category, series divergence, SAI advisor tags |
-| `outreach_emails.md` / `.csv` | one email per top-10 prospect, filled from `templates/outreach.md` |
-| `iss_key.csv` | the ISS "answer key": board-opposed items joined to N-PX, with the sentence each call rests on |
-| `validation.json` | hold-out test of the panel inference (headline + sensitivity) |
-| `run_summary.json` | row counts, segment counts |
+| fewer than 10 items overall | Insufficient data |
+| ≥10 items with its adviser and ≥90% agreement | ISS / Glass Lewis follower |
+| management rate ≥90% | Management follower |
+| fewer than 10 items with its adviser | Insufficient data (can't rule out following it) |
+| ≥90% adviser agreement in one category, mixed in another | Partial robo-voter |
+| otherwise | Judgment voter |
+
+5. **Confidence** (low/medium/high) starts at medium with ≥30 items, low otherwise. It
+   goes up one level when the SAI supports the segment: own guidelines or a
+   stewardship team for tier 1, or the followed adviser named without own guidelines
+   for tier 2. It does not affect the order.
 
 ## Pipeline
 
-| step | module | source | what it does |
-|---|---|---|---|
-| 1 | `npx.py` | EDGAR `full-index/2026/QTR3/form.idx`, N-PX filed Aug 2026 (votes Jul 2025–Jun 2026) | Picks each target family's trusts by filer-name regex (`config.yaml`). Keeps registrantType `RMIC` only, so adviser-level 13F N-PX filings drop out. Streams the XML into one row per vote record: family, trust, series, issuer, CUSIP, meeting date, N-PX vote categories, vote source, vote cast, management rec, with/against management. |
-| 1 | `npx.py` | form.idx DEFC14A 2025Q2–2026Q2 | N-PX has **no contest flag** (checked: the schema only has category, source and vote). So contested meetings are found by fuzzy-matching the issuer to a DEFC14A filed 0–120 days before the meeting. Meetings that the ISS soliciting material shows were proxy fights are added on top. |
-| 1 | `npx.py` | — | Priority mapping: vote source `SECURITY HOLDER` → shareholder proposals. `EXTRAORDINARY TRANSACTIONS` → M&A. `SECTION 14A SAY-ON-PAY VOTES` or `COMPENSATION` → pay (frequency votes excluded). Director elections at a contested meeting → contested elections. Everything else is dropped. |
-| 1 | `items.py` | — | Each family words the same ballot item its own way, so descriptions are clustered within (CUSIP, meeting, category) into one canonical `item_key`. Director rows are matched on the extracted nominee name. |
-| 2 | `iss_key.py` | EDGAR full-text search: DEFA14A, DEFC14A, DFAN14A, Jan–Jul 2026 | Regex pulls sentences mentioning ISS plus "recommend". **AI step:** each company's sentences are turned into items (type, label, ISS rec, board rec, opposed?) with the verbatim evidence sentence. Only items where ISS opposed the board are kept. CIK is bridged to CUSIP by issuer name, and the meeting is matched by date window. Proposals are matched by category and keywords. Directors are matched by rapidfuzz name match. Items are ranked by how many target families voted on them; the top 40 are kept. |
-| 2 | `scoring.py` | — | **Seed and expand.** Families matching ISS on ≥90% of ≥10 key items form the follower panel. For other priority items, ISS's rec is inferred when ≥5 panel families vote together at ≥90%. Only board-opposed inferences are kept, to match the key. The scored family is excluded from its own panel. **Validation:** 8 key items are held out, the panel is rebuilt without them, and the held-out items are inferred back. |
-| 3 | `sai.py` | EDGAR full-text search: 485BPOS filed by each family's trusts, queries "Institutional Shareholder Services" and "Glass Lewis" | Regex pulls the proxy-voting passages. **AI step:** tags advisor (ISS / Glass Lewis / both / none), role (research / execution / recommendations), own guidelines, and stewardship team. |
-| 4 | `scoring.py` | — | Pure algorithm (thresholds in `config.yaml`). |
-| 5 | `outreach.py` | — | Ranked table. The template is filled with each fund's metrics; **AI step** polishes it. |
-
-### Scoring
-
-A family's vote on an item is the majority direction across its series.
-
-* **ISS agreement** = votes matching ISS / disagreement items voted (key + inferred items)
-* **Category agreement** = the same, per category (only counted with ≥3 items)
-* **Series divergence** = share of priority items, voted by ≥2 series, where the family's series split
-* **Workload** = distinct meetings voted in the N-PX year (all categories)
-
-| segment | rule |
-|---|---|
-| Insufficient data | < 10 items |
-| ISS follower | ≥ 90% agreement |
-| Management follower | ≤ 10% |
-| Partial robo-voter | ≥ 90% in one category, mixed in another |
-| Judgment voter | mixed overall |
-
-The **primary list** is judgment and partial voters, ranked by workload. The
-**secondary list** is ISS followers (pitch: Glass Lewis's 2027 change). Confidence starts
-from data volume. It goes up one level when the SAI tells the same story: own guidelines
-or a stewardship team for judgment voters, or ISS named without own guidelines for
-followers.
+| step | module | source |
+|---|---|---|
+| 1 N-PX votes | `npx.py`, `items.py` | EDGAR `full-index/2026/QTR3/form.idx`: N-PX filed Aug 2026 (votes Jul 2025–Jun 2026). Only fund filers (registrantType RMIC) are kept. Same-item descriptions from different families are clustered into one ballot item. |
+| 1 contested elections | `npx.py` | N-PX has no contest flag, so issuers are matched to DEFC14A filings made 0–120 days before the meeting. Meetings the adviser text shows were proxy fights are added. |
+| 2 answer keys | `adviser_key.py` | EDGAR full-text search. ISS: `"Institutional Shareholder Services"`, `"ISS"`. Glass Lewis: `"Glass Lewis"`, `"Glass, Lewis"`. Sentences naming the adviser + "recommend" → **AI** turns them into items (adviser rec, board rec, evidence) → items opposing the board are joined to N-PX. Up to 40 per adviser, ranked by families voting. |
+| 2 panel / inference | `scoring.py` | Per adviser: families at ≥90% on ≥10 key items form a panel. Items where ≥5 panel families vote ≥90% alike get an inferred rec. The scored family is excluded from its own panel. A hold-out validation is run. |
+| 3 SAI | `sai.py` | 485BPOS full-text search for ISS / Glass Lewis → **AI** tags advisor, role (research / execution / recommendations), own guidelines, stewardship team. |
+| 4–5 scoring, list | `scoring.py`, `prospects.py` | as above |
 
 ## About the AI steps in this build
 
-No Anthropic API credentials were configured on the build machine. The three AI steps
-were therefore done by Claude inside the Claude Code session that built the repo, and
-recorded with `source: "claude-session"`:
+No Anthropic API credentials were configured on the build machine. The snippet
+classifications were therefore done by Claude inside the Claude Code session that
+built the repo, and recorded with `source: "claude-session"`:
 
-* `scripts/seed_iss_classifications.py` → `data/ai/iss_items.json`
+* `scripts/seed_adviser_classifications.py` → `data/ai/iss_items.json`,
+  `data/ai/gl_items.json`
 * `scripts/seed_sai_tags.py` → `data/ai/sai_tags.json`
-* `data/ai/outreach.json` (email polish)
 
-`src/pennant/ai.py` resolves every answer in this order:
-1. cache,
-2. Claude API (`claude-opus-5`, structured output, server-side fallback),
-3. deterministic regex rules.
+`src/pennant/ai.py` resolves in this order: cache → Claude API → regex rules. Rules
+output is never cached. **When you change `families.csv`:**
+* The adviser keys don't depend on the family list, so they stay valid.
+* New families' SAIs are tagged by the API, or by the regex rules if no key is set.
+* Set `ANTHROPIC_API_KEY` to have the model tag them.
 
-Rules output is never cached. To re-run the AI steps against the API, set
-`ANTHROPIC_API_KEY` and delete the JSON files in `data/ai/`. Every output row carries
-`ai_source`.
+## Results (run of 2026-09-30, placeholder list of 30 families)
+
+**Keys:**
+* ISS: 40 board-opposed items (30 pay, 9 contested-election, 1 shareholder proposal).
+* Glass Lewis: 21 items (13 contested-election, 7 pay, 1 shareholder proposal). That is
+  fewer than the 25 target, because companies publish rebuttals to Glass Lewis less
+  often.
+
+**Segments:**
+* **Tier 1, 8 families:** Victory, Columbia, Principal, Thrivent, Harbor, Schwab,
+  Allspring, AMG.
+* **Tier 2, none:** no family reaches 90% agreement with its adviser. The highest are
+  Thrivent (73% with ISS) and AMG (78% with Glass Lewis, on 9 items only).
+* **Tier 3, Hartford:** 90% with management, on 10 items.
+* **Insufficient data, 21 families:** too few key items. This includes American
+  Century and Franklin Templeton despite heavy voting, and Virtus, which agreed with
+  ISS on 9 of 9 items (one short of the minimum).
+
+**Validation:** not measurable for either adviser. Both panels are empty at the
+headline thresholds. A relaxed what-if (≥70% on ≥8 items) is in
+`data/processed/sensitivity_inferred_*.csv`; it is not used for scoring.
 
 ## Deviations from the brief (and why)
 
-* **ISS search widened.** The exact phrase "Institutional Shareholder Services" in
-  DEFA14A/DEFC14A for Jan–Jul 2026 returns only 83 documents. Most of them are companies
-  touting ISS *support*. The search therefore also uses `"ISS"` and dissident DFAN14A
-  filings. Those are where ISS-backs-the-dissident items show up.
-* **Contested elections past June 30 are out of scope.** Seer (July 2026) and a few other
-  fights fall outside the N-PX year and are listed in
-  `data/processed/iss_key_misses.csv`.
-* **T. Rowe Price dropped.** Its fund trusts don't appear as N-PX filers in the Q3 2026
-  index under a matchable name.
-* **Families with no vote table.** Several filer CIKs (some MFS, Virtus, Neuberger
-  trusts) filed N-PX notices with no vote table. Those trusts contribute nothing; the
-  family is scored on the trusts that did report.
-* **Per-family download cap.** Downloads are capped at 10 filings / 150 MB per family to
-  keep the demo fast. Large families are therefore scored on their main equity trusts.
+* **Wider soliciting-material search.** `"ISS"` and dissident DFAN14A filings were added
+  to the ISS query, because the exact phrase alone returned 83 documents, mostly
+  companies touting ISS *support*.
+* **Glass Lewis added** as a second answer key, so families using Glass Lewis are
+  measured against Glass Lewis.
+* **Fights after June 30 are out.** Proxy fights after June 30, 2026 (e.g. Seer) fall
+  outside the N-PX year; see `data/processed/*_key_misses.csv`.
+* **Per-family download cap.** Capped at 10 N-PX filings / 150 MB per family, so large
+  families are scored on their main equity trusts.
 
-## Demo caveats
+## Caveats
 
-* Thresholds are assumptions, not calibrated values.
-* N-PX covers registered funds only. Pensions, SMAs and other non-fund accounts are
-  excluded.
-* The key only covers items where ISS **publicly** opposed the board, as revealed by
-  company or dissident soliciting material. That is a biased sample: it leans toward
-  equity plans and say-on-pay at mid/small caps plus a handful of proxy fights.
-* A family's "vote" is a majority across series. Sub-advised series can vote very
-  differently from each other, and series divergence is reported for that reason.
-* Validation accuracy rests on 8 held-out items. Treat it as a sanity check, not a
-  measurement.
-
-## Results (run of 2026-09-30)
-
-**Data:**
-* 30 families; 1,739,728 N-PX vote rows, of which 282,902 are in priority categories
-  (34,240 canonical ballot items).
-* 41 contested meetings found via DEFC14A.
-* 164 soliciting documents produced 80 companies with ISS statements and 50
-  board-opposed priority items. 40 of those were kept as the key: 29 pay,
-  10 contested-election, 1 shareholder proposal.
-
-| # | family | segment | confidence | meetings | key items | ISS agreement |
-|---|---|---|---|---|---|---|
-| 1 | Victory | Judgment voter | high | 4,849 | 36 | 72% |
-| 2 | Columbia | Judgment voter | medium | 4,451 | 27 | 33% |
-| 3 | Principal | Judgment voter | high | 3,866 | 37 | 68% |
-| 4 | Thrivent | Judgment voter | medium | 3,826 | 22 | 73% |
-| 5 | Harbor | Judgment voter | low | 3,006 | 21 | 33% |
-| 6 | Schwab | Judgment voter | medium | 2,397 | 22 | 27% |
-| 7 | Allspring | Judgment voter | medium | 1,971 | 14 | 71% |
-| 8 | Federated Hermes | Judgment voter | low | 1,382 | 17 | 35% |
-| 9 | AMG | Judgment voter | medium | 786 | 15 | 53% |
-| 10 | Hartford | Management follower | low | 1,311 | 10 | 10% |
-
-The other 20 families have fewer than 10 key items and are marked "Insufficient data".
-
-### What the demo actually shows
-
-1. **No family is an ISS follower on board-opposed items.** The follower panel
-   (≥90% on ≥10 items) is empty. The highest agreement is 73% (Thrivent). This matches
-   the SAIs, most of which describe custom or house guidelines. As a result, the
-   secondary "follower" list is empty on this key.
-2. **Seed-and-expand did not run at the headline thresholds** (empty panel). A labelled
-   what-if with a panel of ≥70% on ≥8 items (Allspring, Franklin Templeton,
-   Thrivent, Victory, Virtus) infers 163 more board-opposed items, almost all
-   shareholder proposals. That output is in
-   `data/processed/sensitivity_inferred_items.csv` and is **not** used for scoring.
-3. **Validation could not be measured.** Holding out 8 of the 40 key items leaves too few
-   items to qualify any panel family. Across relaxed settings and seeds (tested
-   ad hoc), the panel inferred only 0–2 of 5–6 held-out items. That is too few to state
-   an accuracy. A useful validation needs a bigger key: more search terms, earlier
-   months, or a licensed ISS rec file.
-4. **Coverage is the binding constraint.** Only 9 of 30 families reach 10 key items. The
-   key leans toward mid/small-cap equity plans, which the smaller families don't hold.
-
+* Thresholds are assumptions.
+* N-PX covers registered funds only, so pensions and SMAs are excluded.
+* The keys only include items where an adviser **publicly** opposed the board. That
+  leans toward equity plans, say-on-pay and a handful of proxy fights.
+* With 10–42 items per family, agreement rates carry roughly ±15-point uncertainty.
+* A family's vote is a majority across its funds. Sub-advised funds can differ, which
+  is reported as series divergence.

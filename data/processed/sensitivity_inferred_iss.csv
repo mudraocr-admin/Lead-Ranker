@@ -1,4 +1,4 @@
-item_key,iss_rec,panel_n,panel_share,issuer,meeting_dt,category,item_text
+item_key,rec,panel_n,panel_share,issuer,meeting_dt,category,item_text
 001055102|2026-05-04|shareholder_proposal|0,AGAINST,5,1.0,Aflac Incorporated,2026-05-04,shareholder_proposal,Independent Board Chairman
 00724F101|2026-04-15|shareholder_proposal|0,AGAINST,5,1.0,Adobe Inc.,2026-04-15,shareholder_proposal,Stockholder Proposal Regarding Board Matrix.
 00724F101|2026-04-15|shareholder_proposal|1,AGAINST,5,1.0,Adobe Inc.,2026-04-15,shareholder_proposal,Stockholder Proposal Regarding Vote on Golden Parachutes.

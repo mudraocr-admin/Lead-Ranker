@@ -1,0 +1,94 @@
+item_key,issuer,item_text,vote_source,from_votes,share,n_rows,sponsor_rule
+550021109|2026-06-25|shareholder_proposal|0,lululemon athletica inc.,Advisory vote to approve a stockholder proposal regarding declassification of the Board of Directors so that all directors are elected annually for one-year terms.,SECURITY HOLDER,FOR,1.0,59.0,AGAINST
+Q0429F119|2025-12-18|pay|3,ANZ Group Holdings Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,18.0,FOR
+Q4229W132|2025-11-11|pay|4,Goodman Group,Approve the Spill Resolution,ISSUER,AGAINST,1.0,16.0,FOR
+09239B109|2026-05-07|shareholder_proposal|0,"BlackLine, Inc.",The stockholder proposal regarding the declassification of the Board of Directors if properly presented at the Annual Meeting of Shareholders.,SECURITY HOLDER,FOR,1.0,16.0,AGAINST
+Q3018U109|2025-10-28|pay|1,CSL Limited,Approve Conditional Board Spill Resolution,ISSUER,AGAINST,1.0,13.0,FOR
+09260U109|2025-07-11|contested_election|0,BlackRock Capital Allocation Term Trust,To Elect Board Member Nominees: Arthur P. Steinmetz,ISSUER,FOR,1.0,6.0,AGAINST
+Y2685T131|2026-06-18|contested_election|0,Genco Shipping & Trading Limited,Genco Nominee: Arthur L. Regan,ISSUER,FOR,1.0,6.0,AGAINST
+Y2685T131|2026-06-18|contested_election|5,Genco Shipping & Trading Limited,Genco Nominee: John C. Wobensmith,ISSUER,FOR,1.0,6.0,AGAINST
+09260U109|2025-07-11|contested_election|1,BlackRock Capital Allocation Term Trust,To Elect Board Member Nominees: J. Phillip Holloman,ISSUER,FOR,1.0,6.0,AGAINST
+09260U109|2025-07-11|contested_election|2,BlackRock Capital Allocation Term Trust,To Elect Board Member Nominees: John M. Perlowski,ISSUER,FOR,1.0,6.0,AGAINST
+09260U109|2025-07-11|contested_election|4,BlackRock Capital Allocation Term Trust,To Elect Board Member Nominees: Robert Fairbairn,ISSUER,FOR,1.0,6.0,AGAINST
+Y2685T131|2026-06-18|contested_election|6,Genco Shipping & Trading Limited,Genco Nominee: Karin Y. Orsel,ISSUER,FOR,1.0,6.0,AGAINST
+09260U109|2025-07-11|contested_election|5,BlackRock Capital Allocation Term Trust,To Elect Board Member Nominees: W. Carl Kester,ISSUER,FOR,1.0,6.0,AGAINST
+112463104|2025-07-11|contested_election|13,Brookdale Senior Living Inc.,Election of Directors: Victoria L. Freed,ISSUER,AGAINST,1.0,6.0,FOR
+112463104|2025-07-11|contested_election|2,Brookdale Senior Living Inc.,Election of Directors: Elizabeth B. Mace,ISSUER,AGAINST,1.0,6.0,FOR
+112463104|2025-07-11|contested_election|7,Brookdale Senior Living Inc.,Election of Directors: Lee S. Wielansky,ISSUER,AGAINST,1.0,6.0,FOR
+Y2685T131|2026-06-18|contested_election|7,Genco Shipping & Trading Limited,Genco Nominee: Kathleen C. Haines,ISSUER,FOR,1.0,6.0,AGAINST
+Y2685T131|2026-06-18|contested_election|1,Genco Shipping & Trading Limited,Genco Nominee: Basil G. Mavroleon,ISSUER,FOR,1.0,6.0,AGAINST
+112463104|2025-07-11|contested_election|9,Brookdale Senior Living Inc.,Election of Directors: Mark Fioravanti,ISSUER,AGAINST,1.0,6.0,FOR
+112463104|2025-07-11|contested_election|5,Brookdale Senior Living Inc.,Election of Directors: Jordan R. Asher,ISSUER,AGAINST,1.0,6.0,FOR
+112463104|2025-07-11|contested_election|0,Brookdale Senior Living Inc.,Election of Directors: Claudia N. Drayton,ISSUER,AGAINST,1.0,6.0,FOR
+112463104|2025-07-11|contested_election|10,Brookdale Senior Living Inc.,Election of Directors: Paula J. Poskon,SECURITY HOLDER,FOR,1.0,6.0,AGAINST
+112463104|2025-07-11|contested_election|3,Brookdale Senior Living Inc.,Election of Directors: Frank J. Small,SECURITY HOLDER,FOR,1.0,6.0,AGAINST
+112463104|2025-07-11|contested_election|4,Brookdale Senior Living Inc.,Election of Directors: Ivona Smith,SECURITY HOLDER,FOR,1.0,6.0,AGAINST
+112463104|2025-07-11|contested_election|12,Brookdale Senior Living Inc.,Election of Directors: Steven L. Vick,SECURITY HOLDER,FOR,1.0,6.0,AGAINST
+112463104|2025-07-11|contested_election|8,Brookdale Senior Living Inc.,Election of Directors: Lori B. Wittman,SECURITY HOLDER,FOR,1.0,6.0,AGAINST
+112463104|2025-07-11|contested_election|11,Brookdale Senior Living Inc.,Election of Directors: Steven J. Insoft,SECURITY HOLDER,FOR,1.0,6.0,AGAINST
+09260U109|2025-07-11|contested_election|3,BlackRock Capital Allocation Term Trust,To Elect Board Member Nominees: R. Glenn Hubbard,ISSUER,FOR,1.0,6.0,AGAINST
+Y2685T131|2026-06-18|contested_election|8,Genco Shipping & Trading Limited,Genco Nominee: Paramita Das,ISSUER,FOR,1.0,6.0,AGAINST
+Q0604U105|2025-10-23|pay|2,ASX Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,4.0,FOR
+Q60976109|2025-11-20|pay|0,Mineral Resources Limited,Approve Conditional Board Spill Meeting Resolution,ISSUER,AGAINST,1.0,4.0,FOR
+023586100|2025-08-21|shareholder_proposal|0,U-Haul Holding Company,"A proposal received from Company stockholder proponents to ratify and affirm the decisions and actions taken by the Board of Directors and executive officers of the Company with respect to U-HAUL HOLDING COMPANY, its subsidiaries, and its various constituencies for the fiscal year ended March 31, 2025.",SECURITY HOLDER,FOR,1.0,4.0,AGAINST
+Q3983N155|2026-05-07|pay|1,Helia Group Ltd.,Approve the Spill Resolution,ISSUER,AGAINST,1.0,4.0,FOR
+Q318AK102|2026-05-27|pay|5,Dicker Data Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,4.0,FOR
+F8333P109|2026-06-04|pay|1,Vusion,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,3.0,FOR
+Q6951V109|2025-11-27|pay|0,NRW Holdings Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,3.0,FOR
+Q8068F100|2025-10-22|pay|1,Reliance Worldwide Corporation Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,3.0,FOR
+68373J104|2026-06-03|shareholder_proposal|0,Open Lending Corporation,To approve a stockholder proposal regarding the declassification of our board of directors,SECURITY HOLDER,FOR,1.0,3.0,AGAINST
+35137L204|2025-11-14|pay|0,FOX CORPORATION,Improve Executive Compensation Program.,ISSUER,AGAINST,1.0,3.0,FOR
+Q496B9100|2025-11-20|pay|4,IPH Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,3.0,FOR
+|2026-03-26|pay|40,Argan SA,Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,2.0,FOR
+13765N107|2025-12-12|contested_election|2,"CANNAE HOLDINGS, INC.",CARRONADE CAPITAL NOMINEE: Chérie L. Schaible,ISSUER,FOR,1.0,2.0,AGAINST
+96208T104|2026-05-05|contested_election|6,WEX INC.,IMPACTIVE NOMINEE: Kurt P. Adams,ISSUER,FOR,1.0,2.0,AGAINST
+Q52522101|2025-10-30|pay|0,Kelsian Group Limited,Approve Conditional Board Spill,ISSUER,AGAINST,1.0,2.0,FOR
+Q6813N105|2025-11-07|pay|0,Nine Entertainment Co. Holdings Limited,Approve Conditional Board Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+Q48215109|2025-10-21|pay|0,IDP Education Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+Q17548167|2025-10-15|pay|1,Bravura Solutions Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+Q0R979107|2025-10-23|pay|1,Australian Clinical Labs Limited,Approve the Spill Resolution and EGM within 90 Days,ISSUER,AGAINST,1.0,2.0,FOR
+F0378V109|2026-03-26|pay|0,Argan SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,2.0,FOR
+96208T104|2026-05-05|contested_election|8,WEX INC.,COMPANY NOMINEE OPPOSED BY IMPACTIVE: Melissa Smith,ISSUER,AGAINST,1.0,2.0,FOR
+F7440W163|2026-04-29|pay|0,GL Events SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,2.0,FOR
+F59766109|2026-06-25|pay|0,Manitou BF SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,2.0,FOR
+F64308111|2026-06-09|pay|0,Nanobiotix SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,2.0,FOR
+Q80528138|2025-11-21|pay|0,Reece Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+Q8571C107|2025-11-24|pay|0,Southern Cross Media Group Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+Q9239H108|2025-10-23|pay|0,Perpetual Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+Q3663F100|2025-10-24|pay|2,EVT Limited,Approve Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+Q7128A101|2025-10-28|pay|2,Omni Bridgeway Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+Q4548G107|2025-10-30|pay|0,Healius Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+96208T104|2026-05-05|contested_election|10,WEX INC.,COMPANY NOMINEE OPPOSED BY IMPACTIVE: Stephen Smith,ISSUER,AGAINST,1.0,2.0,FOR
+96208T104|2026-05-05|contested_election|4,WEX INC.,IMPACTIVE NOMINEE: Ellen R. Alemany,ISSUER,FOR,1.0,2.0,AGAINST
+96208T104|2026-05-05|contested_election|9,WEX INC.,COMPANY NOMINEE OPPOSED BY IMPACTIVE: Nancy Altobello,ISSUER,AGAINST,1.0,2.0,FOR
+96208T104|2026-05-05|contested_election|7,WEX INC.,IMPACTIVE NOMINEE: Lauren Taylor Wolfe,ISSUER,FOR,1.0,2.0,AGAINST
+Q4978A109|2026-05-21|pay|6,ioneer Ltd.,Approve the Spill Resolution,ISSUER,AGAINST,1.0,1.0,FOR
+Q8458J100|2026-02-17|pay|2,Select Harvests Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,1.0,FOR
+Q8719T103|2025-11-25|pay|0,The Star Entertainment Group Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,1.0,FOR
+Q0456H103|2026-05-22|pay|3,Appen Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,1.0,FOR
+Q73763106|2025-11-27|pay|0,Peet Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,1.0,FOR
+F9635C101|2026-06-25|pay|0,Valneva SE,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
+759530108|2026-04-23|shareholder_proposal|0,RELX PLC,Approve 14 day notice period for general meetings (To be proposed as a Special Resolution),SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+F5586F101|2025-09-26|pay|0,Groupe LDLC SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
+Q53502102|2025-11-21|pay|0,Kogan.com Limited,Approve Conditional Board Spill Meeting Resolution,ISSUER,AGAINST,1.0,1.0,FOR
+F8964N100|2026-05-21|pay|0,STIF SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
+25675T107|2026-06-11|shareholder_proposal|2,Dollarama Inc.,Shareholder Proposal Regarding Say on Climate,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+46124U107|2026-06-30|pay|0,Inventiva SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-02-26|pay|1,El Al Israel Airlines Ltd.,Completion of Severance in Accordance with the Severance Pay Law,ISSUER,AGAINST,1.0,1.0,FOR
+15117K103|2026-06-25|pay|0,Cellectis SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-29|pay|47,GL Events,"Delegation of authority to be granted to the Board of Directors to proceed with a capital increase through the issuance of ordinary shares and/or securities giving access to the share capital, suspending shareholders' preferential rights in favour of employees participating in a company savings plan pursuant to the provisions of Articles L. 3332-18",ISSUER,AGAINST,1.0,1.0,FOR
+019170208|2025-08-04|contested_election|10,"Allied Gaming & Entertainment, Inc.",Election of three Class B directors to serve on the Company's Board of Directors until the Company's 2027 annual meeting of stockholders and until their successors have been duly elected and qualified. KNIGHTED CLASS B NOMINEES: Roy Choi,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+019170208|2025-08-04|contested_election|11,"Allied Gaming & Entertainment, Inc.",Election of three Class B directors to serve on the Company's Board of Directors until the Company's 2027 annual meeting of stockholders and until their successors have been duly elected and qualified. KNIGHTED CLASS B NOMINEES: Walter Ivey Delph III,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+019170208|2025-08-04|contested_election|5,"Allied Gaming & Entertainment, Inc.",Election of three Class B directors to serve on the Company's Board of Directors until the Company's 2027 annual meeting of stockholders and until their successors have been duly elected and qualified. KNIGHTED CLASS B NOMINEES: Jennifer van Dijk,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+019170208|2025-08-04|contested_election|6,"Allied Gaming & Entertainment, Inc.",Election of three Class B directors to serve on the Company's Board of Directors until the Company's 2027 annual meeting of stockholders and until their successors have been duly elected and qualified. COMPANY NOMINEES OPPOSED BY KNIGHTED: Jingsheng (Jason) Lu,ISSUER,AGAINST,1.0,1.0,FOR
+019170208|2025-08-04|contested_election|3,"Allied Gaming & Entertainment, Inc.",Election of three Class B directors to serve on the Company's Board of Directors until the Company's 2027 annual meeting of stockholders and until their successors have been duly elected and qualified. COMPANY NOMINEES OPPOSED BY KNIGHTED: Guanzhou (Jerry) Qin,ISSUER,AGAINST,1.0,1.0,FOR
+019170208|2025-08-04|contested_election|7,"Allied Gaming & Entertainment, Inc.",Election of three Class B directors to serve on the Company's Board of Directors until the Company's 2027 annual meeting of stockholders and until their successors have been duly elected and qualified. COMPANY NOMINEES OPPOSED BY KNIGHTED: Mao Sun,ISSUER,AGAINST,1.0,1.0,FOR
+019170208|2025-08-04|contested_election|8,"Allied Gaming & Entertainment, Inc.",Election of three Class C directors to serve on the Company's Board of Directors until the Company's 2028 annual meeting of stockholders and until their successors have been duly elected and qualified. KNIGHTED CLASS C NOMINEES: Peter Chun,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+019170208|2025-08-04|contested_election|4,"Allied Gaming & Entertainment, Inc.",Election of three Class C directors to serve on the Company's Board of Directors until the Company's 2028 annual meeting of stockholders and until their successors have been duly elected and qualified. KNIGHTED CLASS C NOMINEES: Howard Donaldson,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+019170208|2025-08-04|contested_election|0,"Allied Gaming & Entertainment, Inc.",Election of three Class C directors to serve on the Company's Board of Directors until the Company's 2028 annual meeting of stockholders and until their successors have been duly elected and qualified. KNIGHTED CLASS C NOMINEES: Adam Rymer,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+019170208|2025-08-04|contested_election|9,"Allied Gaming & Entertainment, Inc.",Election of three Class C directors to serve on the Company's Board of Directors until the Company's 2028 annual meeting of stockholders and until their successors have been duly elected and qualified. COMPANY NOMINEES OPPOSED BY KNIGHTED: Roy Anderson,ISSUER,AGAINST,1.0,1.0,FOR
+019170208|2025-08-04|contested_election|12,"Allied Gaming & Entertainment, Inc.",Election of three Class C directors to serve on the Company's Board of Directors until the Company's 2028 annual meeting of stockholders and until their successors have been duly elected and qualified. COMPANY NOMINEES OPPOSED BY KNIGHTED: Yushi Guo,ISSUER,AGAINST,1.0,1.0,FOR
+019170208|2025-08-04|contested_election|1,"Allied Gaming & Entertainment, Inc.",Election of three Class C directors to serve on the Company's Board of Directors until the Company's 2028 annual meeting of stockholders and until their successors have been duly elected and qualified. COMPANY NOMINEES OPPOSED BY KNIGHTED: Chi Zhao,ISSUER,AGAINST,1.0,1.0,FOR
+019170208|2025-08-04|pay|0,"Allied Gaming & Entertainment, Inc.","The Company's proposal to approve, in a non-binding advisory vote, the compensation of the Company's named executive officers.",ISSUER,AGAINST,1.0,1.0,FOR
+019170208|2025-08-04|contested_election|2,"Allied Gaming & Entertainment, Inc.",Knighted's proposal to remove for cause one (1) incumbent member of the Company's Board of Directors: Class A director Yangyang Li.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+F56028107|2026-04-29|pay|0,Lectra SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR

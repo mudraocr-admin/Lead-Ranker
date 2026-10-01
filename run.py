@@ -12,6 +12,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 from pennant import adviser_key, npx, prospects, sai, scoring  # noqa: E402
+from pennant.items import match_universe  # noqa: E402
 from pennant.config import OUTPUT, load_config, make_edgar  # noqa: E402
 
 
@@ -32,20 +33,27 @@ def main():
         items = adviser_key.classify(snips, cfg, adv, log)
         opposed[adv] = adviser_key.keyed_items(items, votes)
         contested |= adviser_key.contested_from_key(opposed[adv], votes)
-    pri = npx.prioritize(votes, contested, log)
+    pri = npx.prioritize(votes, cfg, contested, log)
     keys = {}
     for adv, opp in opposed.items():
         key = adviser_key.join_to_items(opp, pri, cfg, log)
         keys[adv] = adviser_key.rank_and_trim(key, pri, cfg, log)
 
+    # Step 2b: reference universe - every other N-PX fund filer, never scored
+    uni = None
+    if cfg["universe"].get("enabled", True):
+        uni = match_universe(npx.load_universe(edgar, cfg, pri, log), pri)
+        log(f"Universe: {len(uni):,} reference votes matched to target ballot items "
+            f"({uni.series_id.nunique():,} funds)")
+
     # Step 3: SAI adviser identity
     tags = sai.run(edgar, cfg, votes, log)
 
-    # Steps 2b + 4: panels, inference, validation, scoring
-    sc, validation, _ = scoring.score(votes, pri, keys, tags, cfg, log)
+    # Steps 2c + 4: panels, inference, validation, scoring
+    sc, validation, _ = scoring.score(votes, pri, keys, tags, cfg, log, uni=uni)
 
     # Step 5: priority list
-    ranked = prospects.rank_prospects(sc, tags)
+    ranked = prospects.rank_prospects(sc, tags, votes)
     prospects.write_outputs(ranked, keys, validation, log)
     (OUTPUT / "run_summary.json").write_text(json.dumps({
         "families": int(votes.family.nunique()), "vote_rows": int(len(votes)),

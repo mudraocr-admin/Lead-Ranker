@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import threading
 import time
 from pathlib import Path
 from urllib.parse import urlencode
@@ -24,6 +25,7 @@ class Edgar:
         self.session.headers.update({"User-Agent": user_agent, "Accept-Encoding": "gzip, deflate"})
         self.min_gap = 1.0 / max_rps
         self._last = 0.0
+        self._lock = threading.Lock()  # the rate limit holds across threads
         CACHE.mkdir(parents=True, exist_ok=True)
 
     def _path(self, url: str) -> Path:
@@ -34,10 +36,11 @@ class Edgar:
         if cache and path.exists():
             return path.read_bytes()
         for attempt in range(5):
-            wait = self.min_gap - (time.monotonic() - self._last)
-            if wait > 0:
-                time.sleep(wait)
-            self._last = time.monotonic()
+            with self._lock:
+                wait = self.min_gap - (time.monotonic() - self._last)
+                if wait > 0:
+                    time.sleep(wait)
+                self._last = time.monotonic()
             resp = self.session.get(url, timeout=120)
             if resp.status_code in (429, 500, 502, 503, 504):
                 time.sleep(2 ** attempt)

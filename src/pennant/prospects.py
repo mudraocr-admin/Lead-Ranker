@@ -4,8 +4,9 @@ Tiers:
   1  Follows neither an adviser nor management  (Judgment voter, Partial robo-voter)
   2  Adviser follower                           (ISS follower, Glass Lewis follower)
   3  Management follower
-  4  Insufficient data
-Within a tier, families are ordered by workload (meetings voted per year).
+Every family gets a tier. Families classified on thin data carry low
+confidence and say why. Within a tier, families are ordered by workload
+(meetings voted per year).
 """
 from __future__ import annotations
 
@@ -18,25 +19,26 @@ from .scoring import CATS
 
 LEVELS = ["low", "medium", "high"]
 TIER_LABELS = {1: "Tier 1 - independent voter", 2: "Tier 2 - adviser follower",
-               3: "Tier 3 - management follower", 4: "Unclassified - insufficient data"}
+               3: "Tier 3 - management follower"}
 
 
 def tier_of(segment: str) -> int:
     if segment in ("Judgment voter", "Partial robo-voter"):
         return 1
-    if segment.endswith("follower") and segment != "Management follower":
-        return 2
     if segment == "Management follower":
         return 3
-    return 4  # Insufficient data / Insufficient adviser data
+    return 2  # ISS / Glass Lewis follower
 
 
 def confidence(row: pd.Series) -> tuple[str, str]:
-    """Data volume sets the base; an SAI that tells the same story raises it."""
+    """Data volume sets the base; an SAI that tells the same story raises it.
+    Labels from the thin-data rules are always low."""
+    if row.get("segment_basis"):
+        return "low", row["segment_basis"]
     if row["segment"] == "Management follower":
         return ("high" if row["mgmt_items"] >= 200 else "medium"), "rate over all priority items"
     a = row.get("scored_adviser")
-    base = 1 if a and row.get(f"items_{a}", 0) >= 30 else 0
+    base = 1 if a and row.get(f"n_{a}_opposed", 0) >= 20 else 0
     seg, sai_adv = row["segment"], row.get("advisor")
     followed = {"ISS follower": "ISS", "Glass Lewis follower": "Glass Lewis"}.get(seg)
     confirms = ""
@@ -48,7 +50,15 @@ def confidence(row: pd.Series) -> tuple[str, str]:
     return LEVELS[min(base + (1 if confirms else 0), 2)], confirms
 
 
-def rank_prospects(sc: pd.DataFrame, sai: pd.DataFrame) -> pd.DataFrame:
+def filer_ciks(votes: pd.DataFrame) -> pd.DataFrame:
+    """The N-PX filer CIKs (trusts) whose votes make up each family, largest first."""
+    t = votes.groupby(["family", "trust_cik", "trust"]).size().rename("rows").reset_index()
+    t = t.sort_values(["family", "rows"], ascending=[True, False])
+    return t.groupby("family").agg(ciks=("trust_cik", "; ".join), filers=("trust", "; ".join)).reset_index()
+
+
+def rank_prospects(sc: pd.DataFrame, sai: pd.DataFrame, votes: pd.DataFrame) -> pd.DataFrame:
+    sc = sc.merge(filer_ciks(votes), on="family", how="left")
     df = sc.merge(sai[["family", "advisor", "roles", "own_guidelines", "stewardship_team", "evidence", "ai_source"]]
                   .rename(columns={"advisor": "sai_advisor", "evidence": "sai_evidence", "ai_source": "sai_source"})
                   .assign(advisor=lambda d: d.sai_advisor), on="family", how="left")
@@ -63,14 +73,14 @@ def rank_prospects(sc: pd.DataFrame, sai: pd.DataFrame) -> pd.DataFrame:
 
 def write_outputs(prospects: pd.DataFrame, keys: dict[str, pd.DataFrame], validation: dict, log=print):
     OUTPUT.mkdir(parents=True, exist_ok=True)
-    cols = (["rank", "family", "priority", "segment", "confidence", "confidence_reason", "workload_meetings",
+    cols = (["rank", "family", "ciks", "priority", "segment", "confidence", "confidence_reason", "workload_meetings",
              "mgmt_rate", "mgmt_items", "scored_adviser", "scored_adviser_reason", "adviser_agreement"]
             + [f"{p}_{a}" for a in keys for p in ("agree", "items", "key_items")]
             + [f"{p}_{a}_{k}" for a in keys for k in ("opposed", "aligned") for p in ("agree", "n")]
-            + [f"{p}_{a}_{c}" for a in keys for c in CATS for p in ("agree", "n")]
+            + [f"{p}_{a}_{c}{o}" for a in keys for c in CATS for o in ("_opposed", "") for p in ("agree", "n")]
             + [f"mgmt_{p}_{c}" for c in CATS for p in ("rate", "n")]
             + ["series_divergence", "n_series", "sai_advisor", "roles", "own_guidelines", "stewardship_team",
-               "sai_evidence", "sai_source"])
+               "sai_evidence", "sai_source", "filers"])
     prospects[cols].to_csv(OUTPUT / "priority_list.csv", index=False)
     for adv, key in keys.items():
         key.to_csv(OUTPUT / f"{adv.lower()}_key.csv", index=False)

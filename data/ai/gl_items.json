@@ -50,6 +50,31 @@
     },
     "source": "claude-session"
   },
+  "1020859": {
+    "answer": {
+      "company": "UNITED NATURAL FOODS INC  (UNFI)  (CIK 0001020859)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis ... recommended a vote for the Fifth Amended and Restated Plan.",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive",
+            "plan"
+          ],
+          "label": "Fifth Amended and Restated Plan",
+          "opposed_board": false
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
   "102752": {
     "answer": {
       "company": "VSE CORP  (VSEC, VSECU)  (CIK 0000102752)",
@@ -92,6 +117,30 @@
     },
     "source": "claude-session"
   },
+  "1040161": {
+    "answer": {
+      "company": "PIXELWORKS, INC  (PXLW)  (CIK 0001040161)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "both leading independent proxy voting advisory groups, Institutional Shareholder Services and Glass Lewis, recommended that shareholders vote FOR Proposal 1.",
+          "item_type": "mna",
+          "keywords": [
+            "merger",
+            "transaction",
+            "arrangement",
+            "acquisition",
+            "issuance",
+            "sale"
+          ],
+          "label": "Proposal 1 (sale transaction)",
+          "opposed_board": false
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
   "105319": {
     "answer": {
       "company": "WW INTERNATIONAL, INC.  (WW)  (CIK 0000105319)",
@@ -110,6 +159,41 @@
           ],
           "label": "Say-on-Pay Proposal",
           "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1067294": {
+    "answer": {
+      "company": "CRACKER BARREL OLD COUNTRY STORE, INC  (CBRL)  (CIK 0001067294)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis has recommended voting against Mr. Davila and another independent director, Jody Bilney",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Gilbert Davila",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis has recommended voting against Mr. Davila and another independent director, Jody Bilney",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Jody Bilney",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Both ISS and Glass Lewis recommend shareholders vote for Ms. Masino.",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Julie Masino",
+          "opposed_board": false
         }
       ]
     },
@@ -183,6 +267,30 @@
     },
     "source": "claude-session"
   },
+  "1156388": {
+    "answer": {
+      "company": "BIG 5 SPORTING GOODS Corp  (BGFV)  (CIK 0001156388)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Independent proxy advisory firms ISS and Glass Lewis both recently issued recommendations in favor of the Merger proposal.",
+          "item_type": "mna",
+          "keywords": [
+            "merger",
+            "transaction",
+            "arrangement",
+            "acquisition",
+            "issuance",
+            "sale"
+          ],
+          "label": "Merger",
+          "opposed_board": false
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
   "1173420": {
     "answer": {
       "company": "NOVAGOLD RESOURCES INC  (NG)  (CIK 0001173420)",
@@ -209,6 +317,65 @@
   "1173489": {
     "answer": {
       "company": "CEVA INC  (CEVA)  (CIK 0001173489)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1178697": {
+    "answer": {
+      "company": "SONIM TECHNOLOGIES INC  (SONM)  (CIK 0001178697)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis & Co. has recommended ... voting \"FOR\" the election of three director candidates (Joseph M. Glynn, Surendra Singh and Michael Wallace) proposed by AJP and Orbic",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Joseph M. Glynn",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis & Co. has recommended ... voting \"FOR\" the election of three director candidates (Joseph M. Glynn, Surendra Singh and Michael Wallace) proposed by AJP and Orbic",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Surendra Singh",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis & Co. has recommended ... voting \"FOR\" the election of three director candidates (Joseph M. Glynn, Surendra Singh and Michael Wallace) proposed by AJP and Orbic",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Michael Wallace",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1191070": {
+    "answer": {
+      "company": "Neuphoria Therapeutics Inc.  (NEUP)  (CIK 0001191070)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis Recommends Voting FOR Lynx1's Independent Nominee, Stephen Doberstein, Ph.D.",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Stephen Doberstein",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1227523": {
+    "answer": {
+      "company": "OPTIMUM FUND TRUST  (CIK 0001227523)",
       "items": []
     },
     "source": "claude-session"
@@ -333,6 +500,27 @@
     },
     "source": "claude-session"
   },
+  "1318605": {
+    "answer": {
+      "company": "Tesla, Inc.  (TSLA)  (CIK 0001318605)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "This year, both firms once again recommend against our CEO performance award (Proposal 4)",
+          "item_type": "other_compensation",
+          "keywords": [
+            "performance award",
+            "performance-based",
+            "award"
+          ],
+          "label": "CEO performance award (Proposal 4)",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
   "1326200": {
     "answer": {
       "company": "GENCO SHIPPING & TRADING LTD  (GNK)  (CIK 0001326200)",
@@ -388,6 +576,54 @@
           ],
           "label": "Equity incentive plan",
           "opposed_board": false
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1327318": {
+    "answer": {
+      "company": "TrueCar, Inc.  (TRUE)  (CIK 0001327318)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Independent Proxy Advisory Firms ISS and Glass Lewis Recommend TrueCar Stockholders Vote \"FOR\" Pending Transaction with Fair Holdings",
+          "item_type": "mna",
+          "keywords": [
+            "merger",
+            "transaction",
+            "arrangement",
+            "acquisition",
+            "issuance",
+            "sale"
+          ],
+          "label": "Transaction with Fair Holdings",
+          "opposed_board": false
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1327567": {
+    "answer": {
+      "company": "Palo Alto Networks Inc  (PANW)  (CIK 0001327567)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1332349": {
+    "answer": {
+      "company": "Brookdale Senior Living Inc.  (BKD)  (CIK 0001332349)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass, Lewis & Co. (\"Glass Lewis\"), has recommended that stockholders vote FOR the election of Ortelius nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__dissident_slate__",
+          "opposed_board": true
         }
       ]
     },
@@ -547,6 +783,55 @@
     },
     "source": "claude-session"
   },
+  "1413898": {
+    "answer": {
+      "company": "DallasNews Corp  (DALN)  (CIK 0001413898)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "On August 29, 2025, Glass, Lewis & Co. ... recommended that the Company's shareholders vote FOR the Merger.",
+          "item_type": "mna",
+          "keywords": [
+            "merger",
+            "transaction",
+            "arrangement",
+            "acquisition",
+            "issuance",
+            "sale"
+          ],
+          "label": "Merger with Hearst",
+          "opposed_board": false
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1425287": {
+    "answer": {
+      "company": "Workhorse Group Inc.  (WKHS)  (CIK 0001425287)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis both recommend that shareholders vote FOR the transaction with Motiv.",
+          "item_type": "mna",
+          "keywords": [
+            "merger",
+            "transaction",
+            "arrangement",
+            "acquisition",
+            "issuance",
+            "sale",
+            "motiv"
+          ],
+          "label": "Transaction with Motiv",
+          "opposed_board": false
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
   "1438231": {
     "answer": {
       "company": "Digimarc CORP  (DMRC)  (CIK 0001438231)",
@@ -625,6 +910,13 @@
     },
     "source": "claude-session"
   },
+  "1551047": {
+    "answer": {
+      "company": "Bluerock Total Income (plus) Real Estate Fund  (CIK 0001551047)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
   "1580808": {
     "answer": {
       "company": "A10 Networks, Inc.  (ATEN)  (CIK 0001580808)",
@@ -687,6 +979,27 @@
     },
     "source": "claude-session"
   },
+  "1628369": {
+    "answer": {
+      "company": "Cushman & Wakefield plc  (CWK)  (CIK 0001628369)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis Joins ISS in Recommending Shareholders Vote \"FOR\" All Proposals Related to Cushman & Wakefield's Redomiciliation",
+          "item_type": "mna",
+          "keywords": [
+            "redomicil",
+            "scheme",
+            "merger"
+          ],
+          "label": "Redomiciliation",
+          "opposed_board": false
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
   "1640147": {
     "answer": {
       "company": "Snowflake Inc.  (SNOW)  (CIK 0001640147)",
@@ -721,6 +1034,117 @@
     "answer": {
       "company": "XAI Floating Rate & Alternative Income Trust  (XFLT)  (CIK 0001703079)",
       "items": []
+    },
+    "source": "claude-session"
+  },
+  "1704720": {
+    "answer": {
+      "company": "Cannae Holdings, Inc.  (CNNE)  (CIK 0001704720)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis Recommends Cannae Shareholders Vote \"FOR\" All Four of Carronade's Director Nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Mona Aboelnaga",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis Recommends Cannae Shareholders Vote \"FOR\" All Four of Carronade's Director Nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Benjamin Duster",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis Recommends Cannae Shareholders Vote \"FOR\" All Four of Carronade's Director Nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Dennis Prieto",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "Glass Lewis Recommends Cannae Shareholders Vote \"FOR\" All Four of Carronade's Director Nominees",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Cherie Schaible",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "FOR",
+          "evidence": "follow the recommendations of ISS and Glass Lewis and vote ... \"WITHHOLD\" on Erika Meinhardt, Barry B. Moullet, James B. Stallings, Jr., and Frank P. Willey",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Erika Meinhardt",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "FOR",
+          "evidence": "follow the recommendations of ISS and Glass Lewis and vote ... \"WITHHOLD\" on Erika Meinhardt, Barry B. Moullet, James B. Stallings, Jr., and Frank P. Willey",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Barry B. Moullet",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "FOR",
+          "evidence": "follow the recommendations of ISS and Glass Lewis and vote ... \"WITHHOLD\" on Erika Meinhardt, Barry B. Moullet, James B. Stallings, Jr., and Frank P. Willey",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "James B. Stallings",
+          "opposed_board": true
+        },
+        {
+          "adviser_rec": "WITHHOLD",
+          "board_rec": "FOR",
+          "evidence": "follow the recommendations of ISS and Glass Lewis and vote ... \"WITHHOLD\" on Erika Meinhardt, Barry B. Moullet, James B. Stallings, Jr., and Frank P. Willey",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "Frank P. Willey",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "1720420": {
+    "answer": {
+      "company": "IBEX Ltd  (IBEX)  (CIK 0001720420)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
+  "1725057": {
+    "answer": {
+      "company": "Dayforce, Inc.  (DAY)  (CIK 0001725057)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "ISS and Glass Lewis have both affirmed our Board of Directors' recommendation that stockholders vote \"FOR\" the Merger",
+          "item_type": "mna",
+          "keywords": [
+            "merger",
+            "transaction",
+            "arrangement",
+            "acquisition",
+            "issuance",
+            "sale"
+          ],
+          "label": "Merger",
+          "opposed_board": false
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -777,6 +1201,13 @@
           "opposed_board": true
         }
       ]
+    },
+    "source": "claude-session"
+  },
+  "1745059": {
+    "answer": {
+      "company": "Angel Oak Financial Strategies Income Term Trust  (FINS)  (CIK 0001745059)",
+      "items": []
     },
     "source": "claude-session"
   },
@@ -847,10 +1278,41 @@
     },
     "source": "claude-session"
   },
+  "1826892": {
+    "answer": {
+      "company": "BioAtla, Inc.  (BCAB)  (CIK 0001826892)",
+      "items": []
+    },
+    "source": "claude-session"
+  },
   "1836981": {
     "answer": {
       "company": "BigBear.ai Holdings, Inc.  (BBAI, BBAI-WT)  (CIK 0001836981)",
       "items": []
+    },
+    "source": "claude-session"
+  },
+  "1839341": {
+    "answer": {
+      "company": "Core Scientific, Inc./tx  (CORZ, CORZR, CORZW, CORZZ)  (CIK 0001839341)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Glass Lewis Joins ISS In Recommending Core Scientific Shareholders Vote \"AGAINST\" Proposed Sale to CoreWeave",
+          "item_type": "mna",
+          "keywords": [
+            "merger",
+            "transaction",
+            "arrangement",
+            "acquisition",
+            "issuance",
+            "sale"
+          ],
+          "label": "Merger with CoreWeave",
+          "opposed_board": true
+        }
+      ]
     },
     "source": "claude-session"
   },
@@ -1099,6 +1561,47 @@
     },
     "source": "claude-session"
   },
+  "717954": {
+    "answer": {
+      "company": "UNIFIRST CORP  (UNF)  (CIK 0000717954)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "AGAINST",
+          "evidence": "All Three Leading Independent Proxy Advisors Recommend UniFirst Shareholders Vote \"FOR\" Engine Capital's New Director Candidates",
+          "item_type": "contested_director",
+          "keywords": [],
+          "label": "__dissident_slate__",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "718937": {
+    "answer": {
+      "company": "STAAR SURGICAL CO  (STAA)  (CIK 0000718937)",
+      "items": [
+        {
+          "adviser_rec": "AGAINST",
+          "board_rec": "FOR",
+          "evidence": "Glass, Lewis & Co. issued its recommendation that shareholders vote against the proposed sale of STAAR to Alcon.",
+          "item_type": "mna",
+          "keywords": [
+            "merger",
+            "transaction",
+            "arrangement",
+            "acquisition",
+            "issuance",
+            "sale"
+          ],
+          "label": "Merger with Alcon",
+          "opposed_board": true
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
   "720672": {
     "answer": {
       "company": "STIFEL FINANCIAL CORP  (SF, SFB, SF-PB, SF-PC, SF-PD)  (CIK 0000720672)",
@@ -1184,6 +1687,38 @@
           "opposed_board": true
         }
       ]
+    },
+    "source": "claude-session"
+  },
+  "866273": {
+    "answer": {
+      "company": "MATRIX SERVICE CO  (MTRX)  (CIK 0000866273)",
+      "items": [
+        {
+          "adviser_rec": "FOR",
+          "board_rec": "FOR",
+          "evidence": "Glass, Lewis & Co., LLC has recommended a vote FOR Proposal 5.",
+          "item_type": "equity_plan",
+          "keywords": [
+            "incentive plan",
+            "equity plan",
+            "stock plan",
+            "omnibus",
+            "award plan",
+            "equity incentive",
+            "2020"
+          ],
+          "label": "Amended 2020 Plan (Proposal 5)",
+          "opposed_board": false
+        }
+      ]
+    },
+    "source": "claude-session"
+  },
+  "876427": {
+    "answer": {
+      "company": "MONRO, INC.  (MNRO)  (CIK 0000876427)",
+      "items": []
     },
     "source": "claude-session"
   },

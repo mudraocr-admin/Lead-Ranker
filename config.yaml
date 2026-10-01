@@ -12,12 +12,15 @@ npx:
   filed_to: "2026-08-31"
   max_filings_per_family: 10
   max_mb_per_family: 150
+  # Board position per item = consensus of what the filers' for/against-management
+  # flags imply; below this share of agreement, fall back to the sponsor rule.
+  board_consensus: 0.75
   # Trust names matching this are skipped before download (no equity votes).
   skip_name_regex: "(?i)muni|bond|tax[- ]?(free|exempt)|money market|treasur|liquidity|government|cash reserve|income trust|floating rate|credit|target term|high yield|mortgage"
 
 # Answer keys: items where a proxy adviser publicly opposed the board.
 adviser_key:
-  search_from: "2026-01-01"
+  search_from: "2025-07-01"      # full N-PX year (Jul 2025 - Jun 2026)
   search_to: "2026-07-31"
   forms: ["DEFA14A", "DEFC14A", "DFAN14A"]
   max_docs: 400
@@ -56,9 +59,28 @@ scoring:
   partial_category: 0.90          # >=90% adviser agreement in one category, mixed in another
   min_items: 10                   # adviser-opposed items needed to call adviser following
   min_category_items: 3           # category rate only counted with >=3 items
+  thin_min_items: 3               # below min_items: with >=3 items, a 95% Wilson bound can rule out following;
+                                  # with fewer, the SAI decides. Both are labelled low confidence.
 
 ai:
   model: "claude-opus-5"
   # Without credentials the pipeline falls back to deterministic rules and
   # marks every such row ai_source="rules".
   enabled: true
+
+# Reference voters: every other fund filer of N-PX. Never scored; used to find
+# adviser-following funds and infer the adviser's call on more items.
+universe:
+  max_gb: 10                      # download cap for the one-time pull (cached afterwards)
+  enabled: true
+  workers: 6                      # parallel downloads, all within edgar.max_rps
+  panel:                          # a reference fund follows the adviser when it agrees ...
+    agreement: 0.90               # ... >=90% overall
+    min_items: 10                 # ... on >=10 key items
+    min_opposed: 3                # ... including >=3 where the adviser opposed the board
+    opposed_agreement: 0.75       # ... with >=75% agreement on those
+  holdout_rounds: 5               # validation: 5 rounds ...
+  holdout_share: 0.25             # ... each holding out 25% of key items
+  gate:                           # inferred recs are used only if the hold-out shows
+    opposed_accuracy: 0.90        # >=90% accuracy on board-opposed items
+    opposed_coverage: 0.30        # with >=30% of those items inferred

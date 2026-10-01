@@ -3,11 +3,23 @@
   "vote_rows": 1739728,
   "priority_rows": 282902,
   "key_items": {
-    "ISS": 96,
-    "GL": 70
+    "ISS": 133,
+    "GL": 99
   },
   "validation": {
     "ISS": {
+      "universe": {
+        "rounds": 5,
+        "held_out": 165,
+        "panel_size_avg": 30.0,
+        "coverage": 0.703030303030303,
+        "accuracy": 0.9310344827586207,
+        "opposed_held_out": 80,
+        "opposed_coverage": 0.675,
+        "opposed_accuracy": 0.8518518518518519,
+        "passed": false,
+        "panel_size": 58
+      },
       "headline": {
         "holdout_items": 8,
         "panel_size": 1,
@@ -18,22 +30,24 @@
       }
     },
     "GL": {
-      "headline": {
-        "holdout_items": 8,
-        "panel_size": 1,
-        "inferred": 0,
-        "correct": 0,
-        "accuracy": null,
-        "coverage": 0.0
+      "universe": {
+        "rounds": 5,
+        "held_out": 125,
+        "panel_size_avg": 17.4,
+        "coverage": 0.552,
+        "accuracy": 0.9710144927536232,
+        "opposed_held_out": 56,
+        "opposed_coverage": 0.35714285714285715,
+        "opposed_accuracy": 0.9,
+        "passed": true,
+        "panel_size": 17
       }
     }
   },
   "segments": {
-    "Judgment voter": 9,
+    "Judgment voter": 13,
     "Management follower": 8,
-    "Partial robo-voter": 5,
-    "Insufficient adviser data": 5,
-    "ISS follower": 2,
-    "Glass Lewis follower": 1
+    "Partial robo-voter": 6,
+    "ISS follower": 3
   }
 }

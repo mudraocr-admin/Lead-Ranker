@@ -48,6 +48,39 @@ def _cluster(texts: list[str], threshold: int) -> list[int]:
     return labels
 
 
+def match_universe(uni: pd.DataFrame, pri: pd.DataFrame) -> pd.DataFrame:
+    """Give reference-universe vote rows the item_key of the same ballot item in
+    the target families' data: exact description first, then the same fuzzy
+    comparison used to build the keys. Rows with no match are dropped."""
+    from .npx import map_priority
+
+    contested = set(zip(pri.cusip[pri.contested], pri.meeting_dt[pri.contested]))
+    uni = uni.assign(contested=[(c, m) in contested for c, m in zip(uni.cusip, uni.meeting_dt)])
+    uni = uni.assign(priority_category=map_priority(uni)).dropna(subset=["priority_category"])
+    cols = ["cusip", "meeting_dt", "priority_category", "description"]
+    known = pri[cols + ["item_key"]].drop_duplicates(cols)
+    exact = uni.merge(known, on=cols, how="left")
+
+    todo = exact[exact.item_key.isna()][cols + ["vote_categories"]].drop_duplicates(cols)
+    reps = known.assign(cmp=[director_name(d) if c == "contested_election" else norm_text(d)
+                             for d, c in zip(known.description, known.priority_category)])
+    groups = {k: g for k, g in reps.groupby(["cusip", "meeting_dt", "priority_category"])}
+    found = {}
+    for r in todo.itertuples(index=False):
+        g = groups.get((r.cusip, r.meeting_dt, r.priority_category))
+        if g is None:
+            continue
+        is_dir = r.priority_category == "contested_election"
+        t = director_name(r.description) if is_dir else norm_text(r.description)
+        scores = [fuzz.token_sort_ratio(t, c) for c in g.cmp]
+        best = max(range(len(scores)), key=scores.__getitem__)
+        if scores[best] >= (90 if is_dir else 88):
+            found[(r.cusip, r.meeting_dt, r.priority_category, r.description)] = g.item_key.iat[best]
+    miss = exact.item_key.isna()
+    exact.loc[miss, "item_key"] = [found.get(k) for k in zip(*(exact.loc[miss, c] for c in cols))]
+    return exact.dropna(subset=["item_key"])
+
+
 def assign_item_keys(pri: pd.DataFrame) -> pd.DataFrame:
     """Adds item_key and item_text to priority vote rows."""
     uniq = pri[["cusip", "meeting_dt", "priority_category", "description", "vote_categories"]].drop_duplicates(

@@ -22,8 +22,9 @@ You maintain the target list; the tool never picks firms.
 | `match` | no | regex over EDGAR N-PX filer names. Blank means "filer name starts with `family`". |
 | `ciks` | no | semicolon-separated filer CIKs. When given, they are used instead of `match`. |
 
-A warning is printed for any family that matches no N-PX filer. The 30 families
-currently in the file are **placeholders** from the first demo run; replace them.
+Any other columns (the current file carries `structure`, `pennant_fit`,
+`fit_rationale`, `fit_risk`) are ignored. A warning is printed for any family that
+matches no N-PX filer. The file holds the user's 50-family list (2026-10-01).
 
 ## Output: `output/priority_list.csv`
 
@@ -251,6 +252,8 @@ changes. Rebuilding them for a new year is ~210 company calls, about 125k input 
 25k output tokens.
 
 ## Results (run of 2026-10-01, placeholder list of 30 families)
+
+The 50-family list's results and problems are in `HANDOFF.md` until a clean rerun.
 
 **Keys** (Jul 2025–Jul 2026 soliciting material): ISS 133 items (64 oppose the board),
 9 set aside by the quote audit; Glass Lewis 99 items (45 oppose the board), none set

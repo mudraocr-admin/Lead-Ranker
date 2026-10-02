@@ -10,7 +10,7 @@ npx:
   index_quarter: "2026/QTR3"      # filings made Jul-Sep 2026
   filed_from: "2026-08-01"        # Aug 2026 filings = Jul 2025 - Jun 2026 votes
   filed_to: "2026-08-31"
-  max_filings_per_family: 10
+  max_trusts_per_family: 10          # N-PX filer CIKs per family; all of a trust's filings are read
   max_mb_per_family: 150
   # Board position per item = consensus of what the filers' for/against-management
   # flags imply; below this share of agreement, fall back to the sponsor rule.
@@ -31,27 +31,6 @@ advisers:
   ISS: {queries: ['"Institutional Shareholder Services"', '"ISS"']}
   GL:  {queries: ['"Glass Lewis"', '"Glass, Lewis"']}
 
-panel:
-  follower_agreement: 0.90        # >=90% agreement with the adviser ...
-  follower_min_items: 10          # ... on >=10 key items
-  infer_min_panel_votes: 5        # infer the adviser's rec when >=5 panel funds vote ...
-  infer_min_agreement: 0.90       # ... with >=90% agreement
-  holdout_items: 8                # validation hold-out (5-10)
-  seed: 7
-
-# Used only if the panel above comes out empty: a clearly labelled what-if that
-# demonstrates seed-and-expand and validation. Never used for segmentation.
-panel_sensitivity:
-  follower_agreement: 0.70
-  follower_min_items: 8
-
-sai:
-  forms: ["485BPOS"]
-  queries: ['"Institutional Shareholder Services"', '"Glass Lewis"']
-  search_from: "2025-07-01"
-  search_to: "2026-09-30"
-  max_docs_per_family: 3
-
 scoring:
   mgmt_follower: 0.90             # >=90% of votes with the board, all priority items (checked first)
   mgmt_min_items: 50              # priority items with a known board position needed for that call
@@ -60,7 +39,7 @@ scoring:
   min_items: 10                   # adviser-opposed items needed to call adviser following
   min_category_items: 3           # category rate only counted with >=3 items
   thin_min_items: 3               # below min_items: with >=3 items, a 95% Wilson bound can rule out following;
-                                  # with fewer, the SAI decides. Both are labelled low confidence.
+                                  # with fewer, no following is shown. Both are labelled low confidence.
 
 ai:
   model: "claude-opus-5"
@@ -68,19 +47,23 @@ ai:
   # marks every such row ai_source="rules".
   enabled: true
 
-# Reference voters: every other fund filer of N-PX. Never scored; used to find
-# adviser-following funds and infer the adviser's call on more items.
+# Reference voters: every registered fund (NPORT-P filer) that filed N-PX in the
+# window, minus the target families. Never scored; their votes drive the imputation.
 universe:
-  max_gb: 10                      # download cap for the one-time pull (cached afterwards)
-  enabled: true
   workers: 6                      # parallel downloads, all within edgar.max_rps
-  panel:                          # a reference fund follows the adviser when it agrees ...
-    agreement: 0.90               # ... >=90% overall
-    min_items: 10                 # ... on >=10 key items
-    min_opposed: 3                # ... including >=3 where the adviser opposed the board
-    opposed_agreement: 0.75       # ... with >=75% agreement on those
-  holdout_rounds: 5               # validation: 5 rounds ...
-  holdout_share: 0.25             # ... each holding out 25% of key items
-  gate:                           # inferred recs are used only if the hold-out shows
-    opposed_accuracy: 0.90        # >=90% accuracy on board-opposed items
-    opposed_coverage: 0.30        # with >=30% of those items inferred
+
+# Imputed ISS / Glass Lewis recommendations: Zytnick (2025), section 4 + appendix B.
+impute:
+  close_follower: 0.96            # round 1: close followers agree with the seed recs >= 96% ...
+  close_min_items: 5              # ... on >= 5 seed items in that board position,
+  close_min_opposed: 3            # ... >= 3 of them where the adviser opposed the board
+  min_cell_votes: 10              # a follow rate needs >= 10 labelled votes, else the next coarser one
+  threshold: 0.90                 # impute FOR at Pr >= 0.90, AGAINST at <= 0.10, else leave blank
+  folds: 5                        # validation: hide 1/5 of the quoted recs at a time
+  seed: 7
+  gate_opposed_accuracy: 0.90     # use imputed recs only if hidden board-opposed recs come back >= 90% right
+  audit:                          # set aside quotes the adviser's strict followers contradict:
+    follower: 0.80                # strict follower = >= 80% agreement ...
+    min_quotes: 15                # ... on >= 15 other board-opposed quotes
+    min_followers: 8              # >= 8 strict followers voted on the item ...
+    contradict: 0.75              # ... and >= 75% of them voted against the quote

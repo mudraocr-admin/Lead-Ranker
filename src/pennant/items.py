@@ -51,9 +51,13 @@ def _cluster(texts: list[str], threshold: int) -> list[int]:
 def match_universe(uni: pd.DataFrame, pri: pd.DataFrame) -> pd.DataFrame:
     """Give reference-universe vote rows the item_key of the same ballot item in
     the target families' data: exact description first, then the same fuzzy
-    comparison used to build the keys. Rows with no match are dropped."""
+    comparison used to build the keys. The target families' own filers and rows
+    with no match are dropped."""
     from .npx import map_priority
 
+    meetings = pd.MultiIndex.from_frame(pri[["cusip", "meeting_dt"]].drop_duplicates())
+    uni = uni[~uni.filer_cik.astype(str).isin(set(pri.trust_cik))
+              & pd.MultiIndex.from_frame(uni[["cusip", "meeting_dt"]]).isin(meetings)]
     contested = set(zip(pri.cusip[pri.contested], pri.meeting_dt[pri.contested]))
     uni = uni.assign(contested=[(c, m) in contested for c, m in zip(uni.cusip, uni.meeting_dt)])
     uni = uni.assign(priority_category=map_priority(uni)).dropna(subset=["priority_category"])

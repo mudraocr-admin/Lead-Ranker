@@ -1,94 +1,833 @@
 item_key,issuer,item_text,vote_source,from_votes,share,n_rows,sponsor_rule
-550021109|2026-06-25|shareholder_proposal|0,lululemon athletica inc.,Advisory vote to approve a stockholder proposal regarding declassification of the Board of Directors so that all directors are elected annually for one-year terms.,SECURITY HOLDER,FOR,1.0,59.0,AGAINST
-Q0429F119|2025-12-18|pay|3,ANZ Group Holdings Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,18.0,FOR
-Q4229W132|2025-11-11|pay|4,Goodman Group,Approve the Spill Resolution,ISSUER,AGAINST,1.0,16.0,FOR
-09239B109|2026-05-07|shareholder_proposal|0,"BlackLine, Inc.",The stockholder proposal regarding the declassification of the Board of Directors if properly presented at the Annual Meeting of Shareholders.,SECURITY HOLDER,FOR,1.0,16.0,AGAINST
-Q3018U109|2025-10-28|pay|1,CSL Limited,Approve Conditional Board Spill Resolution,ISSUER,AGAINST,1.0,13.0,FOR
-09260U109|2025-07-11|contested_election|0,BlackRock Capital Allocation Term Trust,To Elect Board Member Nominees: Arthur P. Steinmetz,ISSUER,FOR,1.0,6.0,AGAINST
-Y2685T131|2026-06-18|contested_election|0,Genco Shipping & Trading Limited,Genco Nominee: Arthur L. Regan,ISSUER,FOR,1.0,6.0,AGAINST
-Y2685T131|2026-06-18|contested_election|5,Genco Shipping & Trading Limited,Genco Nominee: John C. Wobensmith,ISSUER,FOR,1.0,6.0,AGAINST
-09260U109|2025-07-11|contested_election|1,BlackRock Capital Allocation Term Trust,To Elect Board Member Nominees: J. Phillip Holloman,ISSUER,FOR,1.0,6.0,AGAINST
-09260U109|2025-07-11|contested_election|2,BlackRock Capital Allocation Term Trust,To Elect Board Member Nominees: John M. Perlowski,ISSUER,FOR,1.0,6.0,AGAINST
-09260U109|2025-07-11|contested_election|4,BlackRock Capital Allocation Term Trust,To Elect Board Member Nominees: Robert Fairbairn,ISSUER,FOR,1.0,6.0,AGAINST
-Y2685T131|2026-06-18|contested_election|6,Genco Shipping & Trading Limited,Genco Nominee: Karin Y. Orsel,ISSUER,FOR,1.0,6.0,AGAINST
-09260U109|2025-07-11|contested_election|5,BlackRock Capital Allocation Term Trust,To Elect Board Member Nominees: W. Carl Kester,ISSUER,FOR,1.0,6.0,AGAINST
-112463104|2025-07-11|contested_election|13,Brookdale Senior Living Inc.,Election of Directors: Victoria L. Freed,ISSUER,AGAINST,1.0,6.0,FOR
-112463104|2025-07-11|contested_election|2,Brookdale Senior Living Inc.,Election of Directors: Elizabeth B. Mace,ISSUER,AGAINST,1.0,6.0,FOR
-112463104|2025-07-11|contested_election|7,Brookdale Senior Living Inc.,Election of Directors: Lee S. Wielansky,ISSUER,AGAINST,1.0,6.0,FOR
-Y2685T131|2026-06-18|contested_election|7,Genco Shipping & Trading Limited,Genco Nominee: Kathleen C. Haines,ISSUER,FOR,1.0,6.0,AGAINST
-Y2685T131|2026-06-18|contested_election|1,Genco Shipping & Trading Limited,Genco Nominee: Basil G. Mavroleon,ISSUER,FOR,1.0,6.0,AGAINST
-112463104|2025-07-11|contested_election|9,Brookdale Senior Living Inc.,Election of Directors: Mark Fioravanti,ISSUER,AGAINST,1.0,6.0,FOR
-112463104|2025-07-11|contested_election|5,Brookdale Senior Living Inc.,Election of Directors: Jordan R. Asher,ISSUER,AGAINST,1.0,6.0,FOR
-112463104|2025-07-11|contested_election|0,Brookdale Senior Living Inc.,Election of Directors: Claudia N. Drayton,ISSUER,AGAINST,1.0,6.0,FOR
-112463104|2025-07-11|contested_election|10,Brookdale Senior Living Inc.,Election of Directors: Paula J. Poskon,SECURITY HOLDER,FOR,1.0,6.0,AGAINST
-112463104|2025-07-11|contested_election|3,Brookdale Senior Living Inc.,Election of Directors: Frank J. Small,SECURITY HOLDER,FOR,1.0,6.0,AGAINST
-112463104|2025-07-11|contested_election|4,Brookdale Senior Living Inc.,Election of Directors: Ivona Smith,SECURITY HOLDER,FOR,1.0,6.0,AGAINST
-112463104|2025-07-11|contested_election|12,Brookdale Senior Living Inc.,Election of Directors: Steven L. Vick,SECURITY HOLDER,FOR,1.0,6.0,AGAINST
-112463104|2025-07-11|contested_election|8,Brookdale Senior Living Inc.,Election of Directors: Lori B. Wittman,SECURITY HOLDER,FOR,1.0,6.0,AGAINST
-112463104|2025-07-11|contested_election|11,Brookdale Senior Living Inc.,Election of Directors: Steven J. Insoft,SECURITY HOLDER,FOR,1.0,6.0,AGAINST
-09260U109|2025-07-11|contested_election|3,BlackRock Capital Allocation Term Trust,To Elect Board Member Nominees: R. Glenn Hubbard,ISSUER,FOR,1.0,6.0,AGAINST
-Y2685T131|2026-06-18|contested_election|8,Genco Shipping & Trading Limited,Genco Nominee: Paramita Das,ISSUER,FOR,1.0,6.0,AGAINST
-Q0604U105|2025-10-23|pay|2,ASX Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,4.0,FOR
-Q60976109|2025-11-20|pay|0,Mineral Resources Limited,Approve Conditional Board Spill Meeting Resolution,ISSUER,AGAINST,1.0,4.0,FOR
-023586100|2025-08-21|shareholder_proposal|0,U-Haul Holding Company,"A proposal received from Company stockholder proponents to ratify and affirm the decisions and actions taken by the Board of Directors and executive officers of the Company with respect to U-HAUL HOLDING COMPANY, its subsidiaries, and its various constituencies for the fiscal year ended March 31, 2025.",SECURITY HOLDER,FOR,1.0,4.0,AGAINST
-Q3983N155|2026-05-07|pay|1,Helia Group Ltd.,Approve the Spill Resolution,ISSUER,AGAINST,1.0,4.0,FOR
-Q318AK102|2026-05-27|pay|5,Dicker Data Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,4.0,FOR
-F8333P109|2026-06-04|pay|1,Vusion,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,3.0,FOR
-Q6951V109|2025-11-27|pay|0,NRW Holdings Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,3.0,FOR
-Q8068F100|2025-10-22|pay|1,Reliance Worldwide Corporation Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,3.0,FOR
-68373J104|2026-06-03|shareholder_proposal|0,Open Lending Corporation,To approve a stockholder proposal regarding the declassification of our board of directors,SECURITY HOLDER,FOR,1.0,3.0,AGAINST
-35137L204|2025-11-14|pay|0,FOX CORPORATION,Improve Executive Compensation Program.,ISSUER,AGAINST,1.0,3.0,FOR
-Q496B9100|2025-11-20|pay|4,IPH Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,3.0,FOR
-|2026-03-26|pay|40,Argan SA,Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,2.0,FOR
-13765N107|2025-12-12|contested_election|2,"CANNAE HOLDINGS, INC.",CARRONADE CAPITAL NOMINEE: Chérie L. Schaible,ISSUER,FOR,1.0,2.0,AGAINST
-96208T104|2026-05-05|contested_election|6,WEX INC.,IMPACTIVE NOMINEE: Kurt P. Adams,ISSUER,FOR,1.0,2.0,AGAINST
-Q52522101|2025-10-30|pay|0,Kelsian Group Limited,Approve Conditional Board Spill,ISSUER,AGAINST,1.0,2.0,FOR
-Q6813N105|2025-11-07|pay|0,Nine Entertainment Co. Holdings Limited,Approve Conditional Board Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
-Q48215109|2025-10-21|pay|0,IDP Education Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
-Q17548167|2025-10-15|pay|1,Bravura Solutions Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
-Q0R979107|2025-10-23|pay|1,Australian Clinical Labs Limited,Approve the Spill Resolution and EGM within 90 Days,ISSUER,AGAINST,1.0,2.0,FOR
+550021109|2026-06-25|shareholder_proposal|1,lululemon athletica inc.,Advisory vote to approve a stockholder proposal regarding declassification of the Board of Directors so that all directors are elected annually for one-year terms.,SECURITY HOLDER,FOR,1.0,94.0,AGAINST
+Q0429F119|2025-12-18|pay|3,ANZ Group Holdings Limited,Approve the Spill Resolution,ISSUER,AGAINST,0.9574468085106383,47.0,FOR
+Q4229W132|2025-11-11|pay|5,Goodman Group,Approve the Spill Resolution,ISSUER,AGAINST,0.9285714285714286,42.0,FOR
+Q3018U109|2025-10-28|pay|1,CSL Limited,Approve Conditional Board Spill Resolution,ISSUER,AGAINST,0.9722222222222222,36.0,FOR
+09239B109|2026-05-07|shareholder_proposal|1,"BlackLine, Inc.",The stockholder proposal regarding the declassification of the Board of Directors if properly presented at the Annual Meeting of Shareholders.,SECURITY HOLDER,FOR,1.0,36.0,AGAINST
+Y2685T131|2026-06-18|contested_election|11,Genco Shipping & Trading Limited,Genco Nominee: Kathleen C. Haines,ISSUER,FOR,0.9411764705882353,34.0,AGAINST
+Y2685T131|2026-06-18|contested_election|1,Genco Shipping & Trading Limited,Genco Nominee: Basil G. Mavroleon,ISSUER,FOR,0.9705882352941176,34.0,AGAINST
+Y2685T131|2026-06-18|contested_election|10,Genco Shipping & Trading Limited,Genco Nominee: Karin Y. Orsel,ISSUER,FOR,0.9411764705882353,34.0,AGAINST
+Y2685T131|2026-06-18|contested_election|0,Genco Shipping & Trading Limited,Genco Nominee: Arthur L. Regan,ISSUER,FOR,0.9705882352941176,34.0,AGAINST
+Y2685T131|2026-06-18|contested_election|9,Genco Shipping & Trading Limited,Genco Nominee: John C. Wobensmith,ISSUER,FOR,0.9411764705882353,34.0,AGAINST
+Y2685T131|2026-06-18|contested_election|12,Genco Shipping & Trading Limited,Genco Nominee: Paramita Das,ISSUER,FOR,0.9411764705882353,34.0,AGAINST
+Q0604U105|2025-10-23|pay|4,ASX Limited,Approve the Spill Resolution,ISSUER,AGAINST,0.9666666666666667,30.0,FOR
+68373J104|2026-06-03|shareholder_proposal|0,Open Lending Corporation,To approve a stockholder proposal regarding the declassification of our board of directors,SECURITY HOLDER,FOR,1.0,25.0,AGAINST
+023586100|2025-08-21|shareholder_proposal|0,U-Haul Holding Company,"A proposal received from Company stockholder proponents to ratify and affirm the decisions and actions taken by the Board of Directors and executive officers of the Company with respect to U-HAUL HOLDING COMPANY, its subsidiaries, and its various constituencies for the fiscal year ended March 31, 2025.",SECURITY HOLDER,FOR,0.9523809523809523,21.0,AGAINST
+35137L204|2025-11-14|pay|0,FOX CORPORATION,Improve Executive Compensation Program.,ISSUER,AGAINST,1.0,19.0,FOR
+Q60976109|2025-11-20|pay|0,Mineral Resources Limited,Approve Conditional Board Spill Meeting Resolution,ISSUER,AGAINST,1.0,15.0,FOR
+Q80528138|2025-11-21|pay|1,Reece Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,10.0,FOR
+126650100|2026-05-14|shareholder_proposal|0,CVS Health Corporation,Reduce Ownership Threshold for Shareholders to Request Action by Written Consent to 10%,SECURITY HOLDER,FOR,0.7777777777777778,9.0,AGAINST
+913903100|2026-05-20|shareholder_proposal|0,"Universal Health Services, Inc.",Adopt Policy to Publicly Disclose Workforce Diversity,SECURITY HOLDER,FOR,0.7777777777777778,9.0,AGAINST
+02079K305|2026-06-05|shareholder_proposal|3,Alphabet Inc.,Report on Alignment of Water Usage Policies and Practices With AI Development,SECURITY HOLDER,FOR,0.7777777777777778,9.0,AGAINST
+02079K305|2026-06-05|shareholder_proposal|7,Alphabet Inc.,Report on Meeting GHG Goals Given Rising Energy Demand From AI and Data Centers,SECURITY HOLDER,FOR,0.7777777777777778,9.0,AGAINST
+060505104|2026-05-04|shareholder_proposal|1,Bank of America Corporation,Require Independent Board Chair,SECURITY HOLDER,FOR,0.7777777777777778,9.0,AGAINST
+46266C105|2026-04-23|shareholder_proposal|1,IQVIA Holdings Inc.,Require Independent Board Chair,SECURITY HOLDER,FOR,0.7777777777777778,9.0,AGAINST
+02079K305|2026-06-05|shareholder_proposal|6,Alphabet Inc.,Report on Improper Usage of External Data to Develop AI Products,SECURITY HOLDER,FOR,0.7777777777777778,9.0,AGAINST
+02079K305|2026-06-05|shareholder_proposal|19,Alphabet Inc.,Update Audit Committee Charter to Provide AI-Related Risk Oversight,SECURITY HOLDER,FOR,0.7777777777777778,9.0,AGAINST
+02079K305|2026-06-05|shareholder_proposal|4,Alphabet Inc.,Report on Customer Data Privacy Risks,SECURITY HOLDER,FOR,0.7777777777777778,9.0,AGAINST
+02079K305|2026-06-05|shareholder_proposal|1,Alphabet Inc.,Establish Committee and Issue Report on Risks Related to Lack of Viewpoint Diversity,SECURITY HOLDER,FOR,0.7777777777777778,9.0,AGAINST
+91324P102|2026-06-01|shareholder_proposal|1,UnitedHealth Group Incorporated,Require Independent Board Chair,SECURITY HOLDER,FOR,0.75,8.0,AGAINST
+099724106|2026-04-29|shareholder_proposal|0,BorgWarner Inc.,Provide Right to Act by Written Consent,SECURITY HOLDER,FOR,0.875,8.0,AGAINST
+Q6813N105|2025-11-07|pay|1,Nine Entertainment Co. Holdings Limited,Approve Conditional Board Spill Resolution,ISSUER,AGAINST,1.0,7.0,FOR
+Q6951V109|2025-11-27|pay|0,NRW Holdings Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,7.0,FOR
+Q3983N155|2026-05-07|pay|1,Helia Group Ltd.,Approve the Spill Resolution,ISSUER,AGAINST,1.0,7.0,FOR
+688239201|2026-05-05|shareholder_proposal|0,Oshkosh Corporation,Require a Majority Vote Standard for the Election of Directors with Mandatory Resignation Policy,SECURITY HOLDER,FOR,0.8333333333333334,6.0,AGAINST
+|2026-05-08|pay|78,HSBC Holdings plc,Shareholder requisitioned resolution: Midland Clawback Campaign 1,ISSUER,AGAINST,1.0,6.0,FOR
+13765N107|2025-12-12|contested_election|2,"CANNAE HOLDINGS, INC.",CARRONADE CAPITAL NOMINEE: Chérie L. Schaible,ISSUER,FOR,0.8333333333333334,6.0,AGAINST
+759509102|2026-05-20|shareholder_proposal|1,"Reliance, Inc.",Require a Majority Vote Standard for the Election of Directors with Mandatory Resignation Policy,SECURITY HOLDER,FOR,0.8,5.0,AGAINST
+Q9239H108|2025-10-23|pay|1,Perpetual Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,5.0,FOR
+Q8068F100|2025-10-22|pay|1,Reliance Worldwide Corporation Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,5.0,FOR
+Q496B9100|2025-11-20|pay|4,IPH Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,5.0,FOR
+36242H872|2026-05-11|contested_election|2,Gabelli Dividend & Income Trust,"Election of Trustees Nominees for election by holders of Common Shares and Preferred Shares voting together as a single class: Frank J. Fahrenkopf, Jr.",ISSUER,FOR,1.0,4.0,AGAINST
+34354P105|2026-05-14|shareholder_proposal|0,Flowserve Corporation,Allow Advisory Vote on Say on Stock Repurchases,SECURITY HOLDER,FOR,0.75,4.0,AGAINST
+36242H872|2026-05-11|contested_election|1,Gabelli Dividend & Income Trust,Election of Trustees Nominees for election by holders of Common Shares and Preferred Shares voting together as a single class: Colin J. Kilrain,ISSUER,FOR,1.0,4.0,AGAINST
+Q48215109|2025-10-21|pay|0,IDP Education Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,4.0,FOR
+Q80529136|2025-10-23|pay|1,Articore Group Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,4.0,FOR
+Q3663F100|2025-10-24|pay|3,EVT Limited,Approve Spill Resolution,ISSUER,AGAINST,1.0,4.0,FOR
+36242H872|2026-05-11|contested_election|3,Gabelli Dividend & Income Trust,Election of Trustees Nominees for election by holders of Common Shares and Preferred Shares voting together as a single class: Salvatore J. Zizza,ISSUER,FOR,1.0,4.0,AGAINST
+Q8571C107|2025-11-24|pay|0,Southern Cross Media Group Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,4.0,FOR
+Q318AK102|2026-05-27|pay|6,Dicker Data Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,4.0,FOR
+F7440W163|2026-04-29|pay|1,GL Events SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,4.0,FOR
+36242H872|2026-05-11|contested_election|0,Gabelli Dividend & Income Trust,Election of Trustees Nominees for election by holders of Preferred Shares voting as a separate class: Anthony S. Colavita,ISSUER,FOR,1.0,4.0,AGAINST
+Q52522101|2025-10-30|pay|1,Kelsian Group Limited,Approve Conditional Board Spill,ISSUER,AGAINST,1.0,3.0,FOR
+Q7128A101|2025-10-28|pay|2,Omni Bridgeway Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,3.0,FOR
+Q17548167|2025-10-15|pay|2,Bravura Solutions Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,3.0,FOR
+Q0R979107|2025-10-23|pay|2,Australian Clinical Labs Limited,Approve the Spill Resolution and EGM within 90 Days,ISSUER,AGAINST,1.0,3.0,FOR
+550021109|2026-06-25|shareholder_proposal|0,lululemon athletica inc.,Declassify the Board of Directors,SECURITY HOLDER,FOR,1.0,3.0,AGAINST
+Q98665104|2025-08-21|pay|1,Xero Limited,Approve Remuneration Report,ISSUER,AGAINST,1.0,2.0,FOR
+Q49361100|2025-10-23|pay|3,Insurance Australia Group Limited,Approve Increase to the Independent Non-Executive Director Fee Pool,ISSUER,AGAINST,1.0,2.0,FOR
+G4253H119|2025-10-29|pay|3,James Hardie Industries Plc,Approve Increase in Non-Executive Director Fee Pool,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-03-15|pay|4,Melisron Ltd.,"Approve Extended and Amended Employment Terms of Ofir Sarid, CEO",ISSUER,AGAINST,1.0,2.0,FOR
+04638F108|2025-07-08|contested_election|9,"ASTRONOVA, INC.",ASKELADDEN NOMINEE: Shawn Kravetz,ISSUER,FOR,1.0,2.0,AGAINST
+04638F108|2025-07-08|contested_election|7,"ASTRONOVA, INC.",ASKELADDEN NOMINEE: Ryan Oviatt,ISSUER,FOR,1.0,2.0,AGAINST
+04638F108|2025-07-08|contested_election|8,"ASTRONOVA, INC.",ASKELADDEN NOMINEE: Samir Patel,ISSUER,FOR,1.0,2.0,AGAINST
+04638F108|2025-07-08|contested_election|1,"ASTRONOVA, INC.",ASKELADDEN NOMINEE: Boyd Roberts,ISSUER,FOR,1.0,2.0,AGAINST
+04638F108|2025-07-08|contested_election|4,"ASTRONOVA, INC.",ASKELADDEN NOMINEE: Jeff Sands,ISSUER,FOR,1.0,2.0,AGAINST
+04638F108|2025-07-08|contested_election|0,"ASTRONOVA, INC.",COMPANY NOMINEE: Alexis Michas,ISSUER,AGAINST,1.0,2.0,FOR
+Q73763106|2025-11-27|pay|1,Peet Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+F3145H130|2026-05-27|pay|0,Eramet SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,2.0,FOR
+F97486108|2026-06-03|pay|3,Viel & Cie SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,2.0,FOR
+F59766109|2026-06-25|pay|1,Manitou BF SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,2.0,FOR
+404280406|2026-05-08|pay|2,HSBC HOLDINGS PLC,Shareholder requisitioned resolution: Midland Clawback Campaign 1 (special resolution),ISSUER,AGAINST,1.0,2.0,FOR
+855244109|2026-03-25|shareholder_proposal|1,Starbucks Corporation,Adopt Simple Majority Vote,SECURITY HOLDER,FOR,1.0,2.0,AGAINST
+30303M102|2026-05-27|pay|3,"Meta Platforms, Inc.",A shareholder proposal regarding annual vote regarding executive pay.,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-05-13|pay|41,"Equinix, Inc.","Approval, by a non-binding advisory vote, of the compensation of our named executive officers",ISSUER,AGAINST,1.0,2.0,FOR
+|2026-04-23|shareholder_proposal|3,Johnson & Johnson,Independent Board Chair,SECURITY HOLDER,FOR,1.0,2.0,AGAINST
+Q77534107|2025-11-13|pay|10,Propel Funeral Partners Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+Q80825187|2025-11-27|pay|0,Retail Food Group Limited,Approve Contingent Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+Q4548G107|2025-10-30|pay|1,Healius Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-05-12|shareholder_proposal|50,ConocoPhillips,Stockholder Proposal - Independent Board Chairman.,SECURITY HOLDER,FOR,1.0,2.0,AGAINST
+|2026-05-13|pay|97,Carmila SA,Approve Remuneration Policy of Vice-CEO,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-04-15|pay|13,Adobe Inc.,Advisory Vote to Approve Named Executive Officer Compensation,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-04-23|pay|122,Beijer Ref AB,Approve Performance Share Matching Plan LTI 2026 for Key Employees,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-05-19|pay|87,Telenor ASA,Approve Remuneration Statement (Advisory Vote),ISSUER,AGAINST,1.0,2.0,FOR
+76680R206|2025-12-31|pay|1,"RingCentral, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-03-26|pay|47,Argan SA,Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,2.0,FOR
+88160R101|2025-11-06|shareholder_proposal|11,"TESLA, INC.",A shareholder proposal regarding Board authorization of an investment in xAl.,SECURITY HOLDER,FOR,1.0,2.0,AGAINST
+04638F108|2025-07-08|contested_election|3,"ASTRONOVA, INC.",COMPANY NOMINEE: Gregory Woods,ISSUER,AGAINST,1.0,2.0,FOR
+04638F108|2025-07-08|contested_election|6,"ASTRONOVA, INC.",COMPANY NOMINEE: Richard Warzala,ISSUER,AGAINST,1.0,2.0,FOR
+04638F108|2025-07-08|contested_election|10,"ASTRONOVA, INC.",COMPANY NOMINEE: Yvonne Schlaeppi,ISSUER,AGAINST,1.0,2.0,FOR
+04638F108|2025-07-08|contested_election|5,"ASTRONOVA, INC.",COMPANY NOMINEE: Mitchell Quain,ISSUER,AGAINST,1.0,2.0,FOR
+682189105|2026-05-14|shareholder_proposal|0,ON Semiconductor Corporation,Adopt Simple Majority Vote,SECURITY HOLDER,FOR,1.0,2.0,AGAINST
+89377M109|2026-05-20|pay|3,"TransMedics Group, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,2.0,FOR
+|2025-11-18|pay|10,Northern Star Resources Limited,Approve Issuance of FY26 LTI Performance Rights to Stuart Tonkin,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-03-09|pay|5,Phoenix Financial Ltd.,Approve Updated Compensation Policy for the Directors and Officers of the Company,ISSUER,AGAINST,1.0,2.0,FOR
+74736K101|2025-08-13|pay|5,"Qorvo, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,2.0,FOR
+74736K101|2025-08-13|pay|0,"Qorvo, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,2.0,FOR
+04638F108|2025-07-08|contested_election|2,"ASTRONOVA, INC.",COMPANY NOMINEE: Darius Nevin,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-05-19|pay|63,Telenor ASA,Approve Equity Plan Financing Through Repurchase of Shares,ISSUER,AGAINST,1.0,2.0,FOR
+Q53502102|2025-11-21|pay|1,Kogan.com Limited,Approve Conditional Board Spill Meeting Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-05-28|pay|65,bioMerieux SA,Approve Remuneration Policy of Chairman of the Board,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-05-28|pay|28,D'Ieteren Group,Approve Changes to the Remuneration Policy,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-05-28|pay|67,D'Ieteren Group,Approve Remuneration of the Vice-Chairman of the Board of Directors,ISSUER,AGAINST,1.0,2.0,FOR
+Y767A4123|2025-09-01|pay|0,"Shandong Bohui Paper Industry Co., Ltd.",Approve Authorization of the Board to Handle All Matters Related to the Company's Navigator Employee Share Purchase Plan,ISSUER,AGAINST,1.0,2.0,FOR
+Y1294N105|2026-05-19|pay|1,"Sumec Corp., Ltd.",Approve Remuneration of Independent Directors,ISSUER,AGAINST,1.0,2.0,FOR
 F0378V109|2026-03-26|pay|0,Argan SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,2.0,FOR
-96208T104|2026-05-05|contested_election|8,WEX INC.,COMPANY NOMINEE OPPOSED BY IMPACTIVE: Melissa Smith,ISSUER,AGAINST,1.0,2.0,FOR
-F7440W163|2026-04-29|pay|0,GL Events SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,2.0,FOR
-F59766109|2026-06-25|pay|0,Manitou BF SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,2.0,FOR
-F64308111|2026-06-09|pay|0,Nanobiotix SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,2.0,FOR
-Q80528138|2025-11-21|pay|0,Reece Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
-Q8571C107|2025-11-24|pay|0,Southern Cross Media Group Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
-Q9239H108|2025-10-23|pay|0,Perpetual Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
-Q3663F100|2025-10-24|pay|2,EVT Limited,Approve Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
-Q7128A101|2025-10-28|pay|2,Omni Bridgeway Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
-Q4548G107|2025-10-30|pay|0,Healius Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
-96208T104|2026-05-05|contested_election|10,WEX INC.,COMPANY NOMINEE OPPOSED BY IMPACTIVE: Stephen Smith,ISSUER,AGAINST,1.0,2.0,FOR
-96208T104|2026-05-05|contested_election|4,WEX INC.,IMPACTIVE NOMINEE: Ellen R. Alemany,ISSUER,FOR,1.0,2.0,AGAINST
-96208T104|2026-05-05|contested_election|9,WEX INC.,COMPANY NOMINEE OPPOSED BY IMPACTIVE: Nancy Altobello,ISSUER,AGAINST,1.0,2.0,FOR
-96208T104|2026-05-05|contested_election|7,WEX INC.,IMPACTIVE NOMINEE: Lauren Taylor Wolfe,ISSUER,FOR,1.0,2.0,AGAINST
-Q4978A109|2026-05-21|pay|6,ioneer Ltd.,Approve the Spill Resolution,ISSUER,AGAINST,1.0,1.0,FOR
-Q8458J100|2026-02-17|pay|2,Select Harvests Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,1.0,FOR
-Q8719T103|2025-11-25|pay|0,The Star Entertainment Group Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,1.0,FOR
+34964C106|2026-05-05|shareholder_proposal|0,"Fortune Brands Innovations, Inc.",Declassify the Board of Directors,SECURITY HOLDER,FOR,1.0,2.0,AGAINST
+15101Q207|2026-05-19|pay|2,Celestica Inc.,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,2.0,FOR
+Q8458J100|2026-02-17|pay|3,Select Harvests Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,2.0,FOR
+939653101|2025-10-30|mna|1,Elme Communities,Approve Plan of Liquidation,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-05-12|pay|35,Equinor ASA,Authorize Share Repurchase Program in Connection With Employee Remuneration Programs,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-04-16|pay|81,Canadian Imperial Bank of Commerce,Shareholder Proposal Regarding Executive Compensation Policy,ISSUER,AGAINST,1.0,2.0,FOR
+|2026-05-27|shareholder_proposal|10,"Meta Platforms, Inc.",A shareholder proposal regarding report on Al data usage oversight.,SECURITY HOLDER,FOR,1.0,2.0,AGAINST
+531914109|2025-09-30|contested_election|10,"Lifeway Foods, Inc.","The Board Removal Proposal: To remove each director of the Company, including Julie Smolyansky, Juan Carlos Dalto, Jody Levy, Dorri McWhorter, Perfecto Sanchez, Jason Scher, Pol Sikar and any other director appointed by the Board on or after June 15, 2024 and prior to this Proposal becoming effective, subject to the election of at least one Nominee pursuant to the Director Election Proposal below: Perfecto Sanchez",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+531914109|2025-09-30|contested_election|4,"Lifeway Foods, Inc.","The Board Removal Proposal: To remove each director of the Company, including Julie Smolyansky, Juan Carlos Dalto, Jody Levy, Dorri McWhorter, Perfecto Sanchez, Jason Scher, Pol Sikar and any other director appointed by the Board on or after June 15, 2024 and prior to this Proposal becoming effective, subject to the election of at least one Nominee pursuant to the Director Election Proposal below: Jason Scher",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+531914109|2025-09-30|contested_election|11,"Lifeway Foods, Inc.","The Board Removal Proposal: To remove each director of the Company, including Julie Smolyansky, Juan Carlos Dalto, Jody Levy, Dorri McWhorter, Perfecto Sanchez, Jason Scher, Pol Sikar and any other director appointed by the Board on or after June 15, 2024 and prior to this Proposal becoming effective, subject to the election of at least one Nominee pursuant to the Director Election Proposal below: Pol Sikar",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+531914109|2025-09-30|contested_election|2,"Lifeway Foods, Inc.","The Director Election Proposal: To elect each of Edward Smolyansky, Ludmila Smolyansky, Richard Beleutz, Cindy Curry, Michael Leydervuder, George Sent and Robert Whalen (each a ""Nominee""), to serve as directors of the Company until the Company's next annual meeting of shareholders and until their respective successors are duly elected and qualified (or, if any such Nominee is unable or unwilling to serve as a director of the Company, or if the Board changes the number of directorships to be a number other than seven, the persons designated as Nominees by the then-remaining Nominee(s)), subject to the approval of the Board Removal Proposal: Edward Smolyansky",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+531914109|2025-09-30|contested_election|8,"Lifeway Foods, Inc.","The Director Election Proposal: To elect each of Edward Smolyansky, Ludmila Smolyansky, Richard Beleutz, Cindy Curry, Michael Leydervuder, George Sent and Robert Whalen (each a ""Nominee""), to serve as directors of the Company until the Company's next annual meeting of shareholders and until their respective successors are duly elected and qualified (or, if any such Nominee is unable or unwilling to serve as a director of the Company, or if the Board changes the number of directorships to be a number other than seven, the persons designated as Nominees by the then-remaining Nominee(s)), subject to the approval of the Board Removal Proposal: Ludmila Smolyansky",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+531914109|2025-09-30|contested_election|12,"Lifeway Foods, Inc.","The Director Election Proposal: To elect each of Edward Smolyansky, Ludmila Smolyansky, Richard Beleutz, Cindy Curry, Michael Leydervuder, George Sent and Robert Whalen (each a ""Nominee""), to serve as directors of the Company until the Company's next annual meeting of shareholders and until their respective successors are duly elected and qualified (or, if any such Nominee is unable or unwilling to serve as a director of the Company, or if the Board changes the number of directorships to be a number other than seven, the persons designated as Nominees by the then-remaining Nominee(s)), subject to the approval of the Board Removal Proposal: Richard Beleutz",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+531914109|2025-09-30|contested_election|0,"Lifeway Foods, Inc.","The Director Election Proposal: To elect each of Edward Smolyansky, Ludmila Smolyansky, Richard Beleutz, Cindy Curry, Michael Leydervuder, George Sent and Robert Whalen (each a ""Nominee""), to serve as directors of the Company until the Company's next annual meeting of shareholders and until their respective successors are duly elected and qualified (or, if any such Nominee is unable or unwilling to serve as a director of the Company, or if the Board changes the number of directorships to be a number other than seven, the persons designated as Nominees by the then-remaining Nominee(s)), subject to the approval of the Board Removal Proposal: Cindy Curry",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+531914109|2025-09-30|contested_election|9,"Lifeway Foods, Inc.","The Director Election Proposal: To elect each of Edward Smolyansky, Ludmila Smolyansky, Richard Beleutz, Cindy Curry, Michael Leydervuder, George Sent and Robert Whalen (each a ""Nominee""), to serve as directors of the Company until the Company's next annual meeting of shareholders and until their respective successors are duly elected and qualified (or, if any such Nominee is unable or unwilling to serve as a director of the Company, or if the Board changes the number of directorships to be a number other than seven, the persons designated as Nominees by the then-remaining Nominee(s)), subject to the approval of the Board Removal Proposal: Michael Leydervuder",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+531914109|2025-09-30|contested_election|3,"Lifeway Foods, Inc.","The Director Election Proposal: To elect each of Edward Smolyansky, Ludmila Smolyansky, Richard Beleutz, Cindy Curry, Michael Leydervuder, George Sent and Robert Whalen (each a ""Nominee""), to serve as directors of the Company until the Company's next annual meeting of shareholders and until their respective successors are duly elected and qualified (or, if any such Nominee is unable or unwilling to serve as a director of the Company, or if the Board changes the number of directorships to be a number other than seven, the persons designated as Nominees by the then-remaining Nominee(s)), subject to the approval of the Board Removal Proposal: George Sent",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+531914109|2025-09-30|contested_election|13,"Lifeway Foods, Inc.","The Director Election Proposal: To elect each of Edward Smolyansky, Ludmila Smolyansky, Richard Beleutz, Cindy Curry, Michael Leydervuder, George Sent and Robert Whalen (each a ""Nominee""), to serve as directors of the Company until the Company's next annual meeting of shareholders and until their respective successors are duly elected and qualified (or, if any such Nominee is unable or unwilling to serve as a director of the Company, or if the Board changes the number of directorships to be a number other than seven, the persons designated as Nominees by the then-remaining Nominee(s)), subject to the approval of the Board Removal Proposal: Robert Whalen",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-09|pay|45,Royal Bank of Canada,Shareholder Proposal Regarding Executive Compensation Policy,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-14|pay|45,The Bank of Nova Scotia,Shareholder Proposal Regarding Executive Compensation Policy,ISSUER,AGAINST,1.0,1.0,FOR
+281020107|2026-04-23|pay|2,Edison International,Shareholder Proposal Regarding Retention of Equity,ISSUER,AGAINST,1.0,1.0,FOR
+375558103|2026-04-30|pay|5,"Gilead Sciences, Inc.","To vote on a stockholder proposal requesting a report on the risks of ESG and DEI executive compensation metrics, if properly presented at the Annual Meeting.",ISSUER,AGAINST,1.0,1.0,FOR
+14040H105|2026-05-08|pay|1,Capital One Financial Corporation,Stockholder proposal to require a shareholder vote on golden parachute arrangements.,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-20|pay|132,Credit Agricole S.A.,SHP Regarding Discount on Equity Remuneration for Employees,ISSUER,AGAINST,1.0,1.0,FOR
+92343V104|2026-05-21|pay|3,Verizon Communications Inc.,Risks of non-fiduciary executive compensation metrics,ISSUER,AGAINST,1.0,1.0,FOR
+020002101|2026-05-22|pay|2,The Allstate Corporation,Shareholder proposal requesting a report on use of ESG and DEI metrics in executive compensation.,ISSUER,AGAINST,1.0,1.0,FOR
+256163106|2026-06-01|pay|4,"DocuSign, Inc.","A stockholder proposal to report on the risks of non-fiduciary executive compensation metrics, if properly presented at the meeting",ISSUER,AGAINST,1.0,1.0,FOR
+086516101|2026-06-12|pay|1,"Best Buy Co., Inc.","To vote on a shareholder proposal entitled ""Report on Risks of Non-Fiduciary Executive Compensation Metrics""",ISSUER,AGAINST,1.0,1.0,FOR
+G415A8104|2026-05-19|mna|0,Greencoat UK Wind PLC,Approve Discontinuation of Company as Closed-Ended Investment Company,ISSUER,AGAINST,1.0,1.0,FOR
+22266T109|2026-06-11|pay|1,"Coupang, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+443573100|2026-06-15|pay|0,"HubSpot, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+86366E106|2026-06-17|pay|1,Structure Therapeutics Inc.,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+29786A106|2026-06-09|pay|0,"Etsy, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+16679L109|2026-06-10|pay|0,"Chewy, Inc.","To approve, on a non-binding, advisory basis, the compensation of the Company's named executive officers.",ISSUER,AGAINST,1.0,1.0,FOR
+00217D100|2026-06-15|pay|0,"AST Spacemobile, Inc.","To approve the Amended and Restated AST SpaceMobile, Inc. 2024 Incentive Award Plan to increase the number of shares of the Company's Class A Common Stock available for issuance thereunder and to extend the term of the plan.",ISSUER,AGAINST,1.0,1.0,FOR
+30063P105|2026-06-30|pay|0,Exact Sciences Corporation,"Proposal to approve, on an advisory (nonbinding) basis, the compensation that may be paid or become payable to Exact Sciences Corporation's named executive officers that is based on or otherwise related to the Merger Agreement and the transactions contemplated by the Merger Agreement (the ""Compensation Proposal"").",ISSUER,AGAINST,1.0,1.0,FOR
+Q3526H103|2025-10-16|pay|3,Enero Group Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,1.0,FOR
 Q0456H103|2026-05-22|pay|3,Appen Limited,Approve the Spill Resolution,ISSUER,AGAINST,1.0,1.0,FOR
-Q73763106|2025-11-27|pay|0,Peet Limited,Approve Conditional Spill Resolution,ISSUER,AGAINST,1.0,1.0,FOR
-F9635C101|2026-06-25|pay|0,Valneva SE,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
 759530108|2026-04-23|shareholder_proposal|0,RELX PLC,Approve 14 day notice period for general meetings (To be proposed as a Special Resolution),SECURITY HOLDER,FOR,1.0,1.0,AGAINST
-F5586F101|2025-09-26|pay|0,Groupe LDLC SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
-Q53502102|2025-11-21|pay|0,Kogan.com Limited,Approve Conditional Board Spill Meeting Resolution,ISSUER,AGAINST,1.0,1.0,FOR
-F8964N100|2026-05-21|pay|0,STIF SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
-25675T107|2026-06-11|shareholder_proposal|2,Dollarama Inc.,Shareholder Proposal Regarding Say on Climate,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
-46124U107|2026-06-30|pay|0,Inventiva SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
-|2026-02-26|pay|1,El Al Israel Airlines Ltd.,Completion of Severance in Accordance with the Severance Pay Law,ISSUER,AGAINST,1.0,1.0,FOR
-15117K103|2026-06-25|pay|0,Cellectis SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
-|2026-04-29|pay|47,GL Events,"Delegation of authority to be granted to the Board of Directors to proceed with a capital increase through the issuance of ordinary shares and/or securities giving access to the share capital, suspending shareholders' preferential rights in favour of employees participating in a company savings plan pursuant to the provisions of Articles L. 3332-18",ISSUER,AGAINST,1.0,1.0,FOR
-019170208|2025-08-04|contested_election|10,"Allied Gaming & Entertainment, Inc.",Election of three Class B directors to serve on the Company's Board of Directors until the Company's 2027 annual meeting of stockholders and until their successors have been duly elected and qualified. KNIGHTED CLASS B NOMINEES: Roy Choi,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
-019170208|2025-08-04|contested_election|11,"Allied Gaming & Entertainment, Inc.",Election of three Class B directors to serve on the Company's Board of Directors until the Company's 2027 annual meeting of stockholders and until their successors have been duly elected and qualified. KNIGHTED CLASS B NOMINEES: Walter Ivey Delph III,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
-019170208|2025-08-04|contested_election|5,"Allied Gaming & Entertainment, Inc.",Election of three Class B directors to serve on the Company's Board of Directors until the Company's 2027 annual meeting of stockholders and until their successors have been duly elected and qualified. KNIGHTED CLASS B NOMINEES: Jennifer van Dijk,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
-019170208|2025-08-04|contested_election|6,"Allied Gaming & Entertainment, Inc.",Election of three Class B directors to serve on the Company's Board of Directors until the Company's 2027 annual meeting of stockholders and until their successors have been duly elected and qualified. COMPANY NOMINEES OPPOSED BY KNIGHTED: Jingsheng (Jason) Lu,ISSUER,AGAINST,1.0,1.0,FOR
-019170208|2025-08-04|contested_election|3,"Allied Gaming & Entertainment, Inc.",Election of three Class B directors to serve on the Company's Board of Directors until the Company's 2027 annual meeting of stockholders and until their successors have been duly elected and qualified. COMPANY NOMINEES OPPOSED BY KNIGHTED: Guanzhou (Jerry) Qin,ISSUER,AGAINST,1.0,1.0,FOR
-019170208|2025-08-04|contested_election|7,"Allied Gaming & Entertainment, Inc.",Election of three Class B directors to serve on the Company's Board of Directors until the Company's 2027 annual meeting of stockholders and until their successors have been duly elected and qualified. COMPANY NOMINEES OPPOSED BY KNIGHTED: Mao Sun,ISSUER,AGAINST,1.0,1.0,FOR
-019170208|2025-08-04|contested_election|8,"Allied Gaming & Entertainment, Inc.",Election of three Class C directors to serve on the Company's Board of Directors until the Company's 2028 annual meeting of stockholders and until their successors have been duly elected and qualified. KNIGHTED CLASS C NOMINEES: Peter Chun,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
-019170208|2025-08-04|contested_election|4,"Allied Gaming & Entertainment, Inc.",Election of three Class C directors to serve on the Company's Board of Directors until the Company's 2028 annual meeting of stockholders and until their successors have been duly elected and qualified. KNIGHTED CLASS C NOMINEES: Howard Donaldson,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
-019170208|2025-08-04|contested_election|0,"Allied Gaming & Entertainment, Inc.",Election of three Class C directors to serve on the Company's Board of Directors until the Company's 2028 annual meeting of stockholders and until their successors have been duly elected and qualified. KNIGHTED CLASS C NOMINEES: Adam Rymer,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
-019170208|2025-08-04|contested_election|9,"Allied Gaming & Entertainment, Inc.",Election of three Class C directors to serve on the Company's Board of Directors until the Company's 2028 annual meeting of stockholders and until their successors have been duly elected and qualified. COMPANY NOMINEES OPPOSED BY KNIGHTED: Roy Anderson,ISSUER,AGAINST,1.0,1.0,FOR
-019170208|2025-08-04|contested_election|12,"Allied Gaming & Entertainment, Inc.",Election of three Class C directors to serve on the Company's Board of Directors until the Company's 2028 annual meeting of stockholders and until their successors have been duly elected and qualified. COMPANY NOMINEES OPPOSED BY KNIGHTED: Yushi Guo,ISSUER,AGAINST,1.0,1.0,FOR
-019170208|2025-08-04|contested_election|1,"Allied Gaming & Entertainment, Inc.",Election of three Class C directors to serve on the Company's Board of Directors until the Company's 2028 annual meeting of stockholders and until their successors have been duly elected and qualified. COMPANY NOMINEES OPPOSED BY KNIGHTED: Chi Zhao,ISSUER,AGAINST,1.0,1.0,FOR
-019170208|2025-08-04|pay|0,"Allied Gaming & Entertainment, Inc.","The Company's proposal to approve, in a non-binding advisory vote, the compensation of the Company's named executive officers.",ISSUER,AGAINST,1.0,1.0,FOR
-019170208|2025-08-04|contested_election|2,"Allied Gaming & Entertainment, Inc.",Knighted's proposal to remove for cause one (1) incumbent member of the Company's Board of Directors: Class A director Yangyang Li.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
-F56028107|2026-04-29|pay|0,Lectra SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
+671044105|2025-12-11|pay|1,"OSI Systems, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+98983L108|2026-04-30|pay|1,Zurn Elkay Water Solutions Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+28618M106|2026-05-04|pay|1,Element Solutions Inc,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+462222100|2026-06-04|pay|5,"Ionis Pharmaceuticals, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+40131M109|2026-06-17|pay|2,"Guardant Health, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+10806X102|2026-06-22|pay|4,"BridgeBio Pharma, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+99724106|2026-04-29|shareholder_proposal|0,BorgWarner Inc.,Vote on stockholder proposal regarding action by written consent.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+39483102|2026-05-07|shareholder_proposal|0,Archer-Daniels-Midland Company,Stockholder Proposal Regarding Issuance of a Report on Pesticide Use Data Reporting in Regenerative Agriculture Program Disclosures.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|8,"Cadence Design Systems, Inc.",ELECTION OF DIRECTORS: Mark W. Adams,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|3,"Cadence Design Systems, Inc.",ELECTION OF DIRECTORS: Ita Brennan,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|6,"Cadence Design Systems, Inc.",ELECTION OF DIRECTORS: Lewis Chew,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|2,"Cadence Design Systems, Inc.",ELECTION OF DIRECTORS: Anirudh Devgan,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|10,"Cadence Design Systems, Inc.",ELECTION OF DIRECTORS: Moshe Gavrielov,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|9,"Cadence Design Systems, Inc.",ELECTION OF DIRECTORS: ML Krakauer,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|5,"Cadence Design Systems, Inc.",ELECTION OF DIRECTORS: Julia Liuson,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|4,"Cadence Design Systems, Inc.",ELECTION OF DIRECTORS: James D. Plummer,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|1,"Cadence Design Systems, Inc.",ELECTION OF DIRECTORS: Alberto Sangiovanni-Vincentelli,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|11,"Cadence Design Systems, Inc.",ELECTION OF DIRECTORS: Young K. Sohn,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|7,"Cadence Design Systems, Inc.",ELECTION OF DIRECTORS: Luc Van den hove,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|0,"Cadence Design Systems, Inc.",APPROVAL OF THE AMENDMENT OF THE OMNIBUS EQUITY INCENTIVE PLAN,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|12,"Cadence Design Systems, Inc.",ADVISORY RESOLUTION TO APPROVE NAMED EXECUTIVE OFFICER COMPENSATION,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+127387108|2026-05-07|shareholder_proposal|13,"Cadence Design Systems, Inc.",RATIFICATION OF THE SELECTION OF THE INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+57636Q104|2026-06-16|shareholder_proposal|8,Mastercard Incorporated,ELECTION OF DIRECTORS TO SERVE ON THE BOARD OF DIRECTORS: Merit E. Janow,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+57636Q104|2026-06-16|shareholder_proposal|2,Mastercard Incorporated,ELECTION OF DIRECTORS TO SERVE ON THE BOARD OF DIRECTORS: Candido Bracher,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+57636Q104|2026-06-16|shareholder_proposal|11,Mastercard Incorporated,ELECTION OF DIRECTORS TO SERVE ON THE BOARD OF DIRECTORS: Richard K. Davis,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+57636Q104|2026-06-16|shareholder_proposal|6,Mastercard Incorporated,ELECTION OF DIRECTORS TO SERVE ON THE BOARD OF DIRECTORS: Julius Genachowski,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+57636Q104|2026-06-16|shareholder_proposal|3,Mastercard Incorporated,ELECTION OF DIRECTORS TO SERVE ON THE BOARD OF DIRECTORS: Choon Phong Goh,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+57636Q104|2026-06-16|shareholder_proposal|10,Mastercard Incorporated,ELECTION OF DIRECTORS TO SERVE ON THE BOARD OF DIRECTORS: Oki Matsumoto,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+57636Q104|2026-06-16|shareholder_proposal|9,Mastercard Incorporated,ELECTION OF DIRECTORS TO SERVE ON THE BOARD OF DIRECTORS: Michael Miebach,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+57636Q104|2026-06-16|shareholder_proposal|12,Mastercard Incorporated,ELECTION OF DIRECTORS TO SERVE ON THE BOARD OF DIRECTORS: Youngme Moon,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+57636Q104|2026-06-16|shareholder_proposal|4,Mastercard Incorporated,ELECTION OF DIRECTORS TO SERVE ON THE BOARD OF DIRECTORS: Gabrielle Sulzberger,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+57636Q104|2026-06-16|shareholder_proposal|5,Mastercard Incorporated,ELECTION OF DIRECTORS TO SERVE ON THE BOARD OF DIRECTORS: Harit Talwar,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+57636Q104|2026-06-16|shareholder_proposal|7,Mastercard Incorporated,ELECTION OF DIRECTORS TO SERVE ON THE BOARD OF DIRECTORS: Lance Uggla,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+57636Q104|2026-06-16|shareholder_proposal|13,Mastercard Incorporated,Advisory approval of Mastercard's executive compensation,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+57636Q104|2026-06-16|shareholder_proposal|16,Mastercard Incorporated,Ratification of the appointment of PricewaterhouseCoopers LLP as the independent registered public accounting firm for Mastercard for 2026,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+573874104|2026-06-25|shareholder_proposal|1,"Marvell Technology, Inc.",Require Independent Board Chair,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-07-31|pay|6,Ralph Lauren Corporation,"Approval, on an advisory basis, of the compensation of our named executive officers and our compensation philosophy, policies and practices as described in the accompanying Proxy Statement.",ISSUER,AGAINST,1.0,1.0,FOR
+|2025-08-09|pay|3,EMS-Chemie Holding AG,Approve Remuneration of Executive Committee in the Amount of CHF 3.1 Million,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-08-14|pay|6,Electronic Arts Inc.,Advisory vote to approve named executive officer compensation.,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-08-19|pay|3,Infratil Limited,Approve Increase in Maximum Aggregate Remuneration Pool of Non-Executive Directors,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-08-19|pay|2,Microchip Technology Incorporated,"Proposal to approve, on an advisory (non-binding) basis, the compensation of our named executives.",ISSUER,AGAINST,1.0,1.0,FOR
+|2025-09-10|pay|14,Compagnie Financiere Richemont SA,Approve Variable Remuneration of Executive Committee in the Amount of CHF 30.6 Million,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-09-10|shareholder_proposal|0,"NetApp, Inc.",To approve a stockholder proposal regarding support for Special Shareholder Meeting Improvement.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-09-10|pay|9,Washington H. Soul Pattinson and Company Limited,Approve Grant of Performance Rights to Todd Barlow,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-09-17|shareholder_proposal|0,"Darden Restaurants, Inc.",To vote on a shareholder proposal requesting the Company disclose measurable targets for reducing greenhouse emissions.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-09-29|shareholder_proposal|0,FedEx Corporation,Stockholder proposal regarding independent board chairman.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-09-30|shareholder_proposal|0,"General Mills, Inc.",Shareholder Proposal - Adopt Policy to Separate the Board Chair and CEO Roles.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-10-14|shareholder_proposal|0,The Procter & Gamble Company,Shareholder Proposal Requesting Additional Reporting on Plastic Packaging,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-10-15|pay|4,Origin Energy Limited,Approve Grant of Performance Rights and Restricted Rights to Frank Calabria,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-10-23|pay|13,ASX Limited,Approve Grant of Performance Rights to Helen Lofthouse,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-10-23|pay|14,South32 Ltd.,Approve Grant of Rights to Graham Kerr,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-10-29|pay|9,James Hardie Industries Plc,Approve Grant of Return on Capital Employed Restricted Stock Units to Aaron Erter,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-10-29|pay|8,James Hardie Industries Plc,Approve Grant of Relative Total Shareholder Return Restricted Stock Units to Aaron Erter,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-10-30|pay|1,Bio-Techne Corporation,"Approve, on an advisory basis, the compensation of our executive officers.",ISSUER,AGAINST,1.0,1.0,FOR
+|2025-10-31|pay|6,Fortescue Ltd.,Approve Grant of Performance Rights to Dino Otranto,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-10-31|pay|9,Fortescue Ltd.,Approve Issuance of Performance Rights to Agustin Pichot,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-11-06|pay|21,"Tesla, Inc.",A Tesla proposal for a non-binding advisory vote approving 2024 executive compensation.,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-11-06|pay|22,"Tesla, Inc.",A Tesla proposal for approval of the A&R 2019 Equity Incentive Plan.,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-11-06|shareholder_proposal|4,"Tesla, Inc.",A shareholder proposal regarding adopting targets and reporting on metrics to assess the feasibility of integrating sustainability metrics into senior executive compensation plans.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-11-06|shareholder_proposal|11,"Tesla, Inc.",A shareholder proposal requesting a child labor audit.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-11-06|shareholder_proposal|1,"Tesla, Inc.",A shareholder proposal to amend Article X of the bylaws.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-11-06|shareholder_proposal|0,Texas Pacific Land Corporation,To consider a non-binding stockholder proposal to reduce the ownership threshold for stockholders to call a special stockholder meeting from 25% to 10%.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-11-10|pay|1,Isracard Ltd.,"Approve Current and Future Directors', Who Are Controlling Shareholders, Or Their Relatives, Stock Option Plan",ISSUER,AGAINST,1.0,1.0,FOR
+|2025-11-11|pay|6,Cromwell Property Group,Approve Grant of Performance Rights to Jonathan Callaghan,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-11-11|pay|9,Goodman Group,Approve Issuance of Performance Rights under the Long Term Incentive Plan to Gregory Goodman,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-11-11|pay|8,Goodman Group,Approve Issuance of Performance Rights under the Long Term Incentive Plan to Danny Peeters,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-11-11|pay|7,Goodman Group,Approve Issuance of Performance Rights under the Long Term Incentive Plan to Anthony Rozic,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-11-13|pay|18,SGH Limited,Approve Grant of Deferred Share Rights to Ryan Stokes,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-11-13|pay|16,The Estee Lauder Companies Inc.,Advisory vote to approve executive compensation.,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-11-14|shareholder_proposal|6,Fox Corporation,Improve Executive Compensation Program.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-11-14|shareholder_proposal|0,Sysco Corporation,To consider a stockholder proposal to adopt a policy requiring that the Board Chair and CEO roles be separate positions held by different people.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-11-18|pay|0,Oracle Corporation,Advisory Vote to Approve the Compensation of our Named Executive Officers,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-11-18|shareholder_proposal|0,The Campbell's Company,To vote on a shareholder proposal regarding a report on the effectiveness of the Company's regenerative agriculture program including pesticide reduction outcomes.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-11-20|pay|24,Growthpoint Properties Australia,Approve Grant of FY26 Long-Term Incentive (LTI) Performance Rights to Ross Lees,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-11-20|pay|3,New World Development Company Limited,Authorize Board to Fix Remuneration of Directors,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-11-20|pay|26,New World Development Company Limited,Approve Grant Mandate to the Directors to Grant Options under the Share Option Scheme,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-12-05|shareholder_proposal|0,Microsoft Corporation,European Security Program Censorship Risk Audit,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-12-05|shareholder_proposal|5,Microsoft Corporation,Report on Risks of Censorship in Generative Artificial Intelligence,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-12-05|shareholder_proposal|1,Microsoft Corporation,Report on Al Data Usage Oversight,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-12-05|shareholder_proposal|3,Microsoft Corporation,Report on Data Operations in Human Rights Hotspots,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-12-05|shareholder_proposal|2,Microsoft Corporation,Report on Al and Machine Learning Tools for Oil and Gas Development and Production,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-12-09|pay|0,Anglo American Plc,Amend Long-Term Incentive Plan,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-12-09|shareholder_proposal|1,"Palo Alto Networks, Inc.","To consider and vote upon a shareholder proposal, if properly presented at the Annual Meeting, regarding a policy addressing the impact of share repurchases on financial performance metrics.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-12-16|shareholder_proposal|0,"Cisco Systems, Inc.",Stockholder Proposal - Approval to request the Board to conduct an evaluation and issue a report assessing how Cisco's Inclusion programs provide positive financial value to shareholders.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2025-12-16|pay|11,"Paramount Group, Inc.","To approve, on a non-binding, advisory basis, the compensation that may be paid or become payable to the Company's named executive officers in connection with the mergers.",ISSUER,AGAINST,1.0,1.0,FOR
+|2025-12-16|pay|10,Sodexo SA,"Approve Compensation of Sophie Bellon, Chairwoman and CEO",ISSUER,AGAINST,1.0,1.0,FOR
+|2025-12-18|pay|9,FactSet Research Systems Inc.,To approve the FactSet Research Systems Inc. 2025 Omnibus Incentive Plan.,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-01-15|shareholder_proposal|0,Costco Wholesale Corporation,Shareholder proposal regarding greenwashing risk audit.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-01-22|shareholder_proposal|0,Intuit Inc.,Shareholder proposal requesting the Board to issue a report on the return on investment of the Company's diversity and inclusion programs,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-01-27|shareholder_proposal|4,Visa Inc.,Shareholder proposal requesting the Board of Directors to adopt a policy for an independent chair.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-01-27|shareholder_proposal|5,Visa Inc.,Shareholder proposal on shareholder right to act by written consent.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-01-27|shareholder_proposal|3,Visa Inc.,Shareholder proposal on report on online sexual exploitation.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-01-27|shareholder_proposal|0,Visa Inc.,Shareholder proposal on inclusion ROI audit.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-02-05|pay|2,"Tyson Foods, Inc.","To approve the amendment and restatement of the Tyson Foods, Inc. 2000 Stock Incentive Plan, a copy of which is attached to the Proxy Statement as Exhibit A.",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-02-05|pay|4,"Tyson Foods, Inc.","To approve, on a non-binding advisory basis, the compensation of the Company's named executive officers.",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-02-05|shareholder_proposal|1,"Tyson Foods, Inc.",Shareholder proposal regarding report on the anticipated impact of recent changes in US immigration practices on the Company's finances and operations.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-02-06|pay|0,Apartment Investment and Management Company,"Compensation Proposal. To approve, on a non-binding, advisory basis, the specified compensation that may be paid or become payable to Aimco's named executive officers in connection with the Plan of Sale and Liquidation.",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-02-24|shareholder_proposal|0,Apple Inc.,"A shareholder proposal entitled ""China Entanglement Audit""",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-02-25|shareholder_proposal|1,Deere & Company,Shareholder proposal on a report on the return on investment of emission reduction goals,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-02-25|shareholder_proposal|0,Deere & Company,Shareholder proposal on a report on faith-based business resource groups,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-03-05|pay|6,Demant A/S,Approve Guidelines for Incentive-Based Compensation for Executive Management and Board,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-17|shareholder_proposal|0,QUALCOMM Incorporated,"Stockholder proposal entitled ""Report on Risk of China Exposure.""",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-03-18|shareholder_proposal|3,The Walt Disney Company,"Shareholder proposal, if properly presented at the meeting, requesting a report on how the employee gift-matching program may impact risks related to religious discrimination against employees.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-03-18|shareholder_proposal|1,The Walt Disney Company,"Shareholder proposal, if properly presented at the meeting, requesting adoption of cumulative voting for Board elections.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-03-18|shareholder_proposal|2,The Walt Disney Company,"Shareholder proposal, if properly presented at the meeting, requesting an independent review and report on accessibility and disability inclusion practices.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-03-24|pay|24,Sartorius Stedim Biotech SA,Approve Compensation Report of Corporate Officers,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-24|pay|59,Schindler Holding AG,Approve Variable Remuneration of Directors in the Amount of CHF 5.5 Million,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-24|pay|60,Schindler Holding AG,Approve Variable Remuneration of Executive Committee in the Amount of CHF 12.8 Million,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-24|pay|13,"Shimano, Inc.","Appoint Statutory Auditor Nozue, Kanako",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-25|pay|15,"NEXON Co., Ltd.",Approve Deep Discount Stock Option Plan,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-25|shareholder_proposal|9,Starbucks Corporation,Shareholder proposal requesting adoption of an independent board chair policy,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-03-25|shareholder_proposal|10,Starbucks Corporation,Shareholder proposal requesting a report on the Company's apparent exclusion of detransitioning in its healthcare coverage,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-03-25|shareholder_proposal|11,Starbucks Corporation,Shareholder proposal requesting a report on median compensation and benefits gaps as they address reproductive and gender dysphoria care,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-03-25|shareholder_proposal|13,Starbucks Corporation,Shareholder proposal requesting a report on the Company's use of diagnostic tools created by politicized corporate partners,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-03-25|shareholder_proposal|12,Starbucks Corporation,Shareholder proposal requesting a report on the risks of the Company excluding religious charities from its employee-gift match program,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-03-26|pay|35,Argan SA,"Approve Compensation of Ronan Le Lan, Chairman of the Management Board",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-26|pay|31,Argan SA,"Approve Compensation of Francis Albertinelli, Management Board Member",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-26|pay|29,Argan SA,"Approve Compensation of Aymar de Germay, Management Board Member",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-26|pay|36,Argan SA,"Approve Compensation of Stephane Cassagne, Management Board Member",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-26|pay|23,Argan SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-27|pay|7,"Canon, Inc.","Appoint Statutory Auditor Asakura, Kaori",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-27|pay|13,"Otsuka Holdings Co., Ltd.","Appoint Statutory Auditor Sugawara, Hiroshi",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-31|pay|33,UniCredit SpA,Approve Second Section of the Remuneration Report,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-01|pay|14,Hewlett Packard Enterprise Company,Advisory vote to approve the Hewlett Packard Enterprise Company's executive compensation,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-01|shareholder_proposal|5,Hewlett Packard Enterprise Company,"Stockholder proposal entitled: ""Report on Discrimination in Charitable Support""",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-13|pay|14,Kongsberg Gruppen ASA,Approve Remuneration Statement,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-13|pay|6,Kongsberg Gruppen ASA,Approve Equity Plan Financing,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-15|shareholder_proposal|16,Adobe Inc.,Stockholder Proposal Regarding Vote on Golden Parachutes.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-15|shareholder_proposal|15,Adobe Inc.,Stockholder Proposal Regarding Board Matrix.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-15|shareholder_proposal|17,Adobe Inc.,Stockholder Proposal Regarding Report on Civil Liberties in Digital Services.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-15|shareholder_proposal|18,Adobe Inc.,Stockholder Proposal Regarding Retirement Plan Climate Risk.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-15|pay|49,AerCap Holdings NV,Approve Report of the Nomination and Compensation Committee,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-15|pay|31,AerCap Holdings NV,Approve Increase in Number of Ordinary Shares for Issuance under the Equity Incentive Plan,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-15|pay|38,Banca Monte dei Paschi di Siena SpA,Approve Remuneration of Board Chair,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-15|pay|57,Cibus Nordic Real Estate AB,Approve Warrant Plan 2026/2029 for Key Employees,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-15|pay|47,Pandox AB,Approve Remuneration Policy And Other Terms of Employment For Executive Management,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-15|pay|28,"Super Micro Computer, Inc.","To approve the further amendment and restatement of the Super Micro Computer, Inc. 2020 Equity and Incentive Compensation Plan.",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-16|shareholder_proposal|26,HP Inc.,"Stockholder proposal requesting that HP's board adopt a policy and amend its governance documents to require an independent Chairman of the Board, if properly presented at the annual meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-16|shareholder_proposal|9,"PPG Industries, Inc.","Shareholder proposal to adopt a policy requiring an independent board chair, if properly presented",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-16|shareholder_proposal|24,"Synopsys, Inc.","To vote on a stockholder proposal regarding 'stockholders' right to act by written consent, if properly presented at the meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-17|pay|16,Hermes International SA,Approve Compensation Report of Corporate Officers,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-17|pay|11,Hermes International SA,"Approve Compensation of Axel Dumas, General Manager",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-17|pay|12,Hermes International SA,"Approve Compensation of Emile Hermes SAS, General Manager",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-17|pay|43,Hermes International SA,Approve Remuneration Policy of General Managers,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-17|pay|8,Hermes International SA,Authorize up to 2 Percent of Issued Capital for Use in Restricted Stock Plans,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-17|pay|38,Straumann Holding AG,Approve One-Time Retention and Engagement Awards to the Executive Committee in the Amount of CHF 1.2 Million for Fiscal Year 2026,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-17|shareholder_proposal|1,The Boeing Company,Board Committee on Disability Access.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-20|pay|8,SITC International Holdings Company Limited,Authorize Board to Fix Remuneration of Directors,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-21|pay|20,"Charter Communications, Inc.",Approval of the amendment increasing the number of shares in the Company's 2019 Stock Incentive Plan.,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-21|mna|0,"Datadog, Inc.",To approve the redomiciliation of the Company from the State of Delaware to the State of Nevada by conversion.,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-21|shareholder_proposal|6,"Domino's Pizza, Inc.",Shareholder proposal regarding departure of directors who fail to obtain a majority vote.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-22|pay|41,"Easterly Government Properties, Inc.","Approval of the Easterly Government Properties, Inc. 2024 Equity Incentive Plan Amendment.",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-22|pay|65,Galderma Group AG,Approve Remuneration of Executive Committee in the Amount of CHF 31.2 Million,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-23|pay|159,Akzo Nobel NV,Approve Supplement to Remuneration Policy in Respect of M.J. de Vries,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-23|pay|99,Beijer Ref AB,Approve Equity Plan Financing Through Acquisition and Transfer of Shares,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-23|pay|30,Beijer Ref AB,"Approve Alternative Equity Plan Financing of LTI 2026, if Item 15.B is Not Approved",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-23|pay|137,Bouygues SA,Approve Remuneration Policy of CEO and Vice-CEOs,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-23|pay|73,Bouygues SA,"Approve Compensation of Pascal Grangé, Vice-CEO",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-23|shareholder_proposal|5,"Citizens Financial Group, Inc.",Shareholder proposal for the adoption of a majority voting standard.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-23|shareholder_proposal|8,Edison International,Shareholder Proposal Regarding Retention of Equity,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-23|shareholder_proposal|13,"HCA Healthcare, Inc.","Stockholder proposal, if properly presented at the meeting, regarding a report on healthcare consequences.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-23|shareholder_proposal|14,"HCA Healthcare, Inc.","Stockholder proposal, if properly presented at the meeting, regarding stockholders' right to act by written consent.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-23|shareholder_proposal|2,IQVIA Holdings Inc.,"If properly presented, a stockholder proposal concerning separate Chairman and Chief Executive Officer roles.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-23|pay|64,LVMH Moet Hennessy Louis Vuitton SE,"Approve Compensation of Bernard Arnault, Chairman and CEO",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-23|pay|56,LVMH Moet Hennessy Louis Vuitton SE,Authorize up to 1 Percent of Issued Capital for Use in Stock Option Plans,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-23|shareholder_proposal|0,Pfizer Inc.,Adopt an Independent Chair Policy,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-23|pay|78,"Warner Bros. Discovery, Inc.","To approve, on an advisory (nonbinding) basis, the compensation that may be paid or become payable to WBD's named executive officers that is based on or otherwise relates to the Merger.",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-23|pay|109,Woodside Energy Group Ltd.,Approve Grant of Performance Rights to Liz Westcott,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-24|pay|47,Hexagon AB,Approve Performance Share Program 2026/2029 for Key Employees,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-24|shareholder_proposal|2,"Stanley Black & Decker, Inc.",To consider and vote on a shareholder proposal requesting an independent Board Chairman.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-27|pay|16,Poste Italiane SpA,Approve Long Term Incentive Plan Phantom Stock Option,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-28|pay|117,ASSA ABLOY AB,Approve Performance Share Matching Plan LTI 2026 for Senior Executives and Key Employees,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-28|shareholder_proposal|0,Constellation Energy Corporation,"To consider a shareholder proposal (if properly presented) requesting a report assessing the bases for the company's diversity, equity and inclusion initiatives",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-28|pay|60,EssilorLuxottica SA,Approve Compensation Report of Corporate Officers,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-28|pay|55,EssilorLuxottica SA,"Approve Compensation of Paul du Saillant, Vice-CEO",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-28|pay|136,EssilorLuxottica SA,Approve Remuneration Policy of Chairman and CEO,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-28|pay|141,EssilorLuxottica SA,Approve Remuneration Policy of Vice-CEO,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-28|shareholder_proposal|12,International Business Machines Corporation,Stockholder Proposal Requesting a Change to IBM's Outside Director Stock Ownership Guidelines,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-28|shareholder_proposal|13,International Business Machines Corporation,Stockholder Proposal Requesting a Report on Al Bias,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-28|shareholder_proposal|14,International Business Machines Corporation,Stockholder Proposal Requesting a Report on Discrimination in Charitable Support,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-28|pay|116,Sandvik Aktiebolag,Approve Performance Share Matching Plan LTI 2026 for Key Employees,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-28|shareholder_proposal|7,Truist Financial Corporation,"Shareholder proposal regarding a report on risks from misalignment between Company policies and customer base, if properly presented.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-28|pay|153,Wallenstam AB,Approve Synthetic Stock Option Plan for Key Employees,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-28|shareholder_proposal|11,Wells Fargo & Company,Shareholder Proposal - Request for Board of Directors to Adopt Policy for an Independent Chair.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-28|shareholder_proposal|9,Wells Fargo & Company,Shareholder Proposal - Report on High-Carbon Financing Litigation Risks.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-28|shareholder_proposal|2,Wells Fargo & Company,Shareholder Proposal - Board Committee on Indigenous Peoples' Rights.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-28|shareholder_proposal|10,Wells Fargo & Company,Shareholder Proposal - Report on Respecting Vendor Civil Liberties.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-29|shareholder_proposal|17,"Huntington Ingalls Industries, Inc.",Stockholder proposal requesting an annual report on the Company's political spending.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-29|shareholder_proposal|14,The Coca-Cola Company,Vote on a shareowner proposal requesting a sustainability committee by-law amendment,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-29|shareholder_proposal|10,The Coca-Cola Company,Vote on a shareowner proposal requesting a report evaluating the Company's plastics packaging policies,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-29|shareholder_proposal|11,The Coca-Cola Company,"Vote on a shareowner proposal requesting a report on the extent of the Company's diversity, equity and inclusion efforts",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-29|shareholder_proposal|13,The Coca-Cola Company,Vote on a shareowner proposal requesting a report on risks related to ingredients,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-30|shareholder_proposal|8,Avery Dennison Corporation,"Vote on stockholder proposal for an independent Board Chairman, if properly presented during the meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-30|pay|98,Banque Cantonale Vaudoise,"Approve Long-Term Variable Remuneration of Executive Committee in Form of 9,952 Shares",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-30|shareholder_proposal|3,Corning Incorporated,Request to adopt an independent chair policy,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-30|shareholder_proposal|9,"Gilead Sciences, Inc.","To vote on a stockholder proposal requesting an independent Board Chair policy, if properly presented at the Annual Meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-30|shareholder_proposal|10,"Gilead Sciences, Inc.","To vote on a stockholder proposal requesting a report on the impact of extended patent exclusivities on patient access, if properly presented at the Annual Meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-30|shareholder_proposal|11,"Gilead Sciences, Inc.","To vote on a stockholder proposal requesting a report on the risks of ESG and DEI executive compensation metrics, if properly presented at the Annual Meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-30|shareholder_proposal|6,Global Payments Inc.,Shareholder proposal regarding shareholder right to act by written consent.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-30|pay|63,JBG SMITH Properties,"To approve, on a non-binding advisory basis, the compensation of the Company's named executive officers as disclosed in the Company's Proxy Statement (""Say-on-Pay"").",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-02|pay|1,Berkshire Hathaway Inc.,"Non-binding resolution to approve the compensation of the Company's Named Executive Officers, as described in the 2026 Proxy Statement.",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-02|shareholder_proposal|1,Berkshire Hathaway Inc.,Shareholder proposal requesting that the Company issue a report disclosing the Board's oversight framework for workforce and human-capital management across its operating subsidiaries.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-04|shareholder_proposal|0,Aflac Incorporated,Independent Board Chairman,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-04|shareholder_proposal|4,Bank of America Corporation,Shareholder proposal requesting independent board chair,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-04|shareholder_proposal|5,Bank of America Corporation,Shareholder proposal requesting report on board oversight of risks related to animal welfare,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-04|shareholder_proposal|2,Eli Lilly and Company,Shareholder proposal to prepare an annual lobbying report.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-05|shareholder_proposal|12,American Express Company,Shareholder proposal requesting a report on coverage of transgender healthcare treatments for minors.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-05|shareholder_proposal|5,American Express Company,Shareholder proposal regarding political bias risk oversight.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-05|shareholder_proposal|2,Bristol-Myers Squibb Company,Shareholder Proposal on the Adoption of a Board Policy that the Chairperson of the Board be an Independent Director,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-05|pay|29,Carvana Co.,To approve the Carvana Co. 2026 Omnibus Incentive Plan.,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-05|shareholder_proposal|9,"Dominion Energy, Inc.",Shareholder Proposal Regarding a Report on the Use of ESG and DEI Metrics In Executive Compensation Plans,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-05|shareholder_proposal|7,"Dominion Energy, Inc.",Shareholder Proposal Regarding a Report on Additional Shareholder Engagement Channels,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-05|shareholder_proposal|13,GE Aerospace,Shareholder Proposal Requesting Report on Defense-Related Products,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-05|shareholder_proposal|6,"Tyler Technologies, Inc.",Shareholder Proposal Regarding Political Spending.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-06|pay|11,Eni SpA,Approve 2026-2028 Long-Term Incentive Plan; Approve Disposal of Eni Treasury Shares to Serve the Plan,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-06|pay|89,Eni SpA,Approve Second Section of the Remuneration Report,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-06|shareholder_proposal|10,Eversource Energy,"Vote on a shareholder proposal titled ""Independent Board Chairman,"" if properly brought before the meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-06|shareholder_proposal|5,"PepsiCo, Inc.",Shareholder Proposal - Independent Board Chair.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-06|shareholder_proposal|8,"PepsiCo, Inc.",Shareholder Proposal - Report Evaluating the Treatment of Animals within Supply Chain.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-06|shareholder_proposal|6,Philip Morris International Inc.,Shareholder Proposal to issue a report on filter cleanup costs and extended producer responsibility laws for filters,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-06|pay|69,Swedish Orphan Biovitrum AB,Approve Long Term Incentive Program (Management Program),ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-06|pay|61,Swedish Orphan Biovitrum AB,Approve Equity Plan Financing (Management Program),ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-06|pay|22,Swedish Orphan Biovitrum AB,Approve Alternative Equity Plan Financing,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-07|shareholder_proposal|31,Archer-Daniels-Midland Company,Stockholder Proposal Regarding Issuance of a Report on Pesticide Use Data Reporting in Regenerative Agriculture Program Disclosures.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-07|shareholder_proposal|30,Ecolab Inc.,"Vote on a stockholder proposal regarding an independent board chair policy, if properly presented at the meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-07|mna|0,Talanx AG,Change of Corporate Form to Societas Europaea (SE),ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-07|shareholder_proposal|14,"United Parcel Service, Inc.",To require UPS to engage a third-party to audit and prepare an additional report on the impacts of UPS operations affecting BIPOC and low income communities.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-07|shareholder_proposal|15,"United Parcel Service, Inc.",To require UPS to provide an additional report describing the alignment of its operations and investments with its carbon neutrality goals.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-08|shareholder_proposal|18,AbbVie Inc.,Stockholder Proposal - to Adopt a Policy to Require an Independent Chair,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-08|pay|62,Capital One Financial Corporation,"Advisory vote on our Named Executive Officer compensation (""Say on Pay"").",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-08|shareholder_proposal|23,Capital One Financial Corporation,Stockholder proposal to require a shareholder vote on golden parachute arrangements.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-08|shareholder_proposal|17,CMS Energy Corporation,Vote on a Shareholder Proposal: Shareholder Right to Act by Written Consent.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-08|shareholder_proposal|21,Colgate-Palmolive Company,"Stockholder proposal entitled ""Remove DEI from Board Candidate Considerations.""",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-08|shareholder_proposal|20,Colgate-Palmolive Company,"Stockholder proposal entitled ""Independent Board Chairman.""",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-08|shareholder_proposal|4,Dover Corporation,To consider a shareholder proposal requesting an independent board chair.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-08|shareholder_proposal|22,Illinois Tool Works Inc.,"A non-binding stockholder proposal, if properly presented at the meeting, for Directors who fail to obtain a majority vote.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-08|shareholder_proposal|19,"United Rentals, Inc.",Stockholder Proposal on Directors Who Fail to Obtain a Majority Vote,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-12|pay|74,Allied Properties Real Estate Investment Trust,Advisory Vote on Executive Compensation Approach,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-12|shareholder_proposal|27,Cummins Inc.,Shareholder proposal to adopt a policy for separation of the roles of Chairperson and Chief Executive Officer.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-12|shareholder_proposal|46,Cummins Inc.,Shareholder proposal requesting a report on the Company's charitable support.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-12|pay|103,EQT AB,"Approve Remuneration of Directors in the Amount of EUR 361,000 for Chair and EUR 164,000 for Other Directors; Approve Remuneration for Committee Work",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-12|pay|33,Galaxy Entertainment Group Limited,Authorize Board to Fix Remuneration of Directors,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-13|pay|52,Ayvens SA,"Approve Compensation of Philippe de Rovira, CEO From Decembre 1, 2025",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-13|pay|96,Ayvens SA,"Approve Remuneration Policy of Philippe de Rovira, CEO",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-13|pay|48,Carmila SA,"Approve Compensation of Marie Cheval, Chairwoman and CEO",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-13|pay|56,Carmila SA,"Approve Compensation of Sebastien Vanhoove, Vice-CEO",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-13|pay|55,Dassault Aviation SA,"Approve Compensation of Éric Trappier, Chairman and CEO",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-13|pay|46,Dassault Aviation SA,"Approve Compensation of Loïk Segalen, Vice-CEO",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-13|shareholder_proposal|10,"Elevance Health, Inc.",Shareholder Proposal Requesting an Independent Study on the Impact of Prohibiting Corporate Contributions to Partisan 527 Tax-Exempt Political Groups.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-13|shareholder_proposal|0,"Equinix, Inc.","Consideration and vote upon a stockholder proposal, if properly presented at the Annual Meeting, related to lowering the stock ownership threshold required to call a special meeting",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-13|shareholder_proposal|21,Intel Corporation,Stockholder proposal requesting a report on risk of China exposure.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-13|shareholder_proposal|20,Intel Corporation,Stockholder proposal requesting a report on Intel's human rights due diligence process.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-13|shareholder_proposal|19,Intel Corporation,Stockholder proposal requesting an enduring policy separating the Chair and CEO roles.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-13|pay|90,Ipsen SA,Approve Remuneration Policy of CEO and Executive Corporate Officers,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-13|shareholder_proposal|15,The Southern Company,Stockholder proposal regarding independent board chairman,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-13|shareholder_proposal|17,The Southern Company,Stockholder proposal regarding a report on data center costs,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-13|shareholder_proposal|16,The Southern Company,Stockholder proposal regarding a report on climate due diligence,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-14|shareholder_proposal|9,AT&T Inc.,Shareholder Right to Act by Written Consent,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-14|shareholder_proposal|10,CVS Health Corporation,Stockholder Proposal for Reducing the Threshold for Our Stockholder Right to Act By Written Consent.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-14|shareholder_proposal|5,Ford Motor Company,"A shareholder proposal relating to a bylaw amendment providing that the Audit Committee have oversight of diversity, equity and inclusion initiatives.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-14|shareholder_proposal|13,Kimberly-Clark Corporation,Stockholder Proposal to Require Independent Board Chair,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-14|shareholder_proposal|8,Morgan Stanley,Shareholder proposal requesting an independent Board Chairman,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-15|shareholder_proposal|1,"Intercontinental Exchange, Inc.","A stockholder proposal regarding independent board chairman, if properly presented at the Annual Meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-15|pay|10,Sands China Ltd.,Authorize Board to Fix Remuneration of Directors,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-18|shareholder_proposal|6,"Americold Realty Trust, Inc.",Advisory Vote on Shareholder Proposal Regarding Director Removal With or Without Cause.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-19|shareholder_proposal|12,Amgen Inc.,Stockholder proposal to require an independent board chairman.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-19|pay|23,Elia Group SA/NV,Approve Amended Remuneration Policy,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-19|shareholder_proposal|3,JPMorgan Chase & Co.,"Report on congruence of security, resiliency, and climate initiatives",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-19|shareholder_proposal|1,JPMorgan Chase & Co.,Independent board chairman,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-19|shareholder_proposal|2,JPMorgan Chase & Co.,Lobbying alignment,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-19|shareholder_proposal|13,JPMorgan Chase & Co.,Sustainability ROI report,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-19|shareholder_proposal|10,"PayPal Holdings, Inc.",Stockholder Proposal - Policy on Provision of Services in Conflict Zones.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-19|mna|2,"Roper Technologies, Inc.",Shareholder proposal regarding a strategic review of a proposed spin-off of the Application Software and Network Software segments.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-28|pay|51,EssilorLuxottica SA,"Approve Compensation of Francesco Milleri, Chairman and CEO",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-07|pay|126,Rentokil Initial Plc.,To approve the Rentokil Initial plc Share Plan,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-20|shareholder_proposal|14,"Amazon.com, Inc.",SHAREHOLDER PROPOSAL REQUESTING A REPORT ON CHARITABLE PARTNERSHIPS,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-20|shareholder_proposal|10,"Amazon.com, Inc.",SHAREHOLDER PROPOSAL REQUESTING ADDITIONAL REPORTING ON IMPACT OF DATA CENTERS ON CLIMATE COMMITMENTS,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-20|shareholder_proposal|15,"Amazon.com, Inc.",SHAREHOLDER PROPOSAL REQUESTING A REPORT ON IMPACT OF CLIMATE COMMITMENTS,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-20|shareholder_proposal|13,"Amazon.com, Inc.",SHAREHOLDER PROPOSAL REQUESTING A MANDATORY INDEPENDENT BOARD CHAIR POLICY,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-20|pay|75,Credit Agricole SA,"Approve Compensation of Philippe Brassac, CEO From January 1, 2025 to May 14, 2025",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-20|pay|78,Credit Agricole SA,"Approve Compensation of Xavier Musca, Vice-CEO From January 1, 2025 to May 14, 2025",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-20|pay|66,Dassault Systemes SE,"Approve Compensation of Bernard Charlès, Chairman of the Board",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-20|pay|73,Dassault Systemes SE,"Approve Compensation of Pascal Daloz, CEO",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-20|pay|56,Dassault Systemes SE,Authorize up to 1.5 Percent of Issued Capital for Use in Restricted Stock Plans,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-20|shareholder_proposal|23,GE Vernova Inc.,Stockholder proposal requesting report assessing sustainability goals on the basis of net-present-value and return-on-investment calculation,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-20|shareholder_proposal|1,McDonald's Corporation,Advisory Vote to Adopt Policy for an Independent Chair.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-20|shareholder_proposal|16,"Mondelez International, Inc.",Shareholder proposal requesting a report on objective evaluation of plastics packaging policies,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-20|shareholder_proposal|11,"Mondelez International, Inc.",Shareholder proposal requesting adoption of an independent board chairman policy,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-20|shareholder_proposal|6,Northrop Grumman Corporation,Shareholder proposal to provide for an independent Board chair.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-20|shareholder_proposal|21,Quest Diagnostics Incorporated,"Stockholder proposal regarding an independent board chairman, if properly presented at the Annual Meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-20|shareholder_proposal|4,S&P Global Inc.,Vote on a shareholder proposal to issue a report on the Company's charitable support;,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-20|shareholder_proposal|12,State Street Corporation,"Shareholder proposal requesting the adoption of a policy and amendment to the by-laws requiring the Chair of the Board be an independent member of the Board in the next CEO transition, if properly presented.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-20|shareholder_proposal|9,"The Travelers Companies, Inc.","Shareholder proposal relating to a report on climate-related pricing and coverage decisions, if presented at the Annual Meeting of Shareholders.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-20|shareholder_proposal|8,"The Travelers Companies, Inc.","Shareholder proposal relating to an independent board chairman, if presented at the Annual Meeting of Shareholders.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|shareholder_proposal|2,CDW Corporation,"To consider and act upon the stockholder proposal, if properly presented at the meeting, regarding independent Board chair requirements.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|shareholder_proposal|16,"Fiserv, Inc.",Shareholder proposal requesting an independent board chair policy.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|pay|55,HKT Trust and HKT Limited,Authorize Board and Trustee-Manager to Fix Remuneration of Directors,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-21|pay|64,"NextEra Energy, Inc.","Approval, by non-binding advisory vote, of NextEra Energy's compensation of its named executive officers as disclosed in the proxy statement.",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-21|shareholder_proposal|4,"NextEra Energy, Inc.","A proposal entitled ""Report on Net Zero Business Performance Risks"" requesting the Board of Directors of NextEra Energy prepare a report within the next year, evaluating the potential costs and benefits to NextEra Energy created by aggressive emission reduction policies.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|shareholder_proposal|15,"ServiceNow, Inc.",Shareholder proposal regarding shareholder right to act by written consent.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|shareholder_proposal|9,"The Home Depot, Inc.",Shareholder Proposal Regarding Evaluation of Recycling-Related Plastics Targets,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|shareholder_proposal|11,"The Home Depot, Inc.",Shareholder Proposal Regarding Report on Customer Data Privacy Risks,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|shareholder_proposal|10,"The Home Depot, Inc.",Shareholder Proposal Regarding Independent Board Chair,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|shareholder_proposal|8,"The Home Depot, Inc.",Shareholder Proposal Regarding Biodiversity Impact and Dependency Assessment,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|shareholder_proposal|14,"The Home Depot, Inc.",Shareholder Proposal Regarding Report on Sufficiency of Associates' Access to Healthcare,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|shareholder_proposal|12,"The Home Depot, Inc.",Shareholder Proposal Regarding Report on Discrimination in Charitable Support,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|pay|62,"Veris Residential, Inc.","To approve, by a non-binding advisory vote, the compensation that may be paid or become payable to the Company's named executive officers that is based on or otherwise relates to the Transactions, including the Mergers.",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-21|shareholder_proposal|18,"VeriSign, Inc.","Stockholder Proposal Regarding an Independent Chair Policy, if Properly Presented at the Meeting",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|shareholder_proposal|0,Verizon Communications Inc.,Board oversight of material issues related to climate change,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|shareholder_proposal|6,Verizon Communications Inc.,Independent board chair,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-21|shareholder_proposal|7,Verizon Communications Inc.,Risks of non-fiduciary executive compensation metrics,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-22|shareholder_proposal|3,Honeywell International Inc.,Shareowner Proposal - Shareholder Right to Act by Written Consent.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-22|shareholder_proposal|2,The Allstate Corporation,Shareholder proposal requesting a report on use of ESG and DEI metrics in executive compensation.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-22|shareholder_proposal|1,"Zimmer Biomet Holdings, Inc.",Shareholder Proposal on Independent Board Chairman.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-26|shareholder_proposal|0,"Merck & Co., Inc.",Shareholder proposal regarding a report on DEI risks in federal contracting.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-26|shareholder_proposal|1,"Merck & Co., Inc.",Shareholder proposal regarding a report on healthcare coverage gaps.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-26|shareholder_proposal|2,"Merck & Co., Inc.",Shareholder proposal regarding a report on political contributions.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-27|pay|51,Bollore SE,"Approve Compensation of Cyrille Bollore, Chairman and CEO",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-27|shareholder_proposal|0,Chevron Corporation,Adopt an Independent Chair,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-27|shareholder_proposal|3,Chevron Corporation,Report on Indigenous Peoples' Rights,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-27|shareholder_proposal|1,Chevron Corporation,Commission a Third-Party Report on Human Rights Processes,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-27|mna|7,Exxon Mobil Corporation,Texas Redomiciliation,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-27|shareholder_proposal|2,Exxon Mobil Corporation,"Independent Chair, a proposal overwhelmingly defeated on 16 separate occasions since 2000",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-27|shareholder_proposal|4,Exxon Mobil Corporation,Proposal requesting Company to modify its Voluntary Retail Voting Program to provide multiple options not aligned with the Board's recommendations,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-07|pay|125,Rentokil Initial Plc.,To approve the Rentokil Initial plc Executive Director Buyout Plan,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-27|shareholder_proposal|12,"Meta Platforms, Inc.",A shareholder proposal regarding report on human rights due diligence.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-27|shareholder_proposal|9,"Meta Platforms, Inc.",A shareholder proposal regarding report on addressing antisemitism and hate in online platforms.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-27|shareholder_proposal|11,"Meta Platforms, Inc.",A shareholder proposal regarding report on climate change-related commitments.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-27|shareholder_proposal|6,"Meta Platforms, Inc.",A shareholder proposal regarding data protection impact assessment on generative Al chatbots.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-27|shareholder_proposal|13,"Meta Platforms, Inc.",A shareholder proposal regarding report on risks of anti-American discrimination from H-1B visa program use.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-30|pay|122,Intesa Sanpaolo Spa,REPORT ON REMUNERATION POLICY AND COMPENSATION PAID: NON-BINDING RESOLUTION ON SECTION II-DISCLOSURE ON COMPENSATION PAID IN THE FINANCIAL YEAR 2025,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-28|pay|35,bioMerieux SA,"Approve Compensation of Pierre Boulud, CEO",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-28|pay|26,bioMerieux SA,Authorize up to 10 Percent of Issued Capital for Use in Stock Option Plans,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-28|pay|123,Assa Abloy AB,RESOLUTION REGARDING LONG-TERM INCENTIVE PROGRAM,ISSUER,AGAINST,1.0,1.0,FOR
+457030104|2026-04-30|shareholder_proposal|6,"Ingles Markets, Incorporated",Summer Road Nominee: Rory A. Held,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-28|shareholder_proposal|1,Dollar General Corporation,To vote on a shareholder proposal asking the Board to amend the director resignation policy to require directors who do not receive a majority vote in uncontested elections to leave the Board within nine months.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-28|pay|25,Kering SA,Authorize up to 1 Percent of Issued Capital for Use in Restricted Stock Plans with Performance Conditions Attached,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-28|pay|45,"Salesforce, Inc.","Approval, on an advisory basis, of the fiscal 2026 compensation of our named executive officers.",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-05-28|shareholder_proposal|7,"Salesforce, Inc.","A stockholder proposal requesting the adoption of cumulative voting for director elections, if properly presented at the meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-29|shareholder_proposal|5,"Digital Realty Trust, Inc.","A stockholder proposal regarding enhanced water risk disclosure, if properly presented.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-29|shareholder_proposal|2,"Lowe's Companies, Inc.",Shareholder Proposal requesting an independent board chairman.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-29|shareholder_proposal|3,"Lowe's Companies, Inc.",Shareholder Proposal requesting a report describing how the Company could disclose its plastic packaging footprint.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-05-29|shareholder_proposal|4,"Lowe's Companies, Inc.",Shareholder Proposal requesting a report on risks of sharing customer data with third parties.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-01|shareholder_proposal|0,UnitedHealth Group Incorporated,"If properly presented at the 2026 Annual Meeting of Shareholders, the shareholder proposal requesting the adoption of a policy to require any Board Chair to be independent.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-02|shareholder_proposal|5,Booking Holdings Inc.,Non-binding stockholder vote on a stockholder resolution regarding business operations in illegal settlements.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-02|shareholder_proposal|1,Cognizant Technology Solutions Corporation,"Shareholder proposal to adopt shareholder right to act by written consent, if properly presented at the meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-02|shareholder_proposal|2,General Motors Company,Shareholder Proposal Regarding Separation of Chair and CEO Roles,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-02|shareholder_proposal|3,General Motors Company,Shareholder Proposal Requesting a Report on Human Rights Standards for Indigenous Peoples,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-03|shareholder_proposal|1,Palantir Technologies Inc.,"Stockholder proposal entitled ""Independent Report on Due Diligence Process,"" if properly presented at the Annual Meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-03|shareholder_proposal|0,Palantir Technologies Inc.,"Stockholder proposal entitled ""Human Rights Impact Assessment,"" if properly presented at the Annual Meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-04|pay|14,Altarea SCA,"Authorize up to 750,000 Shares for Use in Restricted Stock Plans",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-04|pay|13,Altarea SCA,"Authorize up to 350,000 Shares for Use in Stock Option Plans",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-04|shareholder_proposal|6,"Netflix, Inc.","Stockholder proposal entitled, ""ESG ROI Report,"" if properly presented at the meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-04|shareholder_proposal|7,"Netflix, Inc.","Stockholder proposal entitled, ""Report on Politicized Brand Misalignment,"" if properly presented at the meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-04|shareholder_proposal|5,"Netflix, Inc.","Stockholder proposal entitled, ""Adopt Cumulative Voting,"" if properly presented at the meeting.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-04|shareholder_proposal|3,Walmart Inc.,Request for Cumulative Voting for Board Elections,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-04|shareholder_proposal|2,Walmart Inc.,Report on Workplace Health and Safety Governance,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-04|shareholder_proposal|0,Walmart Inc.,Report on Immigration Policy & Enforcement,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-04|shareholder_proposal|1,Walmart Inc.,Report on Workforce Impact of Al and Automation,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-05|shareholder_proposal|1,"Airbnb, Inc.",Oversight of risks relating to digital services;,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-05|shareholder_proposal|2,"Airbnb, Inc.",Report on discrimination in charitable support;,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-05|shareholder_proposal|3,"Airbnb, Inc.",Report on risks of politicized divestments.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-05|shareholder_proposal|12,Alphabet Inc.,Shareholder proposal regarding a report on water usage and AI development,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-05|shareholder_proposal|13,Alphabet Inc.,Shareholder proposal regarding a viewpoint diversity risk report,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-05|shareholder_proposal|11,Alphabet Inc.,Shareholder proposal regarding a report on politicized content moderation,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-05|shareholder_proposal|10,Alphabet Inc.,Shareholder proposal regarding a report on impact of U.S. immigration policy,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-05|shareholder_proposal|9,Alphabet Inc.,Shareholder proposal regarding a report on data privacy,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-05|shareholder_proposal|4,Alphabet Inc.,Shareholder proposal regarding AI Board oversight,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-08|pay|4,"Apollo Global Management, Inc.",An advisory vote to approve the compensation of AGM's named executive officers (Say on Pay);,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|contested_election|12,"Warner Bros. Discovery, Inc.","ELECTION OF DIRECTORS: Samuel A. Di Piazza, Jr.",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|contested_election|11,"Warner Bros. Discovery, Inc.",ELECTION OF DIRECTORS: Richard W. Fisher,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|contested_election|9,"Warner Bros. Discovery, Inc.",ELECTION OF DIRECTORS: Paul A. Gould,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|contested_election|4,"Warner Bros. Discovery, Inc.",ELECTION OF DIRECTORS: Debra L. Lee,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|contested_election|7,"Warner Bros. Discovery, Inc.",ELECTION OF DIRECTORS: Joseph M. Levin,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|contested_election|1,"Warner Bros. Discovery, Inc.",ELECTION OF DIRECTORS: Anton J. Levy,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|contested_election|8,"Warner Bros. Discovery, Inc.",ELECTION OF DIRECTORS: Kenneth W. Lowe,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|contested_election|5,"Warner Bros. Discovery, Inc.",ELECTION OF DIRECTORS: Fazal F. Merchant,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|contested_election|0,"Warner Bros. Discovery, Inc.",ELECTION OF DIRECTORS: Anthony J. Noto,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|contested_election|10,"Warner Bros. Discovery, Inc.",ELECTION OF DIRECTORS: Paula A. Price,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|contested_election|2,"Warner Bros. Discovery, Inc.",ELECTION OF DIRECTORS: Daniel E. Sanchez,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|contested_election|6,"Warner Bros. Discovery, Inc.",ELECTION OF DIRECTORS: Geoffrey Y. Yang,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|contested_election|3,"Warner Bros. Discovery, Inc.",ELECTION OF DIRECTORS: David M. Zaslav,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|pay|1,"Warner Bros. Discovery, Inc.","To vote on an advisory resolution to approve the 2025 compensation of Warner Bros. Discovery, Inc.'s named executive officers, commonly referred to as a ""Say-on-Pay"" vote.",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-09|shareholder_proposal|2,"Warner Bros. Discovery, Inc.","To vote on a stockholder proposal entitled ""Sustainability ROI Report"", if properly presented.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-10|shareholder_proposal|2,Target Corporation,Shareholder proposal requesting policy requiring the Board Chair to be an independent director.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-10|shareholder_proposal|3,Target Corporation,Shareholder proposal requesting a report on presence of pesticides in Target's private label brands.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-10|shareholder_proposal|4,Target Corporation,Shareholder proposal requesting a report on reducing plastic microfiber shedding.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-11|pay|21,"Live Nation Entertainment, Inc.",To hold an advisory vote on the company's executive compensation;,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-12|shareholder_proposal|0,"Best Buy Co., Inc.","To vote on a shareholder proposal entitled ""Report on Risks of Non-Fiduciary Executive Compensation Metrics""",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-12|shareholder_proposal|1,"Best Buy Co., Inc.","To vote on a shareholder proposal entitled ""Sustainability ROI Report""",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-16|shareholder_proposal|6,"Block, Inc.","STOCKHOLDER PROPOSAL REGARDING ESTABLISHING A BOARD-LEVEL TECHNOLOGY COMMITTEE, IF PROPERLY PRESENTED AT THE ANNUAL MEETING.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-16|shareholder_proposal|4,"Dollar Tree, Inc.",Shareholder proposal requesting a shareholder right to act by written consent.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-16|shareholder_proposal|3,Mastercard Incorporated,Consideration of a stockholder proposal regarding shareholder right to act by written consent,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-16|shareholder_proposal|2,Mastercard Incorporated,Consideration of a stockholder proposal to adopt cumulative voting for the election of directors,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-16|pay|21,"T-Mobile US, Inc.",Advisory Vote to Approve the Compensation Provided to the Company's Named Executive Officers for 2025.,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-16|pay|18,"Workday, Inc.","To approve, on an advisory basis, the compensation of our named executive officers as disclosed in the Proxy Statement.",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-16|shareholder_proposal|0,"Workday, Inc.",To consider and vote upon a stockholder proposal regarding disclosure of employee retention rates by demographic category.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-17|pay|24,Colonial SFL SOCIMI SA,Approve Long-Term Incentive Plan,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-17|pay|2,Grifols SA,Amend Remuneration Policy,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-18|shareholder_proposal|34,"Delta Air Lines, Inc.",A shareholder proposal requesting the adoption of cumulative voting for the election of directors.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-18|mna|0,Deutsche EuroShop AG,Change of Corporate Form to Societas Europaea (SE),ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-19|pay|0,Peach Property Group AG,Amend Articles Re: Remuneration of Board Members,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-19|pay|27,Peach Property Group AG,Approve Remuneration of Directors in the Amount of CHF 1.5 Million,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-19|pay|35,Peach Property Group AG,Approve Variable Remuneration of Executive Committee in the Amount of CHF 1.9 Million,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-22|pay|22,SalMar ASA,Approve Remuneration Statement,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-22|pay|24,SalMar ASA,Approve Share-Based Incentive Plan,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-24|shareholder_proposal|26,NVIDIA Corporation,Approval of a non-binding stockholder proposal requesting a report on faith-based community resource groups.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-24|shareholder_proposal|27,NVIDIA Corporation,Approval of a non-binding stockholder proposal requesting a report on workforce civil liberties.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-24|shareholder_proposal|28,NVIDIA Corporation,Approval of a non-binding stockholder proposal requesting reporting on greenhouse gas emissions from the use of our sold products.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-25|mna|9,Dell Technologies Inc.,Approval of the Redomestication Proposal providing for the redomestication of Dell Technologies Inc. from Delaware to Texas by conversion as disclosed in the proxy statement,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-25|pay|45,lululemon athletica inc.,Advisory vote to approve the compensation of our named executive officers.,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-25|shareholder_proposal|109,lululemon athletica inc.,Advisory vote to approve a stockholder proposal regarding declassification of the Board of Directors so that all directors are elected annually for one-year terms.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-25|shareholder_proposal|26,The Kroger Co.,Report on GHG emissions reductions.,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-06-26|pay|47,Aon Plc,Advisory resolution to approve the compensation of the Company's named executive officers.,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-26|pay|27,"SBI Holdings, Inc.","Appoint Statutory Auditor Ichikawa, Toru",ISSUER,AGAINST,1.0,1.0,FOR
+|2026-06-26|pay|51,"Sila Realty Trust, Inc.","To consider and vote on a proposal to approve, on a non-binding, advisory basis, the compensation that may be paid or become payable to the Company's named executive officers that is based on or otherwise relates to the Merger; and",ISSUER,AGAINST,1.0,1.0,FOR
+11777Q209|2026-06-04|pay|3,B2Gold Corp.,Advisory Vote on Executive Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+Y9536Y102|2025-07-31|pay|0,Welspun Corp. Limited,Approve Payment of Remuneration by Way of Commission to Balkrishnan Goenka as Non-Executive Chairman,ISSUER,AGAINST,1.0,1.0,FOR
+Y05495117|2025-08-11|pay|2,Bajaj Consumer Care Limited,"Approve Appointment and Remuneration of Sumit Malhotra as Non-Executive, Non-Independent Director",ISSUER,AGAINST,1.0,1.0,FOR
+Y767A4123|2025-09-01|pay|1,"Shandong Bohui Paper Industry Co., Ltd.",Approve Draft and Summary on the Company's Navigator Employee Share Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+Y767A4123|2025-09-01|pay|3,"Shandong Bohui Paper Industry Co., Ltd.",Approve Management Measures for the Company's Navigator Employee Share Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-19|pay|11,Givaudan S.A.,Executive Compensation (Short-Term),ISSUER,AGAINST,1.0,1.0,FOR
+Y767A4123|2025-09-01|pay|2,"Shandong Bohui Paper Industry Co., Ltd.",Approve Draft and Summary on the Company's Striver Employee Share Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+Y767A4123|2025-09-01|pay|4,"Shandong Bohui Paper Industry Co., Ltd.",Approve Management Measures for the Company's Striver Employee Share Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+Y988AL101|2025-09-15|pay|3,"Zhejiang Hailide New Material Co., Ltd.",Approve Draft and Summary of Performance Share Incentive Plan,ISSUER,AGAINST,1.0,1.0,FOR
+Y988AL101|2025-09-15|pay|4,"Zhejiang Hailide New Material Co., Ltd.",Approve Implementation Assessment and Management Measures for the Performance Share Incentive Plan,ISSUER,AGAINST,1.0,1.0,FOR
+Y988AL101|2025-09-15|pay|1,"Zhejiang Hailide New Material Co., Ltd.",Approve Authorization of the Board to Handle All Matters Related to the Performance Share Incentive Plan,ISSUER,AGAINST,1.0,1.0,FOR
+Y4444J107|2025-11-27|mna|0,"Jiangxi Ganyue Expressway Co., Ltd.",Approve Investment in Guosheng Securities Subordinated Debt,ISSUER,AGAINST,1.0,1.0,FOR
+Y2R3EY112|2025-12-14|pay|0,GMR Power & Urban Infra Ltd.,Approve Appointment and Remuneration of Boda Venkata Nageswara Rao as Executive Director,ISSUER,AGAINST,1.0,1.0,FOR
+Y32263108|2025-12-26|mna|2,"Hisense Visual Technology Co., Ltd.",Approve Use of Funds for Entrusted Asset Management,ISSUER,AGAINST,1.0,1.0,FOR
+Y8070R101|2026-02-13|mna|0,"Gansu Shangfeng Cement Co., Ltd.",Approve Entrusted Asset Management Plan,ISSUER,AGAINST,1.0,1.0,FOR
+Y6347N101|2026-03-26|pay|0,NHN Corp.,Approve Total Remuneration of Inside Directors and Outside Directors,ISSUER,AGAINST,1.0,1.0,FOR
+Y0927D112|2026-03-26|pay|0,"The Bombay Burmah Trading Corporation, Limited",Approve Reappointment and Remuneration of Ness N. Wadia as Managing Director,ISSUER,AGAINST,1.0,1.0,FOR
+M4752S106|2026-03-31|pay|1,Turkiye Garanti Bankasi AS,Approve Director Remuneration,ISSUER,AGAINST,1.0,1.0,FOR
+Y2744Z102|2026-04-21|pay|0,"Goldcup Electric Apparatus Co., Ltd.","Approve 2026 Remuneration of Directors, Senior Management",ISSUER,AGAINST,1.0,1.0,FOR
+Y2744Z102|2026-04-21|pay|1,"Goldcup Electric Apparatus Co., Ltd.",Approve to Formulate Management System for Remuneration of Directors and Senior Management,ISSUER,AGAINST,1.0,1.0,FOR
+Y1294N105|2026-04-21|mna|0,"Sumec Corp., Ltd.",Approve Acquisition of Shares via Agreement Transfer and Related Party Transactions,ISSUER,AGAINST,1.0,1.0,FOR
+Y268G2104|2026-05-15|pay|0,"GDH Supertime Group Co., Ltd.",Amend Remuneration Management System for Directors and Senior Management Members,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-03-19|pay|10,Givaudan S.A.,Executive Compensation (Fixed and Long-term),ISSUER,AGAINST,1.0,1.0,FOR
+G6542K126|2026-06-11|pay|0,Noah Holdings Limited,Approve Accelerated Vesting of the RSUs Granted or to be Granted under the Settlement Plans under the Issuance Mandate,ISSUER,AGAINST,1.0,1.0,FOR
+X05318104|2026-06-17|pay|0,Bank Handlowy w Warszawie SA,Approve Remuneration Report,ISSUER,AGAINST,1.0,1.0,FOR
+Y0771L103|2026-06-23|pay|4,"Beijing Jingneng Power Co., Ltd.",Approve Remuneration Management System for Directors and Senior Management Members,ISSUER,AGAINST,1.0,1.0,FOR
+F6637Z112|2026-05-19|pay|0,NRJ Group SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
+Q4978A109|2026-05-21|pay|7,ioneer Ltd.,Approve the Spill Resolution,ISSUER,AGAINST,1.0,1.0,FOR
+22717L101|2026-06-18|pay|1,Cronos Group Inc.,"Adoption of an advisory (non-binding) resolution on the frequency of future ""say on pay"" votes as disclosed in the proxy statement dated April 24, 2026.",ISSUER,AGAINST,1.0,1.0,FOR
+09228F103|2026-06-25|pay|2,BlackBerry Limited,Advisory Vote on Frequency of Say on Pay Vote - Non-binding advisory resolution on how frequently the Company should hold the non-binding advisory vote on the Company's approach to executive compensation.,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-10-27|pay|16,Northam Platinum Holdings Limited,Approve of Remuneration Policy,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-10-27|pay|15,Northam Platinum Holdings Limited,Approve Remuneration Implementation Report,ISSUER,AGAINST,1.0,1.0,FOR
+|2025-07-22|pay|5,Soltec Power Holdings S.A.,Amendments to the Remuneration Policy,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-28|pay|72,VAT Group AG,Consultative vote on the Compensation Report for the financial year 2025,ISSUER,AGAINST,1.0,1.0,FOR
+|2026-04-28|pay|24,VAT Group AG,Approval of actual short-term incentive (STI) compensation of the Group Executive Committee (GEC) for the financial year 2025,ISSUER,AGAINST,1.0,1.0,FOR
+013091103|2025-08-07|pay|0,"Albertsons Companies, Inc.",Elect Director Allen Gibson,ISSUER,AGAINST,1.0,1.0,FOR
+57060D108|2026-06-10|shareholder_proposal|1,MarketAxess Holdings Inc.,Reduce Ownership Threshold for Shareholders to Call Special Meeting to 10%,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+959802109|2026-05-14|shareholder_proposal|0,The Western Union Company,Provide Right to Act by Written Consent,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+|2026-04-28|pay|114,VAT Group AG,Approval of the maximum aggregate amount of Long-Term Incentive (LTI) compensation of the GEC for the financial year 2027,ISSUER,AGAINST,1.0,1.0,FOR
+649604840|2026-06-11|pay|3,"Adamas Trust, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+649604840|2026-06-11|pay|0,"Adamas Trust, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+00653Q102|2026-06-18|pay|0,AdaptHealth Corp.,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+00676P107|2026-05-07|pay|3,Adeia Inc.,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+00676P107|2026-05-07|pay|0,Adeia Inc.,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+011642105|2026-06-03|pay|1,"Alarm.com Holdings, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+01748X102|2026-05-08|mna|1,Allegiant Travel Company,Issue Shares in Connection with Merger,ISSUER,AGAINST,1.0,1.0,FOR
+01748X102|2026-06-25|pay|1,Allegiant Travel Company,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+024061103|2025-07-15|mna|0,"American Axle & Manufacturing Holdings, Inc.",Issue Shares in Connection with Acquisition,ISSUER,AGAINST,1.0,1.0,FOR
+029899101|2026-05-19|pay|2,American States Water Company,Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+03071H100|2026-06-10|pay|1,"AMERISAFE, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+001744101|2026-05-01|pay|0,"AMN Healthcare Services, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+001744101|2026-05-01|shareholder_proposal|0,"AMN Healthcare Services, Inc.",Require Independent Board Chair,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+03168L105|2026-05-06|pay|1,"Amneal Pharmaceuticals, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+038923108|2026-05-20|pay|0,"Arbor Realty Trust, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+038923108|2026-05-20|pay|3,"Arbor Realty Trust, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+03937C105|2026-04-24|mna|0,ArcBest Corporation,Change State of Incorporation from Delaware to Texas,ISSUER,AGAINST,1.0,1.0,FOR
+03937C105|2026-04-24|shareholder_proposal|0,ArcBest Corporation,Adopt and Report on GHG Emissions Reductions Targets,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+03969F109|2026-06-11|pay|1,"Arcus Biosciences, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+04010E109|2026-06-10|pay|1,"Argan, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+042315705|2026-04-30|pay|4,"ARMOUR Residential REIT, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+042315705|2026-04-30|pay|0,"ARMOUR Residential REIT, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+04280A100|2026-03-19|pay|3,"Arrowhead Pharmaceuticals, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+04280A100|2026-03-19|pay|0,"Arrowhead Pharmaceuticals, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+228903100|2026-05-12|pay|1,"Artivion, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+642045108|2026-05-07|pay|3,Atlas Energy Solutions Inc.,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+531914109|2025-09-30|shareholder_proposal|1,"Lifeway Foods, Inc.","The Bylaws Restoration Proposal. To repeal any amendment to the Company's by-laws that is made by the Company's board of directors (the ""Board"") and becomes effective on or after March 24, 2023 and prior to this Proposal becoming effective:",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+05350V106|2026-04-21|pay|0,"Avanos Medical, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+054540208|2026-02-06|mna|1,"Axcelis Technologies, Inc.",Issue Shares in Connection with Merger,ISSUER,AGAINST,1.0,1.0,FOR
+054540208|2026-05-05|pay|0,"Axcelis Technologies, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+114340102|2026-01-28|pay|0,"Azenta, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+05945F103|2026-05-28|pay|1,BancFirst Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+10316T104|2026-06-25|pay|0,"Box, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+11040G103|2026-06-03|pay|0,Bristow Group Inc.,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+12685J105|2026-05-14|pay|3,"Cable One, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+12685J105|2026-05-14|pay|2,"Cable One, Inc.",Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+13100M509|2026-05-14|pay|1,"Calix, Inc.",Amend Nonqualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+13100M509|2026-05-14|pay|3,"Calix, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+13100M509|2026-05-14|shareholder_proposal|0,"Calix, Inc.",Adopt Simple Majority Vote,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+19239V302|2026-05-01|pay|0,"Cogent Communications Holdings, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+19239V302|2026-05-01|pay|2,"Cogent Communications Holdings, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+192576106|2026-05-15|pay|5,"Cohu, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+192576106|2026-05-15|pay|4,"Cohu, Inc.",Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+192576106|2026-05-15|pay|0,"Cohu, Inc.",Amend Qualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+205768302|2026-06-02|pay|1,"Comstock Resources, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+126501105|2026-05-14|pay|1,CTS Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+G2717C106|2026-05-14|pay|3,Cushman & Wakefield Ltd.,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+G2717C106|2026-05-14|pay|2,Cushman & Wakefield Ltd.,Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+23204G100|2026-05-26|pay|0,"Customers Bancorp, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+23285D109|2026-06-10|pay|1,"Cytek Biosciences, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+254543101|2026-05-11|pay|1,Diodes Incorporated,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+25787G100|2026-05-13|pay|1,"Donnelley Financial Solutions, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+Y2106R110|2025-09-05|pay|1,Dorian LPG Ltd.,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+26154D100|2026-06-08|pay|1,"Dream Finders Homes, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+26154D100|2026-06-08|mna|0,"Dream Finders Homes, Inc.",Change State of Incorporation from Delaware to Texas,ISSUER,AGAINST,1.0,1.0,FOR
+277432100|2026-05-07|pay|3,Eastman Chemical Company,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+277432100|2026-05-07|pay|2,Eastman Chemical Company,Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+277432100|2026-05-07|shareholder_proposal|0,Eastman Chemical Company,Reduce Ownership Threshold for Shareholders to Call Special Meeting to 10%,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+28852N109|2026-05-28|pay|2,Ellington Financial Inc.,Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+531914109|2025-09-30|contested_election|7,"Lifeway Foods, Inc.","The Board Removal Proposal: To remove each director of the Company, including Julie Smolyansky, Juan Carlos Dalto, Jody Levy, Dorri McWhorter, Perfecto Sanchez, Jason Scher, Pol Sikar and any other director appointed by the Board on or after June 15, 2024 and prior to this Proposal becoming effective, subject to the election of at least one Nominee pursuant to the Director Election Proposal below: Julie Smolyansky",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+29082K105|2026-02-11|pay|0,Embecta Corp.,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+194014502|2026-05-19|pay|0,Enovis Corporation,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+415864107|2026-05-04|mna|1,Enviri Corporation,Approve Merger Agreement,ISSUER,AGAINST,1.0,1.0,FOR
+415864107|2026-05-04|pay|1,Enviri Corporation,Advisory Vote on Golden Parachutes,ISSUER,AGAINST,1.0,1.0,FOR
+30040P103|2026-05-21|pay|1,"EVERTEC, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+30212W100|2026-05-08|pay|1,"eXp World Holdings, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+30212W100|2026-05-08|mna|0,"eXp World Holdings, Inc.",Change State of Incorporation from Delaware to Texas,ISSUER,AGAINST,1.0,1.0,FOR
+30257X104|2026-05-21|pay|4,FB Financial Corporation,Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+30257X104|2026-05-21|pay|0,FB Financial Corporation,Amend Qualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+318910106|2026-04-28|pay|1,First Bancorp,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+302491303|2026-04-28|pay|3,FMC Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+302491303|2026-04-28|pay|2,FMC Corporation,Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+344849104|2025-08-22|mna|2,"Foot Locker, Inc.",Approve Merger Agreement,ISSUER,AGAINST,1.0,1.0,FOR
+344849104|2025-08-22|pay|1,"Foot Locker, Inc.",Advisory Vote on Golden Parachutes,ISSUER,AGAINST,1.0,1.0,FOR
+34986A104|2026-06-17|pay|0,Forward Air Corporation,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+G39108108|2026-06-04|pay|2,Gates Industrial Corporation plc,Approve Remuneration Report,ISSUER,AGAINST,1.0,1.0,FOR
+37253A103|2026-05-14|pay|3,Gentherm Incorporated,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+37253A103|2026-05-14|pay|0,Gentherm Incorporated,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+374689107|2026-05-07|pay|1,"Gibraltar Industries, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+381013101|2026-03-31|mna|1,"Golden Entertainment, Inc.",Approve Merger Agreement,ISSUER,AGAINST,1.0,1.0,FOR
+381013101|2026-03-31|pay|1,"Golden Entertainment, Inc.",Advisory Vote on Golden Parachutes,ISSUER,AGAINST,1.0,1.0,FOR
+39813G109|2025-12-23|pay|1,"Grid Dynamics Holdings, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+401617105|2025-11-21|mna|1,"Guess?, Inc.",Approve Merger Agreement,ISSUER,AGAINST,1.0,1.0,FOR
+401617105|2025-11-21|pay|1,"Guess?, Inc.",Advisory Vote on Golden Parachutes,ISSUER,AGAINST,1.0,1.0,FOR
+413160102|2026-06-04|pay|0,Harmonic Inc.,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+413197104|2026-05-14|pay|1,"Harmony Biosciences Holdings, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+42222N103|2026-05-28|pay|1,"HealthStream, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+422347104|2026-05-14|pay|3,"Heartland Express, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+422347104|2026-05-14|pay|0,"Heartland Express, Inc.",Amend Restricted Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+422819102|2025-12-05|mna|1,"Heidrick & Struggles International, Inc.",Approve Merger Agreement,ISSUER,AGAINST,1.0,1.0,FOR
+422819102|2025-12-05|pay|1,"Heidrick & Struggles International, Inc.",Advisory Vote on Golden Parachutes,ISSUER,AGAINST,1.0,1.0,FOR
+45688C107|2026-04-29|pay|0,Ingevity Corporation,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+457730109|2026-04-30|pay|0,"Inspire Medical Systems, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+45826H109|2026-05-20|pay|3,Integer Holdings Corporation,Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+457985208|2026-05-07|pay|0,Integra LifeSciences Holdings Corporation,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+458665304|2026-05-19|pay|1,"Interface, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+489398107|2026-06-10|mna|1,"Kennedy-Wilson Holdings, Inc.",Approve Merger Agreement,ISSUER,AGAINST,1.0,1.0,FOR
+489398107|2026-06-10|pay|1,"Kennedy-Wilson Holdings, Inc.",Advisory Vote on Golden Parachutes,ISSUER,AGAINST,1.0,1.0,FOR
+500255104|2026-05-20|pay|0,Kohl's Corporation,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+50060P106|2026-05-07|pay|0,Koppers Holdings Inc.,Amend Qualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+52466B103|2026-06-03|pay|1,"LegalZoom.com, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+53220K504|2026-06-05|pay|0,Ligand Pharmaceuticals Incorporated,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+53635B107|2026-02-26|pay|0,"Liquidity Services, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+501889208|2026-05-06|pay|1,LKQ Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+550241103|2026-05-20|pay|0,"Lumen Technologies, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+550241103|2026-05-20|shareholder_proposal|1,"Lumen Technologies, Inc.",Submit Shareholder Rights Plan (Poison Pill) to Shareholder Vote,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+559663109|2026-05-08|pay|1,Magnolia Oil & Gas Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+566324109|2026-04-30|pay|1,"Marcus & Millichap, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+573075108|2026-05-05|pay|1,"Marten Transport, Ltd.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+57776J100|2026-05-20|pay|5,"MaxLinear, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+57776J100|2026-05-20|pay|0,"MaxLinear, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+57776J100|2026-05-20|pay|1,"MaxLinear, Inc.",Amend Qualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+589378108|2025-10-22|pay|2,"Mercury Systems, Inc.",Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+589889104|2026-05-13|pay|5,"Merit Medical Systems, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+589889104|2026-05-13|pay|3,"Merit Medical Systems, Inc.",Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+589889104|2026-05-13|pay|4,"Merit Medical Systems, Inc.",Approve Qualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+59064R109|2025-08-22|pay|0,"Mesa Laboratories, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+55277P104|2026-05-19|pay|1,"MGE Energy, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+603158106|2026-05-20|pay|1,Minerals Technologies Inc.,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+635906100|2026-05-07|pay|1,National HealthCare Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+637215104|2026-05-19|pay|1,"National Presto Industries, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+64049M209|2026-05-21|pay|0,"NeoGenomics, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+651229106|2026-05-07|pay|2,Newell Brands Inc.,Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+62945V109|2025-07-31|mna|1,"NV5 Global, Inc.",Approve Merger Agreement,ISSUER,AGAINST,1.0,1.0,FOR
+62945V109|2025-07-31|pay|1,"NV5 Global, Inc.",Advisory Vote on Golden Parachutes,ISSUER,AGAINST,1.0,1.0,FOR
+67103X102|2026-04-22|pay|1,OFG Bancorp,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+68213N109|2026-05-19|pay|0,"Omnicell, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+P73684113|2026-06-03|pay|0,OneSpaWorld Holdings Limited,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+695127100|2026-06-09|contested_election|3,"Pacira Biosciences, Inc.",Elect Management Nominee Director Christopher J. Christie,ISSUER,AGAINST,1.0,1.0,FOR
+695127100|2026-06-09|contested_election|6,"Pacira Biosciences, Inc.",Elect Management Nominee Director Samit Hirawat,ISSUER,AGAINST,1.0,1.0,FOR
+642045108|2026-05-07|pay|2,Atlas Energy Solutions Inc.,Approve Qualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+695127100|2026-06-09|contested_election|5,"Pacira Biosciences, Inc.","Elect Dissident Nominee Director Oliver Benton ""Ben"" Curtis, III",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+695127100|2026-06-09|contested_election|4,"Pacira Biosciences, Inc.",Elect Dissident Nominee Director Eric de Armas,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+695127100|2026-06-09|contested_election|2,"Pacira Biosciences, Inc.",Elect Dissident Nominee Director Christopher Dennis,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+695127100|2026-06-09|pay|0,"Pacira Biosciences, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+695127100|2026-06-09|pay|1,"Pacira Biosciences, Inc.",Amend Qualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+700658107|2026-04-27|pay|5,Park National Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+700658107|2026-04-27|pay|2,Park National Corporation,Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+700658107|2026-04-27|pay|1,Park National Corporation,Approve Non-Employee Director Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+59100U108|2026-02-24|pay|1,"Pathward Financial, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+703343103|2026-05-14|pay|1,"Patrick Industries, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+693282105|2026-06-16|pay|0,"PDF Solutions, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+693282105|2026-06-16|pay|1,"PDF Solutions, Inc.",Amend Qualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+693282105|2026-06-16|pay|4,"PDF Solutions, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+58502B106|2026-05-07|pay|3,"Pediatrix Medical Group, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+58502B106|2026-05-07|pay|0,"Pediatrix Medical Group, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+707569109|2026-06-16|pay|0,"PENN Entertainment, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+707569109|2026-06-16|shareholder_proposal|0,"PENN Entertainment, Inc.",Declassify the Board of Directors,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+71363P106|2026-05-21|pay|1,Perdoceo Education Corporation,Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+71363P106|2026-05-21|pay|3,Perdoceo Education Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+724479100|2026-05-12|pay|1,Pitney Bowes Inc.,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+739128106|2026-02-18|pay|1,"Powell Industries, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+739276103|2026-06-03|pay|3,"Power Integrations, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+739276103|2026-06-03|pay|0,"Power Integrations, Inc.",Amend Restricted Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+739276103|2026-06-03|shareholder_proposal|1,"Power Integrations, Inc.",Require Independent Board Chair,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+69354N106|2026-06-16|pay|0,"PRA Group, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+74276R102|2026-05-20|pay|1,"Privia Health Group, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+743312100|2026-05-07|pay|5,Progress Software Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+743312100|2026-05-07|pay|0,Progress Software Corporation,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+743312100|2026-05-07|pay|1,Progress Software Corporation,Amend Qualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+743713109|2026-05-19|pay|4,"Proto Labs, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+743713109|2026-05-19|pay|0,"Proto Labs, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+69366J200|2026-06-02|pay|1,"PTC Therapeutics, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+74736K101|2026-02-11|mna|0,"Qorvo, Inc.",Approve Merger Agreement,ISSUER,AGAINST,1.0,1.0,FOR
+74736K101|2026-02-11|pay|0,"Qorvo, Inc.",Advisory Vote on Golden Parachutes,ISSUER,AGAINST,1.0,1.0,FOR
+747316107|2026-05-13|pay|1,Quaker Houghton,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+747619104|2026-02-26|pay|1,Quanex Building Products Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+219798105|2026-06-16|pay|1,QuidelOrtho Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+758075402|2026-05-19|pay|3,"Redwood Trust, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+758075402|2026-05-19|pay|0,"Redwood Trust, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+75970E107|2026-04-28|pay|1,Renasant Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+775133101|2026-05-06|pay|1,Rogers Corporation,Approve Qualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+74982T103|2026-05-12|pay|0,"RXO, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+74982T103|2026-05-12|pay|3,"RXO, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+78573M104|2026-04-29|pay|4,Sabre Corporation,Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+78573M104|2026-04-29|pay|3,Sabre Corporation,Approve Non-Employee Director Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+78573M104|2026-04-29|pay|5,Sabre Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+78646V107|2026-05-14|pay|0,Safehold Inc.,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+816850101|2026-06-04|pay|3,Semtech Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+816850101|2026-06-04|pay|0,Semtech Corporation,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+82312B106|2026-04-21|pay|1,Shenandoah Telecommunications Company,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+G8192H106|2026-05-20|pay|2,SiriusPoint Ltd.,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+G8192H106|2026-05-20|pay|1,SiriusPoint Ltd.,Approve Qualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+852312305|2026-01-06|mna|2,STAAR Surgical Company,Approve Merger Agreement,ISSUER,AGAINST,1.0,1.0,FOR
+852312305|2026-01-06|pay|2,STAAR Surgical Company,Advisory Vote on Golden Parachutes,ISSUER,AGAINST,1.0,1.0,FOR
+852312305|2026-06-18|pay|0,STAAR Surgical Company,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+854231107|2025-10-21|pay|1,Standex International Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+858927106|2026-05-27|mna|1,"Stellar Bancorp, Inc.",Approve Merger Agreement,ISSUER,AGAINST,1.0,1.0,FOR
+858927106|2026-05-27|pay|1,"Stellar Bancorp, Inc.",Advisory Vote on Golden Parachutes,ISSUER,AGAINST,1.0,1.0,FOR
+861896108|2026-03-10|pay|1,StoneX Group Inc.,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+866683105|2026-05-08|mna|1,"Sun Country Airlines Holdings, Inc.",Approve Merger Agreement,ISSUER,AGAINST,1.0,1.0,FOR
+866683105|2026-05-08|pay|1,"Sun Country Airlines Holdings, Inc.",Advisory Vote on Golden Parachutes,ISSUER,AGAINST,1.0,1.0,FOR
+86722A103|2026-05-14|pay|1,"SunCoke Energy, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+868459108|2026-06-18|pay|0,"Supernus Pharmaceuticals, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+875372203|2026-05-20|pay|1,"Tandem Diabetes Care, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+163086101|2026-05-08|pay|1,"The Chefs' Warehouse, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+890516107|2026-05-06|pay|1,"Tootsie Roll Industries, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+89679E300|2026-04-23|pay|1,"Triumph Financial, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+898202106|2026-06-10|pay|1,"Trupanion, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+898402102|2026-04-28|pay|1,Trustmark Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+90385V107|2026-05-22|pay|5,"Ultra Clean Holdings, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+90385V107|2026-05-22|pay|0,"Ultra Clean Holdings, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+90385V107|2026-05-22|pay|1,"Ultra Clean Holdings, Inc.",Amend Qualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+910340108|2026-05-20|pay|3,"United Fire Group, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+910340108|2026-05-20|pay|0,"United Fire Group, Inc.",Amend Non-Employee Director Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+922417100|2026-02-06|mna|1,Veeco Instruments Inc.,Approve Merger Agreement,ISSUER,AGAINST,1.0,1.0,FOR
+922417100|2026-02-06|pay|1,Veeco Instruments Inc.,Advisory Vote on Golden Parachutes,ISSUER,AGAINST,1.0,1.0,FOR
+922417100|2026-05-07|pay|0,Veeco Instruments Inc.,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+925283103|2026-06-25|pay|1,"Versant Media Group, Inc.",Approve Nonqualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+29430C102|2026-02-18|pay|1,Vestis Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+92552V100|2025-09-04|pay|5,"ViaSat, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+92552V100|2025-09-04|pay|0,"ViaSat, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+92552V100|2025-09-04|pay|1,"ViaSat, Inc.",Amend Qualified Employee Stock Purchase Plan,ISSUER,AGAINST,1.0,1.0,FOR
+925550105|2025-11-12|pay|0,Viavi Solutions Inc.,Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+92847W103|2026-06-10|pay|1,"Vital Farms, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+971378104|2026-06-05|pay|3,WillScot Holdings Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+971378104|2026-06-05|pay|2,WillScot Holdings Corporation,Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+978097103|2026-05-07|pay|1,"Wolverine World Wide, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+978097103|2026-05-07|shareholder_proposal|0,"Wolverine World Wide, Inc.",Report on Efforts to Reduce GHG Emissions,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+981419104|2025-08-20|pay|2,World Acceptance Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+981419104|2025-08-20|pay|1,World Acceptance Corporation,Approve Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+929328102|2026-05-14|pay|1,WSFS Financial Corporation,Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+98401F105|2026-06-16|pay|0,"Xencor, Inc.",Amend Omnibus Stock Plan,ISSUER,AGAINST,1.0,1.0,FOR
+98401F105|2026-06-16|pay|3,"Xencor, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+48123V102|2026-05-06|pay|1,"Ziff Davis, Inc.",Advisory Vote to Ratify Named Executive Officers' Compensation,ISSUER,AGAINST,1.0,1.0,FOR
+Y445S8102|2025-09-16|mna|0,"Jiangsu Hengrui Pharmaceuticals Co., Ltd.",Adopt 2025 A Share Employee Stock Ownership Scheme,ISSUER,AGAINST,1.0,1.0,FOR
+Y0772M100|2025-12-08|pay|1,"NAURA Technology Group Co., Ltd.",Amend Management Measures for Independent Directors,ISSUER,AGAINST,1.0,1.0,FOR
+P4559M101|2026-03-30|mna|2,Prologis Property Mexico SA de CV,"Ratify, Elect and/or Remove Members and Alternates of Technical Committee and Verify Independence Classification",ISSUER,AGAINST,1.0,1.0,FOR
+457030104|2026-04-30|shareholder_proposal|5,"INGLES MARKETS, INCORPORATED",COMPANY NOMINEE UNOPPOSED BY SUMMER ROAD: Dwight Jacobs,SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+583928106|2026-06-09|shareholder_proposal|1,MEDALLION FINANCIAL CORP.,"PROPOSAL TO RATIFY PLANTE & MORAN, PLLC AS THE INDEPENDENT REGISTERED PUBLIC ACCOUNTING FIRM FOR THE YEAR ENDING DECEMBER 31, 2026.",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+F64308111|2026-06-09|pay|2,Nanobiotix SA,Authorize Capital Issuances for Use in Employee Stock Purchase Plans,ISSUER,AGAINST,1.0,1.0,FOR
+531914109|2025-09-30|contested_election|6,"Lifeway Foods, Inc.","The Board Removal Proposal: To remove each director of the Company, including Julie Smolyansky, Juan Carlos Dalto, Jody Levy, Dorri McWhorter, Perfecto Sanchez, Jason Scher, Pol Sikar and any other director appointed by the Board on or after June 15, 2024 and prior to this Proposal becoming effective, subject to the election of at least one Nominee pursuant to the Director Election Proposal below: Juan Carlos Dalto",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+531914109|2025-09-30|contested_election|5,"Lifeway Foods, Inc.","The Board Removal Proposal: To remove each director of the Company, including Julie Smolyansky, Juan Carlos Dalto, Jody Levy, Dorri McWhorter, Perfecto Sanchez, Jason Scher, Pol Sikar and any other director appointed by the Board on or after June 15, 2024 and prior to this Proposal becoming effective, subject to the election of at least one Nominee pursuant to the Director Election Proposal below: Jody Levy",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+531914109|2025-09-30|contested_election|1,"Lifeway Foods, Inc.","The Board Removal Proposal: To remove each director of the Company, including Julie Smolyansky, Juan Carlos Dalto, Jody Levy, Dorri McWhorter, Perfecto Sanchez, Jason Scher, Pol Sikar and any other director appointed by the Board on or after June 15, 2024 and prior to this Proposal becoming effective, subject to the election of at least one Nominee pursuant to the Director Election Proposal below: Dorri McWhorter",SECURITY HOLDER,FOR,1.0,1.0,AGAINST
+695127100|2026-06-09|contested_election|7,"Pacira Biosciences, Inc.",Elect Management Nominee Director Thomas Wiggans,ISSUER,AGAINST,1.0,1.0,FOR

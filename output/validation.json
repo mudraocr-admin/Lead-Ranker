@@ -1,38 +1,26 @@
 {
-  "ISS": {
-    "universe": {
-      "rounds": 5,
-      "held_out": 165,
-      "panel_size_avg": 30.0,
-      "coverage": 0.703030303030303,
-      "accuracy": 0.9310344827586207,
-      "opposed_held_out": 80,
-      "opposed_coverage": 0.675,
-      "opposed_accuracy": 0.8518518518518519,
-      "passed": false,
-      "panel_size": 58
-    },
-    "headline": {
-      "holdout_items": 8,
-      "panel_size": 1,
-      "inferred": 0,
-      "correct": 0,
-      "accuracy": null,
-      "coverage": 0.0
-    }
-  },
   "GL": {
-    "universe": {
-      "rounds": 5,
-      "held_out": 125,
-      "panel_size_avg": 17.4,
-      "coverage": 0.552,
-      "accuracy": 0.9710144927536232,
-      "opposed_held_out": 56,
-      "opposed_coverage": 0.35714285714285715,
-      "opposed_accuracy": 0.9,
-      "passed": true,
-      "panel_size": 17
-    }
+    "held_out": 133,
+    "covered": 98,
+    "coverage": 0.7368,
+    "accuracy": 0.9082,
+    "opposed_held_out": 48,
+    "opposed_coverage": 0.8958,
+    "opposed_accuracy": 0.8605,
+    "passed": false,
+    "quotes_set_aside": 0,
+    "accuracy_vs_all_quotes": 0.9082
+  },
+  "ISS": {
+    "held_out": 159,
+    "covered": 119,
+    "coverage": 0.7484,
+    "accuracy": 0.9244,
+    "opposed_held_out": 64,
+    "opposed_coverage": 0.7969,
+    "opposed_accuracy": 0.9216,
+    "passed": true,
+    "quotes_set_aside": 7,
+    "accuracy_vs_all_quotes": 0.873
   }
 }

@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import gzip
-import hashlib
 import io
 import re
 import threading
@@ -27,13 +26,30 @@ VOTE_ALIASES = {"TAKENOACTION": "TAKE NO ACTION", "1 YEAR": "ONE YEAR", "2 YEARS
 
 
 # ---------------------------------------------------------------- download
-def select_filings(edgar: Edgar, cfg: dict) -> pd.DataFrame:
-    """N-PX filings in the window whose filer name matches a target family."""
+CONTEST_QUARTERS = ["2025/QTR2", "2025/QTR3", "2025/QTR4", "2026/QTR1", "2026/QTR2"]
+
+
+def npx_index(edgar: Edgar, cfg: dict, skip_names: bool = True) -> pd.DataFrame:
+    """Every N-PX and N-PX/A filing in the window, oldest first, minus non-equity
+    trusts by name.
+
+    A filer can make several filings in one window, and they are not all
+    amendments: GuideStone Funds filed a fund *voting* report and a separate
+    fund *notice* report (funds with nothing to vote on) the same day. Keeping
+    one filing per filer silently dropped ~1,000 filings, so every filing is
+    kept and combine_filings() reconciles them."""
     c = cfg["npx"]
     idx = pd.DataFrame(load_form_index(edgar, c["index_quarter"]))
-    idx = idx[(idx.form == "N-PX") & idx.date.between(c["filed_from"], c["filed_to"])]
-    skip = re.compile(c["skip_name_regex"])
-    idx = idx[~idx.company.map(lambda n: bool(skip.search(n)))]
+    idx = idx[idx.form.isin(["N-PX", "N-PX/A"]) & idx.date.between(c["filed_from"], c["filed_to"])]
+    if skip_names:
+        skip = re.compile(c["skip_name_regex"])
+        idx = idx[~idx.company.map(lambda n: bool(skip.search(n)))]
+    return idx.sort_values(["date", "path"]).reset_index(drop=True)
+
+
+def select_filings(edgar: Edgar, cfg: dict) -> pd.DataFrame:
+    """N-PX filings in the window whose filer matches a target family."""
+    idx = npx_index(edgar, cfg)
     picks = []
     for fam in cfg["families"]:
         if fam.get("ciks"):
@@ -43,10 +59,10 @@ def select_filings(edgar: Edgar, cfg: dict) -> pd.DataFrame:
             hit = idx[idx.company.map(lambda n: bool(pat.search(n)))].copy()
         if hit.empty:
             print(f"  [families.csv] no N-PX filer matched '{fam['name']}' - check its match/ciks")
-        # Amendments and duplicates: keep the latest filing per filer CIK.
-        hit = hit.sort_values("date").drop_duplicates("cik", keep="last")
         hit["family"] = fam["name"]
-        picks.append(hit.head(c["max_filings_per_family"]))
+        # Cap by trust, not by filing, so a trust split across filings stays whole.
+        trusts = hit.cik.drop_duplicates().head(cfg["npx"]["max_trusts_per_family"])
+        picks.append(hit[hit.cik.isin(trusts)])
     return pd.concat(picks, ignore_index=True)
 
 
@@ -66,33 +82,92 @@ def fetch_filing(edgar: Edgar, path: str) -> bytes:
     return body
 
 
-def load_universe(edgar: Edgar, cfg: dict, pri: pd.DataFrame, log=print) -> pd.DataFrame:
-    """Votes from every other fund filer of N-PX, on the meetings our target
-    families voted in. These funds are never scored; they are reference voters
-    used to find adviser followers and infer the adviser's call on more items.
+def _prev_quarter(q: str) -> str:
+    year, n = int(q[:4]), int(q[-1])
+    return f"{year - 1}/QTR4" if n == 1 else f"{year}/QTR{n - 1}"
 
-    Raw filings are cached under data/raw/npx/, and the filtered result under
-    data/processed/ keyed by the meeting set, so reruns are cheap."""
+
+def fund_filers(edgar: Edgar, quarter: str) -> set[str]:
+    """CIKs that filed NPORT-P in the quarter or the one before: registered funds.
+    Institutional managers file N-PX too (about 3 in 4 filers) but never NPORT-P,
+    so this drops them before download instead of after."""
+    rows = load_form_index(edgar, quarter) + load_form_index(edgar, _prev_quarter(quarter))
+    return {r["cik"] for r in rows if r["form"].startswith("NPORT-P")}
+
+
+def contest_issuers(edgar: Edgar) -> set[str]:
+    """Normalized names of companies with proxy-fight filings (DEFC14A, DFAN14A).
+    Director elections are kept in the universe cache only at these companies."""
+    forms = {"DEFC14A", "DEFC14A/A", "DFAN14A"}
+    return {_norm(r["company"]) for q in CONTEST_QUARTERS for r in load_form_index(edgar, q) if r["form"] in forms}
+
+
+def universe_keep(contest: set[str]):
+    """Row filter for the universe cache: the ballot items scoring can use
+    (pay, shareholder proposals, M&A), plus director elections at companies with
+    a proxy fight. Uncontested director elections, more than half of all rows,
+    are never scored."""
+    names = sorted(contest)
+    seen: dict[str, bool] = {}
+
+    def in_contest(issuer: str) -> bool:
+        if issuer not in seen:
+            seen[issuer] = process.extractOne(_norm(issuer), names, scorer=fuzz.token_sort_ratio,
+                                              score_cutoff=92) is not None
+        return seen[issuer]
+
+    def keep(base: dict, cats: list[str]) -> bool:
+        if base["vote_source"] == "SECURITY HOLDER" or "EXTRAORDINARY TRANSACTIONS" in cats or PAY_CATS & set(cats):
+            return True
+        return "DIRECTOR ELECTIONS" in cats and in_contest(base["issuer"])
+    return keep
+
+
+UNIVERSE_COLS = ["cusip", "meeting_date", "description", "vote_categories", "vote_source", "isin"]
+UNIVERSE_VERSION = 2  # 2: all of a filer's N-PX filings, not just its last one
+
+
+def combine_filings(parts: list[tuple[dict, pd.DataFrame]]) -> pd.DataFrame:
+    """One filer's filings, oldest first, as (header, vote rows with series_id).
+    Original reports and NEW HOLDINGS amendments add votes; a RESTATEMENT
+    amendment replaces the earlier votes of every series it reports."""
+    out = pd.DataFrame()
+    for header, d in parts:
+        if header["amendment_type"] == "RESTATEMENT" and len(out):
+            out = out[~out.series_id.isin(set(d.series_id))]
+        out = pd.concat([out, d], ignore_index=True)
+    return out
+
+
+def collapse_filer(d: pd.DataFrame) -> pd.DataFrame:
+    """One FOR/AGAINST vote per ballot item for the whole filer. Items its funds
+    split on are dropped, as Zytnick (2025) does when collapsing funds to institutions."""
+    d = d.copy()
+    d["vote_cast"] = d.vote_cast.replace({"WITHHOLD": "AGAINST"})
+    d = d[d.vote_cast.isin(["FOR", "AGAINST"])]
+    g = d.groupby(UNIVERSE_COLS).vote_cast.agg(["first", "nunique"])
+    return g[g["nunique"] == 1]["first"].rename("vote_cast").reset_index()
+
+
+def load_universe(edgar: Edgar, cfg: dict, log=print) -> pd.DataFrame:
+    """Votes of every registered fund that filed N-PX in the window, one vote per
+    filer per ballot item. These filers are the voters the recommendation
+    imputation learns from (see impute.py); target families are dropped at use.
+
+    Built once per N-PX window and independent of families.csv, so a new target
+    list reuses it. Raw filings are cached under data/raw/npx/."""
     c, u = cfg["npx"], cfg["universe"]
-    meetings = set(zip(pri.cusip, pri.meeting_dt.dt.strftime("%m/%d/%Y")))
-    tag = hashlib.sha1("\n".join(sorted(f"{a}|{b}" for a, b in meetings)).encode()).hexdigest()[:10]
-    out = PROCESSED / f"npx_universe_{tag}.parquet"
+    out = PROCESSED / f"npx_universe_{c['filed_from']}_{c['filed_to']}_v{UNIVERSE_VERSION}.parquet"
     if out.exists():
         uni = pd.read_parquet(out)
-        log(f"Universe: {len(uni):,} cached vote rows from {uni.filer_cik.nunique():,} reference filers")
+        log(f"Universe: {len(uni):,} cached filer votes from {uni.filer_cik.nunique():,} fund filers")
         return uni
 
-    idx = pd.DataFrame(load_form_index(edgar, c["index_quarter"]))
-    idx = idx[(idx.form == "N-PX") & idx.date.between(c["filed_from"], c["filed_to"])]
-    idx = idx[~idx.company.map(lambda n: bool(re.search(c["skip_name_regex"], n)))]
-    targets = set(pri.trust_cik.unique())
-    idx = idx[~idx.cik.isin(targets)].sort_values("date").drop_duplicates("cik", keep="last")
-    # Fund-like names first (most filers are institutional managers, which are
-    # skipped), so a download cap or interruption still leaves the funds.
-    fundish = idx.company.str.contains(r"(?i)\b(trust|funds?|portfolios?|series|etf|variable|investors?)\b")
-    idx = idx.assign(_f=fundish).sort_values("_f", ascending=False, kind="stable")
-    log(f"Universe: {len(idx):,} candidate N-PX filers outside the target families "
-        f"({int(fundish.sum()):,} with fund-like names first)")
+    idx = npx_index(edgar, cfg)
+    funds = fund_filers(edgar, c["index_quarter"])
+    log(f"Universe: {idx.cik.nunique():,} N-PX filers, {idx[idx.cik.isin(funds)].cik.nunique():,} of them registered "
+        f"funds (NPORT-P), {int(idx.cik.isin(funds).sum()):,} filings")
+    idx = idx[idx.cik.isin(funds)]
 
     # Download in parallel; Edgar's lock keeps the whole pool within max_rps.
     def prefetch(path):
@@ -108,36 +183,31 @@ def load_universe(edgar: Edgar, cfg: dict, pri: pd.DataFrame, log=print) -> pd.D
             if i % 500 == 0:
                 log(f"  universe download: {i:,}/{len(idx):,}")
 
-    keep = lambda cusip, mdate: (cusip, mdate) in meetings  # noqa: E731
-    frames, total, cap = [], 0, u["max_gb"] * 2**30
-    n_fund = 0
-    for i, f in enumerate(idx.itertuples(), 1):
+    keep = universe_keep(contest_issuers(edgar))
+    frames = []
+    for i, (cik, g) in enumerate(idx.groupby("cik", sort=False), 1):
         if i % 250 == 0:
-            log(f"  universe: {i:,}/{len(idx):,} filers read, {n_fund:,} fund filers, {total / 2**30:.1f} GB")
-        if total > cap:
-            log(f"  universe download cap ({u['max_gb']} GB) reached after {i - 1:,} filers")
-            break
-        try:
-            body = fetch_filing(edgar, f.path)
-        except Exception as e:  # one bad filing must not stop a multi-hour download
-            log(f"  skip {f.company}: {type(e).__name__}")
-            continue
-        total += len(body)
-        if body.find(b"<registrantType>RMIC</registrantType>", 0, 5_000_000) < 0:
-            continue  # institutional managers, not funds
-        header, rows = parse_filing(body, keep)
-        n_fund += 1
-        if rows:
-            d = pd.DataFrame(rows)[["cusip", "meeting_date", "description", "vote_categories", "vote_source",
-                                    "isin", "vote_cast", "vs_mgmt", "series_id"]]
-            d["series_id"] = d.series_id.replace("", f"CIK{f.cik}")
-            d["filer_cik"], d["filer"] = f.cik, f.company
-            frames.append(d)
+            log(f"  universe: {i:,}/{idx.cik.nunique():,} filers read")
+        parts = []
+        for f in g.itertuples():
+            try:
+                body = fetch_filing(edgar, f.path)
+            except Exception as e:
+                log(f"  skip {f.company} {f.path}: {type(e).__name__}")
+                continue
+            if body.find(b"<registrantType>RMIC</registrantType>", 0, 5_000_000) < 0:
+                continue
+            header, rows = parse_filing(body, keep)
+            if rows:
+                parts.append((header, pd.DataFrame(rows)))
+        if parts:
+            frames.append(collapse_filer(combine_filings(parts)).assign(filer_cik=cik, filer=g.company.iat[-1]))
     uni = pd.concat(frames, ignore_index=True)
     uni["meeting_dt"] = pd.to_datetime(uni.meeting_date, format="%m/%d/%Y", errors="coerce")
+    for col in ("vote_categories", "vote_source", "vote_cast", "filer", "filer_cik"):
+        uni[col] = uni[col].astype("category")
     uni.to_parquet(out, index=False)
-    log(f"Universe: {len(uni):,} vote rows on target meetings from {uni.filer_cik.nunique():,} fund filers "
-        f"({uni.series_id.nunique():,} funds)")
+    log(f"Universe: {len(uni):,} filer votes from {uni.filer_cik.nunique():,} fund filers")
     return uni
 
 
@@ -149,18 +219,14 @@ def _text(el, tag):
 
 def parse_filing(body: bytes, keep=None) -> tuple[dict, list[dict]]:
     """Returns (header, vote rows). Header carries registrantType + series names.
-    `keep(cusip, meeting_date)` optionally filters ballot items before their vote
-    records are expanded, which keeps very large filings cheap to parse."""
-    header: dict = {"registrant_type": "", "series": {}}
+    `keep(item_fields, categories)` optionally filters ballot items before their
+    vote records are expanded, which keeps very large filings cheap to parse."""
+    header: dict = {"registrant_type": "", "report_type": "", "amendment_type": "", "series": {}}
     rows: list[dict] = []
     for block in XML_BLOCK.findall(body):
         if b"proxyVoteTable" in block[:500]:
             for _, pt in etree.iterparse(io.BytesIO(block), tag=NS + "proxyTable", huge_tree=True):
-                if keep is not None and not keep(_text(pt, "cusip").upper(), _text(pt, "meetingDate")):
-                    pt.clear()
-                    continue
                 cats = [c.text.strip() for c in pt.iter(NS + "categoryType") if c.text]
-                series = [s.text.strip() for s in pt.iter(NS + "voteSeries") if s.text] or [""]
                 base = {
                     "issuer": _text(pt, "issuerName"),
                     "cusip": _text(pt, "cusip").upper(),
@@ -170,6 +236,10 @@ def parse_filing(body: bytes, keep=None) -> tuple[dict, list[dict]]:
                     "vote_categories": "|".join(cats),
                     "vote_source": _text(pt, "voteSource"),
                 }
+                if keep is not None and not keep(base, cats):
+                    pt.clear()
+                    continue
+                series = [s.text.strip() for s in pt.iter(NS + "voteSeries") if s.text] or [""]
                 for vr in pt.iter(NS + "voteRecord"):
                     rec = dict(base,
                                vote_cast=VOTE_ALIASES.get(_text(vr, "howVoted").upper(), _text(vr, "howVoted").upper()),
@@ -183,7 +253,10 @@ def parse_filing(body: bytes, keep=None) -> tuple[dict, list[dict]]:
         else:
             root = etree.fromstring(block, parser=etree.XMLParser(huge_tree=True, recover=True))
             els = [(etree.QName(e).localname, e.text) for e in root.iter() if isinstance(e.tag, str)]
-            header["registrant_type"] = next((t.strip() for n, t in els if n == "registrantType" and t), "")
+            first = lambda tag: next((t.strip() for n, t in els if n == tag and t), "")  # noqa: E731
+            header["registrant_type"] = first("registrantType")
+            header["report_type"] = first("reportType")        # e.g. FUND VOTING REPORT / FUND NOTICE REPORT
+            header["amendment_type"] = first("amendmentType")  # RESTATEMENT / NEW HOLDINGS on an N-PX/A
             ids = [t for n, t in els if n == "idOfSeries"]
             names = [t for n, t in els if n == "nameOfSeries"]
             header["series"] = dict(zip(ids, names))
@@ -317,29 +390,48 @@ def load_votes(edgar: Edgar, cfg: dict, log=print) -> pd.DataFrame:
     frames, cap = [], cfg["npx"]["max_mb_per_family"] * 2**20
     used: dict[str, int] = {}
     audit = []
-    for f in filings.itertuples():
-        a = {"family": f.family, "cik": f.cik, "filer": f.company, "filed": f.date, "accession": f.path}
-        if used.get(f.family, 0) > cap:
-            log(f"  skip {f.company}: family byte cap reached")
-            audit.append({**a, "status": "skipped: family download cap"})
-            continue
-        body = fetch_filing(edgar, f.path)
-        used[f.family] = used.get(f.family, 0) + len(body)
-        header, rows = parse_filing(body)
-        if header["registrant_type"] != "RMIC" or not rows:
-            log(f"  drop {f.company}: type={header['registrant_type'] or '?'} rows={len(rows)}")
-            why = ("dropped: not a fund filing (registrant type " + (header["registrant_type"] or "?") + ")"
-                   if header["registrant_type"] != "RMIC" else "dropped: fund filing with no votes")
-            audit.append({**a, "status": why, "series": "; ".join(header["series"].values())})
-            continue
-        audit.append({**a, "status": "used", "vote_rows": len(rows), "series": "; ".join(header["series"].values())})
-        d = pd.DataFrame(rows)
-        d["series_id"] = d.series_id.replace("", f"CIK{f.cik}")
-        d["series_name"] = d.series_id.map(header["series"]).fillna(f.company)
-        d["family"], d["trust"], d["trust_cik"], d["accession"] = f.family, f.company, f.cik, f.path
-        frames.append(d)
-        log(f"  {f.family:<20} {f.company[:45]:<45} {len(d):>8,} rows")
+    for (family, cik), g in filings.groupby(["family", "cik"], sort=False):
+        parts = []
+        for f in g.itertuples():
+            a = {"family": family, "cik": cik, "filer": f.company, "form": f.form, "filed": f.date,
+                 "accession": f.path}
+            if used.get(family, 0) > cap:
+                log(f"  skip {f.company}: family byte cap reached")
+                audit.append({**a, "status": "skipped: family download cap"})
+                continue
+            body = fetch_filing(edgar, f.path)
+            used[family] = used.get(family, 0) + len(body)
+            header, rows = parse_filing(body)
+            a.update(report_type=header["report_type"], amendment_type=header["amendment_type"],
+                     series="; ".join(header["series"].values()))
+            if header["registrant_type"] != "RMIC":
+                why = f"dropped: not a fund filing (registrant type {header['registrant_type'] or '?'})"
+            elif "NOTICE" in header["report_type"]:
+                why = "no votes: notice report (nothing to vote on)"
+            elif not rows:
+                why = "WARNING: voting report but no votes parsed"
+            else:
+                why = ""
+            if why:
+                log(f"  {why}: {f.company} {f.path}")
+                audit.append({**a, "status": why})
+                continue
+            d = pd.DataFrame(rows)
+            d["series_id"] = d.series_id.replace("", f"CIK{cik}")
+            d["series_name"] = d.series_id.map(header["series"]).fillna(f.company)
+            d["family"], d["trust"], d["trust_cik"], d["accession"] = family, f.company, cik, f.path
+            parts.append((header, d))
+            audit.append({**a, "status": "used", "vote_rows": len(d)})
+        if parts:
+            d = combine_filings(parts)
+            frames.append(d)
+            log(f"  {family:<20} {g.company.iat[-1][:45]:<45} {len(d):>8,} rows from {len(parts)} filing(s)")
     votes = pd.concat(frames, ignore_index=True)
+    # A restatement can replace an earlier filing's votes entirely.
+    kept = set(votes.accession)
+    for a in audit:
+        if a["status"] == "used" and a["accession"] not in kept:
+            a["status"] = "replaced by a later restatement"
     OUTPUT.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(audit).to_csv(OUTPUT / "filers.csv", index=False)
     log(f"N-PX: filer audit written to output/filers.csv")
@@ -349,7 +441,7 @@ def load_votes(edgar: Edgar, cfg: dict, log=print) -> pd.DataFrame:
     votes["shares"] = pd.to_numeric(votes.shares, errors="coerce")
 
     # Contested elections: N-PX has no contest flag, so match to DEFC14A.
-    defc = contested_meetings(edgar, ["2025/QTR2", "2025/QTR3", "2025/QTR4", "2026/QTR1", "2026/QTR2"])
+    defc = contested_meetings(edgar, CONTEST_QUARTERS)
     meetings = votes[votes.vote_categories.str.contains("DIRECTOR ELECTIONS")][["issuer", "meeting_dt"]].drop_duplicates()
     meetings["contested"] = flag_contested(meetings, defc)
     votes = votes.merge(meetings, on=["issuer", "meeting_dt"], how="left")

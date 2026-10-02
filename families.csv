@@ -1,31 +1,51 @@
-family,match
-American Century,^AMERICAN CENTURY (MUTUAL|CAPITAL|GROWTH|WORLD|QUANTITATIVE|STRATEGIC|ETF)
-Alger,^ALGER (FUNDS|PORTFOLIOS|INSTITUTIONAL|GLOBAL|ETF)
-Allspring,^ALLSPRING (FUNDS TRUST|VARIABLE TRUST|EXCHANGE-TRADED|MASTER TRUST)
-AMG,^AMG (FUNDS|Funds I|Funds IV|ETF Trust)
-Ariel,^ARIEL INVESTMENT TRUST
-Artisan,^ARTISAN PARTNERS FUNDS
-Baird,^BAIRD FUNDS
-Brown Advisory,^Brown Advisory Funds
-Calamos,^CALAMOS (INVESTMENT TRUST|ADVISORS TRUST)|^Calamos ETF Trust
-Causeway,^CAUSEWAY CAPITAL MANAGEMENT TRUST
-Columbia,^COLUMBIA (ACORN|FUNDS SERIES TRUST|FUNDS VARIABLE)|^Columbia (Funds Series Trust II|ETF Trust)
-Delaware / Macquarie,^DELAWARE GROUP EQUITY
-Diamond Hill,^DIAMOND HILL FUNDS
-Dodge & Cox,^DODGE & COX
-Federated Hermes,^FEDERATED HERMES (EQUITY|ADVISER|ETF|INSURANCE|MDT)
-Franklin Templeton,^FRANKLIN (CUSTODIAN|STRATEGIC SERIES|VALUE|MUTUAL SERIES|TEMPLETON ETF)|^TEMPLETON (FUNDS|GROWTH|GLOBAL)
-Harbor,^HARBOR (FUNDS|ETF)
-Hartford,^HARTFORD (MUTUAL FUNDS|SERIES FUND)|^HARTFORD FUNDS EXCHANGE
-Invesco,\(INVESCO (EQUITY|COUNSELOR|GROWTH|SECTOR|INVESTMENT FUNDS|VARIABLE)
-Janus Henderson,^JANUS (INVESTMENT FUND|ASPEN|DETROIT)
-Lord Abbett,^LORD ABBETT (SECURITIES|RESEARCH|MID CAP|DEVELOPING|AFFILIATED|SERIES|TRUST I)
-MFS,^MFS SERIES TRUST (I|II|IV|VI|X|XI)$|^MFS VARIABLE INSURANCE
-Neuberger Berman,^NEUBERGER BERMAN (EQUITY|ADVISERS|ETF)
-Parnassus,^PARNASSUS
-Principal,^PRINCIPAL (FUNDS|VARIABLE CONTRACTS|EXCHANGE)
-Putnam,^PUTNAM (FUNDS TRUST|INVESTMENT FUNDS|VARIABLE|ETF|INTERNATIONAL EQUITY|SUSTAINABLE)
-Schwab,^SCHWAB (CAPITAL TRUST|STRATEGIC TRUST|INVESTMENTS)|^CHARLES SCHWAB FAMILY
-Thrivent,^THRIVENT (MUTUAL|SERIES|ETF)
-Victory,^VICTORY (PORTFOLIOS|VARIABLE|PORTFOLIOS II)
-Virtus,^VIRTUS (EQUITY|OPPORTUNITIES|ASSET|INVESTMENT|VARIABLE|ETF)
+family,match,ciks,structure,pennant_fit,fit_rationale,fit_risk
+Touchstone Investments,,914243;711080;920547;1919700,Multi-manager / subadvised,High,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house","Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Nationwide Funds,,1048702;353905,Multi-manager / subadvised,High,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house","Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Transamerica,,787623;778207,Multi-manager / subadvised,Medium,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house","Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+John Hancock Investment Management,,45291;22370;743861;792858;756913;1478482;1329954;1331971;925683;1260041,Multi-manager / subadvised,Medium,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house","Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design; large enough to have internal resources"
+Russell Investments,,351601;824036;2042513,Multi-manager / subadvised,High,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house","Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+SEI Investments,,1003632;1627853;1888997;835597;939934;804239,Multi-manager / subadvised,Medium,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house","Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design; large platform"
+PGIM Investments,,711175;352665;356683;318531;1022624;741350;816753;949512;1727074;807394,Multi-manager / subadvised,Medium,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",Large; may have in-house stewardship resources
+Voya Investment Management,,1063946;1066602;837276;895430;1039001;1392116;2664;1090682;1015965;916403,Multi-manager / subadvised,Medium,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",Large; may have in-house stewardship resources
+New York Life Investments (MainStay),,787441;1469192;887340;1426439;1415995,Multi-manager / subadvised,High,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house","Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+BNY Mellon Investment Adviser,,1111565;857114;1056707;1111178;846800;813383;914775;1493580;799295;30146,Multi-manager / subadvised,Medium,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",Parent is a large custodian; may build or buy elsewhere
+Natixis Investment Managers,,1406305;872323;2035827;917469;872649;1526787;1728860;770540;52136;1095726,Multi-manager / subadvised,High,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",Multi-boutique like AMG; affiliates may vote independently
+Bridge Builder Trust (Edward Jones),,1567101,Multi-manager / subadvised,High,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house","Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Mercer Funds,,1320615,Multi-manager / subadvised,Medium,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house","Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Morningstar Funds Trust,,1699360,Multi-manager / subadvised,Medium,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house","Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design; smaller lineup"
+AssetMark (GuidePath / Savos),,1131042;1504079,Multi-manager / subadvised,Medium,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house","Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Destinations Funds (Orion / Brinker),,1688680,Multi-manager / subadvised,Medium,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house","Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Wilmington Funds,,830744,Multi-manager / subadvised,Medium,"Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",Smaller lineup; may hit insufficient data
+GuideStone Funds,,1131013,Multi-manager / subadvised,High,"Faith-based screens require a custom voting policy, Pennant's core use case","Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Lincoln Financial (LVIP),,914036;2015799,Insurance-affiliated VIT (subadvised),Medium,Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop,"Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Jackson National (JNL Series Trust),,933691,Insurance-affiliated VIT (subadvised),Medium,Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop,"Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Brighthouse Funds Trust,,1126087;710826,Insurance-affiliated VIT (subadvised),Medium,Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop,"Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Pacific Life Funds,,813900,Insurance-affiliated VIT (subadvised),Medium,Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop,"Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Empower Funds,,356476,Insurance-affiliated VIT (subadvised),Medium,Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop,"Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Equitable (EQ Advisors Trust / 1290 Funds),,1605941;1027263,Insurance-affiliated VIT (subadvised),Medium,Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop,"Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+MassMutual (Select Funds / MML),,927972;916053;67160;1317146;1859808,Insurance-affiliated VIT (subadvised),Medium,Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop,"Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Northwestern Mutual Series Fund,,742212,Insurance-affiliated VIT (subadvised),Medium,Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop,"Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design"
+Securian (SFT Funds),,766351,Insurance-affiliated VIT (subadvised),Medium,Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop,Smaller lineup; may hit insufficient data
+Mutual of America,,922127,Insurance-affiliated VIT (subadvised),Medium,Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop,Index-heavy; may be an ISS follower
+Penn Mutual (Penn Series Funds),,702340,Insurance-affiliated VIT (subadvised),Medium,Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop,Smaller lineup; may hit insufficient data
+William Blair,,822632,"Single-manager, diversified",High,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Verify N-PX filer name
+First Eagle,,906352;1000249;2083193,"Single-manager, diversified",High,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Global; non-US meetings drop out of the key
+Wasatch Global,,806633,"Single-manager, diversified",High,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Small-cap holdings rarely appear in DEFA14A key
+Boston Partners,,1386060,"Single-manager, diversified",High,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Funds may file under a Robeco or trust name
+Thornburg,,816153;2038383,"Single-manager, diversified",High,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Mixed equity/income lineup
+Cohen & Steers,,1041917;874505;1096903;1033969;1309161;1276070;1275617;1533503;1590402;1157842,"Single-manager, diversified",Medium,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,REIT-concentrated; few contested or M&A items
+GMO,,772129;1981627,"Single-manager, diversified",Medium,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Global; non-US meetings drop out of the key
+AQR,,1444822,"Single-manager, diversified",Medium,Quant manager with very broad holdings; high workload,Systematic voting; may score as ISS follower
+Gabelli Funds (GAMCO),,783898;1086884;877670;794685;806857;925463;893783;1087966;909504;853438,"Single-manager, diversified",High,Broad holdings and a known independent voting stance; likely judgment voter,"Active in M&A situations, so contested/M&A sample may be useful"
+Calvert Research and Management,,701039;1121624;319676;1105446;356682;708950;743773;884110,"Single-manager, diversified",High,ESG mandate means frequent support for shareholder proposals; custom policy,Owned by Morgan Stanley; may share parent resources
+Impax (Pax World Funds),,76721;1598735,"Single-manager, diversified",High,ESG mandate means a custom policy and many shareholder proposal votes,Smaller lineup
+Glenmede,,314949;1644465,"Single-manager, diversified",Medium,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Quant-heavy; may follow ISS
+Segall Bryant & Hamill,,357204,"Single-manager, diversified",Medium,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Smaller lineup; may hit insufficient data
+Sterling Capital,,889284,"Single-manager, diversified",Medium,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Smaller lineup; may hit insufficient data
+Manning & Napier,,751173,"Single-manager, diversified",Medium,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Smaller lineup; may hit insufficient data
+Madison Investments,,1040612;732697,"Single-manager, diversified",Medium,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Smaller lineup; may hit insufficient data
+Aristotle Funds,,1959372,"Single-manager, diversified",Medium,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Verify N-PX filer name
+Westwood,,1165002;949471,"Single-manager, diversified",Medium,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Smaller lineup; may hit insufficient data
+Hotchkis & Wiley,,1145022,"Single-manager, diversified",Medium,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Value funds are fairly concentrated
+Driehaus,,1016073,"Single-manager, diversified",Medium,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,Small-cap holdings rarely appear in DEFA14A key
+Lazard,,874964;1033669;2051630,"Single-manager, diversified",Medium,Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff,International-heavy; many votes fall outside the US key

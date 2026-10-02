@@ -15,9 +15,10 @@ import json
 import pandas as pd
 
 from .config import OUTPUT
-from .scoring import CATS
+from .scoring import CATS, wilson
 
-LEVELS = ["low", "medium", "high"]
+THRESHOLD = 0.90  # scoring.mgmt_follower and scoring.adviser_follower
+
 TIER_LABELS = {1: "Tier 1 - independent voter", 2: "Tier 2 - adviser follower",
                3: "Tier 3 - management follower"}
 
@@ -31,23 +32,18 @@ def tier_of(segment: str) -> int:
 
 
 def confidence(row: pd.Series) -> tuple[str, str]:
-    """Data volume sets the base; an SAI that tells the same story raises it.
-    Labels from the thin-data rules are always low."""
+    """High when the 95% interval on the deciding rate sits entirely on one side
+    of its 90% line, medium when it straddles it. Thin-data labels are low."""
     if row.get("segment_basis"):
         return "low", row["segment_basis"]
     if row["segment"] == "Management follower":
-        return ("high" if row["mgmt_items"] >= 200 else "medium"), "rate over all priority items"
-    a = row.get("scored_adviser")
-    base = 1 if a and row.get(f"n_{a}_opposed", 0) >= 20 else 0
-    seg, sai_adv = row["segment"], row.get("advisor")
-    followed = {"ISS follower": "ISS", "Glass Lewis follower": "Glass Lewis"}.get(seg)
-    confirms = ""
-    if seg in ("Judgment voter", "Partial robo-voter") and (row.get("own_guidelines") is True
-                                                             or row.get("stewardship_team") is True):
-        confirms = "SAI describes own guidelines / stewardship team"
-    elif followed and sai_adv in (followed, "both") and row.get("own_guidelines") is not True:
-        confirms = f"SAI names {followed} without own guidelines"
-    return LEVELS[min(base + (1 if confirms else 0), 2)], confirms
+        rate, n, what = row["mgmt_rate"], row["mgmt_items"], "votes with the board"
+    else:
+        a = row["scored_adviser"]
+        rate, n, what = row["adviser_agreement"], row[f"n_{a}_opposed"], f"agreement with {a} where it opposed the board"
+    lo, hi = wilson(round(rate * n), int(n))
+    clear = lo >= THRESHOLD or hi < THRESHOLD
+    return ("high" if clear else "medium"), f"{what}: {rate:.0%} of {int(n)} (95% interval {lo:.0%}-{hi:.0%})"
 
 
 def filer_ciks(votes: pd.DataFrame) -> pd.DataFrame:
@@ -57,11 +53,8 @@ def filer_ciks(votes: pd.DataFrame) -> pd.DataFrame:
     return t.groupby("family").agg(ciks=("trust_cik", "; ".join), filers=("trust", "; ".join)).reset_index()
 
 
-def rank_prospects(sc: pd.DataFrame, sai: pd.DataFrame, votes: pd.DataFrame) -> pd.DataFrame:
-    sc = sc.merge(filer_ciks(votes), on="family", how="left")
-    df = sc.merge(sai[["family", "advisor", "roles", "own_guidelines", "stewardship_team", "evidence", "ai_source"]]
-                  .rename(columns={"advisor": "sai_advisor", "evidence": "sai_evidence", "ai_source": "sai_source"})
-                  .assign(advisor=lambda d: d.sai_advisor), on="family", how="left")
+def rank_prospects(sc: pd.DataFrame, votes: pd.DataFrame) -> pd.DataFrame:
+    df = sc.merge(filer_ciks(votes), on="family", how="left")
     conf = df.apply(confidence, axis=1, result_type="expand")
     df["confidence"], df["confidence_reason"] = conf[0], conf[1]
     df["tier"] = df.segment.map(tier_of)
@@ -79,8 +72,7 @@ def write_outputs(prospects: pd.DataFrame, keys: dict[str, pd.DataFrame], valida
             + [f"{p}_{a}_{k}" for a in keys for k in ("opposed", "aligned") for p in ("agree", "n")]
             + [f"{p}_{a}_{c}{o}" for a in keys for c in CATS for o in ("_opposed", "") for p in ("agree", "n")]
             + [f"mgmt_{p}_{c}" for c in CATS for p in ("rate", "n")]
-            + ["series_divergence", "n_series", "sai_advisor", "roles", "own_guidelines", "stewardship_team",
-               "sai_evidence", "sai_source", "filers"])
+            + ["series_divergence", "n_series", "filers"])
     prospects[cols].to_csv(OUTPUT / "priority_list.csv", index=False)
     for adv, key in keys.items():
         key.to_csv(OUTPUT / f"{adv.lower()}_key.csv", index=False)

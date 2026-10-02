@@ -11,3 +11,5 @@ data/*probe*.txt
 data/iss_by_company.txt
 data/sai_review.txt
 data/gl_by_company.txt
+# Spot-check dumps from scripts/npx_votes.py; regenerate on demand
+data/processed/npx_votes_*.csv

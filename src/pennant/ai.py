@@ -1,8 +1,9 @@
 """The only place the pipeline calls an LLM.
 
-Two small jobs: classify ISS / Glass Lewis snippets and tag SAI proxy-voting
-snippets. Every answer is cached in data/ai/<task>.json keyed by
-a stable id, so reruns are free and deterministic. Resolution order:
+One small job: turn ISS / Glass Lewis sentences from soliciting material into
+ballot items. It does not depend on the target families, so a new families.csv
+needs no new calls. Every answer is cached in data/ai/<task>.json keyed by a
+stable id, so reruns are free and deterministic. Resolution order:
 
   1. cache hit            -> source "cache:<original source>"
   2. Claude API           -> source "claude-api"   (needs ANTHROPIC_API_KEY or `ant auth login`)

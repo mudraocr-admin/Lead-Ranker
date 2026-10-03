@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Pennant prospect ranking</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Serif:wght@500&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#2C5D7F;text-decoration:none}a:hover{color:#1B3F58;text-decoration:underline}
+.num{font-variant-numeric:tabular-nums;text-align:right}
+.badge{display:inline-flex;align-items:center;height:24px;padding:0 8px;border-radius:4px;font-size:14px;font-weight:500;white-space:nowrap;box-sizing:border-box}
+.b-t1{background:#E6EEF4;color:#1E4866}
+.b-t2{background:#EEF0F2;color:#38424C}
+.b-t3{background:#FFFFFF;color:#56616C;border:1px solid #C9D0D7}
+.b-val{background:#FFFFFF;color:#2C5D7F;border:1px solid #2C5D7F}
+.tab{font:inherit;font-size:15px;height:44px;padding:0 16px;border:1px solid #D5DBE1;background:#FFFFFF;color:#38424C;border-radius:6px;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.tab:hover{background:#F4F6F8}
+.tab.is-active{background:#15202B;border-color:#15202B;color:#FFFFFF}
+.tab .n{font-variant-numeric:tabular-nums;opacity:.75}
+.row{all:unset;box-sizing:border-box;display:grid;grid-template-columns:44px minmax(220px,2fr) minmax(200px,1.4fr) 150px 130px 104px;column-gap:12px;align-items:center;width:100%;padding:12px 16px;border-bottom:1px solid #EBEEF1;cursor:pointer;font-size:16px;color:#15202B}
+.row:hover{background:#F5F7F9}
+.row:focus-visible{outline:2px solid #2C5D7F;outline-offset:-2px}
+.row.is-sel{background:#EEF3F7;box-shadow:inset 3px 0 0 #2C5D7F}
+.dot{all:unset;position:absolute;width:14px;height:14px;border-radius:50%;transform:translate(-50%,50%);cursor:pointer;box-sizing:border-box}
+.dot.t1{background:#2C5D7F}
+.dot.t2{background:#8E9BA8}
+.dot.t3{background:#FFFFFF;border:2px solid #7D8A97}
+.dot:hover{box-shadow:0 0 0 3px #FFFFFF,0 0 0 5px #15202B}
+.dot.is-dim{opacity:.18}
+.sub{font-size:14px;color:#5A6672}
+</style>
+</helmet>
+<div style="font-family: 'IBM Plex Sans', 'Helvetica Neue', sans-serif; color: #15202B; background: #FFFFFF; font-size: 16px; line-height: 1.45; min-height: 100vh">
+<div style="max-width: 1680px; margin: 0 auto; padding: 32px 40px 56px; box-sizing: border-box; display: flex; flex-direction: column; gap: 32px">
+
+<header style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 32px; padding-bottom: 24px; border-bottom: 1px solid #E2E6EA">
+<div style="display: flex; flex-direction: column; gap: 8px; max-width: 900px">
+<div style="font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #2C5D7F">Pennant · Prospect ranking</div>
+<h1 style="margin: 0; font-family: 'IBM Plex Serif', Georgia, serif; font-weight: 500; font-size: 36px; line-height: 1.2">Fund families ranked by how they actually vote</h1>
+<p style="margin: 0; color: #4A5560; font-size: 17px">SEC Form N-PX proxy votes, Jul 2025 – Jun 2026. Independent voters rank first. Tiers 1 and 2 run from least to most agreement with their proxy adviser; Tier 3 from least to most agreement with management.</p>
+</div>
+<div style="display: flex; flex-direction: column; align-items: flex-end; gap: 6px">
+<span class="badge" style="background: #FFF6E5; color: #7A4A00; border: 1px solid #E8C98A">Preliminary · rerun pending</span>
+<span class="sub">Pipeline run 1 Oct 2026 · {{s.runtime}} s · source: SEC EDGAR</span>
+</div>
+</header>
+
+<sc-if value="{{failed}}" hint-placeholder-val="{{ false }}">
+<div style="padding: 16px; border: 1px solid #E8C98A; background: #FFF6E5; border-radius: 6px">The results file could not be loaded.</div>
+</sc-if>
+
+<section aria-label="Run summary" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border: 1px solid #E2E6EA; border-radius: 8px">
+<sc-for list="{{kpis}}" as="k" hint-placeholder-count="4">
+<div style="padding: 18px 20px; display: flex; flex-direction: column; gap: 4px; border-right: 1px solid #E2E6EA">
+<div style="font-size: 28px; font-weight: 500; font-variant-numeric: tabular-nums; letter-spacing: -0.01em">{{k.value}}</div>
+<div style="font-size: 15px; font-weight: 500">{{k.label}}</div>
+<div class="sub">{{k.note}}</div>
+</div>
+</sc-for>
+</section>
+
+<section aria-label="Segmentation" style="display: flex; flex-wrap: wrap; gap: 32px">
+<div style="flex: 999 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 8px 24px">
+<h2 style="margin: 0; font-size: 20px; font-weight: 600">Adviser agreement vs. workload</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; font-size: 14px; color: #38424C">
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #2C5D7F"></span>Tier 1 · Independent</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #8E9BA8"></span>Tier 2 · Adviser follower</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span style="width: 12px; height: 12px; border-radius: 50%; background: #FFFFFF; border: 2px solid #7D8A97; box-sizing: border-box"></span>Tier 3 · Management follower</span>
+</div>
+</div>
+<div style="display: flex; gap: 12px">
+<div style="writing-mode: vertical-rl; transform: rotate(180deg); font-size: 14px; color: #5A6672; text-align: center">Agreement with adviser where it opposed the board</div>
+<div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 8px">
+<div style="position: relative; height: 380px; margin-left: 44px; margin-right: 12px; border-left: 1px solid #C9D0D7; border-bottom: 1px solid #C9D0D7">
+<div style="position: absolute; left: 0; right: 0; bottom: 25%; border-top: 1px solid #EEF0F2"></div>
+<div style="position: absolute; left: 0; right: 0; bottom: 50%; border-top: 1px solid #EEF0F2"></div>
+<div style="position: absolute; left: 0; right: 0; bottom: 75%; border-top: 1px solid #EEF0F2"></div>
+<div style="position: absolute; left: 0; right: 0; bottom: 100%; border-top: 1px solid #EEF0F2"></div>
+<div style="position: absolute; left: 0; right: 0; bottom: 90%; border-top: 1px dashed #7D8A97"></div>
+<div style="position: absolute; right: 4px; bottom: 90%; font-size: 13px; color: #4A5560; background: #FFFFFF; padding: 0 4px; transform: translateY(50%)">90% follower line</div>
+<div class="num" style="position: absolute; left: -48px; width: 40px; bottom: 0; transform: translateY(50%); font-size: 13px; color: #5A6672">0%</div>
+<div class="num" style="position: absolute; left: -48px; width: 40px; bottom: 25%; transform: translateY(50%); font-size: 13px; color: #5A6672">25%</div>
+<div class="num" style="position: absolute; left: -48px; width: 40px; bottom: 50%; transform: translateY(50%); font-size: 13px; color: #5A6672">50%</div>
+<div class="num" style="position: absolute; left: -48px; width: 40px; bottom: 75%; transform: translateY(50%); font-size: 13px; color: #5A6672">75%</div>
+<div class="num" style="position: absolute; left: -48px; width: 40px; bottom: 100%; transform: translateY(50%); font-size: 13px; color: #5A6672">100%</div>
+<sc-for list="{{dots}}" as="p" hint-placeholder-count="0">
+<button type="button" class="{{p.cls}}" style="left: {{p.x}}%; bottom: {{p.y}}%" aria-label="{{p.label}}" onClick="{{p.pick}}" onMouseEnter="{{p.enter}}" onMouseLeave="{{p.leave}}" onFocus="{{p.enter}}" onBlur="{{p.leave}}"></button>
+</sc-for>
+<sc-if value="{{hasHoverDot}}" hint-placeholder-val="{{ false }}">
+<div style="position: absolute; left: {{hoverDot.x}}%; bottom: {{hoverDot.y}}%; transform: {{hoverDot.shift}}; font-size: 14px; font-weight: 600; background: #FFFFFF; padding: 2px 6px; border: 1px solid #C9D0D7; border-radius: 4px; white-space: nowrap; pointer-events: none; z-index: 3">{{hoverDot.name}}</div>
+</sc-if>
+</div>
+<div style="position: relative; height: 20px; margin-left: 44px; margin-right: 12px; font-size: 13px; color: #5A6672; font-variant-numeric: tabular-nums">
+<span style="position: absolute; left: 0; transform: translateX(-50%)">100</span>
+<span style="position: absolute; left: 23.86%; transform: translateX(-50%)">300</span>
+<span style="position: absolute; left: 50%; transform: translateX(-50%)">1,000</span>
+<span style="position: absolute; left: 73.86%; transform: translateX(-50%)">3,000</span>
+<span style="position: absolute; left: 100%; transform: translateX(-50%)">10,000</span>
+</div>
+<div style="margin-left: 44px; text-align: center; font-size: 14px; color: #5A6672">Meetings voted per year (log scale) · click a point to open its evidence</div>
+</div>
+</div>
+</div>
+
+<div style="flex: 1 1 360px; max-width: 520px; display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 20px; font-weight: 600">Three tiers</h2>
+<sc-for list="{{tierCards}}" as="c" hint-placeholder-count="3">
+<div style="border: 1px solid #E2E6EA; border-radius: 8px; padding: 16px 20px; display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; align-items: baseline">
+<div style="display: flex; align-items: center; gap: 10px"><span class="{{c.cls}}">{{c.tier}}</span><span style="font-weight: 600">{{c.name}}</span></div>
+<div style="font-size: 30px; font-weight: 500; font-variant-numeric: tabular-nums; grid-row: span 2">{{c.n}}</div>
+<div style="font-size: 15px; color: #38424C">{{c.rule}}</div>
+<div class="sub" style="grid-column: 1 / -1">{{c.split}}</div>
+</div>
+</sc-for>
+<div style="border: 1px dashed #C9D0D7; border-radius: 8px; padding: 14px 20px; display: flex; justify-content: space-between; align-items: baseline; gap: 16px">
+<span style="color: #38424C">Not scored: no fund-level votes read</span>
+<span style="font-size: 22px; font-weight: 500; font-variant-numeric: tabular-nums">{{s.unscored}}</span>
+</div>
+</div>
+</section>
+
+<section aria-label="Ranked prospects" style="display: flex; flex-direction: column; gap: 16px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px">
+<h2 style="margin: 0; font-size: 20px; font-weight: 600">Ranked prospects</h2>
+<div role="group" aria-label="Filter by tier" style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="4">
+<button type="button" class="{{t.cls}}" aria-pressed="{{t.pressed}}" onClick="{{t.pick}}">{{t.label}} <span class="n">{{t.n}}</span></button>
+</sc-for>
+</div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start">
+<div style="flex: 999 1 640px; min-width: 0; border: 1px solid #E2E6EA; border-radius: 8px; overflow: hidden">
+<div style="max-height: 760px; overflow: auto">
+<div style="min-width: 880px">
+<div style="position: sticky; top: 0; z-index: 1; background: #F6F7F9; border-bottom: 1px solid #DDE2E7; display: grid; grid-template-columns: 44px minmax(220px,2fr) minmax(200px,1.4fr) 150px 130px 104px; column-gap: 12px; padding: 10px 16px; font-size: 14px; font-weight: 500; color: #4A5560; align-items: end">
+<div class="num">#</div>
+<div>Fund family</div>
+<div>Tier · segment</div>
+<div class="num">With adviser<br><span style="font-weight: 400">where it opposed the board</span></div>
+<div class="num">With management</div>
+<div class="num">Meetings / yr</div>
+</div>
+<sc-for list="{{rows}}" as="r" hint-placeholder-count="12">
+<button type="button" class="{{r.cls}}" aria-pressed="{{r.pressed}}" onClick="{{r.pick}}">
+<span class="num" style="color: #5A6672">{{r.rank}}</span>
+<span style="display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="font-weight: 600">{{r.family}}</span>
+<span style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span class="sub">{{r.structure}}</span><sc-if value="{{r.hasTag}}" hint-placeholder-val="{{ false }}"><span class="badge b-val">{{r.tag}}</span></sc-if></span>
+</span>
+<span style="display: flex; flex-direction: column; gap: 4px; align-items: flex-start">
+<span style="display: flex; align-items: center; gap: 8px"><span class="{{r.tierCls}}">{{r.tierLabel}}</span><span>{{r.segment}}</span></span>
+<span class="sub">{{r.conf}} confidence</span>
+</span>
+<span class="num" style="display: flex; flex-direction: column"><span>{{r.agree}}</span><span class="sub">{{r.adviser}} · of {{r.agreeN}}</span></span>
+<span class="num" style="display: flex; flex-direction: column"><span>{{r.mgmt}}</span><span class="sub">of {{r.mgmtN}}</span></span>
+<span class="num">{{r.workload}}</span>
+</button>
+</sc-for>
+</div>
+</div>
+</div>
+
+<sc-if value="{{hasSel}}" hint-placeholder-val="{{ false }}">
+<aside aria-label="Evidence for selected family" style="flex: 1 1 380px; max-width: 460px; border: 1px solid #E2E6EA; border-radius: 8px; padding: 22px 24px; display: flex; flex-direction: column; gap: 18px; box-sizing: border-box">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<div class="sub">Rank {{sel.rank}} of {{s.scored}} · evidence</div>
+<h3 style="margin: 0; font-size: 24px; font-weight: 600; line-height: 1.25">{{sel.family}}</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 8px"><span class="{{sel.tierCls}}">{{sel.tierLabel}}</span><span class="badge b-t2">{{sel.segment}}</span><span class="badge b-t3">{{sel.conf}} confidence</span><sc-if value="{{sel.hasTag}}" hint-placeholder-val="{{ false }}"><span class="badge b-val">{{sel.tag}}</span></sc-if></div>
+</div>
+<div style="background: #F6F7F9; border-radius: 6px; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px">
+<div class="sub" style="font-weight: 500">Basis for the call</div>
+<div style="font-size: 16px">{{sel.why}}</div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 20px">
+<div><div class="sub">Meetings voted / yr</div><div style="font-size: 22px; font-weight: 500; font-variant-numeric: tabular-nums">{{sel.workload}}</div></div>
+<div><div class="sub">With management</div><div style="font-size: 22px; font-weight: 500; font-variant-numeric: tabular-nums">{{sel.mgmt}} <span class="sub">of {{sel.mgmtN}}</span></div></div>
+<div><div class="sub">With {{sel.adviser}} when it opposed board</div><div style="font-size: 22px; font-weight: 500; font-variant-numeric: tabular-nums">{{sel.agree}} <span class="sub">of {{sel.agreeN}}</span></div></div>
+<div><div class="sub">With {{sel.adviser}} when it backed board</div><div style="font-size: 22px; font-weight: 500; font-variant-numeric: tabular-nums">{{sel.aligned}} <span class="sub">of {{sel.alignedN}}</span></div></div>
+<div><div class="sub">Fund series</div><div style="font-size: 22px; font-weight: 500; font-variant-numeric: tabular-nums">{{sel.nSeries}}</div></div>
+<div><div class="sub">Items where series split</div><div style="font-size: 22px; font-weight: 500; font-variant-numeric: tabular-nums">{{sel.divergence}}</div></div>
+</div>
+<div class="sub">Scored against {{sel.adviser}}: {{sel.adviserWhy}}.</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-weight: 600; font-size: 16px">By category</div>
+<div style="display: grid; grid-template-columns: 1fr 112px 120px; column-gap: 12px; font-size: 14px; color: #4A5560; padding-bottom: 6px; border-bottom: 1px solid #E2E6EA">
+<span>Category</span><span class="num">With {{sel.adviser}} vs board</span><span class="num">With management</span>
+</div>
+<sc-for list="{{sel.cats}}" as="c" hint-placeholder-count="4">
+<div style="display: grid; grid-template-columns: 1fr 112px 120px; column-gap: 12px; padding: 6px 0; border-bottom: 1px solid #EEF0F2; align-items: baseline">
+<span style="font-size: 15px">{{c.name}}</span>
+<span class="num">{{c.ag}} <span class="sub">({{c.agn}})</span></span>
+<span class="num">{{c.mg}} <span class="sub">({{c.mgn}})</span></span>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-weight: 600; font-size: 16px">Source filings ({{sel.nFilers}} trusts)</div>
+<sc-for list="{{sel.filers}}" as="f" hint-placeholder-count="3">
+<div style="display: flex; justify-content: space-between; gap: 12px; padding: 6px 0; border-bottom: 1px solid #EEF0F2; align-items: baseline">
+<span style="display: flex; flex-direction: column; min-width: 0"><span style="font-size: 15px">{{f.name}}</span><span class="sub">CIK {{f.cik}}</span></span>
+<a href="{{f.url}}" target="_blank" rel="noopener noreferrer" style="font-size: 14px; white-space: nowrap">{{f.label}} ↗</a>
+</div>
+</sc-for>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<div style="font-weight: 600; font-size: 16px">Fit notes <span class="sub" style="font-weight: 400">· from families.csv, not used in ranking</span></div>
+<div style="font-size: 15px"><span class="sub">Fit:</span> {{sel.fit}} · {{sel.structureFull}}</div>
+<div style="font-size: 15px">{{sel.rationale}}</div>
+<div style="font-size: 15px; color: #4A5560"><span class="sub">Risk:</span> {{sel.risk}}</div>
+</div>
+</aside>
+</sc-if>
+</div>
+</section>
+
+<section aria-label="Not scored" style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 20px; font-weight: 600">Not scored <span class="sub" style="font-size: 16px; font-weight: 400">· {{s.unscored}} of {{s.listed}} listed families</span></h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px">
+<sc-for list="{{missing}}" as="m" hint-placeholder-count="5">
+<div style="border: 1px solid #E2E6EA; border-radius: 8px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-weight: 600">{{m.family}}</span><sc-if value="{{m.hasTag}}" hint-placeholder-val="{{ false }}"><span class="badge b-val">{{m.tag}}</span></sc-if></div>
+<div style="font-size: 15px; color: #38424C">{{m.reason}}</div>
+<div class="sub">CIK {{m.ciks}}</div>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section aria-label="Method and limits" style="display: flex; flex-wrap: wrap; gap: 32px; padding-top: 24px; border-top: 1px solid #E2E6EA">
+<div style="flex: 3 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 20px; font-weight: 600">Method</h2>
+<ol style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; color: #26313B">
+<li>Read every N-PX vote filed by each family’s trusts and keep four judgment categories: shareholder proposals, contested director elections, M&amp;A and executive pay.</li>
+<li>Management followers first: a family voting with management on at least 90% of 50+ items is Tier 3.</li>
+<li>Answer key: ISS and Glass Lewis recommendations quoted in companies’ and activists’ proxy materials ({{s.issQuoted}} ISS, {{s.glQuoted}} Glass Lewis items).</li>
+<li>Infer ISS’s call on {{s.issImputed}} more items from about 1,500 reference funds’ votes (Bayes method of Zytnick 2025). Used only if it recovers at least 90% of held-out quotes where ISS opposed the board: it scored {{s.issGate}}.</li>
+<li>A family agreeing with its adviser on at least 90% of items where the adviser opposed the board is Tier 2. Everyone else is Tier 1.</li>
+</ol>
+</div>
+<div style="flex: 2 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 20px; font-weight: 600">Limits</h2>
+<ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; color: #26313B">
+<li>Mutual funds only. N-PX does not cover pensions or separate accounts.</li>
+<li>One proxy year. The quoted answer key leans toward proxy fights.</li>
+<li>Glass Lewis inference failed its check ({{s.glGate}} vs 90%), so Glass Lewis calls rest on quoted items only. Russell, SEI and PGIM were scored against Glass Lewis; treat those three calls as unconfirmed.</li>
+<li>{{s.issSetAside}} ISS quotes were set aside by a quote audit; without it the ISS check does not pass.</li>
+<li>These results predate a fix for trusts that file more than one N-PX report. A rerun is needed to confirm them.</li>
+</ul>
+</div>
+</section>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2400}}'>
+class Component extends DCLogic {
+  componentDidMount() {
+    fetch('/_blob/e171febb3c00f2e255f4d98baa029ead')
+      .then((r) => r.json())
+      .then((d) => this.setState({ data: d }))
+      .catch(() => this.setState({ failed: true }));
+  }
+
+  renderVals() {
+    const st = this.state || {};
+    const d = st.data;
+    const tier = st.tier || 0;
+    const selRank = st.sel || 1;
+    const all = d ? d.rows : [];
+    const sm = d ? d.summary : null;
+    const v = (x) => (sm ? x : '…');
+
+    const s = {
+      runtime: v(sm && sm.runtime), scored: v(sm && sm.familiesScored), listed: v(sm && sm.familiesListed),
+      unscored: v(sm && sm.familiesListed - sm.familiesScored), issQuoted: v(sm && sm.issQuoted),
+      glQuoted: v(sm && sm.glQuoted), issImputed: v(sm && sm.issImputed), issGate: v(sm && sm.issGate),
+      glGate: v(sm && sm.glGate), issSetAside: v(sm && sm.issSetAside)
+    };
+
+    const perFirm = (total) => Math.round(Number(String(total).replace(/,/g, '')) / sm.familiesScored).toLocaleString('en-US');
+    const kpis = [
+      { value: v(sm && sm.familiesListed), label: 'Families analyzed', note: 'Target list · votes from Jul 2025 – Jun 2026' },
+      { value: v(sm && perFirm(sm.votes)), label: 'N-PX votes read per firm', note: v(sm && 'Average of ' + sm.familiesScored + ' families with votes · ' + sm.votes + ' total') },
+      { value: v(sm && perFirm(sm.priorityVotes)), label: 'Judgment votes per firm', note: v(sm && 'Proposals, contests, M&A, pay · ' + sm.priorityVotes + ' total') },
+      { value: v(sm && sm.familiesScored + ' / ' + sm.familiesListed), label: 'Families scored', note: v(sm && sm.high + ' at high confidence · ' + (sm.familiesScored - sm.high) + ' medium') }
+    ];
+
+    const seg = (sm && sm.segments) || {};
+    const tierCards = [
+      { tier: 'Tier 1', cls: 'badge b-t1', name: 'Independent voters', n: v(sm && sm.tiers['1']),
+        rule: 'Under 90% with management and with their adviser where it opposed the board.',
+        split: v(sm && (seg['Judgment voter'] || 0) + ' judgment voters · ' + (seg['Partial robo-voter'] || 0) + ' partial robo-voters (follow the adviser in some categories)') },
+      { tier: 'Tier 2', cls: 'badge b-t2', name: 'Adviser followers', n: v(sm && sm.tiers['2']),
+        rule: 'At least 90% with their adviser where it opposed the board.',
+        split: v(sm && (seg['ISS follower'] || 0) + ' follow ISS · ' + (seg['Glass Lewis follower'] || 0) + ' follows Glass Lewis') },
+      { tier: 'Tier 3', cls: 'badge b-t3', name: 'Management followers', n: v(sm && sm.tiers['3']),
+        rule: 'At least 90% of judgment votes with management.',
+        split: 'Low priority' }
+    ];
+
+    const tabDefs = [
+      { id: 0, label: 'All' }, { id: 1, label: 'Tier 1 · Independent' },
+      { id: 2, label: 'Tier 2 · Adviser followers' }, { id: 3, label: 'Tier 3 · Management followers' }
+    ];
+    const tabs = tabDefs.map((t) => ({
+      label: t.label,
+      n: all.filter((r) => !t.id || r.tier === t.id).length,
+      cls: 'tab' + (t.id === tier ? ' is-active' : ''),
+      pressed: t.id === tier ? 'true' : 'false',
+      pick: () => this.setState({ tier: t.id })
+    }));
+
+    const pick = (rank) => () => this.setState({ sel: rank });
+    const rows = all.filter((r) => !tier || r.tier === tier).map((r) => ({
+      ...r,
+      hasTag: !!r.tag,
+      tierCls: 'badge b-t' + r.tier,
+      cls: 'row' + (r.rank === selRank ? ' is-sel' : ''),
+      pressed: r.rank === selRank ? 'true' : 'false',
+      pick: pick(r.rank)
+    }));
+
+    const dots = all.filter((r) => r.y !== null && r.y !== undefined).map((r) => ({
+      x: r.x, y: r.y,
+      cls: 'dot t' + r.tier + (tier && r.tier !== tier ? ' is-dim' : ''),
+      label: r.family + ': ' + r.workload + ' meetings, ' + r.agree + ' with ' + r.adviser + ' where it opposed the board',
+      pick: pick(r.rank),
+      enter: () => this.setState({ hover: r.rank }),
+      leave: () => this.setState({ hover: 0 })
+    }));
+
+    const found = all.find((r) => r.rank === selRank);
+    const sel = found ? { ...found, hasTag: !!found.tag, tierCls: 'badge b-t' + found.tier, structureFull: found.structure } : null;
+    const hovered = st.hover ? all.find((r) => r.rank === st.hover) : null;
+    const hasHoverDot = !!(hovered && hovered.y !== null && hovered.y !== undefined);
+    const hoverDot = hasHoverDot
+      ? { x: hovered.x, y: hovered.y, name: hovered.family + ' · ' + hovered.agree + ' · ' + hovered.workload + ' meetings',
+          shift: hovered.x > 62 ? 'translate(calc(-100% - 16px), 50%)' : 'translate(16px, 50%)' }
+      : { x: 0, y: 0, name: '', shift: 'none' };
+
+    const reasons = {
+      'GuideStone Funds': 'Its trust filed more than one N-PX report and this run read only the latest, so its votes were missed. Fixed in the pipeline; awaiting rerun.',
+      'Mutual of America': 'No fund-level N-PX filer in the window; only the adviser’s own filing, which is excluded.',
+      'Boston Partners': 'No fund-level N-PX filer in the window; only the adviser’s own filing, which is excluded.',
+      'Glenmede': 'No fund-level N-PX filer in the window; only the adviser’s own filing, which is excluded.',
+      'Westwood': 'No fund-level N-PX filer in the window; only the adviser’s own filing, which is excluded.'
+    };
+    const missing = (d ? d.missing : []).map((m) => ({ ...m, hasTag: !!m.tag, reason: reasons[m.family] || 'n/a' }));
+
+    return {
+      s, kpis, tierCards, tabs, rows, dots, missing,
+      hasSel: !!sel, sel: sel || { cats: [], filers: [] },
+      hasHoverDot, hoverDot,
+      failed: !!st.failed
+    };
+  }
+}
+</script>
+</body>
+</html>

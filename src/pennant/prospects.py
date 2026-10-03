@@ -5,8 +5,9 @@ Tiers:
   2  Adviser follower                           (ISS follower, Glass Lewis follower)
   3  Management follower
 Every family gets a tier. Families classified on thin data carry low
-confidence and say why. Within a tier, families are ordered by workload
-(meetings voted per year).
+confidence and say why. Tiers 1 and 2 are ordered from least to most agreement
+with the adviser where it opposed the board; Tier 3 from least to most
+agreement with management.
 """
 from __future__ import annotations
 
@@ -59,9 +60,19 @@ def rank_prospects(sc: pd.DataFrame, votes: pd.DataFrame) -> pd.DataFrame:
     df["confidence"], df["confidence_reason"] = conf[0], conf[1]
     df["tier"] = df.segment.map(tier_of)
     df["priority"] = df.tier.map(TIER_LABELS)
-    df = df.sort_values(["tier", "workload_meetings"], ascending=[True, False]).reset_index(drop=True)
+    df = order(df)
     df.insert(0, "rank", range(1, len(df) + 1))
     return df
+
+
+def order(df: pd.DataFrame) -> pd.DataFrame:
+    """Tiers 1 and 2 run from least to most adviser agreement (where the adviser
+    opposed the board), so the most independent voters come first; Tier 3 runs
+    from least to most agreement with management. Ties fall back to workload."""
+    key = df.adviser_agreement.where(df.tier < 3, df.mgmt_rate)
+    return (df.assign(_key=key)
+              .sort_values(["tier", "_key", "workload_meetings"], ascending=[True, True, False], na_position="last")
+              .drop(columns="_key").reset_index(drop=True))
 
 
 def write_outputs(prospects: pd.DataFrame, keys: dict[str, pd.DataFrame], validation: dict, log=print):

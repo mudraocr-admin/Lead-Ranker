@@ -38,8 +38,10 @@ gives their names in the same order.
 | **Tier 2** | follows its proxy adviser | ISS follower, Glass Lewis follower |
 | **Tier 3** | follows management | Management follower |
 
-Within a tier, families are ordered by **workload**: distinct meetings voted in the
-N-PX year.
+Tiers 1 and 2 are ordered from **least to most agreement with the adviser** where the
+adviser opposed the board, so the most independent voters come first. Tier 3 is ordered
+from **least to most agreement with management**. Ties fall back to workload (distinct
+meetings voted in the N-PX year).
 
 Also written:
 * `iss_key.csv` and `gl_key.csv`: each answer key, with the evidence sentence behind

@@ -1,12 +1,8 @@
 # Handoff: Pennant GTM prospect segmentation
 
-Updated 2026-10-03. Last commit `23e3796` on `main`, pushed to private
-`mudraocr-admin/pennant-prospects` (temporary home; the user will move it). `README.md`
+Updated 2026-10-03. Commit `d36ead9` on `main` (not pushed; `23e3796` is the last push to
+private `mudraocr-admin/pennant-prospects`, a temporary home the user will move). `README.md`
 has the full method; this page is the state, the demo website and the open problems.
-
-**Uncommitted work from 2026-10-03** (ask the user before committing): the new sort in
-`src/pennant/prospects.py` (`order()`), the re-sorted `output/priority_list.csv`, the
-README and HANDOFF edits, `scripts/build_site_data.py` and `site/`.
 
 ## First thing to do: rerun, then refresh the website
 

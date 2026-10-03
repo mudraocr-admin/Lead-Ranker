@@ -46,8 +46,7 @@ a{color:#2C5D7F;text-decoration:none}a:hover{color:#1B3F58;text-decoration:under
 <p style="margin: 0; color: #4A5560; font-size: 17px">SEC Form N-PX proxy votes, Jul 2025 – Jun 2026. Independent voters rank first. Tiers 1 and 2 run from least to most agreement with their proxy adviser; Tier 3 from least to most agreement with management.</p>
 </div>
 <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 6px">
-<span class="badge" style="background: #FFF6E5; color: #7A4A00; border: 1px solid #E8C98A">Preliminary · rerun pending</span>
-<span class="sub">Pipeline run 1 Oct 2026 · {{s.runtime}} s · source: SEC EDGAR</span>
+<span class="sub">Pipeline runtime: {{s.runtime}} s · source: SEC EDGAR</span>
 </div>
 </header>
 
@@ -241,7 +240,7 @@ a{color:#2C5D7F;text-decoration:none}a:hover{color:#1B3F58;text-decoration:under
 <li>Read every N-PX vote filed by each family’s trusts and keep four judgment categories: shareholder proposals, contested director elections, M&amp;A and executive pay.</li>
 <li>Management followers first: a family voting with management on at least 90% of 50+ items is Tier 3.</li>
 <li>Answer key: ISS and Glass Lewis recommendations quoted in companies’ and activists’ proxy materials ({{s.issQuoted}} ISS, {{s.glQuoted}} Glass Lewis items).</li>
-<li>Infer ISS’s call on {{s.issImputed}} more items from about 1,500 reference funds’ votes (Bayes method of Zytnick 2025). Used only if it recovers at least 90% of held-out quotes where ISS opposed the board: it scored {{s.issGate}}.</li>
+<li>Infer ISS’s call on {{s.issImputed}} more items from 1,015 reference funds’ votes (Bayes method of Zytnick 2025). Used only if it recovers at least 90% of held-out quotes where ISS opposed the board: it scored {{s.issGate}}.</li>
 <li>A family agreeing with its adviser on at least 90% of items where the adviser opposed the board is Tier 2. Everyone else is Tier 1.</li>
 </ol>
 </div>
@@ -252,7 +251,7 @@ a{color:#2C5D7F;text-decoration:none}a:hover{color:#1B3F58;text-decoration:under
 <li>One proxy year. The quoted answer key leans toward proxy fights.</li>
 <li>Glass Lewis inference failed its check ({{s.glGate}} vs 90%), so Glass Lewis calls rest on quoted items only. Russell, SEI and PGIM were scored against Glass Lewis; treat those three calls as unconfirmed.</li>
 <li>{{s.issSetAside}} ISS quotes were set aside by a quote audit; without it the ISS check does not pass.</li>
-<li>These results predate a fix for trusts that file more than one N-PX report. A rerun is needed to confirm them.</li>
+<li>A 150 MB download cap per family skipped six filings: John Hancock Funds II and Strategic Series, Voya Variable Products Trust, 1290 Funds, and one report each from JNL Series Trust and EQ Advisors Trust. Those families are scored on the filings that were read.</li>
 </ul>
 </div>
 </section>
@@ -263,7 +262,7 @@ a{color:#2C5D7F;text-decoration:none}a:hover{color:#1B3F58;text-decoration:under
 <script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2400}}'>
 class Component extends DCLogic {
   componentDidMount() {
-    fetch('/_blob/e171febb3c00f2e255f4d98baa029ead')
+    fetch('/_blob/af9074528c707b7d84a82c5505a2e031')
       .then((r) => r.json())
       .then((d) => this.setState({ data: d }))
       .catch(() => this.setState({ failed: true }));
@@ -347,7 +346,6 @@ class Component extends DCLogic {
       : { x: 0, y: 0, name: '', shift: 'none' };
 
     const reasons = {
-      'GuideStone Funds': 'Its trust filed more than one N-PX report and this run read only the latest, so its votes were missed. Fixed in the pipeline; awaiting rerun.',
       'Mutual of America': 'No fund-level N-PX filer in the window; only the adviser’s own filing, which is excluded.',
       'Boston Partners': 'No fund-level N-PX filer in the window; only the adviser’s own filing, which is excluded.',
       'Glenmede': 'No fund-level N-PX filer in the window; only the adviser’s own filing, which is excluded.',

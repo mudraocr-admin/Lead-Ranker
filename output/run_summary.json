@@ -1,52 +1,52 @@
 {
-  "families": 45,
-  "vote_rows": 2932401,
-  "priority_rows": 474717,
+  "families": 46,
+  "vote_rows": 3648221,
+  "priority_rows": 589678,
   "key_items": {
-    "ISS": 159,
-    "GL": 133
+    "ISS": 180,
+    "GL": 146
   },
   "rec_items": {
     "ISS": {
-      "imputed": 28244,
-      "key": 158
+      "imputed": 31331,
+      "key": 179
     },
     "GL": {
-      "key": 132
+      "key": 145
     }
   },
   "validation": {
     "GL": {
-      "held_out": 133,
-      "covered": 98,
-      "coverage": 0.7368,
-      "accuracy": 0.9082,
-      "opposed_held_out": 48,
-      "opposed_coverage": 0.8958,
-      "opposed_accuracy": 0.8605,
+      "held_out": 146,
+      "covered": 104,
+      "coverage": 0.7123,
+      "accuracy": 0.8558,
+      "opposed_held_out": 55,
+      "opposed_coverage": 0.8909,
+      "opposed_accuracy": 0.8163,
       "passed": false,
       "quotes_set_aside": 0,
-      "accuracy_vs_all_quotes": 0.9082
+      "accuracy_vs_all_quotes": 0.8558
     },
     "ISS": {
-      "held_out": 159,
-      "covered": 119,
-      "coverage": 0.7484,
-      "accuracy": 0.9244,
-      "opposed_held_out": 64,
-      "opposed_coverage": 0.7969,
-      "opposed_accuracy": 0.9216,
+      "held_out": 180,
+      "covered": 127,
+      "coverage": 0.7056,
+      "accuracy": 0.937,
+      "opposed_held_out": 65,
+      "opposed_coverage": 0.8308,
+      "opposed_accuracy": 0.9259,
       "passed": true,
-      "quotes_set_aside": 7,
-      "accuracy_vs_all_quotes": 0.873
+      "quotes_set_aside": 8,
+      "accuracy_vs_all_quotes": 0.8815
     }
   },
   "segments": {
-    "Judgment voter": 21,
-    "Partial robo-voter": 10,
-    "ISS follower": 8,
+    "Judgment voter": 22,
+    "ISS follower": 10,
+    "Partial robo-voter": 8,
     "Management follower": 5,
     "Glass Lewis follower": 1
   },
-  "runtime_s": 347
+  "runtime_s": 428
 }

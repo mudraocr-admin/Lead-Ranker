@@ -1,34 +1,18 @@
 # Handoff: Pennant GTM prospect segmentation
 
-Updated 2026-10-03. Commit `d36ead9` on `main` (not pushed; `23e3796` is the last push to
+Updated 2026-10-03 (after the post-fix rerun). Last commit `e4b8a88` on `main` (not pushed; `23e3796` is the last push to
 private `mudraocr-admin/pennant-prospects`, a temporary home the user will move). `README.md`
 has the full method; this page is the state, the demo website and the open problems.
 
-## First thing to do: rerun, then refresh the website
+## State (2026-10-03): rerun done, website refreshed
 
-**The outputs are stale.** The 50-family rerun after the GuideStone fix was cut off
-mid-run (the session ended), and it had deleted the reference-universe cache.
-`filers.csv` and `*_key_misses.csv` come from that partial rerun; `priority_list.csv`,
-`validation.json` and `run_summary.json` come from the run *before* the fix (1 Oct 2026).
-The demo website shows those pre-fix results, labelled "Preliminary · rerun pending".
+The post-fix 50-family rerun is done and the demo website shows it. The outputs in
+`output/` are current. A cold run took 1,623 s, because the universe cache rebuilt. The
+warm rerun after it took 428 s and gave an identical `priority_list.csv`.
 
-1. **Rerun.** Run it in the background: it takes ~20–25 min because the universe cache
-   rebuilds once (a warm run is ~6 min).
-
-       .venv/Scripts/python.exe -u run.py      # `python` is not on PATH; use the venv
-
-2. **Diff and report.** Compare the new `output/priority_list.csv` with the committed one
-   (`git diff`, or load both in pandas): tier counts, families that changed tier or
-   segment, and whether GuideStone and MassMutual now score. Check each item under
-   "Active problems" below against the fresh output. Report the diff to the user before
-   touching the website.
-3. **Rebuild the site data:** `.venv/Scripts/python.exe scripts/build_site_data.py`
-   writes `output/pennant-data.json` from `priority_list.csv`, `run_summary.json`,
-   `filers.csv` and `families.csv`.
-4. **Publish it** (see "Demo website"): upload `pennant-data.json` as an asset, point the
-   page's `fetch` at the new `/_blob/<id>`, fix the hard-coded text the rerun made wrong,
-   and republish `project/Main.dc.html`. Then update this file, including the result
-   section below.
+**Next rerun**, if inputs change: run `.venv/Scripts/python.exe -u run.py` in the background.
+Diff the new `output/priority_list.csv` against the committed one and report the diff to the
+user. Then refresh the site (see "Demo website").
 
 ## What it does
 
@@ -44,7 +28,7 @@ theirs and the pipeline ignores them. I mapped the `ciks`. For families with mor
 10 trusts (John Hancock, PGIM, Voya, BNY, Natixis, Cohen & Steers, Gabelli) I picked the
 main equity trusts, and Natixis includes Harris/Oakmark and Loomis Sayles.
 
-## Pipeline (`run.py`; 347 s warm for 50 families)
+## Pipeline (`run.py`; 428 s warm, 1,623 s cold for 50 families)
 
 1. **N-PX votes** (`npx.py`, `items.py`) for each family's trusts, clustered into ballot
    items. Since 2026-10-01 *every* N-PX filing a trust made in the window is read: a
@@ -78,7 +62,7 @@ A one-page web app for the user's job-application demo video (Pennant, YC S26). 
   launches focused) and `project/Main.dc.html` (the whole page). Copies of both are in
   `site/project/`; before editing, read the live `project/Main.dc.html` from the artifact
   (Artifact tool, `action: "read"`, `path`) in case the user edited it in the page.
-- **Data:** the page `fetch`es `/_blob/e171febb3c00f2e255f4d98baa029ead`, an uploaded
+- **Data:** the page `fetch`es `/_blob/af9074528c707b7d84a82c5505a2e031`, an uploaded
   asset holding `pennant-data.json` from `scripts/build_site_data.py`. Nothing is
   hand-copied; the per-firm averages are computed in the page from the summary.
 - **How to update after a rerun:** run the script; upload the JSON with the Artifact tool
@@ -97,22 +81,23 @@ A one-page web app for the user's job-application demo video (Pennant, YC S26). 
 1. **Header:** eyebrow "Pennant · Prospect ranking"; title "Fund families ranked by how
    they actually vote"; subtitle "SEC Form N-PX proxy votes, Jul 2025 – Jun 2026.
    Independent voters rank first. Tiers 1 and 2 run from least to most agreement with
-   their proxy adviser; Tier 3 from least to most agreement with management."; amber badge
-   "Preliminary · rerun pending"; line "Pipeline run 1 Oct 2026 · {runtime} s · source:
-   SEC EDGAR" (runtime from `run_summary.json`; the date is hard-coded).
+   their proxy adviser; Tier 3 from least to most agreement with management."; line
+   "Pipeline runtime: {runtime} s · source: SEC EDGAR" (runtime from `run_summary.json`,
+   now the 428 s warm run). The user had the run date removed on 2026-10-03, and the amber
+   "Preliminary · rerun pending" badge went after the rerun.
 2. **Four summary boxes:** Families analyzed (50 = rows in `families.csv`); N-PX votes read
-   per firm (`vote_rows` / scored families = 65,164; note shows the 2,932,401 total);
-   Judgment votes per firm (`priority_rows` / scored families = 10,549; total 474,717);
-   Families scored (45 / 50; note "39 at high confidence · 6 medium").
+   per firm (`vote_rows` / scored families = 79,309; note shows the 3,648,221 total);
+   Judgment votes per firm (`priority_rows` / scored families = 12,819; total 589,678);
+   Families scored (46 / 50; note "40 at high confidence · 6 medium").
 3. **Scatter "Adviser agreement vs. workload":** x = meetings voted per year on a log axis
    fixed at 100–10,000; y = agreement with the scored adviser where it opposed the board,
    0–100%, with a dashed 90% follower line. Tier 1 filled steel blue, Tier 2 filled grey,
    Tier 3 hollow grey ring. All points the same size and no selection ring; a name label
    (family · agreement · meetings) appears only on hover or keyboard focus. Clicking a
    point opens that family in the evidence panel. A tier filter dims the other tiers.
-4. **Three tier cards:** count, rule and segment split (Tier 1 "21 judgment voters · 10
-   partial robo-voters", Tier 2 "8 follow ISS · 1 follows Glass Lewis", Tier 3 "Low
-   priority"), plus a dashed "Not scored: no fund-level votes read · 5" card.
+4. **Three tier cards:** count, rule and segment split (Tier 1: 30, "22 judgment voters · 8
+   partial robo-voters"; Tier 2: 11, "10 follow ISS · 1 follows Glass Lewis"; Tier 3: 5,
+   "Low priority"), plus a dashed "Not scored: no fund-level votes read · 4" card.
 5. **Ranked prospects table** with filter buttons All / Tier 1 / Tier 2 / Tier 3. Columns:
    # · Fund family (structure from `families.csv`; ESG / Faith-based badge from its
    `fit_rationale`) · Tier · segment (with confidence) · **With adviser** (sub-label
@@ -127,31 +112,34 @@ A one-page web app for the user's job-application demo video (Pennant, YC S26). 
    with management, with counts); source filings, one row per trust with its CIK, linked
    to the trust's N-PX filing on EDGAR (accession from `filers.csv`, else the trust's
    EDGAR N-PX list); "Fit notes · from families.csv, not used in ranking".
-7. **Not scored (5):** GuideStone (Faith-based badge), Mutual of America, Boston Partners,
-   Glenmede and Westwood, each with a reason and its CIKs.
+7. **Not scored (4):** Mutual of America, Boston Partners, Glenmede and Westwood, each
+   with a reason and its CIKs.
 8. **Method** (5 steps) and **Limits** (mutual funds only; one proxy year; Glass Lewis
    inference failed so the Russell, SEI and PGIM calls are unconfirmed; ISS quotes set
-   aside by the audit; results predate the multi-filing fix).
+   aside by the audit; the 150 MB cap skipped six filings, named).
 
 ### Hard-coded text to recheck after a rerun
 
 All in `project/Main.dc.html`; everything else comes from the data file.
-- The badge "Preliminary · rerun pending", the date in "Pipeline run 1 Oct 2026" (keep a
-  date: the user asked for it), and the last Limits bullet about the multi-filing fix.
-- The `reasons` map in `renderVals()` (why each unscored family is missing; GuideStone's
-  says "awaiting rerun"). A family missing from the map shows "n/a".
+- The last Limits bullet naming the six filings the 150 MB cap skipped (from `filers.csv`,
+  status "skipped: family download cap").
+- The `reasons` map in `renderVals()` (why each unscored family is missing). A family
+  missing from the map shows "n/a".
 - Tier card wording: "follows Glass Lewis" (singular) and the Tier 1 split.
-- Method step 4: "about 1,500 reference funds" and "it scored {issGate}" (assumes the ISS
+- Method step 4: "1,015 reference funds" (from the run log line "Imputation: … from N
+  reference filers"; not in `run_summary.json`) and "it scored {issGate}" (assumes the ISS
   gate passed).
 - Limits: "Glass Lewis inference failed its check" and the names Russell, SEI and PGIM
-  (assumes the GL gate failed); "without it the ISS check does not pass".
+  (assumes the GL gate failed); "without it the ISS check does not pass" (true on the
+  3 Oct run: with the 8 set-aside quotes back, board-opposed accuracy is 50/62 = 80.6%).
 - The scatter axis is fixed at 100–10,000 meetings (fine while workloads stay in range).
 
 ### The user's choices for the site (settled)
 
 - Use only real data. Never invent funds, numbers, quotes or links; missing values show
   "n/a". The user rejected a guessed "~2 min per firm" figure and kept the measured
-  runtime (347 s) and the run date.
+  runtime (347 s then, 428 s warm now). On 2026-10-03 they dropped the run date: the
+  header reads "Pipeline runtime: 428 s · source: SEC EDGAR".
 - Style: clean institutional finance; light theme, white ground, one muted accent (steel
   blue `#2C5D7F`); IBM Plex Sans with IBM Plex Serif for the title; tabular right-aligned
   numbers; 16 px+ text; badges for tier and values tag; no gradients, emoji or animation
@@ -165,9 +153,9 @@ All in `project/Main.dc.html`; everything else comes from the data file.
   typical family's items, so overall agreement would put 15 of 31 Tier 1 families at ≥90%
   "with ISS" (median 89.9%), raise Impax from 10% to 85% and drop Calvert from 91% to
   74%. The user went on with the board-opposed measure.
-- The "Families scored" box keeps that label, not "confidently scored": 6 of 45 calls are
+- The "Families scored" box keeps that label, not "confidently scored": 6 of 46 calls are
   medium confidence.
-- Per-firm averages divide by the 45 families with votes, not 50 (the note says so).
+- Per-firm averages divide by the 46 families with votes, not 50 (the note says so).
 
 ## Decisions the user made (don't relitigate)
 
@@ -188,35 +176,49 @@ All in `project/Main.dc.html`; everything else comes from the data file.
   audit the ISS gate fails.
 - The trust picks for the >10-trust families (above).
 
-## Pre-fix 50-family result (what the website shows)
+## Post-fix 50-family result (3 Oct 2026; what the website shows)
 
-45 of 50 families scored: 31 in Tier 1, 9 in Tier 2 (8 ISS followers and Russell for
-Glass Lewis), 5 in Tier 3. ISS gate passed at 92.2% (7 quotes set aside); Glass Lewis
-**failed** at 86.0%.
+46 of 50 families scored: 30 in Tier 1, 11 in Tier 2 (10 ISS followers and Russell for
+Glass Lewis), 5 in Tier 3; 40 high confidence, 6 medium. ISS gate passed at 92.6% (8
+quotes set aside); Glass Lewis **failed** at 81.6%. 3,648,221 N-PX vote rows, 589,678 in
+the judgment categories.
 
-## Active problems, in priority order (recheck after the rerun)
+Against the pre-fix run (1 Oct: 45 scored, 31 / 9 / 5):
+- **GuideStone now scores:** Tier 2, ISS follower, 97% of 731 board-opposed items, rank 36.
+- **MassMutual:** 4 of 5 trusts now read votes (Advantage Funds files a notice report
+  only); 200 → 1,486 meetings; still Tier 1 (rank 14 → 8).
+- **John Hancock** moved Tier 1 → Tier 2 (86% → 91% with ISS; Funds III and the ETF
+  trust are now read).
+- **Jackson National** rank 4 → 25 (41% → 79% with ISS; Judgment voter → Partial
+  robo-voter): its big JNL Series Trust voting report is now read (211k rows).
+- Equitable and Lincoln became Judgment voters (were Partial robo-voters).
+- No other tier changes. The same three families are scored against Glass Lewis.
 
-1. **5 families missing.** Mutual of America, Boston Partners, Glenmede and Westwood have
+## Active problems, in priority order
+
+1. **4 families missing.** Mutual of America, Boston Partners, Glenmede and Westwood have
    no fund N-PX filer in the window, only their advisers' own filings, which are
    dropped. Their funds may file under other trusts (e.g. Westwood in an Ultimus trust),
-   and finding them is the user's call. GuideStone should now score; that's unverified.
-2. **Zero-vote filings.** 13 trusts read zero votes. Most are genuine "FUND NOTICE
-   REPORT"s with no votes (JH Strategic Series, SEI Asset Allocation, PGIM Portfolios 4,
-   Voya Funds Trust, Voya Separate Portfolios). Verify that MassMutual's trusts now
-   score (before the fix it was 1 of 5).
+   and finding them is the user's call.
+2. **The 150 MB per-family cap now bites harder.** Reading every filing per trust means
+   more bytes per family. Skipped: John Hancock Funds II (its largest) and Strategic
+   Series, Voya Variable Products Trust, 1290 Funds, and one of two reports each from
+   JNL Series Trust and EQ Advisors Trust. Jackson's and Equitable's calls rest on part
+   of their votes. Raising `npx.max_mb_per_family` in `config.yaml` is the fix to weigh.
 3. **The Glass Lewis gate depends on the family list.** It passed (92.7%) on the 30
-   families and failed (86.0%) on these 50, because target families are left out of
-   the universe.
+   families and failed on these 50 (86.0% pre-fix, 81.6% now), because target families
+   are left out of the universe.
 4. **Adviser picking is lopsided when one gate fails.** Imputed ISS is compared against
    quotes-only Glass Lewis. Russell is a "Glass Lewis follower" on 17/17 quotes, and SEI
    (33) and PGIM (17) were scored against Glass Lewis. All three calls are unreliable.
-5. **The 150 MB per-family cap** cut John Hancock Funds II (its largest), Funds III and
-   its ETF trust, and Voya Variable Products Trust.
-6. **Imputation coverage fell** to 77% of items (89% on the 30 families); hold-out
-   coverage is 74–75%.
-7. **Board consensus vs sponsor rule disagree on ~830 items** (93 on the 30 families).
+5. **Zero-vote filings.** 6 trusts read zero votes, all genuine "FUND NOTICE REPORT"s
+   (SEI Asset Allocation, PGIM Portfolios 4, Voya Funds Trust, Voya Variable Insurance
+   Trust, Voya Separate Portfolios, MassMutual Advantage Funds).
+6. **Imputation coverage** is 82% of items (37,210 of 45,228; 89% on the 30 families);
+   hold-out coverage is 71%. 1,015 reference filers.
+7. **Board consensus vs sponsor rule disagree on 832 items** (93 on the 30 families).
    Non-US-heavy holders are suspected; unchecked.
-8. **Calvert is an ISS follower** (91% of 1,275), but an ESG voter agrees with ISS on
+8. **Calvert is an ISS follower** (91% of 1,268), but an ESG voter agrees with ISS on
    shareholder proposals anyway. The test can't separate the two.
 9. **No API key.** AI answers are in-session classifications cached in `data/ai/*.json`.
    `config.yaml` has `ai.model: "claude-opus-5"`, which is not a real ID; fix it before

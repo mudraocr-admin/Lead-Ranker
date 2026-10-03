@@ -1,0 +1,3646 @@
+{
+"summary": {
+"familiesListed": 50,
+"familiesScored": 46,
+"votes": "3,648,221",
+"priorityVotes": "589,678",
+"issQuoted": "180",
+"glQuoted": "146",
+"issImputed": "31,331",
+"issGate": "92.6%",
+"issGateN": 65,
+"glGate": "81.6%",
+"glPassed": false,
+"issSetAside": 8,
+"runtime": 428,
+"tiers": {
+"1": 30,
+"2": 11,
+"3": 5
+},
+"segments": {
+"Judgment voter": 22,
+"ISS follower": 10,
+"Partial robo-voter": 8,
+"Management follower": 5,
+"Glass Lewis follower": 1
+},
+"high": 40
+},
+"rows": [
+{
+"rank": 1,
+"family": "Gabelli Funds (GAMCO)",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 11% of 227 (95% interval 8%-16%)",
+"workload": "949",
+"mgmt": "78%",
+"mgmtN": "1,320",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "11%",
+"agreeN": "227",
+"aligned": "81%",
+"alignedN": "1,033",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "4%",
+"agn": "83",
+"mg": "41%",
+"mgn": "286"
+},
+{
+"name": "Contested director elections",
+"ag": "0%",
+"agn": "5",
+"mg": "75%",
+"mgn": "40"
+},
+{
+"name": "M&A",
+"ag": "n/a",
+"agn": "0",
+"mg": "92%",
+"mgn": "37"
+},
+{
+"name": "Executive pay",
+"ag": "16%",
+"agn": "139",
+"mg": "89%",
+"mgn": "957"
+}
+],
+"divergence": "0%",
+"nSeries": "10",
+"nFilers": 10,
+"filers": [
+{
+"name": "GAMCO GLOBAL SERIES FUNDS, INC",
+"cik": "909504",
+"url": "https://www.sec.gov/Archives/edgar/data/909504/0002000324-26-003529.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "GABELLI EQUITY TRUST INC",
+"cik": "794685",
+"url": "https://www.sec.gov/Archives/edgar/data/794685/0002000324-26-003540.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "GABELLI UTILITIES FUND",
+"cik": "1087966",
+"url": "https://www.sec.gov/Archives/edgar/data/1087966/0002000324-26-003534.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "GABELLI ASSET FUND",
+"cik": "783898",
+"url": "https://www.sec.gov/Archives/edgar/data/783898/0002000324-26-003520.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "GABELLI EQUITY SERIES FUNDS INC",
+"cik": "877670",
+"url": "https://www.sec.gov/Archives/edgar/data/877670/0002000324-26-003513.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "GABELLI INVESTOR FUNDS INC",
+"cik": "893783",
+"url": "https://www.sec.gov/Archives/edgar/data/893783/0002000324-26-003528.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "GABELLI VALUE 25 FUND INC",
+"cik": "853438",
+"url": "https://www.sec.gov/Archives/edgar/data/853438/0002000324-26-003536.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "GABELLI DIVIDEND GROWTH FUND",
+"cik": "1086884",
+"url": "https://www.sec.gov/Archives/edgar/data/1086884/0002000324-26-003539.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "GABELLI GROWTH FUND",
+"cik": "806857",
+"url": "https://www.sec.gov/Archives/edgar/data/806857/0002000324-26-003543.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "GABELLI INTERNATIONAL GROWTH FUND, INC",
+"cik": "925463",
+"url": "https://www.sec.gov/Archives/edgar/data/925463/0002000324-26-003514.txt",
+"label": "N-PX filed 2026-08-19"
+}
+],
+"fit": "High",
+"structure": "Single-manager, diversified",
+"rationale": "Broad holdings and a known independent voting stance; likely judgment voter",
+"risk": "Active in M&A situations, so contested/M&A sample may be useful",
+"tag": "",
+"x": 48.86,
+"y": 11.01
+},
+{
+"rank": 2,
+"family": "Impax (Pax World Funds)",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 20% of 120 (95% interval 14%-28%)",
+"workload": "361",
+"mgmt": "75%",
+"mgmtN": "998",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "20%",
+"agreeN": "120",
+"aligned": "94%",
+"alignedN": "809",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "19%",
+"agn": "58",
+"mg": "40%",
+"mgn": "245"
+},
+{
+"name": "Contested director elections",
+"ag": "n/a",
+"agn": "0",
+"mg": "100%",
+"mgn": "9"
+},
+{
+"name": "M&A",
+"ag": "n/a",
+"agn": "0",
+"mg": "88%",
+"mgn": "26"
+},
+{
+"name": "Executive pay",
+"ag": "21%",
+"agn": "62",
+"mg": "87%",
+"mgn": "718"
+}
+],
+"divergence": "18%",
+"nSeries": "9",
+"nFilers": 2,
+"filers": [
+{
+"name": "IMPAX FUNDS SERIES TRUST I",
+"cik": "76721",
+"url": "https://www.sec.gov/Archives/edgar/data/76721/0001398344-26-016225.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "IMPAX FUNDS SERIES TRUST III",
+"cik": "1598735",
+"url": "https://www.sec.gov/Archives/edgar/data/1598735/0001398344-26-016147.txt",
+"label": "N-PX filed 2026-08-31"
+}
+],
+"fit": "High",
+"structure": "Single-manager, diversified",
+"rationale": "ESG mandate means a custom policy and many shareholder proposal votes",
+"risk": "Smaller lineup",
+"tag": "ESG",
+"x": 27.88,
+"y": 20.0
+},
+{
+"rank": 3,
+"family": "Manning & Napier",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 34% of 29 (95% interval 20%-53%)",
+"workload": "129",
+"mgmt": "89%",
+"mgmtN": "197",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "34%",
+"agreeN": "29",
+"aligned": "94%",
+"alignedN": "126",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "50%",
+"agn": "6",
+"mg": "54%",
+"mgn": "13"
+},
+{
+"name": "Contested director elections",
+"ag": "n/a",
+"agn": "0",
+"mg": "90%",
+"mgn": "10"
+},
+{
+"name": "M&A",
+"ag": "100%",
+"agn": "1",
+"mg": "86%",
+"mgn": "7"
+},
+{
+"name": "Executive pay",
+"ag": "27%",
+"agn": "22",
+"mg": "92%",
+"mgn": "167"
+}
+],
+"divergence": "n/a",
+"nSeries": "2",
+"nFilers": 1,
+"filers": [
+{
+"name": "MANNING & NAPIER FUND, INC.",
+"cik": "751173",
+"url": "https://www.sec.gov/Archives/edgar/data/751173/0002000324-26-003360.txt",
+"label": "N-PX filed 2026-08-12"
+}
+],
+"fit": "Medium",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "Smaller lineup; may hit insufficient data",
+"tag": "",
+"x": 5.53,
+"y": 34.48
+},
+{
+"rank": 4,
+"family": "Bridge Builder Trust (Edward Jones)",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 44% of 1048 (95% interval 41%-47%)",
+"workload": "4,137",
+"mgmt": "90%",
+"mgmtN": "6,149",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "44%",
+"agreeN": "1,048",
+"aligned": "99%",
+"alignedN": "5,018",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "53%",
+"agn": "208",
+"mg": "68%",
+"mgn": "544"
+},
+{
+"name": "Contested director elections",
+"ag": "39%",
+"agn": "33",
+"mg": "92%",
+"mgn": "170"
+},
+{
+"name": "M&A",
+"ag": "40%",
+"agn": "5",
+"mg": "98%",
+"mgn": "196"
+},
+{
+"name": "Executive pay",
+"ag": "43%",
+"agn": "802",
+"mg": "91%",
+"mgn": "5,239"
+}
+],
+"divergence": "18%",
+"nSeries": "10",
+"nFilers": 1,
+"filers": [
+{
+"name": "Bridge Builder Trust",
+"cik": "1567101",
+"url": "https://www.sec.gov/Archives/edgar/data/1567101/0001193125-26-355053.txt",
+"label": "N-PX filed 2026-08-18"
+}
+],
+"fit": "High",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 80.83,
+"y": 44.47
+},
+{
+"rank": 5,
+"family": "Pacific Life Funds",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 46% of 2009 (95% interval 44%-48%)",
+"workload": "6,395",
+"mgmt": "88%",
+"mgmtN": "9,953",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "46%",
+"agreeN": "2,009",
+"aligned": "98%",
+"alignedN": "7,968",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "35%",
+"agn": "279",
+"mg": "92%",
+"mgn": "1,112"
+},
+{
+"name": "Contested director elections",
+"ag": "41%",
+"agn": "32",
+"mg": "87%",
+"mgn": "158"
+},
+{
+"name": "M&A",
+"ag": "39%",
+"agn": "444",
+"mg": "79%",
+"mgn": "1,251"
+},
+{
+"name": "Executive pay",
+"ag": "51%",
+"agn": "1,254",
+"mg": "89%",
+"mgn": "7,432"
+}
+],
+"divergence": "8%",
+"nSeries": "34",
+"nFilers": 1,
+"filers": [
+{
+"name": "PACIFIC SELECT FUND",
+"cik": "813900",
+"url": "https://www.sec.gov/Archives/edgar/data/813900/0001398344-26-016039.txt",
+"label": "N-PX filed 2026-08-28"
+}
+],
+"fit": "Medium",
+"structure": "Insurance-affiliated VIT (subadvised)",
+"rationale": "Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 90.29,
+"y": 45.69
+},
+{
+"rank": 6,
+"family": "Nationwide Funds",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 48% of 1343 (95% interval 46%-51%)",
+"workload": "4,914",
+"mgmt": "89%",
+"mgmtN": "8,444",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "48%",
+"agreeN": "1,343",
+"aligned": "98%",
+"alignedN": "6,984",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "43%",
+"agn": "231",
+"mg": "84%",
+"mgn": "780"
+},
+{
+"name": "Contested director elections",
+"ag": "39%",
+"agn": "28",
+"mg": "90%",
+"mgn": "156"
+},
+{
+"name": "M&A",
+"ag": "42%",
+"agn": "38",
+"mg": "96%",
+"mgn": "526"
+},
+{
+"name": "Executive pay",
+"ag": "50%",
+"agn": "1,046",
+"mg": "89%",
+"mgn": "6,982"
+}
+],
+"divergence": "15%",
+"nSeries": "59",
+"nFilers": 2,
+"filers": [
+{
+"name": "NATIONWIDE VARIABLE INSURANCE TRUST",
+"cik": "353905",
+"url": "https://www.sec.gov/Archives/edgar/data/353905/0001193125-26-363726.txt",
+"label": "N-PX filed 2026-08-24"
+},
+{
+"name": "NATIONWIDE MUTUAL FUNDS",
+"cik": "1048702",
+"url": "https://www.sec.gov/Archives/edgar/data/1048702/0001193125-26-363728.txt",
+"label": "N-PX filed 2026-08-24"
+}
+],
+"fit": "High",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 84.57,
+"y": 48.32
+},
+{
+"rank": 7,
+"family": "Morningstar Funds Trust",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 50% of 327 (95% interval 45%-56%)",
+"workload": "1,110",
+"mgmt": "87%",
+"mgmtN": "2,171",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "50%",
+"agreeN": "327",
+"aligned": "95%",
+"alignedN": "1,648",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "72%",
+"agn": "131",
+"mg": "61%",
+"mgn": "388"
+},
+{
+"name": "Contested director elections",
+"ag": "0%",
+"agn": "5",
+"mg": "100%",
+"mgn": "16"
+},
+{
+"name": "M&A",
+"ag": "29%",
+"agn": "7",
+"mg": "97%",
+"mgn": "117"
+},
+{
+"name": "Executive pay",
+"ag": "38%",
+"agn": "184",
+"mg": "92%",
+"mgn": "1,650"
+}
+],
+"divergence": "19%",
+"nSeries": "7",
+"nFilers": 1,
+"filers": [
+{
+"name": "Morningstar Funds Trust",
+"cik": "1699360",
+"url": "https://www.sec.gov/Archives/edgar/data/1699360/0001193125-26-357342.txt",
+"label": "N-PX filed 2026-08-20"
+}
+],
+"fit": "Medium",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design; smaller lineup",
+"tag": "",
+"x": 52.27,
+"y": 50.46
+},
+{
+"rank": 8,
+"family": "MassMutual (Select Funds / MML)",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 52% of 459 (95% interval 48%-57%)",
+"workload": "1,486",
+"mgmt": "88%",
+"mgmtN": "2,735",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "52%",
+"agreeN": "459",
+"aligned": "97%",
+"alignedN": "2,295",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "55%",
+"agn": "174",
+"mg": "75%",
+"mgn": "424"
+},
+{
+"name": "Contested director elections",
+"ag": "33%",
+"agn": "6",
+"mg": "60%",
+"mgn": "32"
+},
+{
+"name": "M&A",
+"ag": "36%",
+"agn": "11",
+"mg": "98%",
+"mgn": "124"
+},
+{
+"name": "Executive pay",
+"ag": "52%",
+"agn": "268",
+"mg": "90%",
+"mgn": "2,155"
+}
+],
+"divergence": "18%",
+"nSeries": "38",
+"nFilers": 4,
+"filers": [
+{
+"name": "MML SERIES INVESTMENT FUND",
+"cik": "67160",
+"url": "https://www.sec.gov/Archives/edgar/data/67160/0001133228-26-011581.txt",
+"label": "N-PX filed 2026-08-25"
+},
+{
+"name": "MASSMUTUAL SELECT FUNDS",
+"cik": "916053",
+"url": "https://www.sec.gov/Archives/edgar/data/916053/0001133228-26-011571.txt",
+"label": "N-PX filed 2026-08-25"
+},
+{
+"name": "MML Series Investment Fund II",
+"cik": "1317146",
+"url": "https://www.sec.gov/Archives/edgar/data/1317146/0001133228-26-011586.txt",
+"label": "N-PX filed 2026-08-25"
+},
+{
+"name": "MASSMUTUAL PREMIER FUNDS",
+"cik": "927972",
+"url": "https://www.sec.gov/Archives/edgar/data/927972/0001133228-26-011576.txt",
+"label": "N-PX filed 2026-08-25"
+}
+],
+"fit": "Medium",
+"structure": "Insurance-affiliated VIT (subadvised)",
+"rationale": "Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 58.6,
+"y": 52.29
+},
+{
+"rank": 9,
+"family": "Madison Investments",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 53% of 47 (95% interval 39%-67%)",
+"workload": "149",
+"mgmt": "63%",
+"mgmtN": "296",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "53%",
+"agreeN": "47",
+"aligned": "66%",
+"alignedN": "251",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "55%",
+"agn": "31",
+"mg": "73%",
+"mgn": "104"
+},
+{
+"name": "Contested director elections",
+"ag": "n/a",
+"agn": "0",
+"mg": "n/a",
+"mgn": "n/a"
+},
+{
+"name": "M&A",
+"ag": "n/a",
+"agn": "0",
+"mg": "100%",
+"mgn": "2"
+},
+{
+"name": "Executive pay",
+"ag": "50%",
+"agn": "16",
+"mg": "57%",
+"mgn": "190"
+}
+],
+"divergence": "0%",
+"nSeries": "8",
+"nFilers": 2,
+"filers": [
+{
+"name": "MADISON FUNDS",
+"cik": "1040612",
+"url": "https://www.sec.gov/Archives/edgar/data/1040612/0001438934-26-001244.txt",
+"label": "N-PX filed 2026-08-24"
+},
+{
+"name": "ULTRA SERIES FUND",
+"cik": "732697",
+"url": "https://www.sec.gov/Archives/edgar/data/732697/0001438934-26-001242.txt",
+"label": "N-PX filed 2026-08-24"
+}
+],
+"fit": "Medium",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "Smaller lineup; may hit insufficient data",
+"tag": "",
+"x": 8.66,
+"y": 53.19
+},
+{
+"rank": 10,
+"family": "Destinations Funds (Orion / Brinker)",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 53% of 1391 (95% interval 51%-56%)",
+"workload": "5,010",
+"mgmt": "89%",
+"mgmtN": "8,065",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "53%",
+"agreeN": "1,391",
+"aligned": "98%",
+"alignedN": "6,766",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "48%",
+"agn": "266",
+"mg": "82%",
+"mgn": "813"
+},
+{
+"name": "Contested director elections",
+"ag": "44%",
+"agn": "32",
+"mg": "91%",
+"mgn": "158"
+},
+{
+"name": "M&A",
+"ag": "37%",
+"agn": "35",
+"mg": "95%",
+"mgn": "393"
+},
+{
+"name": "Executive pay",
+"ag": "55%",
+"agn": "1,058",
+"mg": "90%",
+"mgn": "6,701"
+}
+],
+"divergence": "16%",
+"nSeries": "9",
+"nFilers": 1,
+"filers": [
+{
+"name": "Brinker Capital Destinations Trust",
+"cik": "1688680",
+"url": "https://www.sec.gov/Archives/edgar/data/1688680/0001133228-26-011306.txt",
+"label": "N-PX filed 2026-08-14"
+}
+],
+"fit": "Medium",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 84.99,
+"y": 53.2
+},
+{
+"rank": 11,
+"family": "Natixis Investment Managers",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 57% of 341 (95% interval 51%-62%)",
+"workload": "1,025",
+"mgmt": "86%",
+"mgmtN": "2,004",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "57%",
+"agreeN": "341",
+"aligned": "96%",
+"alignedN": "1,636",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "78%",
+"agn": "134",
+"mg": "65%",
+"mgn": "331"
+},
+{
+"name": "Contested director elections",
+"ag": "44%",
+"agn": "9",
+"mg": "98%",
+"mgn": "39"
+},
+{
+"name": "M&A",
+"ag": "50%",
+"agn": "4",
+"mg": "97%",
+"mgn": "62"
+},
+{
+"name": "Executive pay",
+"ag": "42%",
+"agn": "194",
+"mg": "90%",
+"mgn": "1,572"
+}
+],
+"divergence": "13%",
+"nSeries": "37",
+"nFilers": 10,
+"filers": [
+{
+"name": "Gateway Trust",
+"cik": "1406305",
+"url": "https://www.sec.gov/Archives/edgar/data/1406305/0001438934-26-002597.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "HARRIS ASSOCIATES INVESTMENT TRUST",
+"cik": "872323",
+"url": "https://www.sec.gov/Archives/edgar/data/872323/0001104659-26-103685.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "LOOMIS SAYLES FUNDS II",
+"cik": "872649",
+"url": "https://www.sec.gov/Archives/edgar/data/872649/0001438934-26-002595.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "Natixis Funds Trust I",
+"cik": "770540",
+"url": "https://www.sec.gov/Archives/edgar/data/770540/0001438934-26-002615.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "Natixis Funds Trust II",
+"cik": "52136",
+"url": "https://www.sec.gov/Archives/edgar/data/52136/0001438934-26-002605.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "LOOMIS SAYLES FUNDS I",
+"cik": "917469",
+"url": "https://www.sec.gov/Archives/edgar/data/917469/0001438934-26-002594.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "Harris Oakmark ETF Trust",
+"cik": "2035827",
+"url": "https://www.sec.gov/Archives/edgar/data/2035827/0001104659-26-103687.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "Natixis ETF Trust",
+"cik": "1526787",
+"url": "https://www.sec.gov/Archives/edgar/data/1526787/0001438934-26-002599.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "Natixis Funds Trust IV",
+"cik": "1095726",
+"url": "https://www.sec.gov/Archives/edgar/data/1095726/0001438934-26-002596.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "Natixis ETF Trust II",
+"cik": "1728860",
+"url": "https://www.sec.gov/Archives/edgar/data/1728860/0001438934-26-002602.txt",
+"label": "N-PX filed 2026-08-31"
+}
+],
+"fit": "High",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Multi-boutique like AMG; affiliates may vote independently",
+"tag": "",
+"x": 50.54,
+"y": 56.6
+},
+{
+"rank": 12,
+"family": "Equitable (EQ Advisors Trust / 1290 Funds)",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 57% of 1643 (95% interval 55%-60%)",
+"workload": "6,375",
+"mgmt": "87%",
+"mgmtN": "9,863",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "57%",
+"agreeN": "1,643",
+"aligned": "97%",
+"alignedN": "8,161",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "54%",
+"agn": "306",
+"mg": "77%",
+"mgn": "949"
+},
+{
+"name": "Contested director elections",
+"ag": "52%",
+"agn": "33",
+"mg": "82%",
+"mgn": "179"
+},
+{
+"name": "M&A",
+"ag": "52%",
+"agn": "44",
+"mg": "86%",
+"mgn": "603"
+},
+{
+"name": "Executive pay",
+"ag": "58%",
+"agn": "1,260",
+"mg": "88%",
+"mgn": "8,132"
+}
+],
+"divergence": "20%",
+"nSeries": "58",
+"nFilers": 1,
+"filers": [
+{
+"name": "EQ ADVISORS TRUST",
+"cik": "1027263",
+"url": "https://www.sec.gov/Archives/edgar/data/1027263/0001193125-26-372373.txt",
+"label": "N-PX filed 2026-08-28"
+}
+],
+"fit": "Medium",
+"structure": "Insurance-affiliated VIT (subadvised)",
+"rationale": "Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 90.22,
+"y": 57.21
+},
+{
+"rank": 13,
+"family": "Sterling Capital",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 58% of 125 (95% interval 50%-67%)",
+"workload": "537",
+"mgmt": "84%",
+"mgmtN": "854",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "58%",
+"agreeN": "125",
+"aligned": "91%",
+"alignedN": "726",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "80%",
+"agn": "65",
+"mg": "54%",
+"mgn": "183"
+},
+{
+"name": "Contested director elections",
+"ag": "n/a",
+"agn": "0",
+"mg": "100%",
+"mgn": "16"
+},
+{
+"name": "M&A",
+"ag": "n/a",
+"agn": "0",
+"mg": "100%",
+"mgn": "24"
+},
+{
+"name": "Executive pay",
+"ag": "35%",
+"agn": "60",
+"mg": "92%",
+"mgn": "631"
+}
+],
+"divergence": "2%",
+"nSeries": "9",
+"nFilers": 1,
+"filers": [
+{
+"name": "STERLING CAPITAL FUNDS",
+"cik": "889284",
+"url": "https://www.sec.gov/Archives/edgar/data/889284/0001398344-26-016170.txt",
+"label": "N-PX filed 2026-08-31"
+}
+],
+"fit": "Medium",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "Smaller lineup; may hit insufficient data",
+"tag": "",
+"x": 36.5,
+"y": 58.4
+},
+{
+"rank": 14,
+"family": "PGIM Investments",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with GL where it opposed the board: 59% of 17 (95% interval 36%-78%)",
+"workload": "1,813",
+"mgmt": "84%",
+"mgmtN": "3,629",
+"adviser": "Glass Lewis",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "59%",
+"agreeN": "17",
+"aligned": "96%",
+"alignedN": "25",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "n/a",
+"agn": "0",
+"mg": "65%",
+"mgn": "514"
+},
+{
+"name": "Contested director elections",
+"ag": "40%",
+"agn": "10",
+"mg": "94%",
+"mgn": "71"
+},
+{
+"name": "M&A",
+"ag": "100%",
+"agn": "1",
+"mg": "99%",
+"mgn": "167"
+},
+{
+"name": "Executive pay",
+"ag": "83%",
+"agn": "6",
+"mg": "86%",
+"mgn": "2,877"
+}
+],
+"divergence": "5%",
+"nSeries": "31",
+"nFilers": 9,
+"filers": [
+{
+"name": "PRUDENTIAL SERIES FUND",
+"cik": "711175",
+"url": "https://www.sec.gov/Archives/edgar/data/711175/0000711175-26-000040.txt",
+"label": "N-PX filed 2026-08-25"
+},
+{
+"name": "PRUDENTIAL INVESTMENT PORTFOLIOS, INC.",
+"cik": "949512",
+"url": "https://www.sec.gov/Archives/edgar/data/949512/0000949512-26-000018.txt",
+"label": "N-PX filed 2026-08-20"
+},
+{
+"name": "PRUDENTIAL WORLD FUND, INC.",
+"cik": "741350",
+"url": "https://www.sec.gov/Archives/edgar/data/741350/0000741350-26-000006.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "PRUDENTIAL JENNISON BLEND FUND, INC.",
+"cik": "356683",
+"url": "https://www.sec.gov/Archives/edgar/data/356683/0000356683-26-000001.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "PGIM ETF TRUST",
+"cik": "1727074",
+"url": "https://www.sec.gov/Archives/edgar/data/1727074/0001727074-26-000114.txt",
+"label": "N-PX filed 2026-08-24"
+},
+{
+"name": "PRUDENTIAL SECTOR FUNDS, INC.",
+"cik": "352665",
+"url": "https://www.sec.gov/Archives/edgar/data/352665/0000352665-26-000001.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "PRUDENTIAL JENNISON SMALL CO FUND, INC.",
+"cik": "318531",
+"url": "https://www.sec.gov/Archives/edgar/data/318531/0000318531-26-000001.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "PRUDENTIAL JENNISON NATURAL RESOURCES FUND, INC.",
+"cik": "816753",
+"url": "https://www.sec.gov/Archives/edgar/data/816753/0000816753-26-000001.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "PRUDENTIAL JENNISON MID-CAP GROWTH FUND, INC.",
+"cik": "1022624",
+"url": "https://www.sec.gov/Archives/edgar/data/1022624/0001022624-26-000002.txt",
+"label": "N-PX filed 2026-08-20"
+}
+],
+"fit": "Medium",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Large; may have in-house stewardship resources",
+"tag": "",
+"x": 62.92,
+"y": 58.82
+},
+{
+"rank": 15,
+"family": "Mercer Funds",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 59% of 119 (95% interval 50%-67%)",
+"workload": "617",
+"mgmt": "89%",
+"mgmtN": "2,211",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "59%",
+"agreeN": "119",
+"aligned": "95%",
+"alignedN": "1,317",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "71%",
+"agn": "31",
+"mg": "76%",
+"mgn": "240"
+},
+{
+"name": "Contested director elections",
+"ag": "n/a",
+"agn": "0",
+"mg": "100%",
+"mgn": "10"
+},
+{
+"name": "M&A",
+"ag": "100%",
+"agn": "2",
+"mg": "99%",
+"mgn": "207"
+},
+{
+"name": "Executive pay",
+"ag": "53%",
+"agn": "86",
+"mg": "90%",
+"mgn": "1,754"
+}
+],
+"divergence": "16%",
+"nSeries": "4",
+"nFilers": 1,
+"filers": [
+{
+"name": "Mercer Funds",
+"cik": "1320615",
+"url": "https://www.sec.gov/Archives/edgar/data/1320615/0000930413-26-002775.txt",
+"label": "N-PX filed 2026-08-28"
+}
+],
+"fit": "Medium",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 39.51,
+"y": 58.82
+},
+{
+"rank": 16,
+"family": "Aristotle Funds",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 62% of 95 (95% interval 52%-71%)",
+"workload": "273",
+"mgmt": "87%",
+"mgmtN": "503",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "62%",
+"agreeN": "95",
+"aligned": "98%",
+"alignedN": "411",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "69%",
+"agn": "42",
+"mg": "76%",
+"mgn": "135"
+},
+{
+"name": "Contested director elections",
+"ag": "n/a",
+"agn": "0",
+"mg": "n/a",
+"mgn": "n/a"
+},
+{
+"name": "M&A",
+"ag": "n/a",
+"agn": "0",
+"mg": "100%",
+"mgn": "2"
+},
+{
+"name": "Executive pay",
+"ag": "57%",
+"agn": "53",
+"mg": "92%",
+"mgn": "366"
+}
+],
+"divergence": "1%",
+"nSeries": "8",
+"nFilers": 1,
+"filers": [
+{
+"name": "Aristotle Funds Series Trust",
+"cik": "1959372",
+"url": "https://www.sec.gov/Archives/edgar/data/1959372/0001438934-26-002568.txt",
+"label": "N-PX filed 2026-08-31"
+}
+],
+"fit": "Medium",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "Verify N-PX filer name",
+"tag": "",
+"x": 21.81,
+"y": 62.11
+},
+{
+"rank": 17,
+"family": "BNY Mellon Investment Adviser",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 64% of 1978 (95% interval 62%-66%)",
+"workload": "6,585",
+"mgmt": "85%",
+"mgmtN": "10,532",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "64%",
+"agreeN": "1,978",
+"aligned": "96%",
+"alignedN": "8,609",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "55%",
+"agn": "293",
+"mg": "89%",
+"mgn": "1,411"
+},
+{
+"name": "Contested director elections",
+"ag": "43%",
+"agn": "14",
+"mg": "91%",
+"mgn": "81"
+},
+{
+"name": "M&A",
+"ag": "62%",
+"agn": "450",
+"mg": "77%",
+"mgn": "1,220"
+},
+{
+"name": "Executive pay",
+"ag": "67%",
+"agn": "1,221",
+"mg": "85%",
+"mgn": "7,820"
+}
+],
+"divergence": "7%",
+"nSeries": "35",
+"nFilers": 10,
+"filers": [
+{
+"name": "BNY Mellon ETF Trust",
+"cik": "1493580",
+"url": "https://www.sec.gov/Archives/edgar/data/1493580/0001493580-26-000008.txt",
+"label": "N-PX filed 2026-08-18"
+},
+{
+"name": "BNY MELLON INDEX FUNDS, INC.",
+"cik": "857114",
+"url": "https://www.sec.gov/Archives/edgar/data/857114/0000857114-26-000004.txt",
+"label": "N-PX filed 2026-08-18"
+},
+{
+"name": "BNY MELLON FUNDS TRUST",
+"cik": "1111565",
+"url": "https://www.sec.gov/Archives/edgar/data/1111565/0001111565-26-000010.txt",
+"label": "N-PX filed 2026-08-18"
+},
+{
+"name": "BNY MELLON INVESTMENT PORTFOLIOS",
+"cik": "1056707",
+"url": "https://www.sec.gov/Archives/edgar/data/1056707/0001056707-26-000005.txt",
+"label": "N-PX filed 2026-08-18"
+},
+{
+"name": "BNY MELLON STOCK INDEX FUND, INC.",
+"cik": "846800",
+"url": "https://www.sec.gov/Archives/edgar/data/846800/0000846800-26-000004.txt",
+"label": "N-PX filed 2026-08-18"
+},
+{
+"name": "BNY Mellon Advantage Funds, Inc.",
+"cik": "914775",
+"url": "https://www.sec.gov/Archives/edgar/data/914775/0000914775-26-000007.txt",
+"label": "N-PX filed 2026-08-18"
+},
+{
+"name": "BNY MELLON VARIABLE INVESTMENT FUND",
+"cik": "813383",
+"url": "https://www.sec.gov/Archives/edgar/data/813383/0000813383-26-000014.txt",
+"label": "N-PX filed 2026-08-18"
+},
+{
+"name": "BNY Mellon Investment Funds I",
+"cik": "799295",
+"url": "https://www.sec.gov/Archives/edgar/data/799295/0000799295-26-000010.txt",
+"label": "N-PX filed 2026-08-18"
+},
+{
+"name": "BNY Mellon Large Cap Securities Fund, Inc.",
+"cik": "30146",
+"url": "https://www.sec.gov/Archives/edgar/data/30146/0000030146-26-000361.txt",
+"label": "N-PX filed 2026-08-18"
+},
+{
+"name": "BNY MELLON OPPORTUNITY FUNDS",
+"cik": "1111178",
+"url": "https://www.sec.gov/Archives/edgar/data/1111178/0001111178-26-000003.txt",
+"label": "N-PX filed 2026-08-18"
+}
+],
+"fit": "Medium",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Parent is a large custodian; may build or buy elsewhere",
+"tag": "",
+"x": 90.93,
+"y": 64.05
+},
+{
+"rank": 18,
+"family": "Securian (SFT Funds)",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 66% of 300 (95% interval 60%-71%)",
+"workload": "1,012",
+"mgmt": "82%",
+"mgmtN": "1,653",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "66%",
+"agreeN": "300",
+"aligned": "91%",
+"alignedN": "1,358",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "86%",
+"agn": "162",
+"mg": "54%",
+"mgn": "389"
+},
+{
+"name": "Contested director elections",
+"ag": "0%",
+"agn": "5",
+"mg": "74%",
+"mgn": "27"
+},
+{
+"name": "M&A",
+"ag": "100%",
+"agn": "1",
+"mg": "92%",
+"mgn": "24"
+},
+{
+"name": "Executive pay",
+"ag": "43%",
+"agn": "132",
+"mg": "90%",
+"mgn": "1,213"
+}
+],
+"divergence": "23%",
+"nSeries": "7",
+"nFilers": 1,
+"filers": [
+{
+"name": "Securian Funds Trust",
+"cik": "766351",
+"url": "https://www.sec.gov/Archives/edgar/data/766351/0001438934-26-001172.txt",
+"label": "N-PX filed 2026-08-21"
+}
+],
+"fit": "Medium",
+"structure": "Insurance-affiliated VIT (subadvised)",
+"rationale": "Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop",
+"risk": "Smaller lineup; may hit insufficient data",
+"tag": "",
+"x": 50.26,
+"y": 65.67
+},
+{
+"rank": 19,
+"family": "Transamerica",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Partial robo-voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 67% of 695 (95% interval 63%-70%)",
+"workload": "2,223",
+"mgmt": "88%",
+"mgmtN": "4,535",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "67%",
+"agreeN": "695",
+"aligned": "97%",
+"alignedN": "3,899",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "62%",
+"agn": "193",
+"mg": "77%",
+"mgn": "621"
+},
+{
+"name": "Contested director elections",
+"ag": "100%",
+"agn": "9",
+"mg": "73%",
+"mgn": "41"
+},
+{
+"name": "M&A",
+"ag": "55%",
+"agn": "22",
+"mg": "92%",
+"mgn": "169"
+},
+{
+"name": "Executive pay",
+"ag": "69%",
+"agn": "471",
+"mg": "89%",
+"mgn": "3,704"
+}
+],
+"divergence": "17%",
+"nSeries": "44",
+"nFilers": 2,
+"filers": [
+{
+"name": "TRANSAMERICA SERIES TRUST",
+"cik": "778207",
+"url": "https://www.sec.gov/Archives/edgar/data/778207/0001193125-26-370218.txt",
+"label": "N-PX filed 2026-08-27"
+},
+{
+"name": "TRANSAMERICA FUNDS",
+"cik": "787623",
+"url": "https://www.sec.gov/Archives/edgar/data/787623/0001193125-26-370217.txt",
+"label": "N-PX filed 2026-08-27"
+}
+],
+"fit": "Medium",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 67.35,
+"y": 67.05
+},
+{
+"rank": 20,
+"family": "Thornburg",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 68% of 80 (95% interval 57%-77%)",
+"workload": "304",
+"mgmt": "84%",
+"mgmtN": "672",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "68%",
+"agreeN": "80",
+"aligned": "92%",
+"alignedN": "603",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "64%",
+"agn": "25",
+"mg": "25%",
+"mgn": "93"
+},
+{
+"name": "Contested director elections",
+"ag": "n/a",
+"agn": "0",
+"mg": "100%",
+"mgn": "13"
+},
+{
+"name": "M&A",
+"ag": "40%",
+"agn": "5",
+"mg": "93%",
+"mgn": "28"
+},
+{
+"name": "Executive pay",
+"ag": "72%",
+"agn": "50",
+"mg": "93%",
+"mgn": "538"
+}
+],
+"divergence": "0%",
+"nSeries": "16",
+"nFilers": 2,
+"filers": [
+{
+"name": "THORNBURG INVESTMENT TRUST",
+"cik": "816153",
+"url": "https://www.sec.gov/Archives/edgar/data/816153/0001999371-26-018637.txt",
+"label": "N-PX filed 2026-08-25"
+},
+{
+"name": "Thornburg ETF Trust",
+"cik": "2038383",
+"url": "https://www.sec.gov/Archives/edgar/data/2038383/0001999371-26-018635.txt",
+"label": "N-PX filed 2026-08-25"
+}
+],
+"fit": "High",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "Mixed equity/income lineup",
+"tag": "",
+"x": 24.14,
+"y": 67.5
+},
+{
+"rank": 21,
+"family": "SEI Investments",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Partial robo-voter",
+"conf": "high",
+"why": "agreement with GL where it opposed the board: 70% of 33 (95% interval 53%-83%)",
+"workload": "3,451",
+"mgmt": "83%",
+"mgmtN": "7,659",
+"adviser": "Glass Lewis",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "70%",
+"agreeN": "33",
+"aligned": "98%",
+"alignedN": "48",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "n/a",
+"agn": "0",
+"mg": "62%",
+"mgn": "779"
+},
+{
+"name": "Contested director elections",
+"ag": "60%",
+"agn": "25",
+"mg": "89%",
+"mgn": "131"
+},
+{
+"name": "M&A",
+"ag": "100%",
+"agn": "2",
+"mg": "98%",
+"mgn": "516"
+},
+{
+"name": "Executive pay",
+"ag": "100%",
+"agn": "6",
+"mg": "85%",
+"mgn": "6,233"
+}
+],
+"divergence": "16%",
+"nSeries": "51",
+"nFilers": 5,
+"filers": [
+{
+"name": "SEI INSTITUTIONAL INVESTMENTS TRUST",
+"cik": "939934",
+"url": "https://www.sec.gov/Archives/edgar/data/939934/0001135428-26-000141.txt",
+"label": "N-PX filed 2026-08-21"
+},
+{
+"name": "SEI INSTITUTIONAL MANAGED TRUST",
+"cik": "804239",
+"url": "https://www.sec.gov/Archives/edgar/data/804239/0001135428-26-000145.txt",
+"label": "N-PX filed 2026-08-21"
+},
+{
+"name": "SEI INSTITUTIONAL INTERNATIONAL TRUST",
+"cik": "835597",
+"url": "https://www.sec.gov/Archives/edgar/data/835597/0001135428-26-000149.txt",
+"label": "N-PX filed 2026-08-21"
+},
+{
+"name": "SEI Exchange Traded Funds",
+"cik": "1888997",
+"url": "https://www.sec.gov/Archives/edgar/data/1888997/0001135428-26-000137.txt",
+"label": "N-PX filed 2026-08-21"
+},
+{
+"name": "SEI Catholic Values Trust",
+"cik": "1627853",
+"url": "https://www.sec.gov/Archives/edgar/data/1627853/0001135428-26-000131.txt",
+"label": "N-PX filed 2026-08-21"
+}
+],
+"fit": "Medium",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design; large platform",
+"tag": "",
+"x": 76.9,
+"y": 69.7
+},
+{
+"rank": 22,
+"family": "Empower Funds",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Partial robo-voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 71% of 679 (95% interval 67%-74%)",
+"workload": "3,270",
+"mgmt": "82%",
+"mgmtN": "6,262",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "71%",
+"agreeN": "679",
+"aligned": "98%",
+"alignedN": "4,055",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "62%",
+"agn": "161",
+"mg": "73%",
+"mgn": "910"
+},
+{
+"name": "Contested director elections",
+"ag": "100%",
+"agn": "7",
+"mg": "57%",
+"mgn": "48"
+},
+{
+"name": "M&A",
+"ag": "72%",
+"agn": "32",
+"mg": "85%",
+"mgn": "317"
+},
+{
+"name": "Executive pay",
+"ag": "73%",
+"agn": "479",
+"mg": "84%",
+"mgn": "4,987"
+}
+],
+"divergence": "4%",
+"nSeries": "19",
+"nFilers": 1,
+"filers": [
+{
+"name": "EMPOWER FUNDS, INC.",
+"cik": "356476",
+"url": "https://www.sec.gov/Archives/edgar/data/356476/0001193125-26-357034.txt",
+"label": "N-PX filed 2026-08-19"
+}
+],
+"fit": "Medium",
+"structure": "Insurance-affiliated VIT (subadvised)",
+"rationale": "Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 75.73,
+"y": 70.99
+},
+{
+"rank": 23,
+"family": "Wasatch Global",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 74% of 135 (95% interval 66%-81%)",
+"workload": "517",
+"mgmt": "86%",
+"mgmtN": "808",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "74%",
+"agreeN": "135",
+"aligned": "100%",
+"alignedN": "658",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "14%",
+"agn": "7",
+"mg": "95%",
+"mgn": "59"
+},
+{
+"name": "Contested director elections",
+"ag": "n/a",
+"agn": "0",
+"mg": "n/a",
+"mgn": "n/a"
+},
+{
+"name": "M&A",
+"ag": "0%",
+"agn": "5",
+"mg": "100%",
+"mgn": "26"
+},
+{
+"name": "Executive pay",
+"ag": "80%",
+"agn": "123",
+"mg": "85%",
+"mgn": "723"
+}
+],
+"divergence": "0%",
+"nSeries": "21",
+"nFilers": 1,
+"filers": [
+{
+"name": "WASATCH FUNDS TRUST",
+"cik": "806633",
+"url": "https://www.sec.gov/Archives/edgar/data/806633/0001193125-26-375824.txt",
+"label": "N-PX filed 2026-08-31"
+}
+],
+"fit": "High",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "Small-cap holdings rarely appear in DEFA14A key",
+"tag": "",
+"x": 35.67,
+"y": 74.07
+},
+{
+"rank": 24,
+"family": "Lincoln Financial (LVIP)",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 76% of 2761 (95% interval 75%-78%)",
+"workload": "9,243",
+"mgmt": "82%",
+"mgmtN": "16,044",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "76%",
+"agreeN": "2,761",
+"aligned": "96%",
+"alignedN": "12,456",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "49%",
+"agn": "340",
+"mg": "67%",
+"mgn": "1,582"
+},
+{
+"name": "Contested director elections",
+"ag": "76%",
+"agn": "25",
+"mg": "85%",
+"mgn": "171"
+},
+{
+"name": "M&A",
+"ag": "77%",
+"agn": "322",
+"mg": "83%",
+"mgn": "1,366"
+},
+{
+"name": "Executive pay",
+"ag": "81%",
+"agn": "2,074",
+"mg": "84%",
+"mgn": "12,925"
+}
+],
+"divergence": "17%",
+"nSeries": "55",
+"nFilers": 2,
+"filers": [
+{
+"name": "LINCOLN VARIABLE INSURANCE PRODUCTS TRUST",
+"cik": "914036",
+"url": "https://www.sec.gov/Archives/edgar/data/914036/0001193125-26-368290.txt",
+"label": "N-PX filed 2026-08-26"
+},
+{
+"name": "Lincoln Funds Trust",
+"cik": "2015799",
+"url": "https://www.sec.gov/Archives/edgar/data/2015799/0001193125-26-368281.txt",
+"label": "N-PX filed 2026-08-26"
+}
+],
+"fit": "Medium",
+"structure": "Insurance-affiliated VIT (subadvised)",
+"rationale": "Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 98.29,
+"y": 76.17
+},
+{
+"rank": 25,
+"family": "Jackson National (JNL Series Trust)",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Partial robo-voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 79% of 1805 (95% interval 77%-81%)",
+"workload": "7,887",
+"mgmt": "81%",
+"mgmtN": "11,665",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "79%",
+"agreeN": "1,805",
+"aligned": "95%",
+"alignedN": "8,291",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "38%",
+"agn": "217",
+"mg": "83%",
+"mgn": "647"
+},
+{
+"name": "Contested director elections",
+"ag": "53%",
+"agn": "36",
+"mg": "77%",
+"mgn": "157"
+},
+{
+"name": "M&A",
+"ag": "91%",
+"agn": "412",
+"mg": "77%",
+"mgn": "2,539"
+},
+{
+"name": "Executive pay",
+"ag": "83%",
+"agn": "1,140",
+"mg": "82%",
+"mgn": "8,322"
+}
+],
+"divergence": "15%",
+"nSeries": "24",
+"nFilers": 1,
+"filers": [
+{
+"name": "JNL SERIES TRUST",
+"cik": "933691",
+"url": "https://www.sec.gov/Archives/edgar/data/933691/0001438934-26-001930.txt",
+"label": "N-PX filed 2026-08-27"
+}
+],
+"fit": "Medium",
+"structure": "Insurance-affiliated VIT (subadvised)",
+"rationale": "Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 94.85,
+"y": 78.89
+},
+{
+"rank": 26,
+"family": "Voya Investment Management",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Partial robo-voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 81% of 2200 (95% interval 79%-83%)",
+"workload": "7,128",
+"mgmt": "82%",
+"mgmtN": "11,457",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "81%",
+"agreeN": "2,200",
+"aligned": "98%",
+"alignedN": "9,178",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "48%",
+"agn": "298",
+"mg": "86%",
+"mgn": "1,020"
+},
+{
+"name": "Contested director elections",
+"ag": "73%",
+"agn": "26",
+"mg": "81%",
+"mgn": "140"
+},
+{
+"name": "M&A",
+"ag": "97%",
+"agn": "289",
+"mg": "69%",
+"mgn": "923"
+},
+{
+"name": "Executive pay",
+"ag": "85%",
+"agn": "1,587",
+"mg": "83%",
+"mgn": "9,374"
+}
+],
+"divergence": "0%",
+"nSeries": "59",
+"nFilers": 6,
+"filers": [
+{
+"name": "Voya VARIABLE PORTFOLIOS INC",
+"cik": "1015965",
+"url": "https://www.sec.gov/Archives/edgar/data/1015965/0001193125-26-369272.txt",
+"label": "N-PX filed 2026-08-27"
+},
+{
+"name": "Voya MUTUAL FUNDS",
+"cik": "895430",
+"url": "https://www.sec.gov/Archives/edgar/data/895430/0001193125-26-370753.txt",
+"label": "N-PX filed 2026-08-27"
+},
+{
+"name": "Voya INVESTORS TRUST",
+"cik": "837276",
+"url": "https://www.sec.gov/Archives/edgar/data/837276/0001193125-26-370751.txt",
+"label": "N-PX filed 2026-08-27"
+},
+{
+"name": "Voya EQUITY TRUST",
+"cik": "1063946",
+"url": "https://www.sec.gov/Archives/edgar/data/1063946/0001193125-26-369267.txt",
+"label": "N-PX filed 2026-08-27"
+},
+{
+"name": "Voya PARTNERS INC",
+"cik": "1039001",
+"url": "https://www.sec.gov/Archives/edgar/data/1039001/0001193125-26-369260.txt",
+"label": "N-PX filed 2026-08-27"
+},
+{
+"name": "Voya VARIABLE FUNDS",
+"cik": "2664",
+"url": "https://www.sec.gov/Archives/edgar/data/2664/0001193125-26-370752.txt",
+"label": "N-PX filed 2026-08-27"
+}
+],
+"fit": "Medium",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Large; may have in-house stewardship resources",
+"tag": "",
+"x": 92.65,
+"y": 81.14
+},
+{
+"rank": 27,
+"family": "Cohen & Steers",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Judgment voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 82% of 73 (95% interval 72%-89%)",
+"workload": "321",
+"mgmt": "89%",
+"mgmtN": "588",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "82%",
+"agreeN": "73",
+"aligned": "98%",
+"alignedN": "527",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "77%",
+"agn": "26",
+"mg": "81%",
+"mgn": "58"
+},
+{
+"name": "Contested director elections",
+"ag": "n/a",
+"agn": "0",
+"mg": "n/a",
+"mgn": "n/a"
+},
+{
+"name": "M&A",
+"ag": "100%",
+"agn": "1",
+"mg": "97%",
+"mgn": "66"
+},
+{
+"name": "Executive pay",
+"ag": "85%",
+"agn": "46",
+"mg": "89%",
+"mgn": "464"
+}
+],
+"divergence": "0%",
+"nSeries": "14",
+"nFilers": 10,
+"filers": [
+{
+"name": "Cohen & Steers Real Assets Fund, Inc.",
+"cik": "1533503",
+"url": "https://www.sec.gov/Archives/edgar/data/1533503/0001193125-26-374514.txt",
+"label": "N-PX filed 2026-08-28"
+},
+{
+"name": "Cohen & Steers ETF Trust",
+"cik": "1590402",
+"url": "https://www.sec.gov/Archives/edgar/data/1590402/0001193125-26-375995.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "COHEN & STEERS GLOBAL REALTY SHARES, INC",
+"cik": "1033969",
+"url": "https://www.sec.gov/Archives/edgar/data/1033969/0001193125-26-375999.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "COHEN & STEERS GLOBAL INFRASTRUCTURE FUND INC",
+"cik": "1276070",
+"url": "https://www.sec.gov/Archives/edgar/data/1276070/0001193125-26-376403.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "COHEN & STEERS INFRASTRUCTURE FUND INC",
+"cik": "1275617",
+"url": "https://www.sec.gov/Archives/edgar/data/1275617/0001193125-26-376503.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "Cohen & Steers International Realty Fund, Inc.",
+"cik": "1309161",
+"url": "https://www.sec.gov/Archives/edgar/data/1309161/0001193125-26-374516.txt",
+"label": "N-PX filed 2026-08-28"
+},
+{
+"name": "COHEN & STEERS REAL ESTATE SECURITIES FUND INC",
+"cik": "1041917",
+"url": "https://www.sec.gov/Archives/edgar/data/1041917/0001193125-26-376005.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "COHEN & STEERS INSTITUTIONAL REALTY SHARES INC",
+"cik": "1096903",
+"url": "https://www.sec.gov/Archives/edgar/data/1096903/0001193125-26-376001.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "COHEN & STEERS REALTY SHARES INC",
+"cik": "874505",
+"url": "https://www.sec.gov/Archives/edgar/data/874505/0001193125-26-376010.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "COHEN & STEERS QUALITY INCOME REALTY FUND INC",
+"cik": "1157842",
+"url": "https://www.sec.gov/Archives/edgar/data/1157842/0001193125-26-376003.txt",
+"label": "N-PX filed 2026-08-31"
+}
+],
+"fit": "Medium",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "REIT-concentrated; few contested or M&A items",
+"tag": "",
+"x": 25.33,
+"y": 82.19
+},
+{
+"rank": 28,
+"family": "Brighthouse Funds Trust",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Partial robo-voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 85% of 2151 (95% interval 83%-86%)",
+"workload": "8,289",
+"mgmt": "85%",
+"mgmtN": "17,902",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "85%",
+"agreeN": "2,151",
+"aligned": "97%",
+"alignedN": "11,221",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "82%",
+"agn": "333",
+"mg": "59%",
+"mgn": "3,112"
+},
+{
+"name": "Contested director elections",
+"ag": "100%",
+"agn": "21",
+"mg": "100%",
+"mgn": "137"
+},
+{
+"name": "M&A",
+"ag": "78%",
+"agn": "40",
+"mg": "98%",
+"mgn": "826"
+},
+{
+"name": "Executive pay",
+"ag": "85%",
+"agn": "1,757",
+"mg": "91%",
+"mgn": "13,827"
+}
+],
+"divergence": "24%",
+"nSeries": "46",
+"nFilers": 2,
+"filers": [
+{
+"name": "Brighthouse Funds Trust II",
+"cik": "710826",
+"url": "https://www.sec.gov/Archives/edgar/data/710826/0001193125-26-359133.txt",
+"label": "N-PX filed 2026-08-20"
+},
+{
+"name": "Brighthouse Funds Trust I",
+"cik": "1126087",
+"url": "https://www.sec.gov/Archives/edgar/data/1126087/0001193125-26-359216.txt",
+"label": "N-PX filed 2026-08-20"
+}
+],
+"fit": "Medium",
+"structure": "Insurance-affiliated VIT (subadvised)",
+"rationale": "Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 95.93,
+"y": 84.7
+},
+{
+"rank": 29,
+"family": "Hotchkis & Wiley",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Partial robo-voter",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 86% of 226 (95% interval 81%-90%)",
+"workload": "887",
+"mgmt": "87%",
+"mgmtN": "1,599",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "86%",
+"agreeN": "226",
+"aligned": "99%",
+"alignedN": "1,356",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "68%",
+"agn": "50",
+"mg": "72%",
+"mgn": "128"
+},
+{
+"name": "Contested director elections",
+"ag": "100%",
+"agn": "4",
+"mg": "85%",
+"mgn": "26"
+},
+{
+"name": "M&A",
+"ag": "100%",
+"agn": "5",
+"mg": "95%",
+"mgn": "91"
+},
+{
+"name": "Executive pay",
+"ag": "90%",
+"agn": "167",
+"mg": "87%",
+"mgn": "1,354"
+}
+],
+"divergence": "0%",
+"nSeries": "12",
+"nFilers": 1,
+"filers": [
+{
+"name": "HOTCHKIS & WILEY FUNDS /DE/",
+"cik": "1145022",
+"url": "https://www.sec.gov/Archives/edgar/data/1145022/0001104659-26-103313.txt",
+"label": "N-PX filed 2026-08-28"
+}
+],
+"fit": "Medium",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "Value funds are fairly concentrated",
+"tag": "",
+"x": 47.4,
+"y": 85.84
+},
+{
+"rank": 30,
+"family": "New York Life Investments (MainStay)",
+"tier": 1,
+"tierLabel": "Tier 1",
+"segment": "Partial robo-voter",
+"conf": "medium",
+"why": "agreement with ISS where it opposed the board: 88% of 812 (95% interval 86%-90%)",
+"workload": "2,774",
+"mgmt": "84%",
+"mgmtN": "5,279",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "88%",
+"agreeN": "812",
+"aligned": "98%",
+"alignedN": "4,444",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "94%",
+"agn": "217",
+"mg": "64%",
+"mgn": "666"
+},
+{
+"name": "Contested director elections",
+"ag": "83%",
+"agn": "6",
+"mg": "88%",
+"mgn": "41"
+},
+{
+"name": "M&A",
+"ag": "92%",
+"agn": "53",
+"mg": "85%",
+"mgn": "332"
+},
+{
+"name": "Executive pay",
+"ag": "85%",
+"agn": "536",
+"mg": "87%",
+"mgn": "4,240"
+}
+],
+"divergence": "11%",
+"nSeries": "63",
+"nFilers": 5,
+"filers": [
+{
+"name": "New York Life Investments ETF Trust",
+"cik": "1415995",
+"url": "https://www.sec.gov/Archives/edgar/data/1415995/0001999371-26-018287.txt",
+"label": "N-PX filed 2026-08-20"
+},
+{
+"name": "NYLIM VP FUNDS TRUST",
+"cik": "887340",
+"url": "https://www.sec.gov/Archives/edgar/data/887340/0001193125-26-356874.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "NEW YORK LIFE INVESTMENTS FUNDS TRUST",
+"cik": "1469192",
+"url": "https://www.sec.gov/Archives/edgar/data/1469192/0001193125-26-356870.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "NEW YORK LIFE INVESTMENTS FUNDS",
+"cik": "787441",
+"url": "https://www.sec.gov/Archives/edgar/data/787441/0001193125-26-356868.txt",
+"label": "N-PX filed 2026-08-19"
+},
+{
+"name": "New York Life Investments Active ETF Trust",
+"cik": "1426439",
+"url": "https://www.sec.gov/Archives/edgar/data/1426439/0001999371-26-018283.txt",
+"label": "N-PX filed 2026-08-20"
+}
+],
+"fit": "High",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 72.16,
+"y": 88.05
+},
+{
+"rank": 31,
+"family": "Calvert Research and Management",
+"tier": 2,
+"tierLabel": "Tier 2",
+"segment": "ISS follower",
+"conf": "medium",
+"why": "agreement with ISS where it opposed the board: 91% of 1268 (95% interval 89%-92%)",
+"workload": "4,603",
+"mgmt": "60%",
+"mgmtN": "7,687",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "91%",
+"agreeN": "1,268",
+"aligned": "70%",
+"alignedN": "6,494",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "97%",
+"agn": "217",
+"mg": "38%",
+"mgn": "657"
+},
+{
+"name": "Contested director elections",
+"ag": "100%",
+"agn": "28",
+"mg": "58%",
+"mgn": "154"
+},
+{
+"name": "M&A",
+"ag": "100%",
+"agn": "28",
+"mg": "93%",
+"mgn": "428"
+},
+{
+"name": "Executive pay",
+"ag": "89%",
+"agn": "995",
+"mg": "60%",
+"mgn": "6,448"
+}
+],
+"divergence": "0%",
+"nSeries": "28",
+"nFilers": 8,
+"filers": [
+{
+"name": "Calvert Responsible Index Series, Inc.",
+"cik": "1105446",
+"url": "https://www.sec.gov/Archives/edgar/data/1105446/0001140361-26-032180.txt",
+"label": "N-PX filed 2026-08-11"
+},
+{
+"name": "Calvert Variable Trust, Inc.",
+"cik": "743773",
+"url": "https://www.sec.gov/Archives/edgar/data/743773/0001140361-26-032178.txt",
+"label": "N-PX filed 2026-08-11"
+},
+{
+"name": "Calvert World Values Fund, Inc.",
+"cik": "884110",
+"url": "https://www.sec.gov/Archives/edgar/data/884110/0001140361-26-032179.txt",
+"label": "N-PX filed 2026-08-11"
+},
+{
+"name": "Calvert Impact Fund, Inc.",
+"cik": "1121624",
+"url": "https://www.sec.gov/Archives/edgar/data/1121624/0001140361-26-032181.txt",
+"label": "N-PX filed 2026-08-11"
+},
+{
+"name": "Calvert Management Series",
+"cik": "319676",
+"url": "https://www.sec.gov/Archives/edgar/data/319676/0001140361-26-032174.txt",
+"label": "N-PX filed 2026-08-11"
+},
+{
+"name": "Calvert Social Investment Fund",
+"cik": "356682",
+"url": "https://www.sec.gov/Archives/edgar/data/356682/0001140361-26-032175.txt",
+"label": "N-PX filed 2026-08-11"
+},
+{
+"name": "Calvert Variable Series, Inc.",
+"cik": "708950",
+"url": "https://www.sec.gov/Archives/edgar/data/708950/0001140361-26-032177.txt",
+"label": "N-PX filed 2026-08-11"
+},
+{
+"name": "Calvert Fund",
+"cik": "701039",
+"url": "https://www.sec.gov/Archives/edgar/data/701039/0001140361-26-032176.txt",
+"label": "N-PX filed 2026-08-11"
+}
+],
+"fit": "High",
+"structure": "Single-manager, diversified",
+"rationale": "ESG mandate means frequent support for shareholder proposals; custom policy",
+"risk": "Owned by Morgan Stanley; may share parent resources",
+"tag": "ESG",
+"x": 83.15,
+"y": 90.85
+},
+{
+"rank": 32,
+"family": "Lazard",
+"tier": 2,
+"tierLabel": "Tier 2",
+"segment": "ISS follower",
+"conf": "medium",
+"why": "agreement with ISS where it opposed the board: 91% of 522 (95% interval 88%-93%)",
+"workload": "1,912",
+"mgmt": "82%",
+"mgmtN": "3,257",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "91%",
+"agreeN": "522",
+"aligned": "95%",
+"alignedN": "2,777",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "93%",
+"agn": "150",
+"mg": "68%",
+"mgn": "436"
+},
+{
+"name": "Contested director elections",
+"ag": "n/a",
+"agn": "0",
+"mg": "95%",
+"mgn": "21"
+},
+{
+"name": "M&A",
+"ag": "86%",
+"agn": "28",
+"mg": "85%",
+"mgn": "167"
+},
+{
+"name": "Executive pay",
+"ag": "91%",
+"agn": "344",
+"mg": "84%",
+"mgn": "2,633"
+}
+],
+"divergence": "1%",
+"nSeries": "30",
+"nFilers": 3,
+"filers": [
+{
+"name": "LAZARD FUNDS INC",
+"cik": "874964",
+"url": "https://www.sec.gov/Archives/edgar/data/874964/0000930413-26-002514.txt",
+"label": "N-PX filed 2026-08-14"
+},
+{
+"name": "Lazard Active ETF Trust",
+"cik": "2051630",
+"url": "https://www.sec.gov/Archives/edgar/data/2051630/0000930413-26-002512.txt",
+"label": "N-PX filed 2026-08-14"
+},
+{
+"name": "LAZARD RETIREMENT SERIES INC",
+"cik": "1033669",
+"url": "https://www.sec.gov/Archives/edgar/data/1033669/0000930413-26-002513.txt",
+"label": "N-PX filed 2026-08-14"
+}
+],
+"fit": "Medium",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "International-heavy; many votes fall outside the US key",
+"tag": "",
+"x": 64.07,
+"y": 91.19
+},
+{
+"rank": 33,
+"family": "John Hancock Investment Management",
+"tier": 2,
+"tierLabel": "Tier 2",
+"segment": "ISS follower",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 91% of 2178 (95% interval 90%-93%)",
+"workload": "9,795",
+"mgmt": "79%",
+"mgmtN": "14,205",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "91%",
+"agreeN": "2,178",
+"aligned": "98%",
+"alignedN": "9,696",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "79%",
+"agn": "226",
+"mg": "72%",
+"mgn": "876"
+},
+{
+"name": "Contested director elections",
+"ag": "70%",
+"agn": "40",
+"mg": "82%",
+"mgn": "175"
+},
+{
+"name": "M&A",
+"ag": "89%",
+"agn": "419",
+"mg": "81%",
+"mgn": "2,234"
+},
+{
+"name": "Executive pay",
+"ag": "94%",
+"agn": "1,493",
+"mg": "80%",
+"mgn": "10,920"
+}
+],
+"divergence": "11%",
+"nSeries": "67",
+"nFilers": 8,
+"filers": [
+{
+"name": "JOHN HANCOCK VARIABLE INSURANCE TRUST",
+"cik": "756913",
+"url": "https://www.sec.gov/Archives/edgar/data/756913/0001438934-26-000659.txt",
+"label": "N-PX filed 2026-08-11"
+},
+{
+"name": "John Hancock Exchange-Traded Fund Trust",
+"cik": "1478482",
+"url": "https://www.sec.gov/Archives/edgar/data/1478482/0001438934-26-000663.txt",
+"label": "N-PX filed 2026-08-11"
+},
+{
+"name": "JOHN HANCOCK INVESTMENT TRUST",
+"cik": "22370",
+"url": "https://www.sec.gov/Archives/edgar/data/22370/0001438934-26-000660.txt",
+"label": "N-PX filed 2026-08-11"
+},
+{
+"name": "John Hancock Funds III",
+"cik": "1329954",
+"url": "https://www.sec.gov/Archives/edgar/data/1329954/0001438934-26-000667.txt",
+"label": "N-PX filed 2026-08-11"
+},
+{
+"name": "JOHN HANCOCK INVESTMENT TRUST II",
+"cik": "743861",
+"url": "https://www.sec.gov/Archives/edgar/data/743861/0001438934-26-000666.txt",
+"label": "N-PX filed 2026-08-11"
+},
+{
+"name": "JOHN HANCOCK FINANCIAL OPPORTUNITIES FUND",
+"cik": "925683",
+"url": "https://www.sec.gov/Archives/edgar/data/925683/0001438934-26-000495.txt",
+"label": "N-PX filed 2026-08-05"
+},
+{
+"name": "JOHN HANCOCK CAPITAL SERIES",
+"cik": "45291",
+"url": "https://www.sec.gov/Archives/edgar/data/45291/0001438934-26-000668.txt",
+"label": "N-PX filed 2026-08-11"
+},
+{
+"name": "JOHN HANCOCK TAX-ADVANTAGED DIVIDEND INCOME FUND",
+"cik": "1260041",
+"url": "https://www.sec.gov/Archives/edgar/data/1260041/0001438934-26-000493.txt",
+"label": "N-PX filed 2026-08-05"
+}
+],
+"fit": "Medium",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design; large enough to have internal resources",
+"tag": "",
+"x": 99.55,
+"y": 91.46
+},
+{
+"rank": 34,
+"family": "William Blair",
+"tier": 2,
+"tierLabel": "Tier 2",
+"segment": "ISS follower",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 96% of 295 (95% interval 93%-97%)",
+"workload": "1,118",
+"mgmt": "84%",
+"mgmtN": "1,870",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "96%",
+"agreeN": "295",
+"aligned": "99%",
+"alignedN": "1,559",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "100%",
+"agn": "38",
+"mg": "72%",
+"mgn": "141"
+},
+{
+"name": "Contested director elections",
+"ag": "100%",
+"agn": "1",
+"mg": "95%",
+"mgn": "21"
+},
+{
+"name": "M&A",
+"ag": "71%",
+"agn": "24",
+"mg": "86%",
+"mgn": "133"
+},
+{
+"name": "Executive pay",
+"ag": "97%",
+"agn": "232",
+"mg": "84%",
+"mgn": "1,575"
+}
+],
+"divergence": "1%",
+"nSeries": "18",
+"nFilers": 1,
+"filers": [
+{
+"name": "WILLIAM BLAIR FUNDS",
+"cik": "822632",
+"url": "https://www.sec.gov/Archives/edgar/data/822632/0001193125-26-353690.txt",
+"label": "N-PX filed 2026-08-17"
+}
+],
+"fit": "High",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "Verify N-PX filer name",
+"tag": "",
+"x": 52.42,
+"y": 95.59
+},
+{
+"rank": 35,
+"family": "GMO",
+"tier": 2,
+"tierLabel": "Tier 2",
+"segment": "ISS follower",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 96% of 529 (95% interval 94%-97%)",
+"workload": "1,997",
+"mgmt": "85%",
+"mgmtN": "3,476",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "96%",
+"agreeN": "529",
+"aligned": "99%",
+"alignedN": "2,970",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "90%",
+"agn": "141",
+"mg": "72%",
+"mgn": "436"
+},
+{
+"name": "Contested director elections",
+"ag": "100%",
+"agn": "5",
+"mg": "90%",
+"mgn": "51"
+},
+{
+"name": "M&A",
+"ag": "94%",
+"agn": "16",
+"mg": "93%",
+"mgn": "204"
+},
+{
+"name": "Executive pay",
+"ag": "98%",
+"agn": "367",
+"mg": "86%",
+"mgn": "2,785"
+}
+],
+"divergence": "0%",
+"nSeries": "22",
+"nFilers": 2,
+"filers": [
+{
+"name": "GMO TRUST",
+"cik": "772129",
+"url": "https://www.sec.gov/Archives/edgar/data/772129/0001072613-26-000703.txt",
+"label": "N-PX filed 2026-08-18"
+},
+{
+"name": "GMO ETF Trust",
+"cik": "1981627",
+"url": "https://www.sec.gov/Archives/edgar/data/1981627/0001072613-26-000701.txt",
+"label": "N-PX filed 2026-08-18"
+}
+],
+"fit": "Medium",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "Global; non-US meetings drop out of the key",
+"tag": "",
+"x": 65.02,
+"y": 95.84
+},
+{
+"rank": 36,
+"family": "GuideStone Funds",
+"tier": 2,
+"tierLabel": "Tier 2",
+"segment": "ISS follower",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 97% of 731 (95% interval 95%-98%)",
+"workload": "2,635",
+"mgmt": "84%",
+"mgmtN": "4,718",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "97%",
+"agreeN": "731",
+"aligned": "99%",
+"alignedN": "4,027",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "90%",
+"agn": "199",
+"mg": "61%",
+"mgn": "586"
+},
+{
+"name": "Contested director elections",
+"ag": "100%",
+"agn": "9",
+"mg": "79%",
+"mgn": "42"
+},
+{
+"name": "M&A",
+"ag": "100%",
+"agn": "21",
+"mg": "91%",
+"mgn": "226"
+},
+{
+"name": "Executive pay",
+"ag": "99%",
+"agn": "502",
+"mg": "87%",
+"mgn": "3,864"
+}
+],
+"divergence": "0%",
+"nSeries": "13",
+"nFilers": 1,
+"filers": [
+{
+"name": "GuideStone Funds",
+"cik": "1131013",
+"url": "https://www.sec.gov/Archives/edgar/data/1131013/0001193125-26-374898.txt",
+"label": "N-PX filed 2026-08-31"
+}
+],
+"fit": "High",
+"structure": "Multi-manager / subadvised",
+"rationale": "Faith-based screens require a custom voting policy, Pennant's core use case",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "Faith-based",
+"x": 71.04,
+"y": 96.85
+},
+{
+"rank": 37,
+"family": "Driehaus",
+"tier": 2,
+"tierLabel": "Tier 2",
+"segment": "ISS follower",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 99% of 247 (95% interval 96%-100%)",
+"workload": "731",
+"mgmt": "78%",
+"mgmtN": "1,157",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "99%",
+"agreeN": "247",
+"aligned": "100%",
+"alignedN": "917",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "100%",
+"agn": "33",
+"mg": "70%",
+"mgn": "92"
+},
+{
+"name": "Contested director elections",
+"ag": "100%",
+"agn": "8",
+"mg": "53%",
+"mgn": "17"
+},
+{
+"name": "M&A",
+"ag": "100%",
+"agn": "48",
+"mg": "53%",
+"mgn": "102"
+},
+{
+"name": "Executive pay",
+"ag": "98%",
+"agn": "158",
+"mg": "82%",
+"mgn": "946"
+}
+],
+"divergence": "0%",
+"nSeries": "9",
+"nFilers": 1,
+"filers": [
+{
+"name": "DRIEHAUS MUTUAL FUNDS",
+"cik": "1016073",
+"url": "https://www.sec.gov/Archives/edgar/data/1016073/0001398344-26-014750.txt",
+"label": "N-PX filed 2026-08-17"
+}
+],
+"fit": "Medium",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "Small-cap holdings rarely appear in DEFA14A key",
+"tag": "",
+"x": 43.2,
+"y": 98.79
+},
+{
+"rank": 38,
+"family": "Segall Bryant & Hamill",
+"tier": 2,
+"tierLabel": "Tier 2",
+"segment": "ISS follower",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 99% of 460 (95% interval 98%-100%)",
+"workload": "1,526",
+"mgmt": "82%",
+"mgmtN": "2,554",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "99%",
+"agreeN": "460",
+"aligned": "100%",
+"alignedN": "2,098",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "99%",
+"agn": "69",
+"mg": "76%",
+"mgn": "232"
+},
+{
+"name": "Contested director elections",
+"ag": "n/a",
+"agn": "0",
+"mg": "n/a",
+"mgn": "n/a"
+},
+{
+"name": "M&A",
+"ag": "98%",
+"agn": "44",
+"mg": "80%",
+"mgn": "217"
+},
+{
+"name": "Executive pay",
+"ag": "100%",
+"agn": "347",
+"mg": "83%",
+"mgn": "2,105"
+}
+],
+"divergence": "1%",
+"nSeries": "11",
+"nFilers": 1,
+"filers": [
+{
+"name": "Segall Bryant & Hamill Trust",
+"cik": "357204",
+"url": "https://www.sec.gov/Archives/edgar/data/357204/0001398344-26-015838.txt",
+"label": "N-PX filed 2026-08-27"
+}
+],
+"fit": "Medium",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "Smaller lineup; may hit insufficient data",
+"tag": "",
+"x": 59.18,
+"y": 99.35
+},
+{
+"rank": 39,
+"family": "Wilmington Funds",
+"tier": 2,
+"tierLabel": "Tier 2",
+"segment": "ISS follower",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 100% of 589 (95% interval 99%-100%)",
+"workload": "2,064",
+"mgmt": "84%",
+"mgmtN": "3,783",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "100%",
+"agreeN": "589",
+"aligned": "100%",
+"alignedN": "3,206",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "100%",
+"agn": "185",
+"mg": "67%",
+"mgn": "566"
+},
+{
+"name": "Contested director elections",
+"ag": "100%",
+"agn": "5",
+"mg": "81%",
+"mgn": "27"
+},
+{
+"name": "M&A",
+"ag": "100%",
+"agn": "14",
+"mg": "91%",
+"mgn": "157"
+},
+{
+"name": "Executive pay",
+"ag": "100%",
+"agn": "385",
+"mg": "87%",
+"mgn": "3,033"
+}
+],
+"divergence": "0%",
+"nSeries": "5",
+"nFilers": 1,
+"filers": [
+{
+"name": "WILMINGTON FUNDS",
+"cik": "830744",
+"url": "https://www.sec.gov/Archives/edgar/data/830744/0001193125-26-364768.txt",
+"label": "N-PX filed 2026-08-25"
+}
+],
+"fit": "Medium",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Smaller lineup; may hit insufficient data",
+"tag": "",
+"x": 65.74,
+"y": 99.83
+},
+{
+"rank": 40,
+"family": "AQR",
+"tier": 2,
+"tierLabel": "Tier 2",
+"segment": "ISS follower",
+"conf": "high",
+"why": "agreement with ISS where it opposed the board: 100% of 826 (95% interval 99%-100%)",
+"workload": "3,007",
+"mgmt": "84%",
+"mgmtN": "5,347",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "100%",
+"agreeN": "826",
+"aligned": "100%",
+"alignedN": "4,587",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "100%",
+"agn": "198",
+"mg": "70%",
+"mgn": "686"
+},
+{
+"name": "Contested director elections",
+"ag": "100%",
+"agn": "10",
+"mg": "88%",
+"mgn": "80"
+},
+{
+"name": "M&A",
+"ag": "100%",
+"agn": "18",
+"mg": "92%",
+"mgn": "225"
+},
+{
+"name": "Executive pay",
+"ag": "100%",
+"agn": "600",
+"mg": "86%",
+"mgn": "4,356"
+}
+],
+"divergence": "0%",
+"nSeries": "24",
+"nFilers": 1,
+"filers": [
+{
+"name": "AQR Funds",
+"cik": "1444822",
+"url": "https://www.sec.gov/Archives/edgar/data/1444822/0001085146-26-000665.txt",
+"label": "N-PX filed 2026-08-26"
+}
+],
+"fit": "Medium",
+"structure": "Single-manager, diversified",
+"rationale": "Quant manager with very broad holdings; high workload",
+"risk": "Systematic voting; may score as ISS follower",
+"tag": "",
+"x": 73.91,
+"y": 99.88
+},
+{
+"rank": 41,
+"family": "Russell Investments",
+"tier": 2,
+"tierLabel": "Tier 2",
+"segment": "Glass Lewis follower",
+"conf": "medium",
+"why": "agreement with GL where it opposed the board: 100% of 17 (95% interval 82%-100%)",
+"workload": "2,601",
+"mgmt": "85%",
+"mgmtN": "5,822",
+"adviser": "Glass Lewis",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "100%",
+"agreeN": "17",
+"aligned": "96%",
+"alignedN": "27",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "n/a",
+"agn": "0",
+"mg": "59%",
+"mgn": "656"
+},
+{
+"name": "Contested director elections",
+"ag": "100%",
+"agn": "10",
+"mg": "85%",
+"mgn": "61"
+},
+{
+"name": "M&A",
+"ag": "100%",
+"agn": "1",
+"mg": "98%",
+"mgn": "464"
+},
+{
+"name": "Executive pay",
+"ag": "100%",
+"agn": "6",
+"mg": "87%",
+"mgn": "4,641"
+}
+],
+"divergence": "3%",
+"nSeries": "26",
+"nFilers": 3,
+"filers": [
+{
+"name": "RUSSELL INVESTMENT CO",
+"cik": "351601",
+"url": "https://www.sec.gov/Archives/edgar/data/351601/0001193125-26-374593.txt",
+"label": "N-PX filed 2026-08-28"
+},
+{
+"name": "RUSSELL INVESTMENT FUNDS",
+"cik": "824036",
+"url": "https://www.sec.gov/Archives/edgar/data/824036/0001193125-26-374555.txt",
+"label": "N-PX filed 2026-08-28"
+},
+{
+"name": "Russell Investments Exchange Traded Funds",
+"cik": "2042513",
+"url": "https://www.sec.gov/Archives/edgar/data/2042513/0001193125-26-374566.txt",
+"label": "N-PX filed 2026-08-28"
+}
+],
+"fit": "High",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 70.76,
+"y": 100.0
+},
+{
+"rank": 42,
+"family": "First Eagle",
+"tier": 3,
+"tierLabel": "Tier 3",
+"segment": "Management follower",
+"conf": "medium",
+"why": "votes with the board: 90% of 915 (95% interval 88%-92%)",
+"workload": "550",
+"mgmt": "90%",
+"mgmtN": "915",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "60%",
+"agreeN": "145",
+"aligned": "99%",
+"alignedN": "769",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "64%",
+"agn": "33",
+"mg": "82%",
+"mgn": "104"
+},
+{
+"name": "Contested director elections",
+"ag": "43%",
+"agn": "7",
+"mg": "82%",
+"mgn": "17"
+},
+{
+"name": "M&A",
+"ag": "40%",
+"agn": "5",
+"mg": "95%",
+"mgn": "43"
+},
+{
+"name": "Executive pay",
+"ag": "61%",
+"agn": "100",
+"mg": "91%",
+"mgn": "751"
+}
+],
+"divergence": "0%",
+"nSeries": "12",
+"nFilers": 3,
+"filers": [
+{
+"name": "FIRST EAGLE FUNDS",
+"cik": "906352",
+"url": "https://www.sec.gov/Archives/edgar/data/906352/0000930413-26-002761.txt",
+"label": "N-PX filed 2026-08-28"
+},
+{
+"name": "FIRST EAGLE VARIABLE FUNDS",
+"cik": "1000249",
+"url": "https://www.sec.gov/Archives/edgar/data/1000249/0000930413-26-002762.txt",
+"label": "N-PX filed 2026-08-28"
+},
+{
+"name": "First Eagle ETF Trust",
+"cik": "2083193",
+"url": "https://www.sec.gov/Archives/edgar/data/2083193/0000930413-26-002768.txt",
+"label": "N-PX filed 2026-08-28"
+}
+],
+"fit": "High",
+"structure": "Single-manager, diversified",
+"rationale": "Mid-size active manager with broad holdings (high meeting count); likely own guidelines but lean stewardship staff",
+"risk": "Global; non-US meetings drop out of the key",
+"tag": "",
+"x": 37.02,
+"y": 60.0
+},
+{
+"rank": 43,
+"family": "AssetMark (GuidePath / Savos)",
+"tier": 3,
+"tierLabel": "Tier 3",
+"segment": "Management follower",
+"conf": "medium",
+"why": "votes with the board: 91% of 3510 (95% interval 90%-92%)",
+"workload": "2,352",
+"mgmt": "91%",
+"mgmtN": "3,510",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "47%",
+"agreeN": "552",
+"aligned": "97%",
+"alignedN": "2,943",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "32%",
+"agn": "129",
+"mg": "89%",
+"mgn": "396"
+},
+{
+"name": "Contested director elections",
+"ag": "12%",
+"agn": "17",
+"mg": "97%",
+"mgn": "93"
+},
+{
+"name": "M&A",
+"ag": "93%",
+"agn": "14",
+"mg": "94%",
+"mgn": "264"
+},
+{
+"name": "Executive pay",
+"ag": "52%",
+"agn": "392",
+"mg": "90%",
+"mgn": "2,757"
+}
+],
+"divergence": "5%",
+"nSeries": "6",
+"nFilers": 2,
+"filers": [
+{
+"name": "GPS Funds I",
+"cik": "1131042",
+"url": "https://www.sec.gov/Archives/edgar/data/1131042/0001438934-26-002494.txt",
+"label": "N-PX filed 2026-08-28"
+},
+{
+"name": "GPS Funds II",
+"cik": "1504079",
+"url": "https://www.sec.gov/Archives/edgar/data/1504079/0001438934-26-001441.txt",
+"label": "N-PX filed 2026-08-25"
+}
+],
+"fit": "Medium",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 68.57,
+"y": 46.74
+},
+{
+"rank": 44,
+"family": "Penn Mutual (Penn Series Funds)",
+"tier": 3,
+"tierLabel": "Tier 3",
+"segment": "Management follower",
+"conf": "high",
+"why": "votes with the board: 91% of 5883 (95% interval 90%-92%)",
+"workload": "3,559",
+"mgmt": "91%",
+"mgmtN": "5,883",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "41%",
+"agreeN": "982",
+"aligned": "98%",
+"alignedN": "4,989",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "35%",
+"agn": "184",
+"mg": "83%",
+"mgn": "519"
+},
+{
+"name": "Contested director elections",
+"ag": "32%",
+"agn": "28",
+"mg": "92%",
+"mgn": "154"
+},
+{
+"name": "M&A",
+"ag": "35%",
+"agn": "23",
+"mg": "96%",
+"mgn": "300"
+},
+{
+"name": "Executive pay",
+"ag": "43%",
+"agn": "747",
+"mg": "92%",
+"mgn": "4,910"
+}
+],
+"divergence": "12%",
+"nSeries": "19",
+"nFilers": 1,
+"filers": [
+{
+"name": "PENN SERIES FUNDS INC",
+"cik": "702340",
+"url": "https://www.sec.gov/Archives/edgar/data/702340/0001193125-26-353319.txt",
+"label": "N-PX filed 2026-08-17"
+}
+],
+"fit": "Medium",
+"structure": "Insurance-affiliated VIT (subadvised)",
+"rationale": "Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop",
+"risk": "Smaller lineup; may hit insufficient data",
+"tag": "",
+"x": 77.57,
+"y": 40.73
+},
+{
+"rank": 45,
+"family": "Touchstone Investments",
+"tier": 3,
+"tierLabel": "Tier 3",
+"segment": "Management follower",
+"conf": "high",
+"why": "votes with the board: 92% of 1197 (95% interval 90%-93%)",
+"workload": "685",
+"mgmt": "92%",
+"mgmtN": "1,197",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "36%",
+"agreeN": "187",
+"aligned": "98%",
+"alignedN": "931",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "30%",
+"agn": "77",
+"mg": "83%",
+"mgn": "226"
+},
+{
+"name": "Contested director elections",
+"ag": "100%",
+"agn": "4",
+"mg": "100%",
+"mgn": "4"
+},
+{
+"name": "M&A",
+"ag": "0%",
+"agn": "1",
+"mg": "99%",
+"mgn": "81"
+},
+{
+"name": "Executive pay",
+"ag": "38%",
+"agn": "105",
+"mg": "93%",
+"mgn": "886"
+}
+],
+"divergence": "7%",
+"nSeries": "25",
+"nFilers": 4,
+"filers": [
+{
+"name": "TOUCHSTONE FUNDS GROUP TRUST",
+"cik": "914243",
+"url": "https://www.sec.gov/Archives/edgar/data/914243/0002000324-26-003867.txt",
+"label": "N-PX filed 2026-08-26"
+},
+{
+"name": "Touchstone ETF Trust",
+"cik": "1919700",
+"url": "https://www.sec.gov/Archives/edgar/data/1919700/0002000324-26-004277.txt",
+"label": "N-PX filed 2026-08-31"
+},
+{
+"name": "TOUCHSTONE STRATEGIC TRUST",
+"cik": "711080",
+"url": "https://www.sec.gov/Archives/edgar/data/711080/0002000324-26-003869.txt",
+"label": "N-PX filed 2026-08-26"
+},
+{
+"name": "TOUCHSTONE VARIABLE SERIES TRUST",
+"cik": "920547",
+"url": "https://www.sec.gov/Archives/edgar/data/920547/0002000324-26-003868.txt",
+"label": "N-PX filed 2026-08-26"
+}
+],
+"fit": "High",
+"structure": "Multi-manager / subadvised",
+"rationale": "Mid-to-large complex; oversees many subadvisers' votes, so audit trails and policy oversight matter; too small to build in-house",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 41.78,
+"y": 35.83
+},
+{
+"rank": 46,
+"family": "Northwestern Mutual Series Fund",
+"tier": 3,
+"tierLabel": "Tier 3",
+"segment": "Management follower",
+"conf": "high",
+"why": "votes with the board: 92% of 3539 (95% interval 91%-93%)",
+"workload": "2,081",
+"mgmt": "92%",
+"mgmtN": "3,539",
+"adviser": "ISS",
+"adviserWhy": "higher agreement where it opposed the board",
+"agree": "37%",
+"agreeN": "563",
+"aligned": "98%",
+"alignedN": "2,979",
+"cats": [
+{
+"name": "Shareholder proposals",
+"ag": "36%",
+"agn": "199",
+"mg": "84%",
+"mgn": "488"
+},
+{
+"name": "Contested director elections",
+"ag": "50%",
+"agn": "10",
+"mg": "91%",
+"mgn": "77"
+},
+{
+"name": "M&A",
+"ag": "69%",
+"agn": "16",
+"mg": "91%",
+"mgn": "162"
+},
+{
+"name": "Executive pay",
+"ag": "36%",
+"agn": "338",
+"mg": "94%",
+"mgn": "2,812"
+}
+],
+"divergence": "11%",
+"nSeries": "20",
+"nFilers": 1,
+"filers": [
+{
+"name": "NORTHWESTERN MUTUAL SERIES FUND INC",
+"cik": "742212",
+"url": "https://www.sec.gov/Archives/edgar/data/742212/0000742212-26-000024.txt",
+"label": "N-PX filed 2026-08-21"
+}
+],
+"fit": "Medium",
+"structure": "Insurance-affiliated VIT (subadvised)",
+"rationale": "Insurance-owned trust; votes need documented oversight across subadvisers; not a stewardship-heavy shop",
+"risk": "Subadvisers may vote, so the subadviser could be the buyer and series divergence will be high by design",
+"tag": "",
+"x": 65.91,
+"y": 36.94
+}
+],
+"missing": [
+{
+"family": "Mutual of America",
+"tag": "",
+"structure": "Insurance-affiliated VIT (subadvised)",
+"ciks": "922127"
+},
+{
+"family": "Boston Partners",
+"tag": "",
+"structure": "Single-manager, diversified",
+"ciks": "1386060"
+},
+{
+"family": "Glenmede",
+"tag": "",
+"structure": "Single-manager, diversified",
+"ciks": "314949; 1644465"
+},
+{
+"family": "Westwood",
+"tag": "",
+"structure": "Single-manager, diversified",
+"ciks": "1165002; 949471"
+}
+]
+}

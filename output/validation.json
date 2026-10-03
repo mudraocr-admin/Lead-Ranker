@@ -1,26 +1,26 @@
 {
   "GL": {
-    "held_out": 133,
-    "covered": 98,
-    "coverage": 0.7368,
-    "accuracy": 0.9082,
-    "opposed_held_out": 48,
-    "opposed_coverage": 0.8958,
-    "opposed_accuracy": 0.8605,
+    "held_out": 146,
+    "covered": 104,
+    "coverage": 0.7123,
+    "accuracy": 0.8558,
+    "opposed_held_out": 55,
+    "opposed_coverage": 0.8909,
+    "opposed_accuracy": 0.8163,
     "passed": false,
     "quotes_set_aside": 0,
-    "accuracy_vs_all_quotes": 0.9082
+    "accuracy_vs_all_quotes": 0.8558
   },
   "ISS": {
-    "held_out": 159,
-    "covered": 119,
-    "coverage": 0.7484,
-    "accuracy": 0.9244,
-    "opposed_held_out": 64,
-    "opposed_coverage": 0.7969,
-    "opposed_accuracy": 0.9216,
+    "held_out": 180,
+    "covered": 127,
+    "coverage": 0.7056,
+    "accuracy": 0.937,
+    "opposed_held_out": 65,
+    "opposed_coverage": 0.8308,
+    "opposed_accuracy": 0.9259,
     "passed": true,
-    "quotes_set_aside": 7,
-    "accuracy_vs_all_quotes": 0.873
+    "quotes_set_aside": 8,
+    "accuracy_vs_all_quotes": 0.8815
   }
 }
